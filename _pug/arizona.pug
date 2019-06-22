@@ -1,0 +1,67 @@
+extends layout
+
+block vars
+  - var pageDescription = ''
+  - var bodyClass = 'detail arizona'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Arizona - 
+
+block content
+
+  +state('Arizona', '/assets/images/flag-arizona.png', 'The Grand Canyon State', 'February 14, 1912')
+
+  .intro
+    p The Arizona flag was designed in 1910 by Colonel Charles W. Harris, general of the Arizona National Guard, for the Arizona Rifle Team to use in competition. His wife, Mae Harris, sewed the first competition version.
+
+    p Carl Hayden, Arizona’s first Representative, is also credited with the design and his wife, Nancy Hayden, sewed the first official flag.
+
+    p The flag was officially adopted February 17, 1917.
+
+  .guide
+    .content
+      h2 Flag design
+      p The lower half is a field of blue and the upper half features 13 equally-sized rays, 6 gold and 7 red. A five-pointed copper star rises from the field of blue.
+      p The 13 rays represent the original 13 colonies and the setting sun while the copper star represents Arizona as one of the largest producers of copper.
+    .visual.flag
+      img(src='/assets/images/flag-arizona.png')
+
+  .guide
+    .content
+      h2 Colors*
+      p Colors include blue, red, “old gold” (yellow), and copper. The blue and red match the United States flag.
+      p Blue and gold are Arizona’s state colors.
+    .visual.colors
+      +color('blue', '#28325d')
+      +color('red', '#bb2440')
+      +color('old gold', '#fff22d')
+      +color('copper', '#a96a31')
+
+  .guide
+    .content
+      h2 Dimensions
+      p The flag should have a hoist of 4 feet and a fly of 6 feet. The copper star should be 2 feet tall and positioned 1 foot from the top and 1 foot from the bottom, horizontally centered.
+      p If resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-arizona-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source: a(href='https://www.azleg.gov/FormatDocument.asp?inDoc=/ars/41/00851.htm&Title=41&DocType=ARS') Arizona State Legislature
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Arizona') Wikipedia
+    small *Hex codes are not official.

@@ -1,0 +1,31 @@
+mixin state(state,img,nickname,date)
+  header
+    .flex
+      h1= state
+      .flag
+        img(src=img, alt=state + ' state flag')
+    .meta
+      .nickname= nickname
+      .date Admitted 
+        span= date
+
+mixin territory(territory,img,nickname,date)
+  header
+    h1= territory
+    img(src=img, alt=territory + ' flag')
+    .meta
+      .nickname= nickname
+      .date Became a US territory in 
+        span= date
+
+mixin flag(state, link, img)
+  li.flag-item
+    a(href=link)
+      span.flag: img(src=img)
+      span.state= state
+
+mixin color(color, hex)
+  .color
+    .sample(class=color)
+    .name= color
+    .hex= hex

@@ -1,0 +1,31 @@
+extends layout
+
+block vars
+  - var pageDescription = ''
+  - var bodyClass = 'home'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block content
+
+  header
+    .flex
+      h1 US Flags
+      .flag
+        img(src='/assets/images/flag-arizona.png')
+    .meta
+      .description A guide to the designs of the US state flags.
+
+  ul.flag-list
+    +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+    +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+    +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+    +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+    +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+    +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+    +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+    +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+    +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+    +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+    +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')

@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------------
+* $NAV
+--------------------------------------------------------------------*/
+
+.nav-main
+  display: flex
+  justify-content: space-between
+  font-family: $font-family-study
+  font-style: italic
+
+  .back
+    position: relative
+    padding-left: 20px
+
+    &:before
+      content: '←'
+      position: absolute
+      left: 0
+      font-size: .9em
+      color: $grey-med
+
+  .tweet
+    position: relative
+
+    &:before
+      content: ''
+      width: 20px
+      height: @width
+      display: block
+      position: absolute
+      left: -25px
+      top: 2px
+      background: transparent url('/assets/images/icon-twitter.svg') no-repeat center center
+      background-size: 20px 20px
+      opacity: .3
+
+.home
+  .nav-main
+    justify-content: flex-end
