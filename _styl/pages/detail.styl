@@ -29,23 +29,46 @@
     .content
       margin-bottom: 40px
 
+  h2:not(:first-of-type)
+    margin-top: 50px
+
   .colors
+    width: 100%
     display: flex
-    justify-content: space-between
+
+    & + .colors
+      margin-top: 30px
 
   .color
-    // margin-right: 20px
-    text-align: center
+    margin: 0 10px
+    flex: 1
+
+    &:first-child
+      margin-left: 0
+
+    &:last-child
+      margin-right: 0
 
     .sample
-      margin-bottom: 10px
-      width: 100px
-      height: 100px
-      border-radius: 50%
+      width: 100%
+      margin-bottom: 7px
+      border-radius: 4px
+
+    &.primary
+      .sample
+        height: 100px
+
+    &.secondary
+      font-size: .85em
+      .sample
+        height: 50px
 
     .name
       font-weight: $font-weight-bold
       text-transform: capitalize
+
+    .hex
+      font-size: .9em
 
   &.sources
     margin-bottom: 40px
@@ -62,13 +85,3 @@
         margin-left: 5px
         font-size: 12px
         color: $grey-med
-
-.arizona
-  .blue
-    background-color: #28325d
-  .red
-    background-color: #bb2440
-  .gold
-    background-color: #fff22d
-  .copper
-    background-color: #a96a31

@@ -17,23 +17,6 @@ $font-weight-extra-bold = 800
 b(val) //b for bracket
   unquote("[") + val + unquote("]")
 
-highlight(hue)
-  font-weight: $font-weight-semibold
-  display: inline-block
-  background: hue
-  color: white
-
-underline(hue)
-  background: linear-gradient(to top, hue 35%, transparent 35%)
-
-// Grid
-
-grid-col-full()
-  grid-column: 1 / -1
-
-grid-row-full()
-  grid-row: 1 / -1
-
 // Colors
 
 white(alpha)
@@ -41,11 +24,6 @@ white(alpha)
 
 black(alpha)
   rgba(0,0,0,alpha)
-
-gold(alpha)
-  rgba(255,215,0,alpha)
-
-$red = rgb(228,92,76)
 
 $grey-drk = #444
 $grey-med = #888

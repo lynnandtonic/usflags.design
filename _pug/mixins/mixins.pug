@@ -23,9 +23,3 @@ mixin flag(state, link, img)
     a(href=link)
       span.flag: img(src=img)
       span.state= state
-
-mixin color(color, hex)
-  .color
-    .sample(class=color)
-    .name= color
-    .hex= hex

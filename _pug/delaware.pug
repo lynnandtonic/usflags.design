@@ -1,0 +1,109 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Delware.'
+  - var bodyClass = 'detail delaware'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Delaware - 
+
+block content
+
+  +state('Delaware', '/assets/images/flag-delaware.svg', 'The First State', 'December 7, 1787')
+
+  .intro
+    p Delaware was the first state to ratify the U.S. Constitution and displays that date proudly on its flag.
+    p A commission group was originally put together for the design, which resulted in the current version, the only one Delaware has flown. Like many other states, the Delaware flag features the state coat of arms, adopted in 1777.
+    p The flag was officially adopted July 24, 1913.
+
+  .guide
+    .content
+      h2 Flag design
+      p The flag features a field of colonial blue surrounding a diamond of bluff on which the state coat of arms is placed. “December 7, 1787” is inscribed below the diamond in white letters.
+      h2 Iconography
+      p The bluff diamond references Thomas Jefferson’s nickname for Delaware, the “Diamond State” as he believed it to be small, but valuable.
+      p Featured within the diamond is the state coat of arms, as described in more detial below.
+    .visual.flag
+      img(src='/assets/images/flag-delaware.svg')
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p The husbandman, maize, and wheat represent the role of farming and agriculture for Delaware’s economy. The ox represents the importance of animal husbandry.
+      p The rifleman is a reminder of the citizens’ role in protecting freedom, while the ship represents Delaware’s ship-building industry and coastal commerce. The blue strip above the ox represents the Delaware River.
+      p The state motto “Liberty and Independence” is inscribed, also heard in the state song, “Our Delaware.”
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-delaware.png')
+
+  .guide
+    .content
+      h2 Colors*
+      p The primary colors of the flag are colonial blue and bluff, shades taken from a uniform George Washington once wore.
+      p Colonial blue and bluff are also Delaware’s state colors.
+      small *Hex codes are not official.
+    .visual
+      .colors
+        .color.primary
+          .sample(class='arno')
+          .name Colonial Blue
+          .hex #71a19f
+          small Arno Blue - Cable No. 10663
+        .color.primary
+          .sample(class='buff')
+          .name Buff
+          .hex #d7ac6c
+          small Golden Beige - Cable No. 10781
+      .colors
+        .color.secondary
+          .sample(class='black')
+          .name Black
+          .hex #000000
+        .color.secondary
+          .sample(class='gold')
+          .name Gold
+          .hex #ffd93c
+        .color.secondary
+          .sample(class='green')
+          .name Green
+          .hex #3f863f
+        .color.secondary
+          .sample(class='red')
+          .name Red
+          .hex #a8393a
+        .color.secondary
+          .sample(class='brown')
+          .name Brown
+          .hex #4f3636
+        .color.secondary
+          .sample(class='blue')
+          .name Blue
+          .hex #006fff
+
+  .guide
+    .content
+      h2 Dimensions
+      p The flag should have a proportion of 2:3. So if the flag has a hoist of 4 feet, its fly should be 6 feet.
+      p If resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-delaware-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source: a(href='https://delcode.delaware.gov/title29/c003/index.shtml#306') The State of Delaware
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Delaware') Wikipedia

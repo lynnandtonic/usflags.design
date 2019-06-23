@@ -12,7 +12,7 @@ block title
 
 block content
 
-  +state('Arizona', '/assets/images/flag-arizona.png', 'The Grand Canyon State', 'February 14, 1912')
+  +state('Arizona', '/assets/images/flag-arizona.svg', 'The Grand Canyon State', 'February 14, 1912')
 
   .intro
     p The Arizona flag was designed in 1910 by Colonel Charles W. Harris, general of the Arizona National Guard, for the Arizona Rifle Team to use in competition. His wife, Mae Harris, sewed the first competition version.
@@ -25,20 +25,34 @@ block content
     .content
       h2 Flag design
       p The lower half is a field of blue and the upper half features 13 equally-sized rays, 6 gold and 7 red. A five-pointed copper star rises from the field of blue.
+      h2 Iconography
       p The 13 rays represent the original 13 colonies and the setting sun while the copper star represents Arizona as one of the largest producers of copper.
     .visual.flag
-      img(src='/assets/images/flag-arizona.png')
+      img(src='/assets/images/flag-arizona.svg')
 
   .guide
     .content
       h2 Colors*
       p Colors include blue, red, “old gold” (yellow), and copper. The blue and red match the United States flag.
-      p Blue and gold are Arizona’s state colors.
+      p Blue and gold are also Arizona’s state colors.
+      small *Hex codes are not official.
     .visual.colors
-      +color('blue', '#28325d')
-      +color('red', '#bb2440')
-      +color('old gold', '#fff22d')
-      +color('copper', '#a96a31')
+      .color.primary
+        .sample(class='blue')
+        .name Blue
+        .hex #28325d
+      .color.primary
+        .sample(class='red')
+        .name Red
+        .hex #bb2440
+      .color.primary
+        .sample(class='old-gold')
+        .name Old Gold
+        .hex #fff22d
+      .color.primary
+        .sample(class='copper')
+        .name Copper
+        .hex #a96a31
 
   .guide
     .content
@@ -64,4 +78,3 @@ block content
       li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
       li.source: a(href='https://www.azleg.gov/FormatDocument.asp?inDoc=/ars/41/00851.htm&Title=41&DocType=ARS') Arizona State Legislature
       li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Arizona') Wikipedia
-    small *Hex codes are not official.
