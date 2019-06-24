@@ -32,19 +32,20 @@ block content
 
   .guide
     .content
-      h2 Colors*
+      h2 Colors
       p Colors include blue, red, “old gold” (yellow), and copper. The blue and red match the United States flag.
       p Blue and gold are also Arizona’s state colors.
-      small *Hex codes are not official.
     .visual.colors
       .color.primary
         .sample(class='blue')
         .name Blue
-        .hex #28325d
+        .hex #002868
+        small PMS 282
       .color.primary
         .sample(class='red')
         .name Red
-        .hex #bb2440
+        .hex #bg0a30
+        small PMS 193
       .color.primary
         .sample(class='old-gold')
         .name Old Gold
@@ -64,6 +65,16 @@ block content
 
   .guide.wide
     .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
@@ -77,4 +88,5 @@ block content
     ul
       li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
       li.source: a(href='https://www.azleg.gov/FormatDocument.asp?inDoc=/ars/41/00851.htm&Title=41&DocType=ARS') Arizona State Legislature
+      li.source: a(href='https://www.legion.org/flag/questions-answers/91472/what-are-exact-shades-colors-blue-and-red') The American Legion
       li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Arizona') Wikipedia
