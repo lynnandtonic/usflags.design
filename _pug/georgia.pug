@@ -1,0 +1,136 @@
+extends layout
+
+block vars
+  - var pageDescription = ''
+  - var bodyClass = 'detail georgia'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Georgia - 
+
+block content
+
+  +state('Georgia', '/assets/images/flag-georgia.svg', 'The Peach State', 'January 2, 1788')
+
+  .intro
+    p Georgia holds a few flag records. Not only has it had the most flags (eight different iterations), its current flag is the most recently adopted of the entire nation’s.
+    p The flag has created controversy for the state. The 1956 version featured the Confederate battle flag, adopted soon after Brown v. Board of Education ruled segregation unconstitutional.
+    p The current flag, based on the first Confederate national flag (“Stars and Bars”) was officially adopted May 8, 2003.
+    p The people of Georgia voted to keep this version of the flag in a referendum on March 2, 2004.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Georgia flag features three horizontal bars of red, white, and red. In the upper left corner is a square canton of blue on which a ring of 13 white stars is placed, surrounding the state’s coat of arms in gold. Below the coat of arms, the words “In God We Trust” are inscribed.
+      h2 Iconography
+      p The 13 stars represent the original 13 colonies, of which Georgia was included. “In God We Trust” serves as a foundation for the coat of arms.
+    .visual.flag
+      img(src='/assets/images/flag-georgia.svg')
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p Georgia’s coat of arms features an arch with three columns, each representing a branch of government: executive, legislative, and judicial. A member of the Georgia militia guards the Constitution with sword drawn.
+      p Featured on scrolls are the words of the state motto “Wisdom, Justice, and Moderation.”
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-georgia.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p Colors include blue, red, white, and gold. The blue and red match the United States flag.
+    .visual.colors
+      .color.primary
+        .sample(class='us-blue')
+        .name Blue
+        .hex #002868
+        small PMS 282
+      .color.primary
+        .sample(class='us-red')
+        .name Red
+        .hex #bg0a30
+        small PMS 193
+      .color.primary
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+      .color.primary
+        .sample(class='gold')
+        .name Gold
+        .hex #eed000
+
+  .guide
+    .content
+      h2 Dimensions
+      p The flag should have a proportion of 2:3. So if the flag has a hoist of 4 feet, its fly should be 6 feet.
+      p If resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-georgia-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-georgia-unofficial.jpg')
+          h4 Pre-1879
+          p The flag supplied to militia units bearing the coat of arms.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-georgia-1879-1902.jpg')
+          h4 1879–1902
+          p Introduced by Herman H. Perry, Georgia state senator. Based on the first Confederate national flag.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-georgia-1902-1906.jpg')
+          h4 1902–1906
+          p Upon the blue field, the coat of arms must be “stamped, painted or embroidered.”
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-georgia-1906-1920.jpg')
+          h4 1906–1920
+          p A white shield is added along with a red banner with the word “Georgia.”
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-georgia-1920-1956.jpg')
+          h4 1920–1956
+          p The coat of arms is replaced with the state seal in white and blue.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-georgia-1956-2001.jpg')
+          h4 1956–2001
+          p Designed by John Sammons Bell, the red and white bars are replaced with the Confederate battle flag.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-georgia-2001-2003.jpg')
+          h4 2001–2003
+          p Designed by architect Cecil Alexander and championed by Governor Roy Barnes, a very unpopular “compromise” version.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-georgia.svg')
+          h4 2003-Present
+          p The current Georgia state flag.
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source: a(href='https://www.georgiaencyclopedia.org/articles/government-politics/state-flags-georgia') Georgia Encyclopedia
+      li.source: a(href='https://www.ajc.com/news/local/history-georgia-state-flag-things-know/rQ0DK2QtuSP13EStbLC5iK/') AJC
+      li.source: a(href='https://www.ledger-enquirer.com/news/local/article29462581.html') Ledger-Enquirer
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Georgia_(U.S._state)') Wikipedia

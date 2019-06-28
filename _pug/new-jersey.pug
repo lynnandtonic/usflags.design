@@ -1,0 +1,111 @@
+extends layout
+
+block vars
+  - var pageDescription = ''
+  - var bodyClass = 'detail new-jersey'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | New Jersey - 
+
+block content
+
+  +state('New Jersey', '/assets/images/flag-new-jersey.svg', 'The Garden State', 'December 18, 1787')
+
+  .intro
+    p New Jersey became the third state to ratify the U.S. Constitution, named in honor of England’s Isle of Jersey.
+    p Its flag is the only U.S. flag to feature a field of bluff, often incorrectly represented as yellow. It’s one of many to showcase its state coat of arms.
+    p The flag was officially adopted March 26, 1896.
+
+  .guide
+    .content
+      h2 Flag design
+      p The New Jersey flag has a field of bluff on which the state coat of arms is placed.
+      h2 Iconography
+      p The flag (and coat of arms) features the goddess Liberty and Ceres, the Roman goddess of agriculture. They represent the state’s motto “Liberty and Prosperity” which is inscribed on a scroll below.
+    .visual.flag
+      img(src='/assets/images/flag-new-jersey.svg')
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p New Jersey’s coat of arms was designed by Pierre Eugene du Simitiere in 1777. Besides Liberty and Ceres, it references many features of agriculture: plows, a cornucopia, and a horse (the state animal, crucial in farming).
+      p The shield and forward-facing helmet represents the state’s sovereignty.
+      p The red cap on Liberty’s staff is a Phrygian cap, borrowed iconography from the French Revolution, a symbol for freedom. It can also be seen on Idaho, West Virginia, and New York’s state flags.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-new-jersey.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p Jersey Blue and Buff are New Jersey’s state colors.
+      p The colors were chosen by George Washington while encamped at Jockey Hollow during the Revolutionary War, originally for the New Jersey Line uniform coats.
+    .visual
+      .colors
+        .color.primary
+          .sample(class='buff')
+          .name Buff
+          .hex #e1b584
+          small US Army Buff - Cable No. 65015
+        .color.primary
+          .sample(class='blue')
+          .name Jersey Blue
+          .hex #2484c6
+          small Royal Blue - Cable No. 70087
+      .colors
+        .color.secondary
+          .sample(class='argent')
+          .name Argent
+          .hex #9ba7b9
+        .color.secondary
+          .sample(class='orange')
+          .name Tenne
+          .hex #dc6026
+        .color.secondary
+          .sample(class='gules')
+          .name Gules
+          .hex #d0202e
+        .color.secondary
+          .sample(class='brown')
+          .name Brown
+          .hex #81512b
+
+  .guide
+    .content
+      h2 Dimensions
+      p The flag should have a fly width 1.5 times its hoist. Standard flag size has a hoist of 3 feet and a fly of 4.5 feet.
+      p If resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-new-jersey-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source: a(href='https://www.state.nj.us/nj/about/symbols/') State of New Jersey
+      li.source: a(href='https://statesymbolsusa.org/symbol-official-item/new-jersey/state-flag/flag-new-jersey') State Symbols USA
+      li.source: a(href='https://www.states101.com/flags/new-jersey') States101.com
+      li.source: a(href='https://www.britannica.com/topic/flag-of-New-Jersey') Encyclopedia Britannica
+      li.source: a(href='https://en.wikipedia.org/wiki/Coat_of_arms_and_flag_of_New_Jersey#cite_note-8') Wikipedia
