@@ -1,0 +1,108 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Connecticut.'
+  - var bodyClass = 'detail connecticut'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Connecticut - 
+
+block content
+
+  +state('Connecticut', '/assets/images/flag-connecticut.svg', 'The Constitution State', 'January 9, 1788')
+
+  .intro
+    p More than 100 years after statehood, Governor O. William Coffin established a committee to standardize a state flag.
+    p An unofficial design had been used prior, inspired by a memorial by the Anna Warner Bailey Chapter of the Daughters of the American Revolution and featuring the Connecticut coat of arms.
+    p The flag was officially adopted September 9, 1897.
+
+  .guide
+    .content
+      h2 Flag design
+      p The flag features a field of azure silk on which the state coat of arms is featured in argent white silk. Below the shield is a white streamer, cleft at each end with the Latin words “Qui Transtulit Sustinet” inscribed.
+      h2 Iconography
+      p The three grapevines can be interpreted a few ways. First, because grapevines are easily transplanted, they represent the pilgrims who settled in Connecticut.
+      p They may also symbolize Connecticut’s three oldest settlements of Windsor, Wethersfield, and Hartford or the three colonies of Connecticut, Saybrook, and New Haven.
+    .visual.flag
+      img(src='/assets/images/flag-connecticut.svg')
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p While featured on the flag long before, the state coat of arms wasn’t officially adopted until 1931. It was based on the seal for Saybrook Colony, which featured 15 grapevines and the phrase “Sustinet qui transtulit.”
+      p The “Qui Transtulit Sustinet” here translates to “He Who Transplanted Still Sustains” and has been the state motto since 1662.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-connecticut.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p The flag features a field of azure, accented with white, gold, and other “neutral colors.”
+    .visual
+      .colors
+        .color.primary
+          .sample(class='azure')
+          .name Azure
+          .hex #0c2d83
+        .color.primary
+          .sample(class='white')
+          .name White
+          .hex #ffffff
+        .color.primary
+          .sample(class='gold')
+          .name Gold
+          .hex #ffd312
+      .colors
+        .color.secondary
+          .sample(class='brown')
+          .name Brown
+          .hex #961e1d
+        .color.secondary
+          .sample(class='green')
+          .name Green
+          .hex #129612
+        .color.secondary
+          .sample(class='grape')
+          .name Grape
+          .hex #b400b4
+
+  .guide
+    .content
+      h2 Dimensions
+      p The flag should have a fly of 5 feet, 6 inches and a hoist of 4 feet, 4 inches.
+      p If resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-connecticut-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source: a(href='https://portal.ct.gov/About/State-Symbols/The-State-Flag') The State of Connecticut
+      li.source: a(href='https://www.britannica.com/topic/flag-of-Connecticut') Encyclopedia Britannica
+      li.souurce: a(href='https://statesymbolsusa.org/symbol-official-item/connecticut/state-flag/flag-connecticut') State Symbols USA
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Connecticut') Wikipedia
