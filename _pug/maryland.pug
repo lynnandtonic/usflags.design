@@ -1,0 +1,94 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Maryland.'
+  - var bodyClass = 'detail maryland'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Maryland - 
+
+block content
+
+  +state('Maryland', '/assets/images/flag-maryland.svg', 'The Old Line State', 'April 28, 1788')
+
+  .intro
+    p The design of the Maryland flag is based on English heraldry. The first Lord Baltimore, George Calvert, initiated the settlement of Maryland colony and lends the Calvert family crest and the crest of his mother’s family, the Crosslands.
+    p The flag has historical significance, with each of the crests becoming symbols of Union (Calvert) and Confederate (Crossland) support during the Civil War. The two crests finally joined on the flag became a symbol of healing.
+    p The flag was officially adopted March 9, 1904.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Maryland flag is divided into quarters. The 1st and 4th quarter are a paly of gold and black (an even number of vertical stripes) and a bend dexter (right diagonal band) upon which the colors are reversed.
+      p The 2nd and 3rd quarters are fields of red and white with a cross bottony (a Greek cross with ends of trefoils) upon which the colors are reversed.
+      h2 Iconography
+      p The black and gold quadrants derive from the Calvert family coat of arms and the red and white quadrants derive from the Crossland family crest.
+    .visual.flag
+      img(src='/assets/images/flag-maryland.svg')
+
+  .guide
+    .content
+      h2 Colors
+      p Black and gold became known as “Maryland colors” and were used by loyalists during the Civil War. Red and white, adopted by Confederate sympathizers, became known as “secession colors.”
+    .visual.colors
+      .color.primary
+        .sample(class='black')
+        .name Black
+        .hex #000000
+      .color.primary
+        .sample(class='gold')
+        .name Gold
+        .hex #eaaa00
+        small PMS 124
+      .color.primary
+        .sample(class='red')
+        .name Red
+        .hex #9d2235
+        small PMS 201
+      .color.primary
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+
+  .guide
+    .content
+      h2 Dimensions
+      p The flag should have a proportion of 2:3. So if the flag has a hoist of 4 feet, its fly should be 6 feet.
+      p If resized, it must maintain these proportions.
+      h2 Flagpole
+      p Maryland law requires any flagpole flying the state flag to be ornamented with a gold cross bottony. Government buildings adhere, but many private citizens and businesses choose not to.
+    .visual
+      img(src='/assets/images/flag-maryland-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source: a(href='https://sos.maryland.gov/Pages/Services/Flag-History.aspx#note1') Maryland Secretary of State
+      li.source: a(href='https://www.washingtonian.com/2015/08/19/marylands-flag-confederate-symbol-crossland-banner-calvert-family/') Washingtonian
+      li.souurce: a(href='https://www.patriotwood.com/blogs/news/15596093-3-interesting-maryland-flag-facts') Patriotwood.com
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Maryland') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Variation_of_the_field') Wikipedia

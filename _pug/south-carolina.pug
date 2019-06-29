@@ -1,0 +1,78 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of South Carolina.'
+  - var bodyClass = 'detail south-carolina'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | South Carolina - 
+
+block content
+
+  +state('South Carolina', '/assets/images/flag-south-carolina.svg', 'The Palmetto State', 'May 23, 1788')
+
+  .intro
+    p 
+
+  .guide
+    .content
+      h2 Flag design
+      p 
+      h2 Iconography
+      p 
+    .visual.flag
+      img(src='/assets/images/flag-south-carolina.svg')
+
+  .guide
+    .content
+      h2 Colors
+      p 
+    .visual.colors
+      .color.primary
+        .sample(class='indigo')
+        .name Indigo
+        .hex #003366
+      .color.primary
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+
+  .guide
+    .content
+      h2 Dimensions
+      p 
+    .visual
+      img(src='/assets/images/flag-south-carolina-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source: a(href='https://sos.maryland.gov/Pages/Services/Flag-History.aspx#note1') Maryland Secretary of State
+      li.source: a(href='https://www.washingtonian.com/2015/08/19/marylands-flag-confederate-symbol-crossland-banner-calvert-family/') Washingtonian
+      li.souurce: a(href='https://www.patriotwood.com/blogs/news/15596093-3-interesting-maryland-flag-facts') Patriotwood.com
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Maryland') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Variation_of_the_field') Wikipedia

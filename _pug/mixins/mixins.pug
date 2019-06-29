@@ -19,7 +19,7 @@ mixin territory(territory,img,nickname,date)
         span= date
 
 mixin flag(state, link, img)
-  li.flag-item
+  li.flag-item(class=link)
     a(href=link)
       span.flag: img(src=img)
       span.state= state
