@@ -30,51 +30,14 @@
     .content
       margin-bottom: 40px
 
-  &.timeline
-    p
-      margin-top: 5px
-      font-size: .9em
+  &.timeline .content > p
+    max-width: 400px
 
   h2:not(:first-of-type)
     margin-top: 50px
 
-  .colors
-    width: 100%
-    display: flex
-
-    & + .colors
-      margin-top: 30px
-
-  .color
-    margin: 0 10px
-    flex: 1
-
-    &:first-child
-      margin-left: 0
-
-    &:last-child
-      margin-right: 0
-
-    .sample
-      width: 100%
-      margin-bottom: 7px
-      border-radius: 4px
-
-    &.primary
-      .sample
-        height: 100px
-
-    &.secondary
-      font-size: .85em
-      .sample
-        height: 50px
-
-    .name
-      font-weight: $font-weight-bold
-      text-transform: capitalize
-
-    .hex
-      font-size: .9em
+  img + img
+    margin-top: 15px
 
   &.sources
     margin-bottom: 40px
@@ -91,3 +54,36 @@
         margin-left: 5px
         font-size: 12px
         color: $grey-med
+
+.colors
+  width: 100%
+  display: grid
+  grid-gap: 10px
+
+  &.primary
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+
+    .sample
+      height: 100px
+
+  &.secondary
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr))
+    font-size: .85em
+
+    .sample
+      height: 50px
+
+  & + .colors
+    margin-top: 30px
+
+  .sample
+    width: 100%
+    margin-bottom: 7px
+    border-radius: 4px
+
+  .name
+    font-weight: $font-weight-bold
+    text-transform: capitalize
+
+  .hex
+    font-size: .9em

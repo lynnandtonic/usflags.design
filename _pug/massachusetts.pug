@@ -12,7 +12,7 @@ block title
 
 block content
 
-  +state('Massachusetts', '/assets/images/flag-massachusetts.svg', 'The Bay State', 'February 6, 1788')
+  +state('Massachusetts', '/assets/images/flag-massachusetts.svg', 'The Bay State', 'February 6, 1788', 'border')
 
   .intro
     p The Massachusetts flag was the first state flag to feature a plain white field and, for about 50 years, was a rare two-sided design.
@@ -23,16 +23,35 @@ block content
     .content
       h2 Flag design
       p The flag features a field of white upon which the state coat of arms, in blue and gold, is placed at the center.
-      h2 Iconography
-      p A blue Plantagenet shield surrounds an Algonquian man holding a bow and arrow, with the arrow pointing downward to symbolize peace. The Massachusetts flag was the first to feature a Native American.
     .visual.flag
-      img(src='/assets/images/flag-massachusetts.svg')
+      img.border(src='/assets/images/flag-massachusetts.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-massachusetts-icon-algonquin.svg')
+          h4 Algonquin
+          p The Algonquin man represents the Native people who taught the pilgrims how to survive in Massachusetts.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-massachusetts-icon-arrow.svg')
+          h4 Arrow
+          p The arrow in the Algonquin man’s hand is pointed down, meant to symbolize peace.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-massachusetts-icon-star.svg')
+          h4 Star
+          p The star represents Massachusetts as one of the original 13 colonies.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-massachusetts-icon-broadsword.svg')
+          h4 Arm with broadsword
+          p A visual representation of the state motto: “By the Sword We Seek Peace, But Peace Only Under Liberty.”
 
   .guide
     .content
       h2 Coat of Arms
-      p The arm holding the broadsword is said to be a visual representation of the state’s motto, inscribed in Latin on the ribbon translated as “By the Sword We Seek Peace, But Peace Only Under Liberty.”
-      p Despite these claims, it is not difficult to see the pain this image can cause with the context of history.
+      p The Massachusetts coat of arms was adopted in 1775. Inscribed in Latin on the ribbon are the words “Ense petit placidam sub libertate quietem” which translate to “By the Sword We Seek Peace, But Peace Only Under Liberty.”
+      p Despite the claim that the broadsword references the state’s motto, the imagery of a Native American beneath an arm weilding a sword has caused a great deal of pain, reminding many of the violence inflicted on Native Americans.
     .visual.flag
       img(src='/assets/images/coat-of-arms-massachusetts.jpg')
 
@@ -40,23 +59,23 @@ block content
     .content
       h2 Colors
       p The blue of the flag represents the Blue Hills of Canton. The five-pointed star is white, unlike the state seal where it appears silver.
-    .visual.colors
-      .color.primary
+    .visual.colors.primary
+      .color
         .sample(class='white')
         .name White
         .hex #ffffff
-      .color.primary
+      .color
         .sample(class='blue')
         .name Blue
         .hex #1f2c5c
-      .color.primary
+      .color
         .sample(class='gold')
         .name Gold
         .hex #e6a300
 
   .guide
     .content
-      h2 Dimensions
+      h2 Production
       p The flag should have a proportion of 3:5. So if the flag has a hoist of 3 feet, its fly should be 5 feet.
       p If resized, it must maintain these proportions.
     .visual
@@ -66,9 +85,9 @@ block content
     .content
       h2 Previous iteration
       p Before 1971, the Massachusetts flag had a different design on its reverse. It featured the blue shield with a pine tree.
-      p With the importance of timber in the region, the pine tree became a symbol of New England. After the Pine Tree Riot in 1772, it persisted as an emblem for resistance and independence.
+      p With the importance of timber in the region, the pine tree became a symbol of New England. After the #[a(href='https://en.wikipedia.org/wiki/Pine_Tree_Riot') Pine Tree Riot] in 1772, it persisted as an emblem for resistance and independence.
     .visual.flag
-      img(src='/assets/images/flag-massachusetts-reverse.svg')
+      img.border(src='/assets/images/flag-massachusetts-reverse.svg')
 
   .guide.wide
     .content

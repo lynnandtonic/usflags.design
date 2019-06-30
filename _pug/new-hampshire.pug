@@ -1,0 +1,128 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of New Hampshire.'
+  - var bodyClass = 'detail new-hampshire'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | New Hampshire - 
+
+block content
+
+  +state('New Hampshire', '/assets/images/flag-new-hampshire.svg', 'The Granite State', 'June 21, 1788')
+
+  .intro
+    p The flag of New Hampshire follows a common pattern for U.S. state flags, featuring the state seal on a field of blue. Itt is the only flag, though, to feature a warship.
+    p It was originally adopted February 24, 1909 and has changed just once to accommodate changes to the state seal.
+    p The current version was officially adopted in 1931.
+
+  .guide
+    .content
+      h2 Flag design
+      p The New Hampshire flag features a field of blue with the state seal placed at its center.
+    .visual.flag
+      img(src='/assets/images/flag-new-hampshire.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-new-hampshire-icon-stars.svg')
+          h4 Stars
+          p Nine gold stars represent New Hampshire as the ninth state to ratify the U.S. Constitution.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-new-hampshire-icon-laurel.svg')
+          h4 Laurel wreath
+          p From Greek mythology, the laurel wreath is a symbol of victory.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-new-hampshire-icon-ship.svg')
+          h4 USS Raleigh
+          p The frigate USS Raleigh was built in Portsmouth and is shown on stocks to represent the shipbuilding industry.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-new-hampshire-icon-granite.svg')
+          h4 Granite
+          p The gold strip of land represents New Hampshire’s granite landscape, situated in the harbor of Portsmouth.
+
+  .guide
+    .content
+      h2 Colors
+      p The prominent colors are blue and gold, with supporting colors within the seal.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name blue
+          .hex #002a86
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #efae0e
+      .colors.secondary
+        .color
+          .sample(class='brown') 
+          .name Brown
+          .hex #9e4d3c
+        .color
+          .sample(class='green') 
+          .name Green
+          .hex #3f863f
+        .color
+          .sample(class='red') 
+          .name Red
+          .hex #de1c2c
+        .color
+          .sample.white(class='white') 
+          .name White
+          .hex #ffffff
+
+  .guide
+    .content
+      h2 Production
+      p The flag should have a proportion of 2:3. So if the flag has a hoist of 4 feet, its fly should be 6 feet.
+      p If resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-new-hampshire-dimensions.svg')
+
+  .guide
+    .content
+      h2 Previous Iteration
+      p The original New Hampshire flag still featured the state seal at its center. The ship was depicted further in the background, with ship builders working in the foreground. The law was not specific, so varying versions of the ship became common until 1931 when it was standardized.
+      p The original seal featured the Latin words (later translated to English) “Sigillum Reipublicae Neo Hantoniensis” and the date 1784, when New Hampshire’s state constitution took effect.
+      p The state coat of arms (pictured) shows a similar compositon to the original seal.
+    .visual
+      img(src='/assets/images/flag-new-hampshire-original.jpg')
+      figcaption Image courtesy of Miltonborough Historical Society
+      img(src='/assets/images/coat-of-arms-new-hampshire.jpg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source Hammond, Otis Grant, A.M. History of the Seal and Flag of the State of New Hampshire. Governor and Council of the State of New Hampshire. 1916. Print.
+      li.source: a(href='https://www.nh.gov/almanac/seal.htm') The State of New Hampshire
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_and_seal_of_New_Hampshire') Wikipedia

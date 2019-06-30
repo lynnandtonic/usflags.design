@@ -1,25 +1,25 @@
-mixin state(state,img,nickname,date)
+mixin state(state,img,nickname,date,border)
   header
     .flex
       h1= state
       .flag
-        img(src=img, alt=state + ' state flag')
+        img(src=img, alt=state + ' state flag', class=border)
     .meta
       .nickname= nickname
       .date Admitted 
         span= date
 
-mixin territory(territory,img,nickname,date)
+mixin territory(territory,img,nickname,date,border)
   header
     h1= territory
-    img(src=img, alt=territory + ' flag')
+    img(src=img, alt=territory + ' flag', class=border)
     .meta
       .nickname= nickname
       .date Became a US territory in 
         span= date
 
-mixin flag(state, link, img)
+mixin flag(state, link, img, border)
   li.flag-item(class=link)
     a(href=link)
-      span.flag: img(src=img)
+      span.flag: img(src=img, alt=state + ' state flag', class=border)
       span.state= state

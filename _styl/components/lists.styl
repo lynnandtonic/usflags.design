@@ -1,0 +1,41 @@
+.flag-list,
+.icon-list
+  display: grid
+
+  & > span
+    display: block
+
+  a
+    text-decoration: none
+
+.flag-list
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
+  grid-gap: 40px
+
+  .state
+    font-family: $font-family-study
+    font-style: italic
+    font-weight: $font-weight-light
+
+.detail .flag-list p
+  margin-top: 5px
+  font-size: .9em
+
+.icon-list
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+  grid-gap: 40px 80px
+
+  h4
+    margin-bottom: 5px
+    font-size: .9em
+
+  p
+    font-size: .8em
+
+  .icon img
+    width: auto
+    height: 150px
+
+h2 + .flag-list,
+h2 + .icon-list
+  margin-top: 30px
