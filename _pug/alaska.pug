@@ -1,0 +1,92 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Alaska.'
+  - var bodyClass = 'detail alaska'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Alaska - 
+
+block content
+
+  +state('Alaska', '/assets/images/flag-alaska.svg', 'The Last Frontier', 'January 3, 1959')
+
+  .intro
+    p Alaska became a territory of the United States in 1912. In its journey to statehood, the Alaska Department of the American Legion held a 1927 flag design contest for children across Alaska, grades 7-12.
+    p The chosen flag was designed by 13-year-old Benny Benson who lived at Jesse Lee Mission Home in Seward, a home for displaced children. He received a scholarship and a gold watch and became a hero and inspiration to Alaskans.
+    p Alaska’s state song #[em Alaska’s Flag] was written as a poem by Marie Drake and later composed by Elinor Dusenbury. The women were inspired by Benny’s story and design.
+    p Benny’s flag was officially adopted May 2, 1927 and it remained when Alaska gained statehood in 1959.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Alaska flag features a field of blue with 7 small gold stars in the shape of the Big Dipper and one large gold star in the upper right.
+    .visual.flag
+      img.border(src='/assets/images/flag-alaska.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-alaska-icon-dipper.svg')
+          h4 The Big Dipper
+          p The constellation Ursa Major (The Great Bear) symbolizes Alaska’s strength.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-alaska-icon-star.svg')
+          h4 The North Star
+          p The North Star represents Alaska as the (soon to be at the time) northernmost state.
+        li.icon-item
+
+  .guide
+    .content
+      h2 Colors
+      p The field of blue was chosen to represent the Alaskan sky and the forget-me-not, an Alaskan flower.
+    .visual.colors.primary
+      .color
+        .sample(class='blue')
+        .name Blue
+        .hex #0f204b
+      .color
+        .sample(class='gold')
+        .name Gold
+        .hex #ffb612
+
+  .guide
+    .content
+      h2 Production
+      p The Alaska flag should have a proportion of 1:1.416. So a flag with a hoist of 4 feet should have a fly of 5.664 feet.
+      p Alaska statutes provide a detailed proportion and size chart, recreated here.
+    .visual
+      img(src='/assets/images/flag-alaska-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Spartz, India M. Eight Stars of Gold: The Story of Alaska’s Flag. Juneau: Alaska State Museums, 2001. Print.
+      li.source Alaska Statutes Title 44. State Government § 44.09.020. State flag.
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Alaska') Wikipedia
