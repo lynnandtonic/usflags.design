@@ -1,0 +1,125 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of North Carolina.'
+  - var bodyClass = 'detail north-carolina'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | North Carolina - 
+
+block content
+
+  +state('North Carolina', '/assets/images/flag-north-carolina.svg', 'The Tar Heel State', 'November 21, 1789', 'border')
+
+  .intro
+    p The first official flag of North Carolina was adopted a month after the state seceded from the union in 1861. The design of the flag is credited to Raleigh artist, William G. Browne.
+    p The flag has had two other versions since, with a redesign introduced in 1885 by then state Adjutant General, Johnston Jones.
+    p The current version of the flag was adopted in 1991.
+
+  .guide
+    .content
+      h2 Flag design
+      p The North Carolina state flag features a blue union the full width of the flag and one-third the length. The remaining area features two equally-proportioned horizontal bars of red and white.
+      p Within the blue union is a white five-pointed star with the letters ‘N’ and ‘C’ in gold on either side. They are encircled by two scrolls inscribed with two dates: “May 20th, 1775” above and “April 12th, 1776” below.
+    .visual.flag
+      img.border(src='/assets/images/flag-north-carolina.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-north-carolina-icon-star.svg')
+          h4 Star, N, & C
+          p The star remains from the first design of the North Carolina flag. The letters ‘N’ and ‘C’ were added in 1885 and stand for North Carolina.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-north-carolina-icon-may-20.svg')
+          h4 May 20th 1775
+          p May 20th is the date of the alleged #[a(href='https://en.wikipedia.org/wiki/Mecklenburg_Declaration_of_Independence') Mecklenburg Declaration of Independence] which is disputed by historians. On this date, the citizens of Mecklenburg County supposedly declared themselves free.
+          p Historians do agree that on May 31st, 1775 Mecklenburg County adopted the Mecklenburg Resolves, a set of anti-British resolutions, more than a year before the U.S. Declaration would be signed.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-north-carolina-icon-april-12.svg')
+          h4 April 12th 1776
+          p April 12th is the date that North Carolina authorized its delegates to vote for declaring independence to the Continental Congress. Resolutions were written and they became known as the #[a(href='https://en.wikipedia.org/wiki/Halifax_Resolves') Halifax Resolves].
+
+  .guide
+    .content
+      h2 Colors
+      p Colors include blue, red, white, and gold. The blue and red match the United States flag.
+    .visual.colors.primary
+      .color
+        .sample(class='us-blue')
+        .name Blue
+        .hex #002868
+        small PMS 282
+      .color
+        .sample(class='us-red')
+        .name Red
+        .hex #bg0a30
+        small PMS 193
+      .color
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+      .color
+        .sample(class='gold')
+        .name Gold
+        .hex #ffca00
+
+  .guide
+    .content
+      h2 Production
+      p The flag’s length should be half more than its width (a proportion of 2:3). So if the flag has a hoist of 4 feet, its fly should be 6 feet.
+      p If resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-north-carolina-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-north-carolina-1861-1865.svg')
+          h4 1861-1865
+          p Designed by William G. Browne. “May 20th 1861” is the date North Carolina seceded to join the Confederacy.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-north-carolina-1885-1991.svg')
+          h4 1885–1991
+          p Blue and red stripes are swapped and the letters ‘N’ and ‘C’ are added. “May 20th 1861” is replaced with “April 12th 1776” and both dates get golden scrolls underneath.
+        li.flag-item
+          span.flag(style='margin-bottom:8.274%'): img.border(src='/assets/images/flag-north-carolina.svg')
+          h4 1991-Present
+          p The current flag of North Carolina. It is widened to a 2:3 proportion instead of 3:4.
+        li.flag-item
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source: a(href='https://www.britannica.com/topic/flag-of-North-Carolina') Encyclopedia Britannica
+      li.source: a(href='https://www.ncpedia.org/symbols/flag') NCpedia
+      li.source: a(href='https://statesymbolsusa.org/symbol-official-item/north-carolina/state-flag/flag-north-carolina.html') State Symbols USA
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_North_Carolina') Wikipedia

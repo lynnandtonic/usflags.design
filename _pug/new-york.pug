@@ -1,0 +1,153 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of New York.'
+  - var bodyClass = 'detail new-york'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | New York - 
+
+block content
+
+  +state('New York', '/assets/images/flag-new-york.svg', 'The Empire State', 'July 26, 1788')
+
+  .intro
+    p The New York flag, one of unusually wide proportion, follows a common pattern for U.S. state flags, featuring the state coat of arms on a field of blue.
+    p It spotlights many images seen in other state seals and flags like the goddess Liberty, Phrygian cap, and bald eagle, among others.
+    p An original version of the flag was adopted in 1788, but the current iteration was officially adopted April 2, 1901.
+
+  .guide
+    .content
+      h2 Flag design
+      p The flag of New York features a field of deep blue with the state coat of arms placed at the center. Prominent are two supporters, the goddesses Liberty and Justice.
+    .visual.flag
+      img.border(src='/assets/images/flag-new-york.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-new-york-icon-liberty.svg')
+          h4 Liberty
+          p The goddess Liberty represents freedom (fitting for New York, home to the Statue of Liberty).
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-new-york-icon-justice.svg')
+          h4 Justice
+          p The blindfolded goddess Justice stands with sword ready to fight tyranny.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-new-york-icon-cap.svg')
+          h4 Phrygian cap
+          p The Phrygian cap, borrowed iconography from the French Revolution, represents liberty.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-new-york-icon-crown.svg')
+          h4 Crown
+          p Liberty has a crown underfoot, a symbol of freedom from England after the Revolutionary War.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-new-york-icon-scales.svg')
+          h4 Scales
+          p The goddess Justice holds the scales which symbolize justice and equality under the law.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-new-york-icon-eagle.svg')
+          h4 Eagle & globe
+          p The globe shows both Europe and the Americas and represents the meeting of two worlds. The eagle faces west toward the New World.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-new-york-icon-hudson.svg')
+          h4 Hudson River
+          p A sun rises above ships navigating the Hudson river, representing New York’s natural beauty and commerce by waterway.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-new-york-icon-excelsior.svg')
+          h4 Excelsior
+          p The Latin word “Excelsior” translates to “Ever Upward,” New York’s state motto and attitude toward progress.
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p The New York coat of arms was originally designed in 1777 and officially adopted on March 16th, 1778 (a few months before statehood).
+      p A commission was appointed in 1880 to standardize its presentation.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-new-york.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p The prominent color is a deep blue, with supporting colors within the coat of arms.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #002d72
+      .colors.secondary
+        .color
+          .sample(class='white')
+          .name White
+          .hex #ffffff
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #ff3515
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #f2a900
+        .color
+          .sample(class='light-blue')
+          .name Light Blue
+          .hex #0077c8
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #2c5234
+        .color
+          .sample(class='tan')
+          .name Tan
+          .hex #d18644
+
+  .guide
+    .content
+      h2 Production
+      p The New York flag has an unusual proportion of 1:2. If the flag has a hoist of 3 feet, its fly should be 6 feet.
+      p If resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-new-york-dimensions.svg')
+
+  .guide
+    .content
+      h2 Previous iteration
+      p The New York flag previously had a field of buff, matching the color of troop uniforms. In 1901 it was changed to a field of blue to better follow the design of other military flags.
+    .visual
+      img(src='/assets/images/flag-new-york-pre-1901.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source: a(href='http://www.nysl.nysed.gov/emblems/flag.htm') New York State Library
+      li.source: a(href='https://www.states101.com/flags/new-york') States101
+      li.source: a(href='https://www.crwflags.com/FOTW/flags/us-ny.html') Flags of the World
+      li.source: a(href='https://en.wikipedia.org/wiki/Coat_of_arms_of_New_York') Wikipedia

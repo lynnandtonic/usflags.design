@@ -1,0 +1,135 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Virginia.'
+  - var bodyClass = 'detail virginia'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Virginia - 
+
+block content
+
+  +state('Virginia', '/assets/images/flag-virginia.svg', 'Old Dominion', 'June 25, 1788')
+
+  .intro
+    p The flag of the Commonwealth of Virginia follows a common pattern for U.S. state flags, featuring the state seal on a field of blue.
+    p The seal was primarily designed by George Wythe as part of a committee also including George Mason, Richard Henry Lee, and Robert Carter Nicholas Sr.
+    p It borrows heavily from Roman mythological imagery and is the only state flag to show nudity.
+    p The flag was officially adopted April 30, 1861.
+
+  .guide
+    .content
+      h2 Flag design
+      p The flag of Virginia features a field of deep blue with the state seal on a circle of white painted or embroidered at the center.
+    .visual.flag
+      img.border(src='/assets/images/flag-virginia.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-virginia-icon-virtus.svg')
+          h4 Virtus
+          p The Roman goddess Virtus (Virtue) is dressed as an Amazon and is a peace symbol, after being victorious in battle over her tyrant.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-virginia-icon-tyranny.svg')
+          h4 Tyranny
+          p The man is a tyrant defeated, with a toppled crown, whip, and broken chains. He represents Virgina’s freedom from tyranny.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-virginia-icon-creeper.svg')
+          h4 Creeper
+          p The vines surrounding the seal are red and green Virginia creeper, a species of ivy that grows in the region.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-virginia-icon-sic-semper-tyrannis.svg')
+          h4 Sic Semper Tyrannis
+          p The Latin words, attributed to Brutus, translate to “Thus Always to Tyrants.” It is Virginia’s motto, warning oppressors of defeat.
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p Since the coat of arms and seal were created in the 1770s, many versions came about, though each still representing Virtus victorious over Tyranny. To achieve consistency, the seal (and the flag) were standardized in the 1950s. 
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-virginia.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p The prominent colors are a deep blue and white, with supporting colors within the seal like red and green, the colors of Virginia creeper.
+      p The purple robe worn by the tyrant references Julius Caesar.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #00297b
+        .color
+          .sample(class='white')
+          .name White
+          .hex #ffffff
+      .colors.secondary
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #ff350f
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #3f863f
+        .color
+          .sample(class='light-blue')
+          .name Light Blue
+          .hex #97c8f0
+        .color
+          .sample(class='purple')
+          .name Purple
+          .hex #a039a8
+        .color
+          .sample(class='peach')
+          .name Peach
+          .hex #ffd9c5
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffd93c
+
+  .guide
+    .content
+      h2 Production
+      p The flag should have a fly of 5 feet, 6 inches and a hoist of 4 feet, 4 inches.
+      p If resized, it must maintain these proportions.
+      p The flag should be made of silk, nylon, or similar material and can be trimmed with fringe on three sides measuring 2.5 inches wide.
+    .visual
+      img(src='/assets/images/flag-virginia-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source: a(href='https://web.archive.org/web/20141230082900/http://www.netstate.com/states/symb/flags/va_flag.htm') Netstate.com
+      li.source: a(href='https://www.law.cornell.edu/cfr/text/38/1.9') Cornell Law
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_and_seal_of_Virginia') Wikipedia

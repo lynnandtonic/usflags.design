@@ -1,0 +1,128 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Rhode Island.'
+  - var bodyClass = 'detail rhode-island'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Rhode Island - 
+
+block content
+
+  +state('Rhode Island', '/assets/images/flag-rhode-island.svg', 'The Ocean State', 'May 29, 1790', 'border')
+
+  .intro
+    p The flag of Rhode Island strays from the average in two ways. It is almost square in shape, compared to the common 2:3 flag proportion, and it uses a low-contrast gold on white instead of a more typical light on dark color scheme.
+    p The original version of the flag was adopted in 1877, but has had two redesigns since.
+    p The current flag was officially adopted November 1, 1897.
+
+  .guide
+    .content
+      h2 Flag design
+      p The flag of Rhode Island features a field of white with a golden anchor at center, surrounded by a circle made of thirteen gold stars. A blue ribbon sits below the anchor, with the word “HOPE” in gold letters.
+      p Three edges (except the hoist) are detailed with golden fringe.
+    .visual.flag
+      img.border(src='/assets/images/flag-rhode-island.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-rhode-island-icon-stars.svg')
+          h4 13 stars
+          p The circle of thirteen stars represents the original thirteen colonies, of which Rhode Island was also the 13th.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-rhode-island-icon-anchor.svg')
+          h4 Anchor
+          p The anchor has been a symbol of Rhode Island since its founding. Maritime travel and commerce were crucial for the colony, but like “Hope” it may have religious origin.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-rhode-island-icon-hope.svg')
+          h4 Hope
+          p Howard Chapin, Librarian of the Rhode Island Historical Society, attributed the state’s motto “Hope” to a biblical verse, “Hope we have as an anchor of the soul” from Hebrews 6:18-19.
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p The anchor and “Hope” are also featured on Rhode Island’s coat of arms, adopted in 1881.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-rhode-island.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p The Rhode Island flag is one of only a few with a field of white. It also features gold and a touch of blue for the “Hope” ribbon.
+    .visual.colors.primary
+      .color
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+      .color
+        .sample(class='gold')
+        .name Gold
+        .hex #fec500
+      .color
+        .sample(class='blue')
+        .name Blue
+        .hex #003271
+
+  .guide
+    .content
+      h2 Production
+      p Not quite square, the flag has a hoist of 4 feet, 10 inches and a fly of 5 feet, 6 inches. The anchor should be 22 inches tall and the ribbon should be 24 inches wide, 5 inches tall.
+      p If resized, it must maintain these proportions.
+      p Statute specifies the flag be edged with gold fringe, but many are produced without it.
+      h2 Pike
+      p Any pike (flagpole) flying the flag should be surmounted by a spearhead and be 9 feet tall (not including the spearhead).
+    .visual
+      img(src='/assets/images/flag-rhode-island-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-rhode-island-1877-1882.svg')
+          h4 1877-1882
+          p A field of white to correspnd with facings on state militia uniforms. 39 stars represent the number of states in the Union at the time.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-rhode-island-1882-1897.svg')
+          h4 1882–1897
+          p Changes to a field of blue with gold stars and anchor. The number of stars is reduced to 13.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-rhode-island-thumb.svg')
+          h4 1897-Present
+          p Returns to the field of white and “Hope” is reintroduced.
+        li.flag-item
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source: a(href='http://webserver.rilin.state.ri.us/Statutes/TITLE42/42-4/42-4-3.HTM') The State of Rhode Island
+      li.source: a(href='https://www.britannica.com/topic/flag-of-Rhode-Island') Encylopedia Britannica
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Rhode_Island') Wikipedia

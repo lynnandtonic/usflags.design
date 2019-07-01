@@ -2,11 +2,19 @@
 .icon-list
   display: grid
 
-  & > span
+  .flag,
+  .icon
     display: block
 
   a
     text-decoration: none
+  p a
+    text-decoration: underline
+
+  @media screen and (max-width: 606px)
+    .flag-item:empty,
+    .icon-item:empty
+      display: none
 
 .flag-list
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
