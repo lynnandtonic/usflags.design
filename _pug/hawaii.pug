@@ -1,0 +1,117 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Hawaii.'
+  - var bodyClass = 'detail hawaii'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Hawaii - 
+
+block content
+
+  +state('Hawaii', '/assets/images/flag-hawaii.svg', 'The Aloha State', 'August 21, 1959')
+
+  .intro
+    p The Hawaii state flag is the only flag to have flown above a kingdom, protectorate, republic, and a territory. Despite this, it has remained mostly the same (but for a few small changes) since it was first created.
+    p It is also the only U.S. flag to contain within it the flag of a foreign country—the United Kingdom’s Union Jack flag.
+    p Commissioned by King Kamehameha I, the flag was adopted by his kingdom in 1816 and it remained when Hawaii gained statehood in 1959.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Hawaii flag features eight horizontal stripes alternating in color white, red, and blue in that order.
+      p In its canton is the United Kingdom’s Union Jack flag, which features a field of blue charged with a compound saltire (crossing) of alternating white and red.
+    .visual.flag
+      img.border(src='/assets/images/flag-hawaii.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-hawaii-icon-union-jack.svg')
+          h4 Union Jack
+          p Hawaii flew the U.K.’s #[a(href='https://en.wikipedia.org/wiki/Red_Ensign') Red Ensign] after Captain George Vancouver presented King Kamehameha I with one.
+          p In 1816, the King commissioned an official flag based on the Red Ensign. It is disputed where the stripes were borrowed, with some claiming they were inspired by the U.S. flag and others pointing to the flag of the British East India Company.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-hawaii-icon-stripes.svg')
+          h4 Stripes
+          p Early on, there were inconsistencies with the number of stripes and the order of their colors. In 1845 it was standardized to eight stripes, each representing one of the major Hawaiian islands.
+        li.icon-item
+
+  .guide
+    .content
+      h2 Colors
+      p The Hawaii flag borrows red, white, and blue from both the Union Jack flag and the United States flag. Hawaii statutes, however, do not specify the colors must match exactly.
+    .visual.colors.primary
+      .color
+        .sample(class='blue')
+        .name Blue
+        .hex #00237d
+      .color
+        .sample(class='red')
+        .name Red
+        .hex #cf142b
+      .color
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+
+  .guide
+    .content
+      h2 Production
+      p The flag’s fly is twice the length of its hoist. So if it has a hoist of 4 feet, its fly will be 8 feet. The Union Jack is half the hoist in length and 7/16 the width of the fly.
+    .visual
+      img(src='/assets/images/flag-hawaii-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-hawaii-red-ensign-pre-1801.svg')
+          h4 1793-1800
+          p The Red Ensign flag composed of the red St George’s Cross and diagonal St Andrew’s Cross.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-hawaii-red-ensign-1801-1816.svg')
+          h4 1801-1816
+          p The red St Patrick’s Cross is added when Ireland joins the United Kingdom.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-hawaii-1816-1845.svg')
+          h4 1816-1845
+          p A variant of the original flag, with different number of stripes and varying red, white, and blue stripe pattern.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-hawaii.svg')
+          h4 1845-Present
+          p The current flag, standardized in 1845.
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Hawaii Revised Statutes TITLE 1. GENERAL PROVISIONS 5. Emblems and Symbols §5-19 Description of the Hawaiian flag.
+      li.source: a(href='https://www.hawaiimagazine.com/blogs/hawaii_today/2008/10/21/is_that_the_flag') Hawaii Magazine
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Hawaii') Wikipedia

@@ -1,0 +1,100 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of New Mexico.'
+  - var bodyClass = 'detail new-mexico'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | New Mexico - 
+
+block content
+
+  +state('New Mexico', '/assets/images/flag-new-mexico.svg', 'The Land of Enchantment', 'January 6, 1912')
+
+  .intro
+    p New Mexico’s flag was rated #1 in a 2001 survey by the North American Vexillological Association.
+    p Its distinctive yellow and red design, featuring the Zia sun symbol, was submitted to a flag design contest by Dr. Harry Mera, a Santa Fe archaeologist.
+    p The contest aimed to replace the original flag designed by Ralph E. Twitchell, former mayor of Santa Fe. The “Twitchell Flag” was not representative of New Mexico’s history and culture, so the local chapter of the Daughters of the American Revolution pushed for a new design to be chosen.
+    p The new flag was officially adopted in March 1923.
+
+  .guide
+    .content
+      h2 Flag design
+      p The New Mexico flag features a field of yellow with the Zia sun symbol in red placed at the center.
+    .visual.flag
+      img(src='/assets/images/flag-new-mexico.svg')
+
+  .guide
+    .content
+      h2 Iconography
+      p The Zia are an indigenous tribe living at Zia Pueblo in the state of New Mexico.
+      p The sun, a sacred symbol, is featured on the New Mexico flag. It shows four rays radiating from four sides of a circle. Four is a sacred number for the Zia and represents:
+      ul.bullets
+        li the four seasons of the year (spring, summer, autumn, winter)
+        li the four directions of a compass (north, south, east, west)
+        li the four points of a day (sunrise, noon, evening, night)
+        li the four divisions of life (childhood, youth, adulthood, old age)
+        li the four sacred obligations (strong body, clear mind, pure spirit, devotion to others)
+    .visual.flag
+      img(src='/assets/images/flag-new-mexico-icon-zia-sun.svg')
+
+  .guide
+    .content
+      h2 Colors
+      p The red and yellow are specified as the colors of “old Spain.” They were originally the colors of Spain’s Queen Isabella.
+    .visual.colors.primary
+      .color
+        .sample(class='yellow')
+        .name Yellow
+        .hex #ffd700
+      .color
+        .sample(class='red')
+        .name Red
+        .hex #bf0a30
+
+  .guide
+    .content
+      h2 Production
+      p The New Mexico flag has a proportion of 2:3. So if the flag has a hoist of 4 feet, its fly should be 6 feet.
+      p If resized, it must maintain these proportions.
+      p The proportion of the Zia symbol is specified in statute Chapter 12 § 12-3-2. The inner rays should be one-fifth longer than the outer rays. The circle’s diameter should be one-third the width of the symbol, which should be one-third the width of the flag.
+    .visual
+      img(src='/assets/images/flag-new-mexico-dimensions.svg')
+
+  .guide
+    .content
+      h2 Previous iteration
+      p Adopted in 1915 for the San Diego World’s Fair, the “Twitchell Flag” featured a field of blue with the U.S. flag in the canton. “New Mexico” was insribed diagonally across the field in silver and the number 47 placed in the upper right (New Mexico was the 47th state). The state seal was placed in the bottom right.
+    .visual.flag
+      img.border(src='/assets/images/flag-new-mexico-1915-1923.jpg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source New Mexico Statutes Chapter 12 Article 3 § 12-3-2. Adoption of flag for state of New Mexico.
+      li.source: a(href='https://en.wikipedia.org/wiki/Zia_people#Zia_symbol') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_New_Mexico') Wikipedia

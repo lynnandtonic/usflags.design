@@ -1,0 +1,155 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Vermont.'
+  - var bodyClass = 'detail vermont'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Vermont - 
+
+block content
+
+  +state('Vermont', '/assets/images/flag-vermont.svg', 'The Green Mountain State', 'March 4, 1791')
+
+  .intro
+    p Vermont has had three official iterations of its state flag. The first two closely resembled the flag of the United States, with alternating red and white stripes and blue canton.
+    p This proved confusing, especially due to the U.S. flag changing frequently as new states were added. For the third version, they opted for the reliable design of their coat of arms on a field of blue.
+    p This version of the flag was officially adopted June 1, 1923.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Vermont flag features a field of blue with the state coat of arms at the center.
+    .visual.flag
+      img.border(src='/assets/images/flag-vermont.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-vermont-icon-pine-needles.svg')
+          h4 Pine boughs
+          p A common symbol across New England, pine boughs were worn at the battle of Plattsburgh during the War of 1812.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-vermont-icon-tree.svg')
+          h4 Pine tree
+          p The central tree, borrowed from the state seal, represents Vermont’s forests.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-vermont-icon-wheat.svg')
+          h4 Wheat
+          p Three sheaves of wheat symbolize Vermont’s rich agricultural tradition.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-vermont-icon-cow.svg')
+          h4 Cow
+          p A cow represents Vermont’s dairy farming industry.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-vermont-icon-mountains.svg')
+          h4 Green Mountains
+          p “Verd Mont” translates to Green Mountain. These two mountains are Camel’s Hump and Mount Mansfield.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-vermont-icon-deer.svg')
+          h4 Deer
+          p The westward facing deer represents Vermont’s flourishing wildlife.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-vermont-icon-motto.svg')
+          h4 Freedom and Unity
+          p Vermont’s state motto is inscribed. It juxtoposes two important ideals: personal liberty and welfare of the common good.
+  .guide
+    .content
+      h2 Coat of Arms
+      p First seen in 1807 on Vermont bank notes, the coat of arms wasn’t formalized and standardized until 1840.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-vermont.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p Vermont statute Chapter 11 § 491 describes the colors to be featured in the state coat of arms, recreated on the flag’s field of blue.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #003366
+      .colors.secondary
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffcc33
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #c2091d
+        .color
+          .sample(class='pine')
+          .name Pine
+          .hex #5a8562
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #002a22
+        .color
+          .sample(class='brown')
+          .name Brown
+          .hex #c24b20
+
+  .guide
+    .content
+      h2 Production
+      p Although not specified in Vermont statutes, the flag is typically produced with a 3:5 proportion.
+    .visual
+      img(src='/assets/images/flag-vermont-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-vermont-pre-1804.svg')
+          h4 Pre-1804
+          p An unofficial flag, representing the Green Mountain Boys, a Vermont militia led by Ethan Allen.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-vermont-1804-1837.svg')
+          h4 1804–1837
+          p The first official flag mimics the U.S. flag, but with 17 stars and 17 stripes (a change they expected the U.S. flag to adopt). Vermont is inscribed on the first red stripe.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-vermont-1837-1924.jpg')
+          h4 1837–1924
+          p The flag changed to 13 stripes (again to match the U.S. flag) and within the canton the coat of arms is placed within an 8-pointed star. Sometimes a 5-pointed star was used.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-vermont.svg')
+          h4 1924–Present
+          p The current flag of Vermont, no longer matching the U.S. flag.
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source: a(href='https://web.archive.org/web/20060923180633/http://www.sec.state.vt.us/kids/emblems.html') Vermont Secretary of State
+      li.source: a(href='https://legislature.vermont.gov/statutes/fullchapter/01/011') The State of Vermont
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Vermont') Wikipedia
