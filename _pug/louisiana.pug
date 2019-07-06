@@ -1,0 +1,168 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Louisiana.'
+  - var bodyClass = 'detail louisiana'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Louisiana - 
+
+block content
+
+  +state('Louisiana', '/assets/images/flag-louisiana.svg', 'The Pelican State', 'April 30, 1812')
+
+  .intro
+    p Louisiana has flown many flags in its history, like the flags of Spain, France, and Great Britain. Leading up to and during the American Civil War, it flew four distinct flags including the Confederate battle and national flags.
+    p Its distinct pelican flag was flown during the war, but it was not officially adopted until 1912. Variations were inevitable, many not including the three droplets of blood on the pelican’s chest. In 2006, the flag (and state seal) design was formalized and standardized.
+    p This official version was adopted November 22, 2010.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Louisiana flag features a field of blue with a crest at its center. The crest depicts a mother pelican with her three chicks in a nest, wounding herself with three drops of blood on her chest.
+      p A white banner below the crest has the state motto, “Union Justice Confidence” inscribed.
+    .visual.flag
+      img(src='/assets/images/flag-louisiana.svg')
+
+  .guide
+    .content
+      h2 Iconography
+      p The brown pelican is indigenous to Lousiana, but the symbology is also tied to Europe and Christian tradition. Described as “in her piety,” the pelican became a symbol of the Eucharist, where followers consume the blood of Christ in celebration of his sacrifice.
+      p Pelicans were often observed as stabbing themselves with their bills, giving them a reputation of being attentive, self-sacrificing mothers.
+    .visual.flag
+      img(src='/assets/images/flag-louisiana-icon-pelican.svg')
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p The pelican has long been a symbol of Lousiana. Prior to the Civil War, the “pelican in her piety” was paired with the words “Justice Union and Confidence.” After the war, when union and reconstruction were priority, the order was changed to “Union Justice Confidence.”
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-louisiana.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p Louisiana statute specifies the Pantone colors and their locations for the flag.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #002855
+          small PMS 295C
+        .color
+          .sample(class='white')
+          .name White
+          .hex #ffffff
+      .colors.secondary
+        .color
+          .sample(class='gray-1')
+          .name Gray 1
+          .hex #888b8d
+          small PMS Cool Gray 8C
+        .color
+          .sample(class='gray-2')
+          .name Gray 2
+          .hex #53565a
+          small PMS Cool Gray 11C
+        .color
+          .sample(class='yellow')
+          .name Yellow
+          .hex #ffd100
+          small PMS 109C
+        .color
+          .sample(class='orange-1')
+          .name Orange 1
+          .hex #ea7600
+          small PMS 716C
+        .color
+          .sample(class='orange-2')
+          .name Orange 2
+          .hex #cf7f00
+          small PMS 145C
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #da291c
+          small PMS 485C
+        .color
+          .sample(class='tan-1')
+          .name Tan 1
+          .hex #e6b080
+          small PMS 721C
+        .color
+          .sample(class='tan-2')
+          .name Tan 2
+          .hex #f1be48
+          small PMS 142C
+        .color
+          .sample(class='brown-1')
+          .name Brown 1
+          .hex #954e0f
+          small PMS 724C
+        .color
+          .sample(class='brown-2')
+          .name Brown 2
+          .hex #512f2e
+          small PMS 497C
+
+  .guide
+    .content
+      h2 Production
+      p The flag has a proportion of 7:11. Within this scale, the crest should be 5.25 units tall and 6 units wide.
+      p When resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-louisiana-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-louisiana-1861.svg')
+          h4 1861
+          p Flag raised during the weeks between seceding from the United States and joining the Confederacy.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-louisiana-pelican-1861.jpg')
+          h4 1861
+          p Flag raised at a similar time, establishing the pelican iconography. It was flown simultaneously with the flags of the Confederacy.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-louisiana-1912-2006.jpg')
+          h4 1912-2006
+          p A variation of the pelican flag with the red droplets of blood missing.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-louisiana.svg')
+          h4 2010-Present
+          p The current flag, following the standards defined by Louisiana statute.
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source: a(href='https://www.sos.la.gov/HistoricalResources/AboutLouisiana/Pages/StateFlagAndSeal.aspx') Louisiana Secretary of State
+      li.source: a(href='https://en.wikipedia.org/wiki/Pelican') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Louisiana') Wikipedia

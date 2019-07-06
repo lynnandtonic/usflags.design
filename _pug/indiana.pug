@@ -1,0 +1,90 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Indiana.'
+  - var bodyClass = 'detail indiana'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Indiana - 
+
+block content
+
+  +state('Indiana', '/assets/images/flag-indiana.svg', 'The Hoosier State', 'December 11, 1816')
+
+  .intro
+    p For Indiana’s centennial in 1916, the Indiana Daughters of the American Revolution organized a contest to design the state flag.
+    p The winning design, featuring a glowing torch, was submitted by Paul Hadley, a Mooresville artist. It was modified slightly with the addition of the word “Indiana.”
+    p The flag was officially adopted May 31, 1917.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Indiana state flag features a field of blue with a torch of gold or buff at the center. Lines radiate from the torch, surrounded by 19 five-pointed stars. An outer ring contains 13 stars, an inner ring has 5 stars, and one larger star is placed above the torch. The word ”Indiana” is insribed in half circle above the center star.
+    .visual.flag
+      img(src='/assets/images/flag-indiana.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-indiana-icon-torch.svg')
+          h4 Torch
+          p The lit torch represents liberty and enlightment, with its rays of influence far-reaching.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-indiana-icon-stars.svg')
+          h4 19 stars
+          p The outer ring of 13 stars represent the original 13 colonies. The next ring of 5 represents Vermont, Kentucky, Tennessee, Ohio, and Louisiana (the next five states admitted). The single star is Indiana as the 19th state.
+        li.icon-item
+
+  .guide
+    .content
+      h2 Colors
+      p The flag features a field of dark blue. The torch and stars can be gold or buff in color.
+    .visual.colors.primary
+      .color
+        .sample(class='blue')
+        .name Blue
+        .hex #000f5d
+      .color
+        .sample(class='gold')
+        .name Gold
+        .hex #d59f0f
+
+  .guide
+    .content
+      h2 Production
+      p Indiana statute allows for two different proportions for the state flag. It can be sized with a 3:5 proportion or the more common 2:3.
+    .visual
+      img(src='/assets/images/flag-indiana-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source The State of Indiana
+      li.source 2017 Indiana Code. Chapter 2. State Flag 1-2-2-1. Design and dimensions.
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Indiana') Wikipedia

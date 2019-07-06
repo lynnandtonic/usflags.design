@@ -1,0 +1,112 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Tennessee.'
+  - var bodyClass = 'detail tennessee'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Tennessee - 
+
+block content
+
+  +state('Tennessee', '/assets/images/flag-tennessee.svg', 'The Volunteer State', 'June 21, 1796')
+
+  .intro
+    p Tennessee has had two official state flags. The first was adopted 1 May 1897, but did not find widespread popularity.
+    p The current flag was designed by Captain LeRoy Reeves of the Tennessee Infantry, which honors the three divisions of Tennessee. It’s one of few U.S. flags designed with intentional consideration for how it will look draped on a wind-free day.
+    p It was officially adopted April 17, 1905.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Tennessee flag features a field of red. At the free end is a uniform, perpendicular stripe of blue, separated from the red field by a narrow margin of white.
+      p At the center of the red is a circular field of blue, also separated by a narrow circle of white. Upon the blue circle are three white five-pointed stars.
+    .visual.flag
+      img(src='/assets/images/flag-tennessee.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-tennessee-icon-stars.svg')
+          h4 3 stars
+          p According to Reeves, the three stars represent the three divisions of Tennessee: East Tennessee, Middle Tennessee, and West Tennessee.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-tennessee-icon-circle.svg')
+          h4 Circle of blue
+          p The blue circle surrounding the stars binds the three divisions of Tennessee as one “indissoluble trinity.”
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-tennessee-icon-stripes.svg')
+          h4 Stripes
+          p The blue and white stripe were added to ensure visual interest when the flag hung limp on a wind-free day.
+        li.icon-item
+
+  .guide
+    .content
+      h2 Colors
+      p According to Tennessee statute, the red, white, and blue must match those of the U.S. flag.
+    .visual.colors.primary
+      .color
+        .sample(class='us-red')
+        .name Red
+        .hex #bg0a30
+        small PMS 193
+      .color
+        .sample(class='us-blue')
+        .name Blue
+        .hex #002868
+        small PMS 282
+      .color
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+
+  .guide
+    .content
+      h2 Production
+      p The flag should have a proportion of 3:5. So if the flag has a hoist of 3 feet, its fly should be 5 feet.
+      p If resized, it must maintain these proportions.
+      p The blue stripe is 1/8th the width of the hoist and the white stripe is 1/5th the width of the blue stripe. The diameter of the blue circle is one half the hoist.
+      p The three stars are the largest they can be without touching each other or the edge of the blue circle. None of their sides should be parallel with the flag edges.
+    .visual
+      img(src='/assets/images/flag-tennessee-dimensions.svg')
+
+  .guide
+    .content
+      h2 Previous iteration
+      p The first official flag, used from 1897-1905, featured three diagonal sections in red, blue, and white. Tennessee’s nickname “The Volunteer State” is inscribed in gold, along with the number 16 in blue, representing Tennessee as the 16th state.
+    .visual.flag
+      img.border(src='/assets/images/flag-tennessee-1897-1905.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source: a(href='https://sos.tn.gov/products/state-flag') Tennessee Secretary of State
+      li.source Tennessee Code Title 4. State Government § 4-1-301
+      li.source: a(href='https://www.britannica.com/topic/flag-of-Tennessee') Encyclopedia Britannica
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Tennessee') Wikipedia

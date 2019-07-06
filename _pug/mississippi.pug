@@ -1,0 +1,102 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Mississippi.'
+  - var bodyClass = 'detail mississippi'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Mississippi - 
+
+block content
+
+  +state('Mississippi', '/assets/images/flag-mississippi.svg', 'The Magnolia State', 'December 10, 1817', 'border')
+
+  .intro
+    p The controversial Mississippi flag is the second flag the state has officially adopted, replacing the original “Magnolia Flag.”
+    p Since Georgia changed its flag in 2003, Mississippi is the only U.S. flag to feature the Confederate battle flag, often called “The Southern Cross.”
+    p This version of the flag was adopted February 7, 1894, almost 30 years after the end of the American Civil War.
+    p The people of Mississippi voted (with a significant majority) to keep this version of the flag in a referendum on April 17, 2001.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Mississippi flag features a canton of red with a blue saltine bordered in white and emblazoned with 13 white five-pointed stars.
+      p The field of the flag is divided into three equal horizontal stripes of blue, white, and red.
+    .visual.flag
+      img.border(src='/assets/images/flag-mississippi.svg')
+
+  .guide
+    .content
+      h2 Iconography
+      p Both the second and third national flags of the Confederate States, like the Mississippi state flag, use the battle flag in their cantons.
+      p Defenders of the battle flag claim it is a symbol of the south’s history and defense of liberty and states’ rights during the Civil War.
+      p Despite this claim, it is representative of the Confederacy’s support and defense of slavery. Since the war, the battle flag has been used as a rallying banner for white supremacists and a symbol of continued racism and violence.
+    .visual.flag
+      img(src='/assets/images/flag-mississippi-southern-cross.svg')
+
+  .guide
+    .content
+      h2 Colors
+      p The Mississippi flag features the colors of the United States flag: red, white, and blue.
+    .visual.colors.primary
+      .color
+        .sample(class='us-red')
+        .name Red
+        .hex #bg0a30
+        small PMS 193
+      .color
+        .sample(class='us-blue')
+        .name Blue
+        .hex #002868
+        small PMS 282
+      .color
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+
+  .guide
+    .content
+      h2 Production
+      p The flag should have a proportion of 2:3. So if the flag has a hoist of 4 feet, its fly should be 6 feet.
+      p The canton should be square, 2/3rds the width of the hoist.
+      p If resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-mississippi-dimensions.svg')
+
+  .guide
+    .content
+      h2 Previous iteration
+      p Adopted March 30, 1861, the original Mississippi flag was known as the “Magnolia Flag.” It featured a magnolia tree centered on a field of white and a blue canton with one white five-pointed star. At the free end is a uniform perpendicular stripe of red.
+      p The blue canton is modeled after the Bonnie Blue Flag, a symbolic banner of the Confederacy.
+    .visual.flag
+      img.border(src='/assets/images/flag-mississippi-magnolia.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source 2013 Mississippi Code. Title 3. Chapter 3 § 3-3-16 - Design of state flag.
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Mississippi') Wikipedia

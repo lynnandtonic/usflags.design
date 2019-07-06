@@ -1,0 +1,114 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Kentucky.'
+  - var bodyClass = 'detail kentucky'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Kentucky - 
+
+block content
+
+  +state('Kentucky', '/assets/images/flag-kentucky.svg', 'The Bluegrass State', 'June 1, 1792')
+
+  .intro
+    p The flag of Kentucky follows a common pattern for U.S. state flags, featuring the state seal on a field of blue.
+    p The seal was designed in 1793 by Lexington silversmith David Humphries and placed within the flag design by Jesse Cox Burgess, an art teacher in Frankfort.
+    p The flag was officially adopted March 26, 1918.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Kentucky flag features a field of navy with the state seal embroidered, printed, painted, or stamped at the center.
+    .visual.flag
+      img(src='/assets/images/flag-kentucky.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-kentucky-icon-goldenrod.svg')
+          h4 Goldenrod
+          p The seal is supported by two sprigs of goldenrod, Kentucky’s state flower.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-kentucky-icon-men.svg')
+          h4 Pioneer & statesman
+          p Often mistaken for Daniel Boone and Henry Clay, the two men in embrace represent all Kentucky’s pioneers and statesmen, a literal representation of the state’s motto.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-kentucky-icon-motto.svg')
+          h4 Motto
+          p Historians believe Kentucky’s motto “United We Stand, Divided We Fall” was inspired by “The Liberty Song,” written by John Dickinson in 1768.
+        li.icon-item
+  .guide
+    .content
+      h2 Coat of Arms
+      p The coat of arms, along with early versions of the state seal, depicted the two men as statesmen, both in swallowtail coats.
+      p Alternate versions show the men shaking hands and in other versions in full embrace.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-kentucky.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p The official colors of the seal are blue and gold, reflected also on the state flag.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='navy')
+          .name Navy
+          .hex #000066
+      .colors.secondary
+        .color
+          .sample(class='white')
+          .name White
+          .hex #ffffff
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #e6ad05
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #396f4a
+
+  .guide
+    .content
+      h2 Production
+      p The fly of the flag must be one and nine-tenths the width of the hoist. So if it has a hoist of 4 feet, its fly should be 7 feet 7 inches.
+      p The seal should be two-thirds the width of the hoist.
+      p If resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-kentucky-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source Kentucky Revised Statutes Title I. Sovereignty and Jurisdiction of the Commonwealth § 2.030. State flag
+      li.source: a(href='https://www.britannica.com/topic/flag-of-Kentucky') Encyclopedia Britannica
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Kentucky') Wikipedia

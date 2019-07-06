@@ -1,0 +1,105 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Ohio.'
+  - var bodyClass = 'detail ohio'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Ohio - 
+
+block content
+
+  +state('Ohio', '/assets/images/flag-ohio.svg', 'The Buckeye State', 'March 1, 1803')
+
+  .intro
+    p The Ohio flag is unlike any other U.S. flag due to its unique shape. It’s the only flag that isn’t a rectangle and is instead a swallow-tailed burgee.
+    p It was designed by Cleveland architect John Eisenmann in 1901 for the Pan-American Exposition in New York, created to fly over the Ohio Building.
+    p The flag was officially adopted May 9, 1902.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Ohio flag is burgee-shaped featuring three red and two white horizontal stripes. A blue triangular field extends from the left edge, its apex at the center of the middle red stripe. 
+      p Upon the blue triangle, a red disc is placed at the center of a larger white circle. Seventeen white five-pointed stars surround.
+    .visual.flag
+      img(src='/assets/images/flag-ohio.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-ohio-icon-burgee.svg')
+          h4 Burgee
+          p Eisenmann described the triangles of the burgee representing the hills and valleys of the Ohio landscape.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-ohio-icon-stripes.svg')
+          h4 Stripes
+          p The stripes similarly represent the Ohio rivers and roadways.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-ohio-icon-circle.svg')
+          h4 Circles
+          p The circles represent two things: the “O” of Ohio and the buckeye, the nut that falls from the buckeye tree (and from which Ohio gets its nickname).
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-ohio-icon-stars.svg')
+          h4 Stars
+          p The 13 stars to the left represent the original 13 colonies and the other four represent Vermont, Kentucky, Tennessee, and Ohio, the states that followed.
+
+  .guide
+    .content
+      h2 Colors
+      p The Ohio flag #[em is] similar to other U.S. flags in its colors, utilizing the classic red, white, and blue.
+    .visual.colors.primary
+      .color
+        .sample(class='us-blue')
+        .name Blue
+        .hex #001c5a
+      .color
+        .sample(class='us-red')
+        .name Red
+        .hex #c30a3a
+      .color
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+
+  .guide
+    .content
+      h2 Production
+      p John Eisenmann obtained a U.S. patent for his Ohio flag design and created detailed specification diagrams, simplified and recreated here.
+      p The flag has an 8:13 proportion. So if the flag has a hoist of 4 feet, its fly would be 6 feet, 6 inches.
+      p Many flag makers, rather than create the Ohio flag’s unique shape, print the Ohio flag on a rectangular field of white.
+    .visual
+      img(src='/assets/images/flag-ohio-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source: a(href='https://www.sos.state.oh.us/globalassets/publications/agency/flag.pdf') Ohio Secretary of State
+      li.source Ohio Revised Code. Chapter 5 § 5.01 Ohio state flag.
+      li.source: a(href='https://www.ohiomemory.org/digital/collection/p267401coll32/id/4044') Ohio History Connection
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Ohio') Wikipedia
