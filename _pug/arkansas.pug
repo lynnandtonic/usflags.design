@@ -1,0 +1,128 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Arkansas.'
+  - var bodyClass = 'detail arkansas'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Arkansas - 
+
+block content
+
+  +state('Arkansas', '/assets/images/flag-arkansas.svg', 'The Natural State', 'June 15, 1836')
+
+  .intro
+    p In 1912, the Pine Bluff chapter of the Daughters of the American Revolution held a flag design contest to create a flag for the USS #[em Arkansas].
+    p Willie K. Hocker, a local teacher, submitted the winning design which featured three blue stars at the center of a white diamond trimmed in blue and 25 white stars. At the flag committee’s request, the word “Arkanas” was added and the flag was adopted in 1913.
+    p The flag has had two small revisions, with its current iteration adopted in 1924.
+    p Although unchanged since, it wasn’t signed into law until 1987.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Arkansas flag features a field of red. At the center is a large white diamond, bordered by a band of blue upon which 25 white stars are placed.
+      p Within the white diamond the word “Arkanas” is inscribed. Three blue stars are placed below and one blue star placed above.
+    .visual.flag
+      img(src='/assets/images/flag-arkansas.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-arkansas-icon-diamond.svg')
+          h4 Diamond
+          p The diamond shape represents Arkansas as the only diamond-bearing state in the U.S.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-arkansas-icon-stars.svg')
+          h4 25 stars
+          p The 25 white stars represent Arkansas as the 25th state to join the Union.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-arkansas-icon-3-stars.svg')
+          h4 3 stars
+          p The three stars symbolize two different trios: the three countries to which Arkansas has belonged (Spain, France, and the U.S.) and the first three states formed from the Louisiana Purchase (Louisiana, Missouri and Arkansas).
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-arkansas-icon-1-star.svg')
+          h4 1 star
+          p The single star commemorates Arkansas’ secession and role in the Confederate States of America.
+
+  .guide
+    .content
+      h2 Colors
+      p Colors include red, white, and blue. The blue and red match those on the United States flag.
+    .visual.colors.primary
+      .color
+        .sample(class='us-blue')
+        .name Blue
+        .hex #002868
+        small PMS 282
+      .color
+        .sample(class='us-red')
+        .name Red
+        .hex #bg0a30
+        small PMS 193
+      .color
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+
+  .guide
+    .content
+      h2 Production
+      p The flag should have a proportion of 2:3. So if the flag has a hoist of 4 feet, its fly should be 6 feet.
+      p If resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-arkansas-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-arkansas-hocker.svg')
+          h4 Proposed design
+          p Willie K. Hocker’s design submitted to the flag contest.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-arkansas-1913-1923.svg')
+          h4 1913-1923
+          p “Arkanas” is added to the Hocker design.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-arkansas-1923.svg')
+          h4 1923-1924
+          p A fourth star is added within the white diamond.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-arkansas.svg')
+          h4 1924-Present
+          p The fourth star is separated from the other three.
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source 2014 Arkansas Code. Title 1 - General Provisions Chapter 4 - State Symbols, Motto, Etc. § 1-4-101 - State flag.
+      li.source: a(href='https://encyclopediaofarkansas.net/entries/official-state-flag-3151/') Encyclopedia of Arkansas
+      li.source: a(href='https://www.sos.arkansas.gov/education/arkansas-history/history-of-the-flag/story-of-the-flag') Arkansas Secretary of State
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Arkansas') Wikipedia

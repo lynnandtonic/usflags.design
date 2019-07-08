@@ -1,0 +1,99 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Alabama.'
+  - var bodyClass = 'detail alabama'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Alabama - 
+
+block content
+
+  +state('Alabama', '/assets/images/flag-alabama.svg', 'The Heart of Dixie', 'December 14, 1819', 'border')
+
+  .intro
+    p The flag of Alabama is perhaps the most simple of the U.S. state flags, though it is not free of controversy.
+    p In 2016 it was removed, with a handful of other state flags, from a display at the U.S. Capitol because of Confederate imagery.
+    p The red saltire could have a few origins, but because the flag was adopted amidst the rise of Jim Crow laws, many historians believe it references the Confederate battle flag.
+    p This version of the flag (Alabama’s second) was officially adopted February 16, 1895.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Alabama state flag features a field of white with a crimson saltire, the bars extending diagonally across the flag from side to side.
+    .visual.flag
+      img.border(src='/assets/images/flag-alabama.svg')
+
+  .guide
+    .content
+      h2 Iconography
+      p Alabama statute specifically mentions the cross of St. Andrew. The saltire represents St. Andrew’s martyrdom, crucified on an X-shaped cross.
+      p Because the flag has historically been depicted as square, it is often compared to the Confederate battle flag, though many now claim it was not an influence.
+      p However in 1939, Alabama adopted its current coat of arms which does feature the Confederate battle flag.
+    .visual.flag
+      img(src='/assets/images/flag-alabama-icon-saltire.svg')
+
+  .guide
+    .content
+      h2 Colors
+      p The Alabama flag is one of few that only use two colors. It features white and a “crimson” matching the red from the U.S. flag.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='white')
+          .name White
+          .hex #ffffff
+        .color
+          .sample(class='us-red')
+          .name Crimson
+          .hex #bg0a30
+          small PMS 193
+
+  .guide
+    .content
+      h2 Production
+      p Alabama statutes don’t specify dimensions or even a shape for the flag.
+      p Historically the flag was produced and depicted as square. In 1987 though, Alabama Attorney General Don Siegelman claimed the flag should be rectangular. The common proportion of 2:3 is often used now.
+      p Statute does specify the red bars of the saltire be at least 6 inches wide.
+    .visual
+      img(src='/assets/images/flag-alabama-dimensions.svg')
+
+  .guide
+    .content
+      h2 Previous iteration
+      p In 1861, as Alabama left the Union, the Alabama Secession Convention adopted its first official flag. Designed by a group of women from Montgomery, it became known as the “Republic of Alabama Flag.” It only flew for a month before being replaced by the Confederate national flag.
+      p It features a field of blue with the goddess Liberty on its obverse and a snake with cotton plant on its reverse. The Latin phrase “Noli Me Tangere” is inscribed which translates to “Touch Me Not” and is reminiscent of the #[a(href='https://en.wikipedia.org/wiki/Gadsden_flag') Gadsden flag].
+    .visual.flag
+      img.border(src='/assets/images/flag-alabama-1861.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Alabama Statutes. Chapter 2A: Alabama State Flag Act. Section 1-2A-2 Historical information.
+      li.source: a(href='https://yellowhammernews.com/alabama-flag-removed-us-capitol-confederate-imagery/') Yellw Hammer News
+      li.source: a(href='https://en.wikipedia.org/wiki/Coat_of_arms_of_Alabama') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Alabama') Wikipedia

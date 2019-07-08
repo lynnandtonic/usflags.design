@@ -1,0 +1,139 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Maine.'
+  - var bodyClass = 'detail maine'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Maine - 
+
+block content
+
+  +state('Maine', '/assets/images/flag-maine.svg', 'The Pine Tree State', 'March 15, 1820')
+
+  .intro
+    p The Maine state flag follows a common pattern for U.S. state flags, featuring the coat of arms on a field of blue.
+    p It wasn’t always this way, though. The first official flag was a simple and graphic design featuring a pine tree. It has proven very popular over the years and many campaigns have tried to revert the flag back to the original design with no success (yet).
+    p The current version of the flag was adopted February 23, 1909.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Maine flag features a field of blue with the state coat of arms at its center.
+    .visual.flag
+      img(src='/assets/images/flag-maine.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-maine-icon-north-star.svg')
+          h4 North Star
+          p The North Star was a guiding light for sailors, a symbol representing the state motto “Dirigo” which translates to “I Lead.”
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-maine-icon-farmer.svg')
+          h4 Farmer
+          p The farmer with scythe represents the rich agricultural tradition in Maine.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-maine-icon-sailor.svg')
+          h4 Sailor
+          p The sailor with anchor is a symbol of Maine’s long coastline and fishing and shipbuilding industries.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-maine-icon-tree.svg')
+          h4 Pine tree
+          p The pine tree is a symbol of New England and remains from the first Maine flag. It and the moose represent Maine’s unique flora and fauna.
+  .guide
+    .content
+      h2 Coat of Arms
+      p The Maine coat of arms (and state seal) have remained relatively unchanged since adoption in 1820. It was formally standardized in 1919 to reduce small variations.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-maine.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p There are no official colors for the state coat of arms, so the flag in production sees a lot of variance. Statute does specify the field of blue to match the blue of the U.S. flag.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='us-blue')
+          .name Blue
+          .hex #002868
+          small PMS 282
+      .colors.secondary
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffe84f
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #ff163c
+        .color
+          .sample(class='light-blue')
+          .name Light blue
+          .hex #9ed9ff
+        .color
+          .sample(class='pine')
+          .name Pine
+          .hex #3e6f3e
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #36e218
+        .color
+          .sample(class='brown')
+          .name Brown
+          .hex #6f513e
+
+  .guide
+    .content
+      h2 Production
+      p The flag should have a fly of 5 feet, 6 inches and a hoist of 4 feet, 4 inches.
+      p If resized, it must maintain these proportions.
+      p The coat of arms should be embroidered on a flag of silk and can be trimmed with knotted yellow fringe measuring 2 1/2 inches wide.
+      h2 Pike
+      p The flag should be flown on a 9 foot pike (flagple) with a tassled cord 8 feet 6 inches in length attached to the spearhead. The cord should be made of white and blue silk strands.
+    .visual
+      img(src='/assets/images/flag-maine-dimensions.svg')
+
+  .guide
+    .content
+      h2 Previous iteration
+      p The 1901 version of the Maine flag featured a green pine tree and a blue five-pointed star on a field of buff.
+      p Two attempts in the 1990’s failed to bring back the original flag. In the last few years, though, private companies have begun manufacturing and selling a similar version resulting in increased popularity and new calls to change the flag once again.
+    .visual.flag
+      img(src='/assets/images/flag-maine-1901.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source Maine Revised Statutes. Chapter 9: SEAL, MOTTO, EMBLEMS AND FLAGS. §206. State flag.
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Maine_(1901%E2%80%9309)') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Maine') Wikipedia

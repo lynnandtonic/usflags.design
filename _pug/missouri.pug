@@ -1,0 +1,144 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Missouri.'
+  - var bodyClass = 'detail missouri'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Missouri - 
+
+block content
+
+  +state('Missouri', '/assets/images/flag-missouri.svg', 'The Show Me State', 'August 10, 1821', 'border')
+
+  .intro
+    p Like many other state flags, the Missouri flag begins with the Daughters of the American Revolution. They appointed Mary Elizabeth Oliver to lead a committee and in 1908 she brought her design to the state capitol.
+    p Her flag competed against another design by Dr. G.H. Holcomb, but ultimately it was chosen as the first (and so far, only) Missouri state flag.
+    p It was officially adopted March 22, 1913.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Missouri state flag features three horizontal stripes of equal width in red, white, and blue color. At the center, a circular band of blue encompasses the state coat of arms.
+    .visual.flag
+      img.border(src='/assets/images/flag-missouri.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-missouri-icon-stars.svg')
+          h4 24 stars
+          p The outer ring of 24 stars represent the states of the Union including Missouri.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-missouri-icon-stars2.svg')
+          h4 24 more stars
+          p 24 more stars are featured, but with one larger at the center representing Missouri as the 24th state.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-missouri-icon-bears.svg')
+          h4 Bears
+          p The supporting bears symbolize the strength and courage of the people of Missouri.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-missouri-icon-knight.svg')
+          h4 Knight & shield
+          p The divided shield, knight’s helmet, and buckle symbolize strength and independence of the state. “United We Stand, Divided We Fall” is a reminder of the strength of the union.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-missouri-icon-crescent.svg')
+          h4 Crescent
+          p The crescent moon represents the immense potential for the future of Missouri.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-missouri-icon-eagle.svg')
+          h4 Eagle
+          p The eagle with olive branch and arrows is borrowed from the Great Seal of the U.S. and commemorates Missouri as part of the nation.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-missouri-icon-motto.svg')
+          h4 Motto
+          p The Latin words “Salus Populi Suprema Lex Esto” translate to “The Welfare of the People Shall Be the Supreme Law,” Missouri’s state motto.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-missouri-icon-date.svg')
+          h4 1820
+          p The date, in Roman numerals, is 1820 and refers to the year of the Missouri Compromise allowing Missouri to join the Union as a slave state.
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p The Missouri coat of arms and state seal have been relatively unchanged since they were designed in 1822 by Judge Robert William Wells.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-missouri.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p While the specific values are not specified, the colors of the Missouri flag do have meaning.
+      p The red represents valor, white represents purity, and blue represents vigilance, permanency, and justice.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #ab0635
+        .color
+          .sample(class='white')
+          .name White
+          .hex #ffff
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #004b8d
+      .colors.secondary
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #c3a204
+        .color
+          .sample(class='brown')
+          .name Brown
+          .hex #9a4a23
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #228a43
+        .color
+          .sample(class='light-blue')
+          .name Light blue
+          .hex #0083a9
+
+  .guide
+    .content
+      h2 Production
+      p The Missouri flag has a proportion of 7:12. The width of the blue band around the center circle of the seal is one-fourteenth the width of the hoist. The diameter of the circle is one-third the length of the fly.
+    .visual
+      img(src='/assets/images/flag-missouri-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source 2013 Missouri Revised Statutes. Chapter 10 State Emblems. Section § 10.020 Flag, official--design of--original design--where kept.
+      li.source: a(href='https://www.sos.mo.gov/Kids/history/flag.asp') Missouri Secretary of State
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Missouri') Wikipedia
