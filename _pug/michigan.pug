@@ -1,0 +1,154 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Michigan.'
+  - var bodyClass = 'detail michigan'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Michigan - 
+
+block content
+
+  +state('Michigan', '/assets/images/flag-michigan.svg', 'The Great Lake State', 'January 26, 1837')
+
+  .intro
+    p The current Michigan flag is the third version for the state. Descriptions of the first two flags exist, but their specific designs have been lost to history.
+    p The first Michigan flag was notable in its depiction of Governor Stevens T. Mason. He is the only real person besides George Washington to appear on a state flag.
+    p Michigan’s flag now follows the common pattern of a field of blue charged with the state coat of arms.
+    p This version was officially adopted June 26, 1911.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Michigan flag features a field of blue with the state coat of arms at the center.
+    .visual.flag
+      img(src='/assets/images/flag-michigan.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-michigan-icon-elk-moose.svg')
+          h4 Elk & Moose
+          p Although said to be borrowed from the Hudson’s Bay Company coat of arms, the elk and moose have become symbols for Michigan’s natural beauty.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-michigan-icon-eagle.svg')
+          h4 Eagle
+          p Borrowed from the Great Seal of the U.S. and representing the nation, the eagle symbolizes peace and strength, clutching an olive branch and a bunch of arrows.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-michigan-icon-man.svg')
+          h4 Armed man
+          p Upon a Michigan peninsula, a man waves with his weapon pointed toward the sky, a visualization of the word “Tuebor” inscribed above.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-michigan-icon-tuebor.svg')
+          h4 Tuebor
+          p Translated from Latin, “Tuebor” means “I will defend.” While the armed man is peaceful, he is equipt to fight if needed.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-michigan-icon-e-pluribus-unum.svg')
+          h4 E Pluribus Unum
+          p Also borrowed from the Great Seal, “E Pluribus Unum” translates to “From many, one” and represents the U.S. as a single nation made up of states.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-michigan-icon-motto.svg')
+          h4 Motto
+          p Michigan’s state motto translates to “If You Seek a Pleasant Peninsula, Look About You.”
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p Established in 1835, the Michigan coat of arms bears resemblance to the coat of arms of the #[a(href='https://en.wikipedia.org/wiki/Hudson%27s_Bay_Company#/media/File:HBC-coa.JPG') Hudson’s Bay Company], which also features an elk and moose as supports.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-michigan.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p Only azure and white (argent) are specifically mentioned in the statute for the coat of arms. No colors are specified for the flag.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #00287e
+      .colors.secondary
+        .color
+          .sample(class='brown')
+          .name Brown
+          .hex #86473f
+        .color
+          .sample(class='tan')
+          .name Tan
+          .hex #b37535
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #ef1439
+        .color
+          .sample(class='azure')
+          .name Azure
+          .hex #006fff
+        .color
+          .sample(class='yellow')
+          .name Yellow
+          .hex #ffef6f
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #35b336
+
+  .guide
+    .content
+      h2 Production
+      p Michigan statute doesn’t specify dimensions for its flag. It is usually produced with a proportion of 2:3. So if the flag has a hoist of 4 feet, its fly would be 6 feet.
+      p If resized, it will maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-michigan-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img.blank(src='/assets/images/blank.jpg')
+          h4 1837–1865
+          p The first flag featured the coat of arms plus a woman and soldier. The reverse featured a portrait of Stevens T. Mason.
+        li.flag-item
+          span.flag: img.blank(src='/assets/images/blank.jpg')
+          h4 1837–1911
+          p The woman and soldier were removed from the obverse. Mason’s portrait was removed and the U.S. coat of arms was added to the reverse.
+        li.flag-item
+          span.flag: img.blank(src='/assets/images/flag-michigan.svg')
+          h4 1911–Present
+          p The U.S. coat of arms were removed from the reverse.
+        li.flag-item
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source Michigan Compiled Laws. Chapter 2. Section § 2.22 - State coat-of-arms; emblazonment.
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Michigan') Wikipedia
