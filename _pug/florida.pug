@@ -1,0 +1,157 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Florida.'
+  - var bodyClass = 'detail florida'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Florida - 
+
+block content
+
+  +state('Florida', '/assets/images/flag-florida.svg', 'The Sunshine State', 'March 3, 1845', 'border')
+
+  .intro
+    p Florida has flown many flags. Besides its handful of state flags, it’s seen the flags of Spain, France, Britain, the Confederacy, and the United States.
+    p An early version of the flag featured the state seal on a field of white. The red saltire was introduced in the 1890’s and approved in 1900. Florida Governor Francis P. Fleming suggested that without it, the flag too closely resembled one of surrender.
+    p Because the saltire was adopted amidst the rise of Jim Crow laws, many historians believe it is a reference the Confederate battle flag.
+    p When the seal was changed and standardized in 1985, the flag also followed suit and this new version was officially adopted May 21, 1985.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Florida state flag features a field of white and a red saltire, with bars extending from each corner. At the center, the state seal is placed.
+    .visual.flag
+      img.border(src='/assets/images/flag-florida.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-florida-icon-saltire.svg')
+          h4 Saltire
+          p The cross of St. Andrew typically represents his martyrdom, crucified on an X-shaped cross.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-florida-icon-seminole-woman.svg')
+          h4 Seminole woman
+          p The woman scattering flowers represents the Seminole people of Florida.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-florida-icon-palmetto.svg')
+          h4 Palmetto
+          p The Sabal palmetto tree is the state tree of Florida.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-florida-icon-ship.svg')
+          h4 Ship
+          p The ship represents the important role coastal travel and commerce played in Florida’s development and economy.
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p The seal of Florida was established in 1868. It was similar to today’s version, but in 1985 some revisions took place.
+      p The cocoa tree was changed to the palmetto, the Native American woman’s headress was removed to reflect Seminole history more accurately, and the mountains were removed to better show the flat land of Florida.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-florida.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p Colors are not specified in Florida statutes, but the flag prominently features white and red, with supporting colors within the seal.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='white')
+          .name White
+          .hex #ffffff
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #a80534
+      .colors.secondary
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffb900
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #015941
+        .color
+          .sample(class='brown')
+          .name Brown
+          .hex #7d4802
+        .color
+          .sample(class='tan')
+          .name Tan
+          .hex #cf7419
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #cf7419
+
+  .guide
+    .content
+      h2 Production
+      p Dimensions are not specified for the Florida flag beyond conforming to “standard commercial sizes.” It is usually produced with a proportion of 2:3. So if the flag has a hoist of 4 feet, its fly should be 6 feet.
+      p If resized, it would maintain these proportions.
+      p It is required that the seal be one half the width of the hoist and the red bars be one-fifth the hoist.
+    .visual
+      img(src='/assets/images/flag-florida-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-florida-1845.svg')
+          h4 1845
+          p Although never officially adopted, the Moseley flag flew at Governor William D. Moseley’s inauguration in 1845.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-florida-1861-1865.svg')
+          h4 1861-1865
+          p Adopted by Governor Madison S. Perry when Florida seceded from the Union in 1861.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-florida-1868-1900.jpg')
+          h4 1868–1900
+          p Adopted during the Reconstruction at the same time as the Florida state seal.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-florida-1900-1985.jpg')
+          h4 1900–1985
+          p The red saltire is added by Governor Francis P. Fleming.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-florida.svg')
+          h4 1985–Present
+          p The seal and flag undergo revisions. The current flag of Florida.
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Alabama', 'alabama', '/assets/images/flag-alabama.svg', 'border')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source 2018 Florida Statutes. Chapter 15 Secretary of State. § 15.012 State flag.
+      li.source: a(href='https://dos.myflorida.com/florida-facts/florida-state-symbols/state-flag/floridas-historic-flags/state-flags/') Florida Department of State
+      li.source: a(href='https://www.britannica.com/topic/flag-of-Florida') Encyclopedia Britannica
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Florida') Wikipedia
