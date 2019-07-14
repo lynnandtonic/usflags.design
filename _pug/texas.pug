@@ -1,0 +1,130 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Texas.'
+  - var bodyClass = 'detail texas'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Texas - 
+
+block content
+
+  +state('Texas', '/assets/images/flag-texas.svg', 'The Lone Star State', 'December 29, 1845', 'border')
+
+  .intro
+    p While Texas has had a variety of flags flown (like the familiar “Six Flags Over Texas”), it has only had one official state flag.
+    p The flag was designed and adopted as the third official flag of the Republic of Texas. Though the original designer is unknown, it was officially drawn by Peter Krag and approved by President Mirabeau B. Lamar on January 25, 1839.
+    p When Texas joined the U.S. in 1845 it kept its Lone Star Flag which has flown ever since. Texas was, however, #[em technically] flagless from 1879 to 1933 after state civil statues were revised and the flag code not renewed.
+    p The flag was officially re-adopted August 31, 1933.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Texas flag features a vertical stripe of blue and two equal horizontal stripes of white and red. At the center of the blue stripe is a white five-pointed star.
+    .visual.flag
+      img.border(src='/assets/images/flag-texas.svg')
+
+  .guide
+    .content
+      h2 Iconography
+      p The lone star on the flag represents Texas as the Lone Star State, established as a symbol years before when Texas gained independence from Mexico.
+      p Texas statute says the flag “represents ALL of Texas and stands for our unity as one for God, State, and Country.”
+      p Some attribute (unofficial) meaning to the star’s five points, which dates back to a 1948 issue of #[em Frontier Times] that claimed the star represents characteristics of a good Texan: loyalty, prudence, fortitude, broadmindedness, and righteousness.
+    .visual.flag
+      img(src='/assets/images/flag-texas-icon-star.svg')
+
+  .guide
+    .content
+      h2 Colors
+      p The Texas flag uses the same red, white, and blue as the U.S. flag.
+      p According to state statute, the red represents bravery, the white stands for purity, and the blue represents loyalty.
+    .visual.colors.primary
+      .color
+        .sample(class='us-blue')
+        .name Blue
+        .hex #00205b
+        small PMS 281
+      .color
+        .sample(class='us-red')
+        .name Red
+        .hex #bg0a30
+        small PMS 193
+      .color
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+
+  .guide
+    .content
+      h2 Production
+      p The Texas flag should have a proportion of 2:3. So if the flag has a hoist of 4 feet, its fly should be 6 feet.
+      p If resized, it must maintain these proportions.
+      p The blue vertical stripe is one-third the width of the fly, with the white star at its center measuring three-fourths the width of the stripe.
+      h2 Pike
+      p Texas law specifies the height of the pike (flagpole) to be 2.5 times as long as the flag’s hoist, with an optional finial of a star or spearhead.
+      p If the flag is permanantly mounted, the flag may be decorated with gold fringe and the pike may have a gold cord or tassles.
+    .visual
+      img(src='/assets/images/flag-texas-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 The Six Flags Over Texas
+      p The display of the six flags of Texas was popularized during the 1936 Centennial Celebration. It showcases the flags of the six nations that have had sovereignty over some or all of Texas.
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-texas-six-flags-spain.jpg')
+          h4 Spain
+          p Spain ruled over Texas from 1519–1685 and 1690–1821.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-texas-six-flags-france.jpg')
+          h4 France
+          p France ruled over Texas from 1684–1690 for Fort Saint Louis and 1800–1803 as French Louisiana.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-texas-six-flags-mexico.jpg')
+          h4 Mexico
+          p The Mexico flag was flown from 1821–1835.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-texas.svg')
+          h4 Republic of Texas
+          p The third flag that flew for the Republic of Texas from 1836–1845.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-texas-six-flags-usa.svg')
+          h4 United States
+          p The flag of the U.S. when Texas joined in 1845.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-texas-six-flags-csa.svg')
+          h4 Confederate States
+          p Texas seceded and joined the Confederacy from 1861–1865.
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Texas Government Code. Title 11. State Symbols and Honors;  Preservation. Subtitle A. State Symbols and Honors. Chapter 3100. State Flag. Subchapter A. General Provisions.
+      li.source: a(href='https://www.tsl.texas.gov/ref/abouttx/flagdes.html') Texas State Library and Archives Commission
+      li.source: a(href='https://www.thestoryoftexas.com/education/texas-six-flags') Bullock Museum
+      li.source: a(href='https://tshaonline.org/handbook/online/articles/msf01') Texas State Historical Association
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Texa') Wikipedia

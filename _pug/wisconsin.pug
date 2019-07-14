@@ -1,0 +1,164 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Wisconsin.'
+  - var bodyClass = 'detail wisconsin'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Wisconsin - 
+
+block content
+
+  +state('Wisconsin', '/assets/images/flag-wisconsin.svg', 'The Badger State', 'May 29, 1848')
+
+  .intro
+    p The Wisconsin flag was originally designed in 1863 for use during the Civil War. It wasn’t officially adopted by the state until 1913.
+    p The flag featured the state coat of arms on a field of dark blue. Because many other state flags follow a similar design pattern, in 1979 Wisconsin added its name and the date “1848” in big white letters above and below the coat of arms.
+    p This version of the flag was officially adopted May 1, 1981.
+
+
+  .guide
+    .content
+      h2 Flag design
+      p The flag features a field of dark blue on which the state coat of arms is placed.
+      p The word “Wisconsin” is inscribed above and the date ”1848” is inscribed below.
+    .visual.flag
+      img(src='/assets/images/flag-wisconsin.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wisconsin-icon-sailor.svg')
+          h4 Sailor
+          p The sailor with rope represents Wisconsin labor on water.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wisconsin-icon-miner.svg')
+          h4 Miner
+          p The miner, in contrast, represents labor on land.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wisconsin-icon-forward.svg')
+          h4 Forward
+          p The state’s motto “Forward” alludes to the state’s leadership and progression.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wisconsin-icon-badger.svg')
+          h4 Badger
+          p The badger is the state animal of Wisconsin and the subject of the state’s nickname.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wisconsin-icon-e-pluribus-unum.svg')
+          h4 E Pluribus Unum
+          p The motto translates to “Out of many, one” and symbolizes loyalty to the United States.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wisconsin-icon-plow.svg')
+          h4 Plow
+          p The plow represents the agricultural tradition of Wisconsin.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wisconsin-icon-tools.svg')
+          h4 Pick & Shovel
+          p The tools represent Wisconsin’s mining industry.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wisconsin-icon-arm-and-hammer.svg')
+          h4 Arm & Hammer
+          p The arm and hammer represent Wisconsin’s manufactoring industry.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wisconsin-icon-anchor.svg')
+          h4 Anchor
+          p The anchor represents water navigation.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wisconsin-icon-cornucopia.svg')
+          h4 Cornucopia
+          p The horn of plenty symbolizes Wisconsin’s variety of farm products and represents prosperity and abundance.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wisconsin-icon-lead.svg')
+          h4 Lead
+          p The 13 ingots of lead represent both Wisconsin’s mineral resources and the original 13 colonies.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wisconsin-icon-1848.svg')
+          h4 1848
+          p 1848 is the year Wisconsin gained statehood.
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p The Wisconsin coat of arms was established in 1836. It has seen a few minor alterations, but has stayed mostly the same since.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-wisconsin.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p Wisconsin statute only specifies a background of royal blue. The flag features supporting colors that appear in the coat of arms.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Royal Blue
+          .hex #002986
+      .colors.secondary
+        .color
+          .sample(class='white')
+          .name White
+          .hex #ffffff
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffcc18
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #f3334b
+        .color
+          .sample(class='brown')
+          .name Brown
+          .hex #753c28
+
+  .guide
+    .content
+      h2 Production
+      p The flag should have a proportion of 2:3. So if the flag has a hoist of 4 feet, its fly should be 6 feet.
+      p If resized, it must maintain these proportions.
+      p The coat of arms should have a height one half the width of the hoist. The text should measure one-eighth the width of the hoist and be placed midway between the coat of arms and the flag’s edge.
+      p The flag can be optionally trimmed with yellow knotted fringe.
+    .visual
+      img(src='/assets/images/flag-wisconsin-dimensions.svg')
+
+  .guide
+    .content
+      h2 Previous iteration
+      p The original version of the flag still featured the coat of arms. Missing are “Wisconsin” and “1848” which were added in 1979.
+    .visual.flag
+      img(src='/assets/images/flag-wisconsin-previous.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source 2017-18 Wisconsin Statute. Chapter 1 Sovereignty and Jurisdiction of the State. Section 1.08 State Flag.
+      li.source  Wisconsin Legislative Reference Bureau. State of Wisconsin 2007-2008 Blue Book. Madison: Wisconsin Legislature Joint Committee on Legislative Organization, 2007.
+      li.souurce: a(href='https://www.wisconsinhistory.org/Records/Article/CS2076') Wisconsin Historical Society
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Wisconsin') Wikipedia

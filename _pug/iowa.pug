@@ -1,0 +1,110 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Iowa.'
+  - var bodyClass = 'detail iowa'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Iowa - 
+
+block content
+
+  +state('Iowa', '/assets/images/flag-iowa.svg', 'The Hawkeye State', 'December 28, 1846', 'border')
+
+  .intro
+    p Like a handful of other states, Iowa owes its flag to the Daughters of the American Revolution. State Regent and Knoxville resident Dixie Cornell Gebhardt designed the Iowa flag in 1917.
+    p Gebhardt wrote that the flag should represent all of Iowa history from “its occupation by the Indians” through statehood and to the present. She hoped it could maintain “a design so simple that school children and adults can recognize its symbolism.”
+    p This Iowa flag was officially adopted March 29, 1921.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Iowa flag features three vertical stripes of blue, white, and red. The blue is closest to the staff and white at the center.
+      p Within the white stripe, the widest of the three, an eagle is placed with blue streamers in its beak upon which the words “Our Liberties We Prize and Our Rights We Will Maintain” are inscribed.
+      p Below the eagle and streamers, the word “Iowa” is inscribed in red.
+    .visual.flag
+      img.border(src='/assets/images/flag-iowa.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-iowa-icon-stripes.svg')
+          h4 Stripes
+          p Iowa was once a French territory and borrows its three stripes from the French national flag.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-iowa-icon-eagle.svg')
+          h4 Eagle
+          p The eagle represents the U.S. and has been featured on the seal since Iowa was a territory.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-iowa-icon-motto.svg')
+          h4 Motto
+          p Iowa’s motto “Our Liberties We Prize and Our Rights We Will Maintain” reflect its admission to the U.S. as a free state.
+        li.icon-item
+
+  .guide
+    .content
+      h2 Colors
+      p The flag’s blue, white, and red are borrowed from the French flag, but Gebhardt meant for them to have additional symbolic meaning.
+      p The blue represents loyalty, justice, and truth. The white represents purity and the red stands for courage.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #0a1f62
+        .color
+          .sample(class='white')
+          .name White
+          .hex #ffffff
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #d80025
+      .colors.secondary
+        .color
+          .sample(class='brown')
+          .name Brown
+          .hex #69310b
+
+  .guide
+    .content
+      h2 Production
+      p Though not specified in Iowa statute, the flag usually has a proportion of 2:3. So if the flag has a hoist of 4 feet, its fly should be 6 feet.
+      p If resized, it must maintain these proportions.
+      p The width of the white middle stripe should be about twice the width of each of the other stripes.
+    .visual
+      img(src='/assets/images/flag-iowa-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source 2018 Iowa Code. Title I State Sovereignty and Management. Subtitle 1 Sovereignty. Chapter § 1B State Flag.
+      li.source: a(href='http://iassar.org/2008/01/01/state-flag/') Iowa Society, Sons of the American Revolution
+      li.source: a(href='https://www.britannica.com/topic/flag-of-Iowa') Encyclopedia Britannica
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Iowa') Wikipedia
