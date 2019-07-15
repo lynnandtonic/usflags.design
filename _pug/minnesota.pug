@@ -1,0 +1,153 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Minnesota.'
+  - var bodyClass = 'detail minnesota'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Minnesota - 
+
+block content
+
+  +state('Minnesota', '/assets/images/flag-minnesota.svg', 'The North Star State', 'May 11, 1858')
+
+  .intro
+    p In prepration for the 1893 Chicago World’s Fair, a Minnesota Women’s Auxiliary Board was put together to create a design. They hosted a contest and from 200 submissions, local artist Amelia Hyde Center designed the winning flag.
+    p It was embroidered by Pauline and Thomane Fjelde, sisters who won a gold medal for their work. The flag was officially adopted April 4, 1893.
+    p In 1957, the flag was simplified for easier production and changed again in 1983, to reflect updates to the state seal.
+    p This versio of the flag was officially adopted August 2, 1983.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Minnesota flag features a field of medium blue with the state seal at the center.
+    .visual.flag
+      img(src='/assets/images/flag-minnesota.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-minnesota-icon-stars.svg')
+          h4 19 Stars
+          p Minnesota was 19th to gain statehood after the original 13 colonies. The larger north star represents Minnesota as the North Star State.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-minnesota-icon-flowers.svg')
+          h4 Lady’s Slipper
+          p Previously depicted as white lady’s slipper (not native to Minnesota), the seal now features the pink and white lady’s slipper, Minnesota’s state flower.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-minnesota-icon-dates.svg')
+          h4 Dates
+          p Significant dates reference the establishment of Fort Snelling (1819), Minnesota’s year of statehood (1858), and the flag’s adoption (1893).
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-minnesota-icon-motto.svg')
+          h4 Motto
+          p Written in French, Minnesota’s motto translates to “The Star of the North.”
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-minnesota-icon-farmer.svg')
+          h4 Pioneer
+          p The pioneer, plowing a field with his rifle resting on a stump nearby, represents Minnesota agriculture, hunting, and logging.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-minnesota-icon-native-american.svg')
+          h4 Native American
+          p The Native American man riding a horse is (now) meant to symbolize the rich history of native people in Minnesota. (See coat of arms)
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-minnesota-icon-nature.svg')
+          h4 Nature
+          p The Mississippi River and St. Anthony Falls were important in transportation and commece. The three trees represent the pine regions of St. Croix, Mississippi, and Lake Superior.
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p The original seal and coat of arms depicted a Sioux man in war attire fleeing into the distance.
+      p This was seen as offensive and historically inaccurate, so the seal was updated in 1983 to depict the man riding his horse #[em toward] the pioneer. This was meant to include Native Americans in Minnesota history.
+      p Still, many would prefer the flag be redesigned entirely, introducing bills and petitions to change the flag. None have been successful, yet.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-minnesota.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p Once a royal blue, the field is now a “medium” blue, drawing inspiration from Union blue used during the Civil War.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Medium Blue
+          .hex #3d68c9
+        .color
+          .sample(class='white')
+          .name White
+          .hex #ffffff
+      .colors.secondary
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #fcb216
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #ed1a3a
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #60bb48
+  .guide
+    .content
+      h2 Production
+      p Minnesota statute does not specify a size or proportion for the flag. It is often produced with the common proportion of 3:5.
+    .visual
+      img(src='/assets/images/flag-minnesota-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-minnesota-1893-1957-obverse.jpg')
+          h4 1893-1957 Obverse
+          p Original two-sided design by Amelia Hyde Center.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-minnesota-1893-1957-reverse.jpg')
+          h4 1893-1957 Reverse
+          p The reverse of Center’s design, later deemed too complicated for mass production.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-minnesota-1957-1983.jpg')
+          h4 1957-1983
+          p The seal is updated, blue darkened, and reverse removed.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-minnesota-thumb.svg')
+          h4 1983-Present
+          p The current flag with medium blue and updated seal.
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source: a(href='https://delcode.delaware.gov/title29/c003/index.shtml#306') The State of Delaware
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Delaware') Wikipedia
