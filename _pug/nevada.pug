@@ -1,0 +1,121 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Nevada.'
+  - var bodyClass = 'detail nevada'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Nevada - 
+
+block content
+
+  +state('Nevada', '/assets/images/flag-nevada.svg', 'The Silver State', 'October 31, 1864')
+
+  .intro
+    p 
+
+  .guide
+    .content
+      h2 Flag design
+      p 
+    .visual.flag
+      img(src='/assets/images/flag-nevada.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-nevada-icon-star.svg')
+          h4 Star
+          p 
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-nevada-icon-sagebrush.svg')
+          h4 Sagebrush
+          p 
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-nevada-icon-motto.svg')
+          h4 Battle Born
+          p 
+        li.icon-item
+
+  .guide
+    .content
+      h2 Colors
+      p 
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Cobalt Blue
+          .hex #0033a0
+      .colors.secondary
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffa300
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #00843d
+        .color
+          .sample(class='white')
+          .name White
+          .hex #ffffff
+
+  .guide
+    .content
+      h2 Production
+      p 
+    .visual
+      img(src='/assets/images/flag-nevada-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-nevada.svg')
+          h4 1905–1907
+          p 
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-nevada.svg')
+          h4 1907–1929
+          p 
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-nevada.svg')
+          h4 1929–Present
+          p 
+        li.flag-item
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source: a(href='http://www.wvlegislature.gov/educational/Kids_Page/symbols.cfm') West Virginia Legislature
+      li.source: a(href='http://www.wvculture.org/history/symbols/stateflag01.html') West Virginia Department of Arts, Culture, and History
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_West_Virginia') Wikipedia

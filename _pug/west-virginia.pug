@@ -1,0 +1,152 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of West Virginia.'
+  - var bodyClass = 'detail west-virginia'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | West Virginia - 
+
+block content
+
+  +state('West Virginia', '/assets/images/flag-west-virginia.svg', 'The Mountain State', 'June 20, 1863')
+
+  .intro
+    p After the Civil War began and Virginia joined the Confederacy, 39 of its western counties voted to stay and West Virginia gained statehood in 1863.
+    p It has flown three different flags since, each one representing a kind of “trial and error” approach to flag design. With each iteration, mistakes were fixed and then fixed again.
+    p The two previous versions were among the rare flags with a different design on their reverse.
+    p The current version of the flag was adopted (and has been unchanged since) March 7, 1929.
+
+  .guide
+    .content
+      h2 Flag design
+      p The West Virginia flag features a field of white, bordered on four sides with a stripe of blue.
+      p At the center the state coat of arms is placed, surrounded by a wreath of rhododendron. Above the coat of arms and on a red banner the words “State of West Virginia” are inscribed.
+    .visual.flag
+      img(src='/assets/images/flag-west-virginia.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-west-virginia-icon-rhododendron.svg')
+          h4 Rhododendron Maximum
+          p Once the most prominent visual on the West Virginia flag, the state flower now supports the coat of arms.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-west-virginia-icon-motto.svg')
+          h4 Montani Semper Liberi
+          p The state motto translates to “Mountaineers Are Always Free” which references West Virginia’s decision to separate from Virginia (and the Confederacy).
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-west-virginia-icon-farmer.svg')
+          h4 Farmer
+          p The farmer holds an ax and stands before his cornstalks and plow, representing West Virginia’s agricultural tradition.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-west-virginia-icon-miner.svg')
+          h4 Miner
+          p The miner carries his pickax and stands near his anvil and sledgehammer, representing the state’s mining industry.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-west-virginia-icon-boulder.svg')
+          h4 June 20, 1863
+          p Inscribed on a boulder is the date West Virginia gained statehood, representing the state’s strength in unity.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-west-virginia-icon-liberty.svg')
+          h4 Phrygian cap
+          p The Phrygian cap represents liberty. It rests upon two rifles, symbolizing West Virginia laying down arms.
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p West Virginia’s seal was created in 1863 by artist Joseph H. Diss Debar and has been unchanged since.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-west-virginia.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p Besides white and blue, West Virginia statutes don’t specify colors for the seal or flag.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='white')
+          .name White
+          .hex #ffffff
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #003776
+      .colors.secondary
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffb30f
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #ff3516
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #06884f
+        .color
+          .sample(class='brown')
+          .name Brown
+          .hex #ae5939
+
+  .guide
+    .content
+      h2 Production
+      p The West Virginia flag uses the same proportion as the U.S. flag of 1:1.9. So if the flag has a hoist of 4 feet, its fly should be 7 feet, 7 inches.
+      p If resized, it should maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-west-virginia-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-west-virginia-1905.svg')
+          h4 1905–1907
+          p The original flag featured a sprig of the rhododendron maximum. Its reverse featured the state coat of arms.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-west-virginia-1907.svg')
+          h4 1907–1929
+          p The sides were swapped. The rhododendron was moved to the reverse and the coat of arms to the obverse. The “State of West Virginia” banner was added.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-west-virginia.svg')
+          h4 1929–Present
+          p The design on the reverse is eliminated and the rhododendron is added around the coat of arms. The banner is moved to the top.
+        li.flag-item
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source: a(href='http://www.wvlegislature.gov/educational/Kids_Page/symbols.cfm') West Virginia Legislature
+      li.source: a(href='http://www.wvculture.org/history/symbols/stateflag01.html') West Virginia Department of Arts, Culture, and History
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_West_Virginia') Wikipedia
