@@ -1,0 +1,123 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Nebraska.'
+  - var bodyClass = 'detail nebraska'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Nebraska - 
+
+block content
+
+  +state('Nebraska', '/assets/images/flag-nebraska.svg', 'The Cornhusker State', 'March 1, 1867')
+
+  .intro
+    p The flag of Nebraska follows a common pattern for U.S. state flags, featuring the state seal on a field of blue.
+    p Nebraska was the last of the 48 contiguous states to adopt a flag and in 1925 its “banner” was adopted officially.
+    p Despite a few attempts to update the state seal and the flag, it has remained unchanged since.
+    p It did receive an upgrade to the status of “flag” from “banner” on July 16, 1963.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Nebraska state flag features a field of blue with the state seal in gold and silver placed at the center.
+    .visual.flag
+      img(src='/assets/images/flag-nebraska.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-nebraska-icon-blacksmith.svg')
+          h4 Blacksmith
+          p The blacksmith, working with hammer and anvil, represents Nebraska’s mechanic arts.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-nebraska-icon-wheat.svg')
+          h4 Cabin & Wheat
+          p The cabin represents the pioneers who settled and farmed the land, with the wheat symbolizing agricultural tradition.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-nebraska-icon-boat.svg')
+          h4 Steamboat
+          p A steamboat represents travel and commerce along the Missouri River.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-nebraska-icon-train.svg')
+          h4 Train
+          p The train, a symbol for industry and expansion, heads west toward the Rocky Mountains.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-nebraska-icon-motto.svg')
+          h4 Motto
+          p The state motto “Equality Before the Law” refers to Nebraska being the first and only state to grant black men the right to vote by Congressional mandate.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-nebraska-icon-date.svg')
+          h4 March 1st 1867
+          p The date Nebraska gained statehood.
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p The coat of arms and state seal were established in 1867 when Nebraska gained statehood.
+      p In 1921, a bill was introduced to redesign the seal. Bertram Goodhue (the architect of the Nebraska State Capitol) designed the seal and the bill overwhelmingly passed the Nebraska House. It was opposed in the senate though and has remained unchanged.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-nebraska.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p 
+    .visual.colors.primary
+      .color
+        .sample(class='us-blue')
+        .name National Blue
+        .hex #0033ab
+        small PMS 286
+      .color
+        .sample(class='gold')
+        .name Gold
+        .hex #ffcc00
+      .color
+        .sample(class='silver')
+        .name Silver
+        .hex #c8c8c8
+
+  .guide
+    .content
+      h2 Production
+      p Nebraska law does not specicy dimensions or proportion for the flag.
+      p The original state flag was produced with a hoist of 4 feet, 6 inches and a fly of 5 feet, 6 inches.
+      p Currently the flag is commonly produced with a proportion of 3:5.
+    .visual
+      img(src='/assets/images/flag-nebraska-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source Potter, James E. “Equality Before the Law”: Thoughts on the Origin of Nebraska’s State Motto. Nebraska History 91 (2010): 116-121.
+      li.source: a(href='https://history.nebraska.gov/blog/flashback-friday-fight-over-nebraskas-state-seal-and-flag') History Nebraska
+      li.source: a(href='https://nebraskalegislature.gov/pdf/bluebook/11-19.pdf') Nebraska Legislature
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Nebraska') Wikipedia

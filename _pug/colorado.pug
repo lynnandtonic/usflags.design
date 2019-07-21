@@ -1,0 +1,114 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Colorado.'
+  - var bodyClass = 'detail colorado'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Colorado - 
+
+block content
+
+  +state('Colorado', '/assets/images/flag-colorado.svg', 'The Centennial State', 'August 1, 1876', 'border')
+
+  .intro
+    p Colorado’s original state flag was adopted in 1907, but only one was ever produced and it was never flown publicly.
+    p In 1910, not knowing the state adopted a flag at all, a Colorado chapter of the Daughters of the American Revolution called for submissions for a flag design. The winning submission was designed by Andrew Carlisle Carson.
+    p This (second) flag was officially adopted June 5, 1911.
+    p Its colors were standardized in 1929 and its proportions in 1964.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Colorado state flag features three equal horizontal stripes. The top and bottom stripes are blue and the center stripe is white.
+      p A red letter ‘C’ is placed upon the stripes and within the ‘C’ is a golden disc.
+    .visual.flag
+      img.border(src='/assets/images/flag-colorado.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-colorado-icon-c.svg')
+          h4 C
+          p The red ‘C’ stands for Colorado and its color represents the ruddy soil. The golden disc represents Colorado sunshine.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-colorado-icon-stripes.svg')
+          h4 Stripes
+          p The blue of the stripes represents the blue Colorado skies and the white symbolizes its snowcapped mountains.
+        li.icon-item
+
+  .guide
+    .content
+      h2 Colors
+      p The red and blue of the Colorado flag must match those of the U.S. national flag.
+    .visual.colors.primary
+      .color
+        .sample(class='us-blue')
+        .name Blue
+        .hex #00205b
+        small PMS 281
+      .color
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+      .color
+        .sample(class='us-red')
+        .name Red
+        .hex #bg0a30
+        small PMS 193
+      .color
+        .sample(class='gold')
+        .name Gold
+        .hex #ffd700
+
+  .guide
+    .content
+      h2 Production
+      p The Colorado flag is produced with a proportion of 2:3.
+      p Colorado statute specifies the proportion and spacing for the flag’s visual elements, which is rendered here.
+      p If resized, it must maintain these proportions.
+      p Attached to the flag should be a cord of intertwined gold and silver, with one tassel of gold and one of silver.
+    .visual
+      img(src='/assets/images/flag-colorado-dimensions.svg')
+
+  .guide
+    .content
+      h2 Previous iteration
+      p The original and forgotten Colorado state flag featured the coat of arms on a field of blue. It “flew” from 1907–1911.
+    .visual.flag
+      img.border(src='/assets/images/flag-colorado-1907-1911.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Colorado Revised Statutes 2018. Article 80 State History, Archives, and Emblems. Part 9 State Emblems and Symbols. 24-80-904. State flag.
+      li.source: a(href='https://www.cpr.org/show-segment/like-the-green-triangle-logo-colorados-original-state-flag-was-a-bust/') CPR News
+      li.souurce: a(href='https://www.thedenverchannel.com/news/local-news/colorado-day-fun-facts-history-of-the-colorado-state-flag') The Denver Channel
+      li.source: a(href='https://history.denverlibrary.org/news/story-behind-colorados-iconic-state-flag') Denver Library
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Colorado') Wikipedia
