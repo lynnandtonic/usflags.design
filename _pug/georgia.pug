@@ -61,20 +61,9 @@ block content
       h2 Colors
       p Colors include blue, red, white, and gold. The blue and red match the United States flag.
     .visual.colors.primary
-      .color
-        .sample(class='us-blue')
-        .name Blue
-        .hex #00205b
-        small PMS 281
-      .color
-        .sample(class='us-red')
-        .name Red
-        .hex #bg0a30
-        small PMS 193
-      .color
-        .sample(class='white')
-        .name White
-        .hex #ffffff
+      include includes/color-us-blue
+      include includes/color-us-red
+      include includes/color-white
       .color
         .sample(class='gold')
         .name Gold
@@ -94,7 +83,7 @@ block content
       ul.visual.flag-list
         li.flag-item
           span.flag: img(src='/assets/images/flag-georgia-unofficial.jpg')
-          h4 Pre-1879
+          h4 Pre–1879
           p The flag supplied to militia units bearing the coat of arms.
         li.flag-item
           span.flag: img(src='/assets/images/flag-georgia-1879-1902.jpg')

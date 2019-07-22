@@ -1,0 +1,115 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Washington.'
+  - var bodyClass = 'detail washington'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Washington - 
+
+block content
+
+  +state('Washington', '/assets/images/flag-washington.svg', 'The Evergreen State', 'November 11, 1889')
+
+  .intro
+    p The Washington flag was designed in 1914 by the Daughters of the American Revolution, who put together a flag committee led by Emma Chadwick.
+    p They placed the state seal, a portrait of George Washington designed by brothers Charles and George Talcott, on a field of green.
+    p It took many years, but the flag was officially adopted March 5, 1923.
+    p It has seen one major update in 1967 when artist Richard Nelms updated the state seal, modeled after Gilbert Stuart’s famous portrait of Washington.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Washington flag features a field of green with the state seal placed at its center.
+    .visual.flag
+      img.border(src='/assets/images/flag-washington.svg')
+
+  .guide
+    .content
+      h2 Iconography
+      p The portrait of George Washington honors the first U.S. President from which the state gets its name.
+      p The seal almost featured Mount Rainier. In 1889, Charles Talcott, a local jeweler, was tapped to design the seal. Wanting something simple, he sketched a double circle and pasted a George Washington postage stamp inside.
+      p This idea was approved and Washington has been on the seal ever since.
+    .visual
+      img(src='/assets/images/flag-washington-icon.svg')
+
+  .guide
+    .content
+      h2 Colors
+      p Th colors of the flag are defined by the Secretary of State, first standardized in 1955.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #00843d
+          small Irish Green - Cable No. 80210
+          small PMS DS-268-1
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffcd00
+          small Spanish Yellow - Cable No. 80068
+          small PMS DS-5-4
+      .colors.secondary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #05c3de
+          small Oriental Blue - Cable No. 80176
+          small PMS DS-226-3
+        .color
+          .sample(class='flesh')
+          .name Flesh
+          .hex #fdd6c6
+          small Eggshell - Cable No. 80004
+          small PMS DS-5-9
+        include includes/color-white
+        include includes/color-black
+
+  .guide
+    .content
+      h2 Production
+      p The Washington flag can be produced with a variety of dimensions, specifically 3 feet by 5 feet, 4 feet by 6 feet, and 5 feet by 8 feet.
+      p For these sizes, the seal must be 19 inches, 25 inches, and 31 inches, respectively.
+      p All other sizes of the flag must keep a proportion of 1:1.6 and the seal will be 1/3 the length of the fly.
+    .visual
+      img(src='/assets/images/flag-washington-dimensions.svg')
+
+  .guide
+    .content
+      h2 Previous iteration
+      p The first Washington state flag featured a previous iteration of the state seal, designed by Charles and George Talcott. This version flew from 1923–1967.
+    .visual.flag
+      img.border(src='/assets/images/flag-washington-original.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source: a(href='https://www.sos.wa.gov/flag/reproduction.aspx') Washington Secretary of State
+      li.source: a(href='https://www.britannica.com/topic/flag-of-Washington') Encyclopedia Britannica
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Washington') Wikipedia

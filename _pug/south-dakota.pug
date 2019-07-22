@@ -1,0 +1,137 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of South Dakota.'
+  - var bodyClass = 'detail south-dakota'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | South Dakota - 
+
+block content
+
+  +state('South Dakota', '/assets/images/flag-south-dakota.svg', 'The Mount Rushmore State', 'November 2, 1889')
+
+  .intro
+    p South Dakota’s first state flag was designed by Ida Anding McNeil, a local stenographer. It was adopted July 1, 1909 and featured a two-sided design: a golden sun on the obverse and the state seal on the reverse.
+    p Proving difficult to manufacture, the flag was redesigned in 1963. The seal was moved to the obverse and placed on top of the sun.
+    p The flag was updated one more time, when the nickname inscribed was changed from “The Sunshine State” to “The Mount Rushmore State.”
+    p This version of the flag was officially adopted July 1, 1992.
+
+  .guide
+    .content
+      h2 Flag design
+      p The South Dakota flag features a field of sky blue with the state seal in white and dark blue placed at its center.
+      p Surrounding the seal is a serrated, golden sun. Around the sun, the words ”South Dakota” are inscribed above and “The Mount Rushmore State” below.
+    .visual.flag
+      img(src='/assets/images/flag-south-dakota.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-south-dakota-icon-nickname.svg')
+          h4 Nickname
+          p South Dakota is nicknamed “The Mount Rushmore State” after the national monument in the Black Hills.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-south-dakota-icon-sunburst.svg')
+          h4 Sunburst
+          p The sunburst represents “The Sunshine State,” South Dakota’s nickname until 1992.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-south-dakota-icon-1889.svg')
+          h4 1889
+          p The year South Dakota gained statehood.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-south-dakota-icon-motto.svg')
+          h4 Motto
+          p South Dakota’s motto is “Under God the People Rule.” It is one of three flags to include a reference to God.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-south-dakota-icon-farming.svg')
+          h4 Farming
+          p The farmer tends to crops and represents South Dakota’s agricultural tradition.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-south-dakota-icon-industry.svg')
+          h4 Industry
+          p A smelt furnace burns and represents the gold and mining industries that brought many pioneers to the area.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-south-dakota-icon-boat.svg')
+          h4 Steamboat
+          p The steamboat represents transportation and commerce along the Missouri River.
+
+  .guide
+    .content
+      h2 Colors
+      p The exact color values are not specified in South Dakota statutes.
+    .visual.colors.primary
+      .color
+        .sample(class='sky-blue')
+        .name Sky Blue
+        .hex #0074a8
+      include includes/color-white
+      .color
+        .sample(class='gold')
+        .name Gold
+        .hex #ffc400
+      include includes/color-us-blue
+
+  .guide
+    .content
+      h2 Production
+      p The South Dakota flag uses a proportion of 3:5.
+      p Within the field, the seal should be 4/9 the width of the hoist and the sun, 5/9. The width each of the golden letters should be 1/18 the width of the hoist.
+      p If resized, it must maintain these proportions.
+      p Flags made for indoor use should have three sides of golden fringe 1/18 the width of the hoist.
+    .visual
+      img(src='/assets/images/flag-south-dakota-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-south-dakota-1909-1963-obverse.svg')
+          h4 1909–1963 Obverse
+          p Ida Anding McNeil’s design featuring the sunburst.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-south-dakota-1909-1963-reverse.jpg')
+          h4 1909–1963 Reverse
+          p The reverse side featuring the state seal.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-south-dakota-1963-1992.jpg')
+          h4 1963–1992
+          p The seal is moved to the obverse of the flag and the sunburst simplified.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-south-dakota.svg')
+          h4 1992–Present
+          p The text is changed to “The Mount Rushmore State.”
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.souurce South Dakota Codified Laws. Title 1 State Affairs and Government. Chapter 1-6 State Emblems. 1-6-4. State flag--Description.
+      li.source: a(href='https://sdsos.gov/general-information/about-state-south-dakota/state-seal-symbols.aspx') South Dakota Secretary of State
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_South_Dakota') Wikipedia

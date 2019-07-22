@@ -1,0 +1,145 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Montana.'
+  - var bodyClass = 'detail montana'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Montana - 
+
+block content
+
+  +state('Montana', '/assets/images/flag-montana.svg', 'The Treasure State', 'November 8, 1889')
+
+  .intro
+    p The Montana state flag was first flown by the First Territorial Infantry during the Spanish-American War. Colonel Harry C. Kessler commissioned this flag featuring the state seal on a field of blue.
+    p The flag was officially adopted February 7, 1905, with the only change made to eliminate the text “1st Montana Infantry U.S.V.”
+    p In 1981, the word “Montana” was added to the flag and in 1985, it was specified that Helvetica Bold be used.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Montana flag features a field of blue with the state seal placed at the center.
+      p Above the seal, the word “Montana” is inscribed in gold.
+    .visual.flag
+      img.border(src='/assets/images/flag-montana.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-montana-icon-tools.svg')
+          h4 Tools
+          p A farmer’s plow and miner’s shovel and pickax represent two trades important to Montana.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-montana-icon-motto.svg')
+          h4 Oro Y Plata
+          p Translated as “Gold and Silver,” many traveled to Montana in search of these valuable resources.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-montana-icon-nature.svg')
+          h4 Nature
+          p The seal features the Great Falls of the Missouri River and the Rocky Mountains, representing the state’s natural beauty.
+
+  .guide
+    .content
+      h2 Coat of Arms
+      p The Montana seal and coat of arms was designed in 1865 by Francis Thompson.
+    .visual.flag
+      img(src='/assets/images/coat-of-arms-montana.jpg')
+
+  .guide
+    .content
+      h2 Colors
+      p Montana statute does not specify color values for the flag.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #002a86
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffd90f
+      .colors.secondary
+        .color
+          .sample(class='green-1')
+          .name Green 1
+          .hex #a2d100
+        .color
+          .sample(class='green-2')
+          .name Green 2
+          .hex #008600
+        .color
+          .sample(class='orange')
+          .name Orange
+          .hex #e86f00
+        .color
+          .sample(class='sienna')
+          .name Sienna
+          .hex #a81800
+        .color
+          .sample(class='tan')
+          .name Tan
+          .hex #e8d9a8
+        .color
+          .sample(class='silver')
+          .name Silver
+          .hex #a89982
+        .color
+          .sample(class='blue-2')
+          .name Light Blue
+          .hex #a8efff
+        .color
+          .sample(class='blue-3')
+          .name Medium Blue
+          .hex #1691ff
+
+  .guide
+    .content
+      h2 Production
+      p The Montana flag is usually produced with a proportion of 2:3.
+      p The height of the letters in “Montana” should be 1/10 the width of the fly.
+      p If resized, it will maintain these proportions.
+      p The flag can optionally have golden fringe along the upper and lower edges.
+    .visual
+      img(src='/assets/images/flag-montana-dimensions.svg')
+
+  .guide
+    .content
+      h2 Previous iteration
+      p The original state flag featured the seal, but the word ”Montana” wasn’t added until years later. This version flew from 1905–1981.
+    .visual.flag
+      img.border(src='/assets/images/flag-montana-original.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      li.source: a(href='https://sosmt.gov/about-corey/state-flag/') Montana Secretary of State
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Montana') Wikipedia

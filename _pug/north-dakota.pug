@@ -1,0 +1,153 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of North Dakota.'
+  - var bodyClass = 'detail north-dakota'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | North Dakota - 
+
+block content
+
+  +state('North Dakota', '/assets/images/flag-north-dakota.svg', 'The Peace Garden State', 'November 2, 1889')
+
+  .intro
+    p North Dakota’s flag was introduced in a 1911 bill by Colonel John H. Fraine.
+    p Fraine led the North Dakota infantry during the Philippine–American War, where a similar flag (the U.S. coat of arms on a field of blue) was flown.
+    p To make identifying the flag easier, “North Dakota” was added on a scroll of red and gold.
+    p The flag was officially adopted March 3, 1911.
+
+  .guide
+    .content
+      h2 Flag design
+      p The North Dakota flag features a field of blue with a left-facing eagle at its center.
+      p Upon the eagle’s chest is a shield with 7 red and 6 white alternating stripes. The eagle clasps an olive branch and a sheaf of arrows. In its mouth, it holds a banner inscribed with “E Pluribus Unum.”
+      p Above the eagle are 13 gold stars underneath golden sun rays.
+      p Below the eagle, “North Dakota” is inscribed on a scroll of red and gold.
+    .visual.flag
+      img(src='/assets/images/flag-north-dakota.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-north-dakota-icon-rays.svg')
+          h4 Sun rays
+          p One of many references to the United States. The sun rays represent the birth of a new nation.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-north-dakota-icon-stars.svg')
+          h4 13 Stars
+          p The 13 stars represent the original 13 colonies.
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-north-dakota-icon-eagle.svg')
+          h4 Eagle
+          p The eagle is borrowed from the national coat of arms. “E Pluribus Unum” translates to “Out of many, one.”
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-north-dakota-icon-north-dakota.svg')
+          h4 North Dakota
+          p The only imagery representing North Dakota specifically.
+
+  .guide
+    .content
+      h2 Colors
+      p The State Historical Society of North Dakota provides specific Pantone values for the colors included in the flag.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #003a70
+          small PMS 654C
+      .colors.secondary
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #a6192e
+          small PMS 187C
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #cc8a00
+          small PMS 131C
+        .color
+          .sample(class='yellow')
+          .name Yellow
+          .hex #ffc845
+          small PMS 1225C
+        .color
+          .sample(class='yellow-green')
+          .name Yellow-Green
+          .hex #949300
+          small PMS 384C
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #007a33
+          small PMS 356C
+        .color
+          .sample(class='blue-2')
+          .name Medium Blue
+          .hex #004b87
+          small PMS 301C
+        .color
+          .sample(class='silver')
+          .name Silver
+          .hex #857874
+          small PMS 409C
+        .color
+          .sample(class='brown-1')
+          .name Dark Brown
+          .hex #693f23
+          small PMS 469C
+        .color
+          .sample(class='brown-2')
+          .name Medium Brown
+          .hex #94450b
+          small PMS 1535C
+        .color
+          .sample(class='tan')
+          .name Tan
+          .hex #ddcbA4
+          small PMS 468C
+
+  .guide
+    .content
+      h2 Production
+      p North Dakota statute specifies the flag and eagle’s dimensions in feet and inches.
+      p It uses an unusual proportion of 26:33 (a hoist of 4 feet, 4 inches and a fly of 5 feet, 6 inches), but it is often produced with a 3:5 proportion.
+      p The eagle should be 3 feet, 4 inches wing to wing and 1 foot, 10 inches from head to olive branch.
+      p The flag can have an optional border of knotted yellow fringe 2 and 1/2 inches wide.
+    .visual
+      img(src='/assets/images/flag-north-dakota-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.souurce North Dakota Century Code. Title 54 State Government. Chapter 54-02 State Emblems, Symbols, and Awards.
+      li.source: a(href='http://history.nd.gov/state-flag.html') State Historical Society of North Dakota
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_North_Dakota') Wikipedia
