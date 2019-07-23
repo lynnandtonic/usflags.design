@@ -10,21 +10,59 @@ header
     padding-bottom: 40px
     justify-content: space-between
     align-items: flex-end
-    border-bottom: 16px solid black
+    border-bottom: solid black
 
   h1
     margin: 0
     line-height: 1
-    font-size: 7.3em
 
   .flag
-    width: 120px
-    margin-bottom: 16px
     display: block
 
   .meta
     margin-top: 15px
-    display: flex
-    justify-content: space-between
     font-family: $font-family-study
     font-style: italic
+    @media screen and (min-width: $w-medium)
+      display: flex
+      justify-content: space-between
+
+  @media $bp-small
+    margin: 50px 0
+    .flex
+      padding-bottom: 20px
+      flex-direction: column-reverse
+      align-items: flex-start
+      border-bottom-width: 10px
+    h1
+      font-size: 1.8em
+    .flag
+      width: 80px
+      margin-bottom: 10px
+
+  @media $bp-medium
+    .flex
+      border-bottom-width: 12px
+    h1
+      font-size: 3.2em
+    .flag
+      width: 80px
+      margin-bottom: 3px
+
+  @media $bp-large
+    .flex
+      border-bottom-width: 14px
+    h1
+      font-size: 5.2em
+    .flag
+      width: 110px
+      margin-bottom: 10px
+
+  @media $bp-huge
+    .flex
+      border-bottom-width: 16px
+    h1
+      font-size: 7.3em
+    .flag
+      width: 130px
+      margin-bottom: 16px

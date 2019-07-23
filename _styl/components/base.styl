@@ -13,8 +13,12 @@ html
   padding: 15px
   background-color: #eee
 
+  @media screen and (max-width: $w-medium - 1)
+    padding: 7px
+  @media screen and (min-width: $w-medium)
+    padding: 15px
+
 body
-  padding: 30px
   background-color: white
   border: 1px solid $grey-light
   font-family: $font-family-proxima
@@ -22,6 +26,11 @@ body
   font-size: 112.5%
   line-height: 1.4
   color: black
+
+  @media screen and (max-width: $w-medium - 1)
+    padding: 16px
+  @media screen and (min-width: $w-medium)
+    padding: 30px
 
 img
   width: 100%

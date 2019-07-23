@@ -3,31 +3,64 @@
 --------------------------------------------------------------------*/
 
 .intro
-  margin-bottom: 100px
-  padding-bottom: 60px
   border-bottom: 1px dashed $grey-med
-  font-size: 1.8em
+
+  @media screen and (max-width: $w-medium - 1)
+    margin-bottom: 60px
+    padding-bottom: 20px
+  @media screen and (min-width: $w-medium) and (max-width: $w-medium + 199)
+    margin-bottom: 80px
+    padding-bottom: 30px
+  @media screen and (min-width: $w-medium + 200)
+    margin-bottom: 100px
+    padding-bottom: 60px
+
+  @media $bp-small
+    font-size: 1.1em
+  @media $bp-medium
+    font-size: 1.4em
+  @media $bp-large
+    font-size: 1.6em
+  @media $bp-huge
+    font-size: 1.8em
 
   p
-    max-width: 700px
     margin-bottom: 30px
 
+    @media $bp-small
+      max-width: 400px
+    @media $bp-medium
+      max-width: 500px
+    @media $bp-large
+      max-width: 550px
+    @media $bp-huge
+      max-width: 700px
+
 .guide
-  margin-bottom: 120px
 
-  &:not(.wide)
-    display: flex
-    justify-content: space-between
+  @media screen and (max-width: $w-medium - 1)
+    margin-bottom: 60px
+  @media screen and (min-width: $w-medium) and (max-width: $w-medium + 199)
+    margin-bottom: 80px
+  @media screen and (min-width: $w-medium + 200)
+    margin-bottom: 120px
 
-    .content
-      width: 400px
-      margin-right: 30px
+    &:not(.wide)
+      display: flex
+      justify-content: space-between
 
-    .visual
-      width: 50%
+      .content
+        width: 400px
+        margin-right: 30px
 
-  &.timeline .content > p
-    max-width: 500px
+      .visual
+        width: 50%
+
+    &.timeline .content > p
+      max-width: 500px
+
+  .content
+    margin-bottom: 30px
 
   h2:not(:first-of-type)
     margin-top: 50px
