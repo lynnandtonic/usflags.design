@@ -35,10 +35,24 @@
 
   h4
     margin-bottom: 5px
-    font-size: .9em
+    font-size: 1em
 
   p
     font-size: .8em
+
+    &:not(:last-child)
+      margin-bottom: 15px
+
+    &:first-of-type:before
+      content: 'Denotes'
+      display: block
+      margin-bottom: 5px
+      padding-top: 10px
+      border-top: 1px dotted $grey-light
+      font-size: .7em
+      color: $grey-med
+      text-transform: uppercase
+      letter-spacing: 1px
 
   .icon img
     width: auto
