@@ -1,0 +1,158 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Idaho.'
+  - var bodyClass = 'detail idaho'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Idaho - 
+
+block content
+
+  +state('Idaho', '/assets/images/flag-idaho.svg', 'The Gem State', 'July 3, 1890')
+
+  .intro
+    p The Idaho state flag was first flown by the First Idaho Infantry during the Spanish-American War. Like many other infantries, including Montana, this flag featured the state seal on a field of blue.
+    p Idaho’s seal is unique as the only state seal designed by a woman. Emma Edwards Green, a Boise artist, won the state seal design contest in 1891.
+    p When it came time to adopt a state flag, the infantry flag was used. A banner reading “State of Idaho” was added below the seal.
+    p The flag was officially adopted March 15, 1927.
+    p In 1957, Green’s seal design was updated and repainted by artist Paul B. Evans.
+
+  .guide
+    .content
+      h2 Flag design
+      p A field of blue with the state seal, in full color, placed at the center.
+      p Below the seal, a banner of gold and red with the words ”State of Idaho” inscribed.
+    .visual.flag
+      img(src='/assets/images/flag-idaho.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-idaho-icon-justice.svg')
+          h4 Justice
+          p the goddess Justice, justice and equality under the law, women’s suffrage
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-idaho-icon-cap.svg')
+          h4 phrygian cap
+          p liberty
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-idaho-icon-miner.svg')
+          h4 miner
+          p mining industry
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-idaho-icon-shield.svg')
+          h4 shield
+          p protection through unity
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-idaho-icon-syringa.svg')
+          h4 wild syringa
+          p state flower, regional flora
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-idaho-icon-cornucopia.svg')
+          h4 cornucopia & wheat
+          p farming, agriculture
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-idaho-icon-nature.svg')
+          h4 nature
+          p natural resources, lumber, the Shoshone River
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-idaho-icon-elk.svg')
+          h4 elk
+          p game law, regional fauna
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-idaho-icon-motto.svg')
+          h4 motto
+          p an everlasting future, #[em Let It Be Perpetual]
+
+  .guide
+    .content
+      h2 Colors
+      p 
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #003776
+      .colors.secondary
+        include includes/color-white
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #ef1439
+        .color
+          .sample(class='yellow')
+          .name Yellow
+          .hex #ffe835
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffb32b
+        .color
+          .sample(class='orange')
+          .name Orange
+          .hex #ff9120
+        .color
+          .sample(class='brown')
+          .name Brown
+          .hex #c5792c
+        .color
+          .sample(class='tan')
+          .name Tan
+          .hex #e8daad
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #36e218
+        .color
+          .sample(class='light-blue')
+          .name Light Blue
+          .hex #86e2ff
+        .color
+          .sample(class='purple')
+          .name Purple
+          .hex #913cff
+
+  .guide
+    .content
+      h2 Production
+      p Idaho statute specifies the proportion and spacing for the flag’s visual elements in feet and inches.
+      p The flag should have a hoist of 4 feet, 4 inches and a fly of 5 feet, 6 inches.
+      p The seal should be 21 inches in diameter.
+      p The banner inscribed “The State of Idaho” should be 3 inches tall by 29 inches wide, placed 8.5 inches from the bottom edge. The letters should be 2 inches tall.
+    .visual
+      img(src='/assets/images/flag-idaho-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source Idaho Statutes. Title 46 Militia and Military Affairs. Chapter 8 Miscellaneous and General Provisions. Section 46-801 State Flag.
+      li.souurce: a(href='https://gov.idaho.gov/idaho-state-seal/') Idaho Office of the Governor
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_and_seal_of_Idaho') Wikipedia

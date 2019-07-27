@@ -1,0 +1,166 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Utah.'
+  - var bodyClass = 'detail utah'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Utah - 
+
+block content
+
+  +state('Utah', '/assets/images/flag-utah.svg', 'The Beehive State', 'January 4, 1896')
+
+  .intro
+    p In prepration for the 1903 St. Louis World’s Fair, the Utah Daughters of the Revolution (DAR) created an unofficial flag. It was embroidered by Agnes Frenelius of Zion’s Cooperative Mercantile Institution.
+    p The flag, a field of blue with the coat of arms in white, was officially adopted March 9, 1911.
+    p In 1913, a full color version was adopted.
+    p In 1922, Dollie McMonegal embroidered the flag with an error (the year 1947 was moved outside of the shield). This was copied and reproduced for years, until the error was noticed and corrected.
+    p This corrected version was adopted February 16, 2011.
+
+  .guide
+    .content
+      h2 Flag design
+      p A field of blue with the state coat of arms placed at the center.
+      p The year 1896 is inscribed below the coat of arms and both are surrounded by a gold circle.
+    .visual.flag
+      img(src='/assets/images/flag-utah.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-utah-icon-eagle.svg')
+          h4 eagle
+          p freedom, strength, the United States
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-utah-icon-lilies.svg')
+          h4 sego lilies
+          p state flower, peace
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-utah-icon-beehive.svg')
+          h4 beehive
+          p hardworking, industry
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-utah-icon-industry.svg')
+          h4 motto
+          p hardworking
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-utah-icon-1847.svg')
+          h4 1847
+          p year Mormons entered Salt Lake Valley
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-utah-icon-1896.svg')
+          h4 1896
+          p year of Utah statehood
+
+  .guide
+    .content
+      h2 Colors
+      p Utah statutes do not specify color values for the flag.
+      hr
+      small Hexidecimal codes listed here are not official.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #012d6a
+      .colors.secondary
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #e41837
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffc324
+        .color
+          .sample(class='honey')
+          .name Honey
+          .hex #fbaf40
+        .color
+          .sample(class='tan')
+          .name Tan
+          .hex #bb803a
+        .color
+          .sample(class='brown')
+          .name Brown
+          .hex #8f4a2d
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #01823d
+        .color
+          .sample(class='green-2')
+          .name Green 2
+          .hex #98c63e
+        include includes/color-white
+        .color
+          .sample(class='gray')
+          .name Gray
+          .hex #b0b2b3
+
+  .guide
+    .content
+      h2 Production
+      p Utah statutes do not specify dimensions or proportion for the flag.
+      p A 1909 correspondence between Wm. H. Horstmann Co. and National Guard Adjutant General Edgar A. Wedgewood specified the flag be 52 inches by 66 inches.
+      p It is often produced with these dimensions or with a 3:5 proportion.
+    .visual
+      img(src='/assets/images/flag-utah-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-utah-1903-1913.jpg')
+          h4 1903–1913
+          p The original DAR flag, adopted in 1911.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-utah-1913-2011.jpg')
+          h4 1913–2011
+          p The coat of arms is changed to full color, encircled with gold. The incorrect McMonegal version is shown here.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-utah-2011-prototype.jpg')
+          h4 2011–Present
+          p A prototype design by the Colonial Flag Company.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-utah.svg')
+          h4 2011–Present
+          p An enhanced version of the 2011 prototype created by Perry Van Schelt. This or the prototype version can be used.
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source H.C.R. 2. UTAH STATE FLAG CONCURRENT RESOLUTION - 2011 GENERAL SESSION - STATE OF UTAH
+      li.source Utah Code. Title 63G - General Government. Chapter 1 - State Symbols and Designations. Part 5 - State Flag. Section 501 - State flag.
+      li.source: a(href='https://le.utah.gov/interim/2019/pdf/00001805.pdf') State of Utah
+      li.source: a(href='http://www.loeser.us/flags/utah.html') Historical Flags of Our Ancestors
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Utah') Wikipedia

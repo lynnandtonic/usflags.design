@@ -1,0 +1,119 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Wyoming.'
+  - var bodyClass = 'detail wyoming'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Wyoming - 
+
+block content
+
+  +state('Wyoming', '/assets/images/flag-wyoming.svg', 'The Equality State', 'July 10, 1890')
+
+  .intro
+    p In 1916, the Wyoming Daughters of the American Revolution (DAR) organized a contest to design the state flag.
+    p The winning design, featuring the state seal upon a bison, was submitted by Verna Keays, a local artist. Dr. Grace Raymond Hebard, state regent for DAR, suggested the bison be flipped so it faced the hoist.
+    p With this change, the flag was offically adopted January 31, 1917.
+
+  .guide
+    .content
+      h2 Flag design
+      p An outside border of red surrounds another border of white.
+      p Inside the borders, a field of blue with a white silhouetted bison placed at the center.
+      p Upon the bison’s shoulder is the state seal in blue and white.
+    .visual.flag
+      img.border(src='/assets/images/flag-wyoming.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wyoming-icon-bison.svg')
+          h4 bison
+          p state mammal, regional fauna
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wyoming-icon-seal.svg')
+          h4 seal
+          p western custom of branding
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wyoming-icon-equal-rights.svg')
+          h4 woman
+          p equality, women’s suffrage
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wyoming-icon-pillars.svg')
+          h4 pillars
+          p livestock, mining, agriculture, oil industries
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wyoming-icon-cowboy.svg')
+          h4 cowboy
+          p livestock, rodeo
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wyoming-icon-miner.svg')
+          h4 miner
+          p mining industry
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wyoming-icon-eagle.svg')
+          h4 eagle
+          p freedom, the United States
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wyoming-icon-dates.svg')
+          h4 1869 & 1890
+          p year Wyoming Territory established women’s suffrage, year of Wyoming’s statehood
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-wyoming-icon-star.svg')
+          h4 star
+          p Wyoming as the 44th state
+
+  .guide
+    .content
+      h2 Colors
+      p The Wyoming flag uses the same red, white, and blue as the U.S. national flag.
+      hr
+      small According to Keays, the blue represented fidelity, justice, and virility. The red symbolized the Native peoples and the blood spilled in war. The white represented purity and uprightness.
+    .visual.colors.primary
+      include includes/color-us-blue
+      include includes/color-us-red
+      include includes/color-white
+
+  .guide
+    .content
+      h2 Production
+      p The Wyoming flag has a proportion of 7:10.
+      p The red border is 1/20 and the white border is 1/40 the length of the fly.
+      p The bison is 1/2 the length of the blue field and the state seal is 1/5 the length of the fly.
+      p If resized, it must maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-wyoming-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source 2010 Wyoming Statutes. Title 8 - General Provisions. Chapter 3 - State Seal, Flag, Flower, Bird And Other Symbols. Section 8-3-102. Adoption, use and specifications of state flag; penalty for misuse.
+      li.source: a(href='https://www.netstate.com/states/symb/flags/wy_flag.htm') netstate.com
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Wyoming') Wikipedia

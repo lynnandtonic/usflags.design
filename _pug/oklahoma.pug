@@ -1,0 +1,150 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the state flag of Oklahoma.'
+  - var bodyClass = 'detail oklahoma'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Oklahoma - 
+
+block content
+
+  +state('Oklahoma', '/assets/images/flag-oklahoma.svg', 'The Sooner State', 'November 16, 1907')
+
+  .intro
+    p Oklahoma adopted its first state flag in 1911 which featured a field of red and a single white star.
+    p Fearing a red flag would be associated with communism, the Daughters of the Revolution (DAR) proposed designing a new flag in 1924.
+    p DAR held a flag contest and Louise Funk Fluke, a local artist, submitted the winning design. Her design, featuring an Osage war shield on a field of blue, was officially adopted April 2, 1925.
+    p It has seen a couple small changes since. The word “Oklahoma” was added in 1941. In 1988, due to inconsistencies, the colors of the flag were addressed, but not standardized into law until November 1, 2006.
+
+  .guide
+    .content
+      h2 Flag design
+      p A field of sky blue with an Osage war shield placed at the center. The shield is decorated with six crosses and seven pendant eagle feathers.
+      p On top of the shield, a Native American peace pipe is crossed with an olive branch.
+      p The word “Oklahoma” is inscribed below in white.
+    .visual.flag
+      img(src='/assets/images/flag-oklahoma.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-oklahoma-icon-shield.svg')
+          h4 Osage shield
+          p tribute to Native peoples
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-oklahoma-icon-crosses.svg')
+          h4 crosses
+          p stars, high ideals
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-oklahoma-icon-olive-branch.svg')
+          h4 olive branch
+          p peace, white settlers
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-oklahoma-icon-pipe.svg')
+          h4 pipe
+          p peace, Native peoples
+
+  .guide
+    .content
+      h2 Colors
+      p Oklahoma statute specifies Pantone values for its flag colors.
+      hr
+      small Fluke chose her specific blue to match the Choctaw battle flag that flew during the Civil War.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name French Blue
+          .hex #0072ce
+          small PMS 285c
+        .color
+          .sample(class='amber')
+          .name Amber
+          .hex #bb9959
+          small PMS 465c
+        include includes/color-white
+      .colors.secondary
+        .color
+          .sample(class='flesh')
+          .name Flesh
+          .hex #e8927c
+          small PMS 486c
+        .color
+          .sample(class='brown')
+          .name Gold Brown
+          .hex #963821
+          small PMS 174c
+        .color
+          .sample(class='red')
+          .name Ruby Red
+          .hex #782f40
+          small PMS 195c
+        .color
+          .sample(class='green')
+          .name Dartmouth Green
+          .hex #215b41
+          small PMS 554c
+
+  .guide
+    .content
+      h2 Production
+      p Oklahoma statute does not specify the dimensions for the flag. It is often produced with a 4:6 proportion.
+      p For each cross on the war shield, the horizontal bar should be 3/4 the width of the vertical bar. The top edge of the horizontal bar should be placed at the 25% mark of the vertical bar.
+    .visual
+      img(src='/assets/images/flag-oklahoma-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-oklahoma-1911-1925.svg')
+          h4 1911–1925
+          p Original flag for the 46th state.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-oklahoma-1925-1941.jpg')
+          h4 1925–1941
+          p Louise Funk Fluke’s winning design.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-oklahoma-1941-1988.jpg')
+          h4 1941–2006
+          p The word “Oklahoma” is added.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-oklahoma.svg')
+          h4 2006–Present
+          p Shapes and colors are standardized.
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      li.source 2014 Oklahoma Statutes. Title 25. Definitions and General Provisions. §25-91. State flag - Design.
+      li.source: a(href='https://www.okhistory.org/kids/symbols') Oklahoma Historical Society
+      li.source: a(href='https://www.britannica.com/topic/flag-of-Oklahoma') Encyclopedia Britannica
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Oklahoma') Wikipedia
