@@ -1,0 +1,114 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the flag of Washington D.C.'
+  - var bodyClass = 'detail washington-dc'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Washington D.C. - 
+
+block content
+
+  header.territory
+    .flex
+      h1 Washington D.C.
+      .flag
+        img.border(src='/assets/images/flag-washington-dc.svg', alt='Washington D.C. flag')
+    .meta
+      .date U.S. capital since 
+        span July 16, 1790
+
+  .intro
+    p 
+
+  .guide
+    .content
+      h2 Flag design
+      p
+    .visual.flag
+      img.border(src='/assets/images/flag-washington-dc.svg')
+
+  .guide
+    .content
+      h2 Iconography
+      p 
+    .visual
+      img(src='/assets/images/flag-washington-dc-icon-coat-of-arms.svg')
+
+  .guide
+    .content
+      h2 Colors
+      p 
+    .visual
+      .colors.primary
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #00843d
+          small Irish Green - Cable No. 80210
+          small PMS DS-268-1
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffcd00
+          small Spanish Yellow - Cable No. 80068
+          small PMS DS-5-4
+      .colors.secondary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #05c3de
+          small Oriental Blue - Cable No. 80176
+          small PMS DS-226-3
+        .color
+          .sample(class='flesh')
+          .name Flesh
+          .hex #fdd6c6
+          small Eggshell - Cable No. 80004
+          small PMS DS-5-9
+        include includes/color-white
+        include includes/color-black
+
+  .guide
+    .content
+      h2 Production
+      p 
+    .visual
+      img(src='/assets/images/flag-washington-dc-dimensions.svg')
+
+  //- .guide
+  //-   .content
+  //-     h2 Previous iteration
+  //-     p The first Washington state flag featured a previous iteration of the state seal, designed by Charles and George Talcott. This version flew from 1923–1967.
+  //-   .visual.flag
+  //-     img.border(src='/assets/images/flag-washington-original.svg')
+
+  .guide.wide
+    .content
+      h2 Flags of the Native Peoples
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source: a(href='https://www.sos.wa.gov/flag/reproduction.aspx') Washington Secretary of State
+      li.source: a(href='https://www.britannica.com/topic/flag-of-Washington') Encyclopedia Britannica
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Washington') Wikipedia
