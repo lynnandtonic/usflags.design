@@ -1,0 +1,115 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the flag of Northern Mariana Islands.'
+  - var bodyClass = 'detail nmi'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Northern Mariana Islands - 
+
+block content
+
+  +territory('Northern Mariana Islands', '/assets/images/flag-nmi.svg', 'November 4, 1986')
+
+  .intro
+    p Until the early 1970s, the Flag of the Trust Territory of the Pacific Islands flew over the Northern Mariana Islands (NMI).
+    p In 1972, the Third Marianas Legislature held a flag design contest for Marianas schools. The winning submission was designed by Rotanese student Vito Calvo and featured a latte stone and star on a field of blue.
+    p The flag was not officially adopted until July, 4 1976.
+    p In 1981, the flag was modified and the mwáár (traditional flower wreath) was added. This version of the flag was officially adopted in July, 1985.
+
+  .guide
+    .content
+      h2 Flag design
+      p The NMI flag features a field of ocean blue.
+      p At the center, a white five-pointed star is superimposed on a gray latte stone. Surrounding both is a traditional Carolinian mwáár.
+    .visual.flag
+      img(src='/assets/images/flag-nmi.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-nmi-icon-mwaar.svg')
+          h4 mwáár
+          p Carolinian tradition, honor, respect
+          p #[em Note:] The flowers of the mwáár are langilang (ylang-ylang), flores mayo (seyúr), angagha (peacock flower), and teibwo (Pacific basil).
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-nmi-icon-latte-stone.svg')
+          h4 latte stone
+          p Chamorro tradition, Taga the Great, ingenuity
+          p #[em Note:] A latte stone was a support for ancient houses, made of a column (halagi) topped by a capstone (tasa). Their origins are told in #[a(href='https://www.guampedia.com/taga/') the legend of Taga the Great].
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-nmi-icon-star.svg')
+          h4 star
+          p protection from intruders, the United States
+        li.icon-item
+
+  .guide
+    .content
+      h2 Colors
+      p NMI statute calls for “ocean blue” and “traditional colors” for the flowers in the mwáár, but does not specify Cable or Pantone values.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Ocean Blue
+          .hex #0071bc
+        include includes/color-white
+        .color
+          .sample(class='gray')
+          .name Gray
+          .hex #8c8a8c
+      .colors.secondary
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #de2010
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #217900
+        .color
+          .sample(class='yellow')
+          .name Yellow
+          .hex #ffd200
+        .color
+          .sample(class='violet')
+          .name Violet
+          .hex #6b18b5
+        include includes/color-black
+
+  .guide
+    .content
+      h2 Production
+      p NMI statute specifies the proportion for the flag’s visual elements in inches.
+      p While the flag can be produced with different proportions, they provide an example with a hoist of 40 inches and a fly of 78 inches.
+      p Within this proportion, the latte stone and star should be 16 inches wide and 24 inches tall. The mwáár wreath should be 6 inches wide.
+    .visual
+      img(src='/assets/images/flag-nmi-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Commonwealth of the Northern Mariana Islands Code. TITLE 1: GENERAL PROVISIONS. Section § 221. Commonwealth Flag: Described.
+      li.source Gov. Ralph  DLG Torres. State of the Commonwealth Address. 20th Commonwealth of the Northern Mariana Islands Legislature. 2018.
+      li.source Marianas Variety. Volume 5, Number 17. July 14, 1976.
+      li.source: a(href='https://www.guampedia.com/taga/') Guampedia
+      li.source: a(href='https://www.usmint.gov/coins/coin-medal-programs/dc-and-us-territories/northern-mariana-islands') U.S. Mint
+      li.source: a(href='http://www.mvariety.com/cnmi/cnmi-news/local/43400-santos-honors-designer-of-original-nmi-flag') Marianas Variety
+      li.source: a(href='http://www.hubert-herald.nl/USANMarianas.htm#_edn1') Hubert Herald
+      li.source: a(href='https://fotw.info/flags/mp.html') Flags of the World
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_the_Northern_Mariana_Islands') Wikipedia

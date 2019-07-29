@@ -67,6 +67,10 @@
     .content
       margin-bottom: 30px
 
+  &.wide
+    .content > p
+      max-width: 400px
+
   h2:not(:first-of-type)
     margin-top: 50px
 
@@ -93,17 +97,14 @@
   width: 100%
   display: grid
   grid-gap: 10px
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
 
   &.primary
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
-
     .sample
       height: 100px
 
   &.secondary
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr))
     font-size: .85em
-
     .sample
       height: 50px
 
@@ -112,7 +113,7 @@
 
   .sample
     width: 100%
-    margin-bottom: 7px
+    margin-bottom: 10px
     border-radius: 4px
 
   .name

@@ -1,0 +1,104 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the flag of American Samoa.'
+  - var bodyClass = 'detail american-samoa'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | American Samoa - 
+
+block content
+
+  +territory('American Samoa', '/assets/images/flag-american-samoa.svg', 'April 17, 1900', 'border')
+
+  .intro
+    p American Samoa became a U.S. territory in April of 1900 and didn’t fly its own flag until exactly sixty years later.
+    p In 1959, Samoana High School held a flag design contest for its students. The winning submission, featuring both U.S. and Samoan imagery, was designed by 19-year-old Uinifareti Rapi Sotoa.
+    p The flag was officially adopted April 17, 1960.
+
+  .guide
+    .content
+      h2 Flag design
+      p The American Samoa flag features a field of blue bisected by a red-bordered white triangle extending from the fly edge pointing toward the hoist.
+      p Within the white triangle, a bald eagle is placed, a war club (uatogi) and a fly-whisk (fue) in its claws.
+    .visual.flag
+      img.border(src='/assets/images/flag-american-samoa.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-american-samoa-icon-eagle.svg')
+          h4 eagle
+          p freedom, the United States
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-american-samoa-icon-uatogi.svg')
+          h4 uatogi
+          p power, government
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-american-samoa-icon-fue.svg')
+          h4 fue
+          p wisdom, tradition
+        li.icon-item
+
+  .guide
+    .content
+      h2 Colors
+      p American Somoa statutes do not mention the territory flag.
+      p #[em The Flags and Anthems Manual] for the London 2012 Olympic Games does provide Pantone colors for the American Samoa flag, as specified here.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #00205b
+          small PMS 281
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #ef3340
+          small PMS 032
+        include includes/color-white
+      .colors.secondary
+        .color
+          .sample(class='gold')
+          .name Gold
+          .hex #ffd100
+          small PMS 109
+        .color
+          .sample(class='brown')
+          .name Brown
+          .hex #be531c
+          small PMS 167
+        include includes/color-black
+
+  .guide
+    .content
+      h2 Production
+      p American Somoa statutes do not mention the territory flag.
+      p It is usually produced with a proportion of 10:19.
+    .visual
+      img(src='/assets/images/flag-american-samoa-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Flags and Anthems Manual London 2012. London:  London Organising Committee of the Olympic Games and Paralympic Games Ltd. 2012.
+      li.source: a(href='https://fotw.info/flags/as.html') Flags of the World
+      li.source: a(href='https://www.britannica.com/topic/flag-of-American-Samoa') Encyclopedia Britannica
+      li.source: a(href='http://www.samoanews.com/full-story-flags-designer-laid-rest-week') Samoa News
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_American_Samoa') Wikipedia

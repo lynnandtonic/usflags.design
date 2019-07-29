@@ -1,5 +1,5 @@
 mixin state(state,img,nickname,date,border)
-  header
+  header.state
     .flex
       h1= state
       .flag
@@ -9,12 +9,13 @@ mixin state(state,img,nickname,date,border)
       .date Admitted 
         span= date
 
-mixin territory(territory,img,nickname,date,border)
-  header
-    h1= territory
-    img(src=img, alt=territory + ' flag', class=border)
+mixin territory(territory,img,date,border)
+  header.territory
+    .flex
+      h1= territory
+      .flag
+        img(src=img, alt=territory + ' flag', class=border)
     .meta
-      .nickname= nickname
       .date U.S. territory since 
         span= date
 

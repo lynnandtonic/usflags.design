@@ -1,0 +1,121 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the flag of Guam.'
+  - var bodyClass = 'detail guam'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Guam - 
+
+block content
+
+  +territory('Guam', '/assets/images/flag-guam.svg', 'April 11, 1899')
+
+  .intro
+    p The flag of Guam was first flown July 4, 1918 during a fair in Hagåtña. It featured the territory seal on a field of blue and showcased Chamorro imagery.
+    p Its origins are disputed though, with both Helen Paul, a local teacher, and artist Francisco Feja receiving credit for its inspiration.
+    p The flag was finally adopted April 4, 1930.
+    p It has changed one time since when the red border was added and the imagery standardized in law.
+    p This version was officially adopted February 9, 1948.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Guam flag features a field of blue trimmed on all sides by a red border with the territory seal placed at the center.
+    .visual.flag
+      img(src='/assets/images/flag-guam.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-guam-icon-sling-stone.svg')
+          h4 sling stone
+          p hunting, defense
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-guam-icon-tree.svg')
+          h4 coconut tree
+          p Tree of Life, endurance
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-guam-icon-boat.svg')
+          h4 bay & proa
+          p Agana Bay, canoe building, sailing, generosity
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-guam-icon-cliff.svg')
+          h4 Puntan Dos Amantes
+          p love, commitment, permanence
+
+  .guide
+    .content
+      h2 Colors
+      p Guam statute names the colors featured in the official seal, but does not specify Cable or Pantone values.
+      p #[em The Flags and Anthems Manual] for the London 2012 Olympic Games does provide Pantone colors for the Guam flag, as specified here.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #00205b
+          small PMS 281
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #ef3340
+          small PMS 032
+      .colors.secondary
+        .color
+          .sample(class='sky-blue')
+          .name Sky Blue
+          .hex #0072ce
+          small PMS 285
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #009639
+          small PMS 355
+        .color
+          .sample(class='yellow')
+          .name Yellow
+          .hex #fce300
+          small PMS 102
+        .color
+          .sample(class='brown')
+          .name Brown
+          .hex #382E2c
+          small PMS 440
+        include includes/color-white
+        include includes/color-black
+
+  .guide
+    .content
+      h2 Production
+      p Guam statute specifies the proportion and spacing for the flag’s visual elements in inches.
+      p The flag should have a hoist of 40 inches and a fly of 78 inches.
+      p The red border is 2 inches wide and the seal at the center should be 24 inches tall and 16 inches wide.
+      p If resized, it should maintain these proportions.
+    .visual
+      img(src='/assets/images/flag-guam-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Guam Statutes. Title 1 - GCA General Provisions. Chapter 4 - Polical Authority; Jurisdiction. Section § 407. Guam Flag.
+      li.source Flags and Anthems Manual London 2012. London:  London Organising Committee of the Olympic Games and Paralympic Games Ltd. 2012.
+      li.source: a(href='https://www.guampedia.com/guam-seal-and-flag/') Guampedia
+      li.source: a(href='https://www.britannica.com/topic/flag-of-Guam') Encyclopedia Britannica
+      li.source: a(href='https://en.wikipedia.org/wiki/Seal_of_Guam') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Guam') Wikipedia

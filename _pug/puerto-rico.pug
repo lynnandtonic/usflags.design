@@ -1,0 +1,125 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the flag of Puerto Rico.'
+  - var bodyClass = 'detail puerto-rico'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | Puerto Rico - 
+
+block content
+
+  +territory('Puerto Rico', '/assets/images/flag-puerto-rico.svg', 'April 11, 1899', 'border')
+
+  .intro
+    p The Revolutionary Flag of Lares (Puerto Rico’s first flag) was knitted in 1868 by independence leader Mariana Bracetti. It flew that same year during El Grito de Lares, the first major revolt against Spanish colonial rule.
+    p The current design is credited to Antonio Vélez Alvarado who took inspiration from the flag of Cuba and inversed the colors, using a light sky blue. This version flew during Intentona de Yauco, the second major revolt in 1897.
+    p The flag became and has remained a symbol of pride and resistance for Puerto Rico. So much so, in 1948 a law was passed making it illegal to fly the flag in an attempt to stifle rebellion. It wasn’t repealed until 1957.
+    p Despite the Gag Law still in effect, the flag (with a darker blue and newly defined symbolism) was officially adopted in 1952 when Puerto Rico established its own constitution.
+
+  .guide
+    .content
+      h2 Flag design
+      p The Puerto Rico flag features five equally-sized, horizontal alternating stripes, 3 red and 2 white.
+      p An equilateral triangle of blue fills the width of the hoist and extends toward the center.
+      p Upon the blue triangle, a white five-pointed star is charged.
+    .visual.flag
+      img.border(src='/assets/images/flag-puerto-rico.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      p The meaning of the flag’s colors and imagery was redefined in 1952. The original symbolism is also included here.
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-puerto-rico-icon-triangle.svg')
+          h4 blue triangle
+          p three branches of government, republic
+          p #[em Original:] sky, sea
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-puerto-rico-icon-star.svg')
+          h4 white star
+          p The Commonwealth of Puerto Rico
+          p #[em Original:] the island of Puerto Rico
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-puerto-rico-icon-red-stripes.svg')
+          h4 red stripes
+          p nourishment of government
+          p #[em Original:] blood of revolution
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-puerto-rico-icon-white-stripes.svg')
+          h4 white stripes
+          p individual liberty, rights
+          p #[em Original:] victory and peace through independence
+
+  .guide
+    .content
+      h2 Colors
+      p Puerto Rico statute does not specify color values for the flag. Flags are manufactured in a variety of blues, including the dark blue and sky blue versions.
+      p #[em The Flags and Anthems Manual] for the London 2012 Olympic Games does provide Pantone colors for the Puerto Rico flag, as specified here.
+      hr
+      small The colors of the flag hold special original meaning. This color symbolism was redefined in 1952. Both are described above in the Iconography section.
+    .visual
+      .colors.primary
+        .color
+          .sample(class='blue')
+          .name Blue
+          .hex #00205b
+          small PMS 281
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #ef3340
+          small PMS 032
+        include includes/color-white
+
+  .guide
+    .content
+      h2 Production
+      p Puerto Rico statute does not specify dimensions or proportion for the flag.
+      p It is commonly produced with a proportion of 2:3.
+      p All the stripes should be equal width and the each side of the blue triangle should be equal.
+    .visual
+      img(src='/assets/images/flag-puerto-rico-dimensions.svg')
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-puerto-rico-lares.svg')
+          h4 1868
+          p The Revolutionary Flag of Lares, flown during rebellion against Spain. Based on the flag of the Dominican Republic.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-puerto-rico-1895.svg')
+          h4 1895–1952
+          p Design by Alvarado based on the flag of Cuba, but featuring a sky blue triangle and red/white stripes.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-puerto-rico.svg')
+          h4 1952–Present
+          p The blue is darkened to better match the blue of the U.S. flag.
+        li.flag-item
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Laws of Puerto Rico Annotated. Title One. The Commonwealth. Chapter 3. Flag; Coat of Arms; Great Seal; Anthem; and Instruments. Section § 31. Flag of the Commonwealth.
+      li.source Flags and Anthems Manual London 2012. London:  London Organising Committee of the Olympic Games and Paralympic Games Ltd. 2012.
+      li.source: a(href='https://www.prd.uscourts.gov/flag-puerto-rico') United States District Court for the District of Puerto Rico
+      li.source: a(href='https://islandsofpuertorico.com/puerto-rico-flag/') Islands of Puerto Rico
+      li.source: a(href='https://www.motherjones.com/media/2019/07/puerto-rico-resistance-flag-black-and-white-flag-san-juan-la-puerta-colonial/') Mother Jones
+      li.source: a(href='https://www.britannica.com/topic/flag-of-Puerto-Rico') Encyclopedia Britannica
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Guamhttps://en.wikipedia.org/wiki/Flag_of_Puerto_Rico') Wikipedia

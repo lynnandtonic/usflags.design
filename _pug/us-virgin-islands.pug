@@ -1,0 +1,108 @@
+extends layout
+
+block vars
+  - var pageDescription = 'Design guide for the flag of U.S. Virgin Islands.'
+  - var bodyClass = 'detail usvi'
+
+block tweet
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
+
+block title
+  | U.S. Virgin Islands - 
+
+block content
+
+  +territory('U.S. Virgin Islands', '/assets/images/flag-usvi.svg', 'March 31, 1917', 'border')
+
+  .intro
+    p After Rear Admiral Summer E.W. Kitelle was sworn in as governor, he approached his chief of staff, William Russell White, about designing an official flag.
+    p White tasked Percival W. Sparks, a yeoman and artist, with the design. Sparks took inspiration from the United States coat of arms and created a sketch. His wife Grace and her sister, Blanche Sasso, completed the flag’s embroidery.
+    p The flag was officially adopted May 17, 1921.
+
+  .guide
+    .content
+      h2 Flag design
+      p The flag of the U.S. Virgin Islands features a field of white with an eagle charged at the center between block letters, V and I.
+      p Upon the eagle’s chest is a shield of blue with red and white stripes. In its talons are a sprig of laurel and three arrows.
+    .visual.flag
+      img.border(src='/assets/images/flag-usvi.svg')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-usvi-icon-eagle.svg')
+          h4 eagle
+          p freedom, strength, the United States
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-usvi-icon-laurel.svg')
+          h4 laurel
+          p peace
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-usvi-icon-arrows.svg')
+          h4 3 arrows
+          p strength, the islands of Saint Croix, Saint Thomas, and Saint John
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-usvi-icon-vi.svg')
+          h4 VI
+          p Virgin Islands
+
+  .guide
+    .content
+      h2 Colors
+      p U.S. Virgin Islands statute only specifies that the blue of the shield be the same as the blue from the U.S. flag.
+      p #[em The Flags and Anthems Manual] for the London 2012 Olympic Games does provide Pantone colors for the U.S. Virgin Islands flag, as specified here.
+    .visual
+      .colors.primary
+        include includes/color-white
+        .color
+          .sample(class='yellow')
+          .name Yellow
+          .hex #fce300
+          small PMS 102
+      .colors.secondary
+        include includes/color-us-blue
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #e03c31
+          small PMS 179
+        .color
+          .sample(class='azure')
+          .name Azure
+          .hex #69b3e7
+          small PMS 292
+        .color
+          .sample(class='green')
+          .name Green
+          .hex #009639
+          small PMS 355
+
+  .guide
+    .content
+      h2 Production
+      p U.S. Virgin Islands statute does not specify dimensions or proportion for the flag.
+      p It is commonly produced with a proportion of 2:3.
+    .visual
+      img(src='/assets/images/flag-usvi-dimensions.svg')
+
+  .guide.wide
+    .content
+      h2 Similar Flags
+      p Lalalala
+    ul.visual.flag-list
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source Flags and Anthems Manual London 2012. London:  London Organising Committee of the Olympic Games and Paralympic Games Ltd. 2012.
+      li.source Virgin Islands Code Annotated. Title One - General Provisions. Chapter 7 - Flag, Flower, and Medals. Section § 101. Flag.
+      li.source: a(href='https://www.crwflags.com/fotw/flags/vi.html') CRW Flags
+      li.source: a(href='https://www.britannica.com/topic/flag-of-United-States-Virgin-Islands') Encyclopedia Britannica
+      li.source: a(href='') The St. Thomas Source
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands') Wikipedia
