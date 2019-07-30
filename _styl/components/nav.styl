@@ -2,37 +2,52 @@
 * $NAV
 --------------------------------------------------------------------*/
 
-.nav-main
+.nav-main,
+.pagination
   display: flex
   justify-content: space-between
   font-family: $font-family-study
   font-style: italic
 
-  .back
-    position: relative
-    padding-left: 20px
+.pagination
+  margin-bottom: 50px
 
-    &:before
-      content: '←'
-      position: absolute
-      left: 0
-      font-size: .9em
-      color: $grey-med
+.tweet
+  position: relative
 
-  .tweet
-    position: relative
+  &:before
+    content: ''
+    width: 20px
+    height: @width
+    display: block
+    position: absolute
+    left: -25px
+    top: 2px
+    background: transparent url('/assets/images/icon-twitter.svg') no-repeat center center
+    background-size: 20px 20px
+    opacity: .3
 
-    &:before
-      content: ''
-      width: 20px
-      height: @width
-      display: block
-      position: absolute
-      left: -25px
-      top: 2px
-      background: transparent url('/assets/images/icon-twitter.svg') no-repeat center center
-      background-size: 20px 20px
-      opacity: .3
+.back,
+.previous,
+.next
+  position: relative
+  &:before
+    position: absolute
+    font-size: .9em
+    color: $grey-med
+
+.back,
+.previous
+  padding-left: 20px
+  &:before
+    content: '←'
+    left: 0
+
+.next
+  padding-right: 20px
+  &:before
+    content: '→'
+    right: 0
 
 .home
   .nav-main
