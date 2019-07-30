@@ -23,6 +23,7 @@ block content
     .content
       h2 Flag design
       p The Vermont flag features a field of blue charged with the state coat of arms, centered.
+      +survey('Vermont', '61st')
     .visual.flag
       img(src='/assets/images/flag-vermont.svg')
 
@@ -150,8 +151,8 @@ block content
   .guide.wide.sources
     h3 Sources
     ul
-      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
-      li.source Mitchell, Henry. The State Arms of the Union. Boston: L. Prang & Co, 1876.
+      include includes/source-howe
+      include includes/source-mitchell
       li.source: a(href='https://web.archive.org/web/20060923180633/http://www.sec.state.vt.us/kids/emblems.html') Vermont Secretary of State
       li.source: a(href='https://legislature.vermont.gov/statutes/fullchapter/01/011') The State of Vermont
       li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Vermont') Wikipedia

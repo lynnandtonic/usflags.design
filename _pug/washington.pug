@@ -24,6 +24,7 @@ block content
     .content
       h2 Flag design
       p The Washington flag features a field of green charged with the state seal, centered.
+      +survey('Washington', '47th')
     .visual.flag
       img.border(src='/assets/images/flag-washington.svg')
 
@@ -109,7 +110,7 @@ block content
   .guide.wide.sources
     h3 Sources
     ul
-      li.source Howe, Randy. Flags of the Fifty States: Their Colorful Histories and Significance. Guilford: The Globe Pequot Press, 2002. Print.
+      include includes/source-howe
       li.source: a(href='https://www.sos.wa.gov/flag/reproduction.aspx') Washington Secretary of State
       li.source: a(href='https://www.britannica.com/topic/flag-of-Washington') Encyclopedia Britannica
       li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Washington') Wikipedia

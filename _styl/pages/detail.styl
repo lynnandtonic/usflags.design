@@ -93,6 +93,28 @@
         font-size: 12px
         color: $grey-med
 
+.nava-survey
+  margin: 40px 20px 0
+  padding: 15px
+  padding-left: 35px
+  position: relative
+  border: 1px dotted $grey-light
+  border-radius: 3px
+  font-size: .8em
+
+  &:before
+    width: 40px
+    height: @width
+    content: ''
+    position: absolute
+    left: -(@width/2)
+    background-image: url('/assets/images/seal-nava.gif')
+    background-size: contain
+
+  .asterisk:not(:empty)
+    margin-top: 20px
+    display: block
+
 .colors
   width: 100%
   display: grid

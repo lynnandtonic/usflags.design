@@ -24,3 +24,8 @@ mixin flag(state, link, img, border)
     a(href='/' + link)
       span.flag: img(src=img, alt=state + ' state flag', class=border)
       span.state= state
+
+mixin survey(state, rank, asterisk)
+  .nava-survey
+    p In the #[a(href='https://nava.org/digital-library/raven/Raven_v08_2001_p011-038.pdf') 2001 North American Vexillological Association (NAVA) flag survey] of United States and Canada flags, the flag of #[strong= state] was ranked #[strong= rank] out of 72.
+      span.asterisk= asterisk
