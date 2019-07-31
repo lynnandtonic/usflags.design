@@ -48,7 +48,10 @@ block content
   .guide
     .content
       h2 Colors
-      p The Hawaii flag borrows red, white, and blue from both the Union Jack flag and the United States flag. Hawaii statutes, however, do not specify the colors must match exactly.
+      p The Hawaii flag borrows red, white, and blue from both the Union Jack flag and the U.S. national flag.
+      hr
+      small Hawaii statute does not provide Cable or Pantone values for the colors of the flag.
+      small The hex values here are approximate.
     .visual.colors.primary
       .color
         .sample(class='blue')
@@ -65,7 +68,6 @@ block content
       h2 Construction
       p The flag’s fly is twice the length of its hoist.
       p The Union Jack is half the hoist in width and 7/16 the length of the fly.
-      p If resized, it must maintain these proportions.
     .visual
       img(src='/assets/images/flag-hawaii-dimensions.svg')
 
@@ -110,10 +112,13 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('alaska', 'Alaska',
+              'washington-dc', 'Washington D.C.')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
       li.source Hawaii Revised Statutes TITLE 1. GENERAL PROVISIONS 5. Emblems and Symbols §5-19 Description of the Hawaiian flag.
       li.source: a(href='https://www.hawaiimagazine.com/blogs/hawaii_today/2008/10/21/is_that_the_flag') Hawaii Magazine
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Hawaii') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Hawaii') Flag of Hawaii - Wikipedia

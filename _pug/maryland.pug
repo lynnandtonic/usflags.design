@@ -46,6 +46,7 @@ block content
   .guide
     .content
       h2 Colors
+      p The Maryland Secretary of State provides Pantone values for the red and gold of the flag.
       p Black and gold became known as “Maryland colors” and were used by loyalists during the Civil War. Red and white, adopted by Confederate sympathizers, became known as “secession colors.”
     .visual.colors.primary
       include includes/color-black
@@ -53,12 +54,12 @@ block content
         .sample(class='gold')
         .name Gold
         .hex #eaaa00
-        small PMS 124
+        .pantone PMS 124
       .color
         .sample(class='red')
         .name Red
         .hex #9d2235
-        small PMS 201
+        .pantone PMS 201
       include includes/color-white
 
   .guide
@@ -66,7 +67,6 @@ block content
       h2 Construction
       p The flag should have a proportion of 2:3, divided into four equal quadrants.
       p The diagonal band in each Calvert quadrant should be centered at the corners.
-      p If resized, it must maintain these proportions.
       h2 Pike
       p Maryland law requires any pike (flagple) flying the state flag to be ornamented with a gold cross bottony. Government buildings adhere, but many private citizens and businesses choose not to.
     .visual
@@ -92,12 +92,15 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('massachusetts', 'Massachusetts',
+              'south-carolina', 'South Carolina')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
-      li.source: a(href='https://sos.maryland.gov/Pages/Services/Flag-History.aspx#note1') Maryland Secretary of State
+      li.source Maryland Code. GENERAL PROVISIONS. Title 7 - EMBLEMS; DESIGNATIONS; COMMEMORATIVE DAYS AND MONTHS. Subtitle 2 - FLAGS § 7-202 - Description of State flag.
+      li.source: a(href='https://sos.maryland.gov/Pages/Services/Flag-Protocol.aspx') Maryland Secretary of State
       li.source: a(href='https://www.washingtonian.com/2015/08/19/marylands-flag-confederate-symbol-crossland-banner-calvert-family/') Washingtonian
       li.souurce: a(href='https://www.patriotwood.com/blogs/news/15596093-3-interesting-maryland-flag-facts') Patriotwood.com
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Maryland') Wikipedia
-      li.source: a(href='https://en.wikipedia.org/wiki/Variation_of_the_field') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Maryland') Flag of Maryland - Wikipedia

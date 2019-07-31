@@ -46,8 +46,11 @@ block content
   .guide
     .content
       h2 Colors
-      p Colors include blue, red, “old gold” (yellow), and copper. The blue and red match the United States flag.
-      p Blue and gold are also Arizona’s state colors.
+      p The Arizona flag uses the same blue and red as the U.S. national flag.
+      p Blue and gold are Arizona’s state colors.
+      hr
+      small Arizona statute does not provide Cable or Pantone values for the “old gold” or copper.
+      small The hex values here are approximate.
     .visual.colors.primary
       include includes/color-us-blue
       include includes/color-us-red
@@ -66,7 +69,6 @@ block content
       p Arizona statute specifies the proportion and spacing for the flag’s visual elements in feet.
       p The flag should have a hoist of 4 feet and a fly of 6 feet.
       p The copper star should be 2 feet tall and positioned 1 foot from the top and 1 foot from the bottom, horizontally centered.
-      p If resized, it must maintain these proportions.
     .visual
       img(src='/assets/images/flag-arizona-dimensions.svg')
 
@@ -90,10 +92,14 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('new-mexico', 'New Mexico',
+              'alaska', 'Alaska')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
+      li.source Arizona Revised Statutes. Title 41 - State Government. Section § 41-851 State colors; state flag
       li.source: a(href='https://www.azleg.gov/FormatDocument.asp?inDoc=/ars/41/00851.htm&Title=41&DocType=ARS') Arizona State Legislature
       li.source: a(href='https://www.legion.org/flag/questions-answers/91472/what-are-exact-shades-colors-blue-and-red') The American Legion
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Arizona') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Arizona') Flag of Arizona - Wikipedia

@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------------
+* $FLAG
+--------------------------------------------------------------------*/
+
+.flag,
+.flag img
+  display: block
+  border-radius: 4px
+
+.flag
+  margin-bottom: 8px
+
+.flag-item a
+
+  .flag
+    transition: all .15s ease-in-out
+
+  .state:after
+    display: inline-block
+    margin-left: 5px
+    content: '→'
+    opacity: 0
+
+  &:hover
+
+    .flag
+      transform: scale(1.02)
+      filter: grayscale(1) brightness(1)
+
+    .flag:not(.non-rect)
+      box-shadow: 4px 4px 0 $grey-light
+
+    .state
+      text-decoration: underline
+      &:after
+        opacity: 1

@@ -77,22 +77,6 @@
   img + img
     margin-top: 15px
 
-  &.sources
-    margin-bottom: 40px
-    border-top: 1px dashed $grey-med
-    padding-top: 50px
-
-    li
-      margin-bottom: 10px
-      font-size: .9em
-
-      a:after
-        content: '↗'
-        display: inline-block
-        margin-left: 5px
-        font-size: 12px
-        color: $grey-med
-
 .nava-survey
   margin: 40px 20px 0
   padding: 15px
@@ -126,7 +110,7 @@
       height: 100px
 
   &.secondary
-    font-size: .85em
+    font-size: .9em
     .sample
       height: 50px
 
@@ -139,13 +123,33 @@
     border-radius: 4px
 
   .name
+    margin-bottom: 10px
     font-weight: $font-weight-bold
     text-transform: capitalize
+    border-bottom: 1px dotted $grey-light
 
-  .hex
-    font-size: .9em
-
-  small
-    margin-top: 5px
-    display: block
+  .hex,
+  .cable
+  .pantone
+    margin-bottom: 7px
+    font-size: .7em
+    color: $grey-med
     line-height: 1.2
+
+    span
+      display: block
+
+.sources
+  border-top: 1px dashed $grey-med
+  padding: 50px 0
+
+  li
+    margin-bottom: 5px
+    font-size: .85em
+
+    a:after
+      content: '↗'
+      display: inline-block
+      margin-left: 5px
+      font-size: 12px
+      color: $grey-med

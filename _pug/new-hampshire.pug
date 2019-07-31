@@ -52,6 +52,9 @@ block content
     .content
       h2 Colors
       p The prominent colors are blue and gold, with supporting colors within the seal.
+      hr
+      small New Hampshire statute does not provide Cable or Pantone values for the colors of the flag.
+      small The hex values here are approximate.
     .visual
       .colors.primary
         .color
@@ -80,8 +83,8 @@ block content
   .guide
     .content
       h2 Construction
-      p New Hampshire statute does not specify proportion for the flag. It is usually produced with a proportion of 2:3.
-      p For the seal, statute calls for a “suitable proportion,” but no specific dimensions are described.
+      p New Hampshire statute doesn’t specify dimensions, but the flag is usually produced with a proportion of 2:3.
+      p It does not specify dimensions for the coat of arms beyond “suitable proportion.”
     .visual
       img(src='/assets/images/flag-new-hampshire-dimensions.svg')
 
@@ -116,11 +119,15 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('south-carolina', 'South Carolina',
+              'virginia', 'Virginia')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
       include includes/source-mitchell
+      li.source New Hampshire Revised Statutes. Title I - The State and Its Government. Chapter 3 - State Emblems, Flag, Etc. Section § 3:2 - State Flag.
       li.source Hammond, Otis Grant, A.M. History of the Seal and Flag of the State of New Hampshire. Governor and Council of the State of New Hampshire. 1916. Print.
       li.source: a(href='https://www.nh.gov/almanac/seal.htm') The State of New Hampshire
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_and_seal_of_New_Hampshire') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_and_seal_of_New_Hampshire') Flag of New Hampshire - Wikipedia

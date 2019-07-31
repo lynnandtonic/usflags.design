@@ -57,7 +57,10 @@ block content
   .guide
     .content
       h2 Colors
-      p The Rhode Island flag is one of only a few with a field of white. It also features gold and a touch of blue for the “Hope” ribbon.
+      p The Rhode Island flag is one of only a few with a field of white.
+      hr
+      small Rhode Island statute does not provide Cable or Pantone values for the colors of the flag.
+      small The hex values here are approximate.
     .visual.colors.primary
       include includes/color-white
       .color
@@ -74,7 +77,6 @@ block content
       h2 Construction
       p Rhode Island statute specifies the proportion and spacing for the flag’s visual elements in feet and inches.
       p Not quite square, the flag has a hoist of 4 feet, 10 inches and a fly of 5 feet, 6 inches. 
-      p If resized, it must maintain these proportions.
       p Statute specifies the flag be edged with gold fringe, but many are produced without it.
       h2 Pike
       p Any pike (flagpole) flying the flag should be surmounted by a spearhead and be 9 feet tall (not including the spearhead).
@@ -119,11 +121,14 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('north-carolina', 'North Carolina',
+              'vermont', 'Vermont')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
       include includes/source-mitchell
-      li.source: a(href='http://webserver.rilin.state.ri.us/Statutes/TITLE42/42-4/42-4-3.HTM') The State of Rhode Island
+      li.source Rhode Island General Laws. Title 42 - State Affairs and Government. Chapter 42-4 - State Emblems. Section § 42-4-3 - State flag.
       li.source: a(href='https://www.britannica.com/topic/flag-of-Rhode-Island') Encylopedia Britannica
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Rhode_Island') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Rhode_Island') Flag of Rhode Island - Wikipedia

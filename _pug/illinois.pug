@@ -63,7 +63,10 @@ block content
   .guide
     .content
       h2 Colors
-      p The flag features red, white, and blue of the U.S. flag and supporting colors determined by the state seal.
+      p The Illinois flag uses the same red, white, and blue as the U.S. national flag.
+      hr
+      small Illinois statute does not provide Cable or Pantone values for the colors of the seal.
+      small The hex values here are approximate.
     .visual
       .colors.primary
         include includes/color-us-white
@@ -99,7 +102,6 @@ block content
     .content
       h2 Construction
       p The flag should have a proportion of 3:5.
-      p If resized, it must maintain these proportions.
     .visual
       img(src='/assets/images/flag-illinois-dimensions.svg')
 
@@ -130,12 +132,15 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('mississippi', 'Mississippi',
+              'alabama', 'Alabama')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
       include includes/source-mitchell
-      li.source Office of the Illinois Secretary of State (2007-03-31). Illinois Handbook of Government: 2007-2008.
+      li.source: a(href='http://www.wildwoodworldmagnet.org/ourpages/auto/2014/11/5/48477851/IL%20Handbook%20of%20Government.pdf') Illinois Handbook of Government: 2007-2008.
       li.source: a(href='https://www2.illinois.gov/Pages/about/StateSeal.aspx') The State of Illinois
-      li.source: a(href='https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States') Wikipedia
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_and_seal_of_Illinois') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States') Great Seal of the United States - Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_and_seal_of_Illinois') Flag and Seal of Illinois - Wikipedia

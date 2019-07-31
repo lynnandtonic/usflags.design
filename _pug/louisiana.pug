@@ -40,79 +40,79 @@ block content
   .guide
     .content
       h2 Coat of Arms
-      p The pelican has long been a symbol of Lousiana. Prior to the Civil War, the “pelican in her piety” was paired with the words “Justice Union and Confidence.” After the war, when union and reconstruction were priority, the order was changed to “Union Justice Confidence.”
+      p The pelican has long been a symbol of Lousiana. Prior to the Civil War, the “pelican in her piety” was paired with the words “Justice Union and Confidence.”
+      p After the war, when union and reconstruction were priority, the order was changed to “Union Justice Confidence.”
     .visual.flag
       img(src='/assets/images/coat-of-arms-louisiana.jpg')
 
   .guide
     .content
       h2 Colors
-      p Louisiana statute specifies the Pantone colors and their locations for the flag.
+      p Louisiana statute specifies the Pantone colors featured on its flag.
     .visual
       .colors.primary
         .color
           .sample(class='blue')
           .name Blue
           .hex #002855
-          small PMS 295C
+          .pantone PMS 295C
         include includes/color-white
       .colors.secondary
         .color
           .sample(class='gray-1')
           .name Gray 1
           .hex #888b8d
-          small PMS Cool Gray 8C
+          .pantone PMS Cool Gray 8C
         .color
           .sample(class='gray-2')
           .name Gray 2
           .hex #53565a
-          small PMS Cool Gray 11C
+          .pantone PMS Cool Gray 11C
         .color
           .sample(class='yellow')
           .name Yellow
           .hex #ffd100
-          small PMS 109C
+          .pantone PMS 109C
         .color
           .sample(class='orange-1')
           .name Orange 1
           .hex #ea7600
-          small PMS 716C
+          .pantone PMS 716C
         .color
           .sample(class='orange-2')
           .name Orange 2
           .hex #cf7f00
-          small PMS 145C
+          .pantone PMS 145C
         .color
           .sample(class='red')
           .name Red
           .hex #da291c
-          small PMS 485C
+          .pantone PMS 485C
         .color
           .sample(class='tan-1')
           .name Tan 1
           .hex #e6b080
-          small PMS 721C
+          .pantone PMS 721C
         .color
           .sample(class='tan-2')
           .name Tan 2
           .hex #f1be48
-          small PMS 142C
+          .pantone PMS 142C
         .color
           .sample(class='brown-1')
           .name Brown 1
           .hex #954e0f
-          small PMS 724C
+          .pantone PMS 724C
         .color
           .sample(class='brown-2')
           .name Brown 2
           .hex #512f2e
-          small PMS 497C
+          .pantone PMS 497C
 
   .guide
     .content
       h2 Construction
       p The flag has a proportion of 7:11. Within this scale, the crest should be 5.25 units tall and 6 units wide.
-      p When resized, it must maintain these proportions.
     .visual
       img(src='/assets/images/flag-louisiana-dimensions.svg')
 
@@ -157,11 +157,14 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('ohio', 'Ohio',
+              'indiana', 'Indiana')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
       include includes/source-mitchell
       li.source: a(href='https://www.sos.la.gov/HistoricalResources/AboutLouisiana/Pages/StateFlagAndSeal.aspx') Louisiana Secretary of State
-      li.source: a(href='https://en.wikipedia.org/wiki/Pelican') Wikipedia
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Louisiana') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Pelican') Pelican - Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Louisiana') Flag of Louisiana - Wikipedia

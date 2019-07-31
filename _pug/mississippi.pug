@@ -41,7 +41,7 @@ block content
   .guide
     .content
       h2 Colors
-      p The Mississippi flag features the colors of the United States flag: red, white, and blue.
+      p The Mississippi flag uses the same red, white, and blue as the U.S. national flag.
     .visual.colors.primary
       include includes/color-us-red
       include includes/color-us-blue
@@ -52,7 +52,6 @@ block content
       h2 Construction
       p The flag should have a proportion of 2:3.
       p The canton should be square, 2/3 the width of the hoist.
-      p If resized, it must maintain these proportions.
     .visual
       img(src='/assets/images/flag-mississippi-dimensions.svg')
 
@@ -84,9 +83,12 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('indiana', 'Indiana',
+              'illinois', 'Illinois')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
-      li.source 2013 Mississippi Code. Title 3. Chapter 3 § 3-3-16 - Design of state flag.
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Mississippi') Wikipedia
+      li.source Mississippi Code. Title 3. Chapter 3 § 3-3-16 - Design of state flag.
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Mississippi') Flag of Mississippi - Wikipedia

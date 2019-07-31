@@ -22,10 +22,16 @@ mixin territory(territory,img,date,border)
 mixin flag(state, link, img, border)
   li.flag-item(class=link)
     a(href='/' + link)
-      span.flag: img(src=img, alt=state + ' state flag', class=border)
+      span.flag(class=border)
+        img(src=img, alt=state + ' state flag')
       span.state= state
 
 mixin survey(state, rank, asterisk)
   .nava-survey
     p In the #[a(href='https://nava.org/digital-library/raven/Raven_v08_2001_p011-038.pdf') 2001 North American Vexillological Association (NAVA) flag survey] of United States and Canada flags, the flag of #[strong= state] was ranked #[strong= rank] out of 72.
       span.asterisk= asterisk
+
+mixin pagination(prevURL, prevName, nextURL, nextName)
+  nav.pagination
+    a.previous(href='/' + prevURL)= prevName
+    a.next(href='/' + nextURL)= nextName

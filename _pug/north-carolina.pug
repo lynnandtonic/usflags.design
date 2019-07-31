@@ -51,7 +51,10 @@ block content
   .guide
     .content
       h2 Colors
-      p Colors include blue, red, white, and gold. The blue and red match the United States flag.
+      p The North Carolina flag uses the same red, white, and blue as the U.S. national flag.
+      hr
+      small North Carolina statute does not provide Cable or Pantone values for the gold of the flag.
+      small The hex value here is approximate.
     .visual.colors.primary
       include includes/color-us-blue
       include includes/color-us-red
@@ -66,7 +69,6 @@ block content
       h2 Construction
       p The flag’s length should be half more than its width (a proportion of 2:3).
       p The length of the blue union should be the same as the widths of the horizontal red and white stripes.
-      p If resized, it must maintain these proportions.
     .visual
       img(src='/assets/images/flag-north-carolina-dimensions.svg')
 
@@ -108,11 +110,15 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('new-york', 'New York',
+              'rhode-island', 'Rhode Island')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
+      li.source North Carolina General Statutes. Chapter 144. State Flag, Official Governmental Flags, Motto, and Colors. Section § 144-1. State flag.
       li.source: a(href='https://www.britannica.com/topic/flag-of-North-Carolina') Encyclopedia Britannica
       li.source: a(href='https://www.ncpedia.org/symbols/flag') NCpedia
       li.source: a(href='https://statesymbolsusa.org/symbol-official-item/north-carolina/state-flag/flag-north-carolina.html') State Symbols USA
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_North_Carolina') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_North_Carolina') Flag of North Carolina - Wikipedia

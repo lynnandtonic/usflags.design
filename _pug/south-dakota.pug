@@ -66,7 +66,10 @@ block content
   .guide
     .content
       h2 Colors
-      p The exact color values are not specified in South Dakota statutes.
+      p The South Dakota flag uses a unique sky blue for its field.
+      hr
+      small South Dakota statute does not provide Cable or Pantone values for the colors of the flag.
+      small The hex values here are approximate.
     .visual.colors.primary
       .color
         .sample(class='sky-blue')
@@ -77,14 +80,16 @@ block content
         .sample(class='gold')
         .name Gold
         .hex #ffc400
-      include includes/color-us-blue
+      .color
+        .sample(class='us-blue')
+        .name Blue
+        .hex #00205b
 
   .guide
     .content
       h2 Construction
       p The South Dakota flag uses a proportion of 3:5.
       p Within the field, the seal should be 4/9 the width of the hoist and the sun, 5/9. The width each of the golden letters should be 1/18 the width of the hoist.
-      p If resized, it must maintain these proportions.
       p Flags made for indoor use should have three sides of golden fringe 1/18 the width of the hoist.
     .visual
       img(src='/assets/images/flag-south-dakota-dimensions.svg')
@@ -130,10 +135,13 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('north-dakota', 'North Dakota',
+              'montana', 'Montana')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
       li.souurce South Dakota Codified Laws. Title 1 State Affairs and Government. Chapter 1-6 State Emblems. 1-6-4. State flag--Description.
       li.source: a(href='https://sdsos.gov/general-information/about-state-south-dakota/state-seal-symbols.aspx') South Dakota Secretary of State
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_South_Dakota') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_South_Dakota') Flag of South Dakota - Wikipedia

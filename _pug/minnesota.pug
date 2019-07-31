@@ -76,6 +76,9 @@ block content
     .content
       h2 Colors
       p Once a royal blue, the field is now a “medium” blue, drawing inspiration from Union blue used during the Civil War.
+      hr
+      small Minnesota statute does not provide Cable or Pantone values for the colors of the flag.
+      small The hex values here are approximate.
     .visual
       .colors.primary
         .color
@@ -145,12 +148,15 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('california', 'California',
+              'oregon', 'Oregon')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
       include includes/source-mitchell
-      li.source 2018 Minnesota Statutes. Chapter 1. Sovereignty, Jurisdiction, Emergency Operation, General Policies. Section 1.141 State Flag.
-      li.source Becker, William. “The Origin of the Minnesota State Flag” (PDF). Minnesota State Legislature. Retrieved 2017-08-10.
+      li.source Minnesota Statutes. Chapter 1. Sovereignty, Jurisdiction, Emergency Operation, General Policies. Section 1.141 State Flag.
+      li.source: a(href='http://collections.mnhs.org/MNHistoryMagazine/articles/53/v53i01p002-008.pdf') Becker, William. “The Origin of the Minnesota State Flag” (PDF). Minnesota State Legislature.
       li.source: a(href='https://www.lakewoodcemetery.org/single-post/2018/06/13/The-Fair-and-the-Flag-The-Origins-and-Evolution-of-Minnesota%E2%80%99s-State-Flag') Lakewood Cemetery
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Minnesota') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Minnesota') Flag of Minnesota - Wikipedia

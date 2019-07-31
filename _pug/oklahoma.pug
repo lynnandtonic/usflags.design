@@ -55,42 +55,41 @@ block content
     .content
       h2 Colors
       p Oklahoma statute specifies Pantone values for its flag colors.
-      hr
-      small Fluke chose her specific blue to match the Choctaw battle flag that flew during the Civil War.
+      p Fluke chose her specific blue to match the Choctaw battle flag that flew during the Civil War.
     .visual
       .colors.primary
         .color
           .sample(class='blue')
           .name French Blue
           .hex #0072ce
-          small PMS 285c
+          .pantone PMS 285c
         .color
           .sample(class='amber')
           .name Amber
           .hex #bb9959
-          small PMS 465c
+          .pantone PMS 465c
         include includes/color-white
       .colors.secondary
         .color
           .sample(class='flesh')
           .name Flesh
           .hex #e8927c
-          small PMS 486c
+          .pantone PMS 486c
         .color
           .sample(class='brown')
           .name Gold Brown
           .hex #963821
-          small PMS 174c
+          .pantone PMS 174c
         .color
           .sample(class='red')
           .name Ruby Red
           .hex #782f40
-          small PMS 195c
+          .pantone PMS 195c
         .color
           .sample(class='green')
           .name Dartmouth Green
           .hex #215b41
-          small PMS 554c
+          .pantone PMS 554c
 
   .guide
     .content
@@ -141,11 +140,14 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('utah', 'Utah',
+              'new-mexico', 'New Mexico')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
-      li.source 2014 Oklahoma Statutes. Title 25. Definitions and General Provisions. §25-91. State flag - Design.
+      li.source Oklahoma Statutes. Title 25. Definitions and General Provisions. §25-91. State flag - Design.
       li.source: a(href='https://www.okhistory.org/kids/symbols') Oklahoma Historical Society
       li.source: a(href='https://www.britannica.com/topic/flag-of-Oklahoma') Encyclopedia Britannica
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Oklahoma') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Oklahoma') Flag of Oklahoma - Wikipedia

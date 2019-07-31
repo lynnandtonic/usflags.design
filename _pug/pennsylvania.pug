@@ -15,14 +15,14 @@ block content
   +state('Pennsylvania', '/assets/images/flag-pennsylvania.svg', 'The Keystone State', 'December 12, 1787')
 
   .intro
-    p Pennsylvania was the second state to ratify the U.S. Constitution (just days after Delaware).
-    p The state’s General Assembly approved a first official flag in 1799, prominently featuring the state coat of arms. However, inconsistencies abounded so a few years later the flag was standardized to the version known today.
+    p Pennsylvania was the second state (commonwealth) to ratify the U.S. Constitution (just days after Delaware).
+    p The General Assembly approved a first official flag in 1799, prominently featuring the Pennsylvania coat of arms. However, inconsistencies abounded so a few years later the flag was standardized to the version known today.
     p The flag was officially adopted June 13, 1907.
 
   .guide
     .content
       h2 Flag design
-      p The Pennsylvania flag features a field of blue charged with the state coat of arms, centered.
+      p The Pennsylvania flag features a field of blue charged with the commonwealth coat of arms, centered.
       +survey('Pennsylvania', '57th')
     .visual.flag
       img(src='/assets/images/flag-pennsylvania.svg')
@@ -59,19 +59,25 @@ block content
           span.icon: img(src='/assets/images/flag-pennsylvania-icon-plow.svg')
           h4 plow
           p rich natural resources
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-pennsylvania-icon-motto.svg')
+          h4 motto
+          p virtue, liberty, independence
 
   .guide
     .content
       h2 Coat of Arms
       p Somewhat like the original flag, there were many inconsistent versions of the coat of arms between 1778 and 1875. The official coat of arms was adopted in 1874, designed almost 100 years earlier by Caleb Lownes, a Philadelphia Quaker.
-      p The coat of arms also features the state’s motto “Virtue, Liberty, and Independence.”
     .visual.flag
       img(src='/assets/images/coat-of-arms-pennsylvania.jpg')
 
   .guide
     .content
       h2 Colors
-      p The flag must use the same blue of the United States flag, required since the standardization in 1907.
+      p The flag must use the same blue as the U.S. national flag, required since the standardization in 1907.
+      hr
+      small Pennsylvania statute does not provide Cable or Pantone values for the colors of the coat of arms.
+      small The hex values here are approximate.
     .visual
       .colors.primary
         include includes/color-us-blue
@@ -96,8 +102,10 @@ block content
   .guide
     .content
       h2 Construction
-      p The Pennsylvania flag is usually produced with a proportion of 2:3.
-      p If resized, it will maintain these proportions.
+      p Pennsylvania statute specifies the dimensions of the flag in feet and inches. It should have a hoist of 4 feet, 6 inches and a fly of 6 feet, 2 inches.
+      p This is an unusual 27:37 proportion, so the flag is usually produced with a proportion of 2:3.
+      p It does not specify dimensions for the coat of arms beyond “proportionate size.”
+      p The flag can also have knotted fringe of yellow silk, measuring 2 and 1/2 inches wide and a cord of white and blue silk, measuring 8 feet, 6 inches.
     .visual
       img(src='/assets/images/flag-pennsylvania-dimensions.svg')
 
@@ -121,12 +129,16 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('delaware', 'Delaware',
+              'new-jersey', 'New Jersey')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
       include includes/source-mitchell
+      li.source Pennsylvania Statutes. Title 44 P.S. Legal Holidays and Observances. Section § 45. Flag of Pennsylvania;  size and emblems.
       li.source: a(href='https://www.monticello.org/site/research-and-collections/caleb-lownes') Thomas Jefferson Foundation, Inc.
       li.souurce: a(href='https://statesymbolsusa.org/symbol-or-officially-designated-item/pennsylvania/state-coat-arms/pennsylvania-coat-arms') State Symbols USA
       li.source: a(href='https://visitpa.com/pennsylvania-facts-history') Visit PA
-      li.source: a(href='https://en.wikipedia.org/wiki/Coat_of_arms_of_Pennsylvania') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Coat_of_arms_of_Pennsylvania') Coat of Arms of Pennsylvania - Wikipedia

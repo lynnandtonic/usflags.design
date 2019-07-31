@@ -61,33 +61,33 @@ block content
           .sample(class='blue')
           .name Blue
           .hex #00205b
-          small PMS 281
+          .pantone PMS 281
         .color
           .sample(class='red')
           .name Red
           .hex #ef3340
-          small PMS 032
+          .pantone PMS 032
       .colors.secondary
         .color
           .sample(class='sky-blue')
           .name Sky Blue
           .hex #0072ce
-          small PMS 285
+          .pantone PMS 285
         .color
           .sample(class='green')
           .name Green
           .hex #009639
-          small PMS 355
+          .pantone PMS 355
         .color
           .sample(class='yellow')
           .name Yellow
           .hex #fce300
-          small PMS 102
+          .pantone PMS 102
         .color
           .sample(class='brown')
           .name Brown
           .hex #382E2c
-          small PMS 440
+          .pantone PMS 440
         include includes/color-white
 
   .guide
@@ -96,7 +96,6 @@ block content
       p Guam statute specifies the proportion and spacing for the flag’s visual elements in inches.
       p The flag should have a hoist of 40 inches and a fly of 78 inches.
       p The red border is 2 inches wide and the seal at the center should be 24 inches tall and 16 inches wide.
-      p If resized, it should maintain these proportions.
     .visual
       img(src='/assets/images/flag-guam-dimensions.svg')
 
@@ -110,6 +109,9 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('washington-dc', 'Washington D.C.',
+              'puerto-rico', 'Puerto Rico')
+
   .guide.wide.sources
     h3 Sources
     ul
@@ -117,5 +119,5 @@ block content
       li.source Flags and Anthems Manual London 2012. London:  London Organising Committee of the Olympic Games and Paralympic Games Ltd. 2012.
       li.source: a(href='https://www.guampedia.com/guam-seal-and-flag/') Guampedia
       li.source: a(href='https://www.britannica.com/topic/flag-of-Guam') Encyclopedia Britannica
-      li.source: a(href='https://en.wikipedia.org/wiki/Seal_of_Guam') Wikipedia
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Guam') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Seal_of_Guam') Seal of Guam - Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Guam') Flag of Guam - Wikipedia

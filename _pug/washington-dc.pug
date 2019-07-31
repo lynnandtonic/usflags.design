@@ -49,7 +49,9 @@ block content
     .content
       h2 Colors
       p The D.C. flag features two colors: red and white.
-      p D.C. statute does not specify a Cable or Pantone value for the red in its flag.
+      hr
+      small D.C. statute does not provide Cable or Pantone values for the red.
+      small The hex value here is approximate.
     .visual.colors.primary
       .color
         .sample(class='red')
@@ -59,7 +61,7 @@ block content
 
   .guide
     .content
-      h2 Production
+      h2 Construction
       p The D.C. flag is usually produced with a 1:2 proportion, but statute only specifies proportion of the visual elements relative to the hoist.
       p The chief (top white stripe) should be 3/10 the width of the hoist with each star measuring 2/10 the hoist and spaced evenly within the chief.
       p The red stripes and the base (bottom white stripe) should be 2/10 the hoist and the space between the red stripes should be 1/10.
@@ -86,11 +88,14 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('hawaii', 'Hawaii',
+              'guam', 'Guam')
+
   .guide.wide.sources
     h3 Sources
     ul
       li.source: a(href='https://code.dccouncil.us/dc/council/code/sections/1-151.html') Code of the District of Columbia. § 1–151. District of Columbia official flag.
       li.source: a(href='https://os.dc.gov/page/dc-symbols') DC Office of the Secretary
       li.source: a(href='https://www.britannica.com/topic/flag-of-Washington-DC') Encyclopedia Britannica
-      li.source: a(href='https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Washington_family') Wikipedia
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Washington,_D.C.') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Washington_family') Coat of Arms of the Washington Family - Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Washington,_D.C.') Flag of Washington D.C. - Wikipedia

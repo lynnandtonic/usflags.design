@@ -52,7 +52,7 @@ block content
   .guide
     .content
       h2 Colors
-      p U.S. Virgin Islands statute only specifies that the blue of the shield be the same as the blue from the U.S. flag.
+      p U.S. Virgin Islands statute only specifies that the blue of the shield be the same as the blue from the U.S. national flag.
       p #[em The Flags and Anthems Manual] for the London 2012 Olympic Games does provide Pantone colors for the U.S. Virgin Islands flag, as specified here.
     .visual
       .colors.primary
@@ -61,24 +61,24 @@ block content
           .sample(class='yellow')
           .name Yellow
           .hex #fce300
-          small PMS 102
+          .pantone PMS 102
       .colors.secondary
         include includes/color-us-blue
         .color
           .sample(class='red')
           .name Red
           .hex #e03c31
-          small PMS 179
+          .pantone PMS 179
         .color
           .sample(class='azure')
           .name Azure
           .hex #69b3e7
-          small PMS 292
+          .pantone PMS 292
         .color
           .sample(class='green')
           .name Green
           .hex #009639
-          small PMS 355
+          .pantone PMS 355
 
   .guide
     .content
@@ -98,6 +98,9 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('american-samoa', 'American Samoa',
+              'northern-mariana-islands', 'Northern Mariana Islands')
+
   .guide.wide.sources
     h3 Sources
     ul
@@ -106,4 +109,4 @@ block content
       li.source: a(href='https://www.crwflags.com/fotw/flags/vi.html') CRW Flags
       li.source: a(href='https://www.britannica.com/topic/flag-of-United-States-Virgin-Islands') Encyclopedia Britannica
       li.source: a(href='') The St. Thomas Source
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_the_United_States_Virgin_Islands') Flag of the United States Virgin Islands - Wikipedia

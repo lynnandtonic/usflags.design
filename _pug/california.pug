@@ -57,40 +57,38 @@ block content
       p It is one of only four state flags to not include blue.
     .visual
       .colors.primary
-        include includes/color-white
-          small White - Cable No. 70001
+        include includes/color-us-white
         .color
           .sample(class='red')
           .name Red
           .hex #b71234
-          small Old Glory - Cable No. 70180
-          small PMS 200
+          .cable Cable No. 70180 #[span Old Glory]
+          .pantone PMS 200
       .colors.secondary
         .color
           .sample(class='green')
           .name Green
           .hex #008542
-          small Irish Green - Cable No. 70168
-          small PMS 348
+          .cable Cable No. 70168 #[span Irish Green]
+          .pantone PMS 348
         .color
           .sample(class='tan')
           .name Tan
           .hex #bd8a5e
-          small Maple Sugar - Cable No. 70129
-          small PMS 729C
+          .cable Cable No. 70129 #[span Maple Sugar]
+          .pantone PMS 729C
         .color
           .sample(class='brown')
           .name Brown
           .hex #584528
-          small Seal - Cable No. 70108
-          small PMS 462C
+          .cable Cable No. 70108 #[span Seal]
+          .pantone PMS 462C
 
   .guide
     .content
       h2 Construction
       p The flag should have a proportion of 2:3.
       p California statute specifies the proportion and spacing for the flag’s visual elements, which is rendered here.
-      p If resized, it must maintain these proportions.
     .visual
       img(src='/assets/images/flag-california-dimensions.svg')
 
@@ -135,6 +133,9 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('wisconsin', 'Wisconsin',
+              'minnesota', 'Minnesota')
+
   .guide.wide.sources
     h3 Sources
     ul
@@ -142,4 +143,4 @@ block content
       li.source California Government Code. Title 1 General. Division 2 State Seal, Flag, and Emblems. Chapter 2 State Flag and Emblems § 420.
       li.souurce Flags Over California: A History Guide (PDF). California State Military Museum. State of California, Military Department. 2002. Retrieved 22 July 2012.
       li.source: a(href='http://www.sfmuseum.org/hist6/toddflag.html') The Virtual Museum of the City of San Francisco
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_California') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_California') Flag of California - Wikipedia

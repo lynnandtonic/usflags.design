@@ -52,29 +52,27 @@ block content
   .guide
     .content
       h2 Colors
-      p Nevada law specifies Pantone values for each of the flag’s five colors.
+      p Nevada’s flag specifications provide Pantone values for each of the flag’s five colors.
     .visual
       .colors.primary
         .color
           .sample(class='blue')
           .name Cobalt Blue
           .hex #0033ab
-          small PMS 286
+          .pantone PMS 286
       .colors.secondary
         .color
           .sample(class='gold')
           .name Gold
           .hex #ffa300
-          small PMS 137
+          .pantone PMS 137
         .color
           .sample(class='green')
           .name Green
           .hex #00843d
-          small PMS 348
+          .pantone PMS 348
         include includes/color-white
-          small Pantone White
         include includes/color-black
-          small Pantone Black
 
   .guide
     .content
@@ -126,10 +124,14 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('west-virginia', 'West Virginia',
+              'nebraska', 'Nebraska')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
+      li.source Nevada Revised Statutes. CHAPTER 235 - STATE SEAL, MOTTO AND SYMBOLS; GIFTS AND ENDOWMENTS. Section § 235.020 - State flag.
       li.source: a(href='http://nava.org/digital-library/raven/Raven_v01_1994_p065-089.pdf') Ferrigan II, James J. “Battle Born” Vexillology: The Nevada State Flag and Its Predecessor. NAVA:  1994.
       li.source: a(href='https://www.leg.state.nv.us/Division/Research/Publications/PHoN/Ch02.pdf') Nevada Legislature
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Nevada') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Nevada') Flag of Nevada - Wikipedia

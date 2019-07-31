@@ -22,7 +22,7 @@ block content
   .guide
     .content
       h2 Flag design
-      p The Massachusetts flag features a field of white charged with the state coat of arms in blue and gold, centered.
+      p The Massachusetts flag features a field of white charged with the commonwealth coat of arms in blue and gold, off-centered towards the hoist.
       +survey('Massachusettss', '38th')
     .visual.flag
       img.border(src='/assets/images/flag-massachusetts.svg')
@@ -47,35 +47,46 @@ block content
           span.icon: img(src='/assets/images/flag-massachusetts-icon-broadsword.svg')
           h4 broadsword
           p peace only under liberty
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-massachusetts-icon-motto.svg')
+          h4 motto
+          p “By the Sword We Seek Peace, But Peace Only Under Liberty”
 
   .guide
     .content
       h2 Coat of Arms
       p The Massachusetts coat of arms was adopted in 1775. Inscribed in Latin on the ribbon are the words “Ense petit placidam sub libertate quietem” which translate to “By the Sword We Seek Peace, But Peace Only Under Liberty.”
-      p Despite the claim that the broadsword references the state’s motto, the imagery of a Native American beneath an arm weilding a sword has caused a great deal of pain, reminding many of the violence inflicted on Native Americans.
+      p Despite the claim that the broadsword references the commonwealth motto, the imagery of an Algonquin man beneath an arm weilding a sword has caused a great deal of pain, reminding many of the violence inflicted on Native Americans.
     .visual.flag
       img(src='/assets/images/coat-of-arms-massachusetts.jpg')
 
   .guide
     .content
       h2 Colors
-      p The blue of the flag represents the Blue Hills of Canton. The five-pointed star is white, unlike the state seal where it appears silver.
+      p The Secretary of the Commonwealth provides Cable values for the colors of its flag.
+      p The blue of the flag represents the Blue Hills of Canton. The five-pointed star is white, unlike the seal where it appears silver.
     .visual.colors.primary
-      include includes/color-white
+      .color
+        .sample(class='white')
+        .name White
+        .hex #ffffff
+        .cable Cable No. 70001 #[span White]
       .color
         .sample(class='blue')
         .name Blue
         .hex #1f2c5c
+        .cable Cable No. 70087 #[span Royal Blue]
       .color
         .sample(class='gold')
         .name Gold
         .hex #e6a300
+        .cable Cable No. 70068 #[span Spanish Yellow]
 
   .guide
     .content
       h2 Construction
-      p The Massachusetts flag is usually produced with a proportion of 3:5.
-      p If resized, it will maintain these proportions.
+      p The Secretary of the Commonwealth provides specifications for the flag, recreated here.
+      p The flag can be produced with a few proportions, but 3:5 is recommended.
     .visual
       img(src='/assets/images/flag-massachusetts-dimensions.svg')
 
@@ -107,13 +118,17 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('connecticut', 'Connecticut',
+              'maryland', 'Maryland')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
       include includes/source-mitchell
       li.source: a(href='http://www.sec.state.ma.us/cis/cismaf/mf1a.htm') Secretary of the Commonwealth of Massachusetts
+      li.source: a(href='https://www.mass.gov/regulations/950-CMR-3400-commonwealth-of-massachusetts-flags-arms-and-seal-specifications') 950 CMR 34.00: Commonwealth of Massachusetts flags, arms and seal specifications
       li.source: a(href='https://www.britannica.com/topic/flag-of-Massachusetts') Encyclopedia Britannica
       li.souurce: a(href='https://www.usflagsupply.com/u.s.-state-flag-history/massachusettss-flag-history.html') US Flag Supply
-      li.source: a(href='https://en.wikipedia.org/wiki/Pine_Tree_Flag') Wikipedia
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Massachusetts') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Pine_Tree_Flag') Pine Tree Flag - Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Massachusetts') Flag of Massachusetts - Wikipedia

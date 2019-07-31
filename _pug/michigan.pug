@@ -105,7 +105,6 @@ block content
     .content
       h2 Construction
       p Michigan statute doesn’t specify dimensions for its flag. It is usually produced with a proportion of 2:3.
-      p If resized, it will maintain these proportions.
     .visual
       img(src='/assets/images/flag-michigan-dimensions.svg')
 
@@ -147,10 +146,13 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('arkansas', 'Arkansas',
+              'florida', 'Florida')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
       include includes/source-mitchell
       li.source Michigan Compiled Laws. Chapter 2. Section § 2.22 - State coat-of-arms; emblazonment.
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Michigan') Wikipedia
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Michigan') Flag of Michigan - Wikipedia

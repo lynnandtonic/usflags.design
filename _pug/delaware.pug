@@ -77,20 +77,23 @@ block content
   .guide
     .content
       h2 Colors
-      p The primary colors of the flag are colonial blue and buff, shades taken from a uniform George Washington once wore.
       p Colonial blue and buff are Delaware’s state colors.
+      p The colors were inspired by a military uniform George Washington once wore.
+      hr
+      small Delaware statute describes the colors featured in the coat of arms, but Cable or Pantone values are not provided.
+      small The hex values here are approximate.
     .visual
       .colors.primary
         .color
           .sample(class='arno')
           .name Colonial Blue
           .hex #71a19f
-          small Arno Blue - Cable No. 10663
+          .cable Cable No. 10663 #[span Arno Blue]
         .color
           .sample(class='buff')
           .name Buff
           .hex #d7ac6c
-          small Golden Beige - Cable No. 10781
+          .cable Cable No. 10781 #[span Golden Beige]
       .colors.secondary
         include includes/color-black
         .color
@@ -117,8 +120,7 @@ block content
   .guide
     .content
       h2 Construction
-      p Delaware statutes don’t specify dimensions, but the flag is usually produced with a proportion of 2:3.
-      p If resized, it will maintain these proportions.
+      p Delaware statute doesn’t specify dimensions, but the flag is usually produced with a proportion of 2:3.
     .visual
       img(src='/assets/images/flag-delaware-dimensions.svg')
 
@@ -142,14 +144,13 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
-  nav.pagination
-    a.previous(href='/northern-mariana-islands') Northen Mariana Islands
-    a.next(href='/pennsylvania') Pennsylvania
+  +pagination('northern-mariana-islands', 'Northen Mariana Islands',
+              'pennsylvania', 'Pennsylvania')
 
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
       include includes/source-mitchell
-      li.source: a(href='https://delcode.delaware.gov/title29/c003/index.shtml#306') The State of Delaware
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Delaware') Wikipedia
+      li.source Delaware Code. TITLE 29 State Government. Part I General Provisions. CHAPTER 3. STATE SEAL, SONG AND SYMBOLS. Section § 306 State flag.
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Delaware') Flag of Delaware - Wikipedia

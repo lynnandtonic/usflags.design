@@ -46,18 +46,19 @@ block content
   .guide
     .content
       h2 Colors
-      p The flag features a field of dark blue. The torch and stars can be gold or buff in color.
+      p Indiana statute specifies a field of dark blue. The torch and stars can be gold or buff in color.
+      p Because statute doesn’t provide specific values, the Indiana Historical Bureau provides unofficial Pantone and hex values for the blue and gold.
     .visual.colors.primary
       .color
         .sample(class='blue')
         .name Blue
-        .hex #10069f
-        small PMS 072 C
+        .hex #000f5d
+        .pantone PMS 072 C
       .color
         .sample(class='gold')
         .name Gold
         .hex #d59f0f
-        small PMS 109C
+        .pantone PMS 109C
 
   .guide
     .content
@@ -86,10 +87,14 @@ block content
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
       +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
+  +pagination('louisiana', 'Louisiana',
+              'mississippi', 'Mississippi')
+
   .guide.wide.sources
     h3 Sources
     ul
       include includes/source-howe
-      li.source The State of Indiana
       li.source 2017 Indiana Code. Chapter 2. State Flag 1-2-2-1. Design and dimensions.
-      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Indiana') Wikipedia
+      li.source: a(href='https://www.in.gov/history/2797.htm') Indiana Historical Bureau
+      li.source: a(href='https://www.in.gov/gov/2376.htm') The State of Indiana
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Indiana') Flag of Indiana - Wikipedia
