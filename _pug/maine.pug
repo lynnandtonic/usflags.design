@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Maine.'
-  - var bodyClass = 'detail maine'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Maine'
+  - var path = 'maine'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Maine - 
-
 block content
 
-  +state('Maine', '/assets/images/flag-maine.svg', 'The Pine Tree State', 'March 15, 1820')
+  +state(name, path, 'The Pine Tree State', 'March 15, 1820')
 
   .intro
     p The Maine state flag follows a common pattern for U.S. state flags, featuring the coat of arms on a field of blue.
@@ -23,28 +22,28 @@ block content
     .content
       h2 Flag design
       p The Maine flag features a field of blue charged with the state coat of arms, centered.
-      +survey('Maine', '60th')
+      +survey(name, '60th')
     .visual.flag
-      img(src='/assets/images/flag-maine.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-maine-icon-north-star.svg')
+          span.icon: img(src='/assets/images/flag-maine-icon-north-star.svg', alt='five-pointed star surrouned by radiating beams, “Dirigo” on a banner')
           h4 North Star
           p a guiding light, navigation, leadership
         li.icon-item
-          span.icon: img(src='/assets/images/flag-maine-icon-farmer.svg')
+          span.icon: img(src='/assets/images/flag-maine-icon-farmer.svg', alt='a farmer with scythe')
           h4 farmer
           p rich agricultural tradition
         li.icon-item
-          span.icon: img(src='/assets/images/flag-maine-icon-sailor.svg')
+          span.icon: img(src='/assets/images/flag-maine-icon-sailor.svg', alt='a sailor with an anchor')
           h4 sailor
           p Maine’s long coastline, fishing, shipbuilding
         li.icon-item
-          span.icon: img(src='/assets/images/flag-maine-icon-tree.svg')
+          span.icon: img(src='/assets/images/flag-maine-icon-tree.svg', alt='a moose lies in front of a pine tree')
           h4 pine tree
           p New England, regional flora and fauna
   .guide
@@ -52,7 +51,7 @@ block content
       h2 Coat of Arms
       p The Maine coat of arms (and state seal) have remained relatively unchanged since adoption in 1820. It was formally standardized in 1919 to reduce small variations.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-maine.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -60,7 +59,7 @@ block content
       p The Maine flag uses the same blue of the U.S. national flag.
       hr
       small Maine statute does not provide Cable or Pantone values for the colors of the coat of arms.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         include includes/color-us-blue
@@ -99,7 +98,7 @@ block content
       h2 Pike
       p The flag should be flown on a 9 foot pike (flagple) with a tassled cord 8 feet 6 inches in length attached to the spearhead. The cord should be made of white and blue silk strands.
     .visual
-      img(src='/assets/images/flag-maine-dimensions.svg')
+      +construction(name, path)
 
   .guide
     .content
@@ -107,27 +106,27 @@ block content
       p The 1901 version of the Maine flag featured a green pine tree and a blue five-pointed star on a field of buff.
       p Two attempts in the 1990’s failed to bring back the original flag. In the last few years, though, private companies have begun manufacturing and selling a similar version resulting in increased popularity and new calls to change the flag once again.
     .visual.flag
-      img(src='/assets/images/flag-maine-1901.svg')
+      img(src='/assets/images/flag-maine-1901.svg', alt='previous version of thee Maine flag featuring a pine tree')
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('alabama', 'Alabama',
               'missouri', 'Missouri')

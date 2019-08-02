@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of New York.'
-  - var bodyClass = 'detail new-york'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'New York'
+  - var path = 'new-york'
 
 block tweet
-  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
-
-block title
-  | New York - 
+  a.tweet(href="https://ctt.ec/DidfP") Share on Twitter 
 
 block content
 
-  +state('New York', '/assets/images/flag-new-york.svg', 'The Empire State', 'July 26, 1788')
+  +state(name, path, 'The Empire State', 'July 26, 1788')
 
   .intro
     p The New York flag, one of unusually wide proportion, follows a common pattern for U.S. state flags, featuring the state coat of arms on a field of blue.
@@ -23,9 +22,9 @@ block content
     .content
       h2 Flag design
       p The New York flag features a field of deep blue charged with the state coat of arms, centered.
-      +survey('New York', '53rd')
+      +survey(name, '53rd')
     .visual.flag
-      img(src='/assets/images/flag-new-york.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -70,7 +69,7 @@ block content
       p The New York coat of arms was originally designed in 1777 and officially adopted on March 16th, 1778 (a few months before statehood).
       p A commission was appointed in 1880 to standardize its presentation.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-new-york.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -78,7 +77,7 @@ block content
       p The prominent color is a deep blue, with supporting colors within the coat of arms.
       hr
       small New York statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
@@ -113,7 +112,7 @@ block content
       h2 Construction
       p The New York flag is usually produce with a proportion of 1:2.
     .visual
-      img(src='/assets/images/flag-new-york-dimensions.svg')
+      +construction(name, path)
 
   .guide
     .content
@@ -127,20 +126,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('virginia', 'Virginia',
               'north-carolina', 'North Carolina')

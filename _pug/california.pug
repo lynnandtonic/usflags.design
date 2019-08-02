@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of California.'
-  - var bodyClass = 'detail california'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'California'
+  - var path = 'california'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | California - 
-
 block content
 
-  +state('California', '/assets/images/flag-california.svg', 'The Golden State', 'September 9, 1850', 'border')
+  +state(name, path, 'The Golden State', 'September 9, 1850', 'border')
 
   .intro
     p California’s iconic Bear Flag originates with the #[a(href='https://en.wikipedia.org/wiki/California_Republic#Bear_Flag_Revolt') Bear Flag Revolt] against Mexico in 1846. Notable bear flags were designed by Peter Storm and William L. Todd (cousin to Mary Todd Lincoln).
@@ -25,26 +24,26 @@ block content
       h2 Flag design
       p The California flag features a field of white charged with a brown grizzly bear walking on a patch of green grass at the flag’s center.
       p Below the bear, the words “California Republic” are inscribed. A red stripe spans the length of the fly. A five-pointed red star is placed in the flag’s upper left.
-      +survey('California', '13th')
+      +survey(name, '13th')
     .visual.flag
-      img.border(src='/assets/images/flag-california.svg')
+      +flag(name, path, 'border')
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-california-icon-star.svg')
+          span.icon: img(src='/assets/images/flag-california-icon-star.svg', alt='five-pointed star')
           h4 Lone Star
           p California
           p #[em Note:] The lone star is borrowed from the Lone Star Flag which flew during Juan Alvarado’s rebellion against Mexico in 1836.
         li.icon-item
-          span.icon: img(src='/assets/images/flag-california-icon-bear.svg')
+          span.icon: img(src='/assets/images/flag-california-icon-bear.svg', alt='grizzly bear')
           h4 Monarch
           p strength, unyielding resistance
           p #[em Note:] The bear was modeled after Monarch, the last California grizzly in captivity who died in 1911.
         li.icon-item
-          span.icon: img(src='/assets/images/flag-california-icon-ca-republic.svg')
+          span.icon: img(src='/assets/images/flag-california-icon-ca-republic.svg', alt='the words “California Republic”')
           h4 California Republic
           p freedom, sovereignty
           p #[em Note:] First featured on the Todd Flag during the Bear Flag Revolt, representing California’s desired independence.
@@ -90,26 +89,26 @@ block content
       p The flag should have a proportion of 2:3.
       p California statute specifies the proportion and spacing for the flag’s visual elements, which is rendered here.
     .visual
-      img(src='/assets/images/flag-california-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
       h2 Previous iterations
       ul.visual.flag-list
         li.flag-item
-          span.flag: img.border(src='/assets/images/flag-california-lone-star.svg')
+          span.flag: img.border(src='/assets/images/flag-california-lone-star.svg', alt='California flag from 1836')
           h4 Lone Star Flag
           p Flown in 1836 during Juan Alvarado’s rebellion.
         li.flag-item
-          span.flag: img.border(src='/assets/images/flag-california-storm.jpg')
+          span.flag: img.border(src='/assets/images/flag-california-storm.jpg', alt='California flag from 1846')
           h4 Storm’s Bear Flag
           p Designed by Peter Storm and flown in 1846.
         li.flag-item
-          span.flag: img.border(src='/assets/images/flag-california-todd.svg')
+          span.flag: img.border(src='/assets/images/flag-california-todd.svg', alt='a variant of the 1846 flag')
           h4 Todd’s Bear Flag
           p A variant of the Bear Flag William L. Todd in 1846.
         li.flag-item
-          span.flag: img.border(src='/assets/images/flag-california.svg')
+          span.flag: img.border(src='/assets/images/flag-california.svg', alt='current California flag')
           h4 1911–Present
           p The current California state flag, standardized in 1953.
 
@@ -118,20 +117,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('wisconsin', 'Wisconsin',
               'minnesota', 'Minnesota')

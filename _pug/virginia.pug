@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Virginia.'
-  - var bodyClass = 'detail virginia'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Virginia'
+  - var path = 'virginia'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Virginia - 
-
 block content
 
-  +state('Virginia', '/assets/images/flag-virginia.svg', 'Old Dominion', 'June 25, 1788')
+  +state(name, path, 'Old Dominion', 'June 25, 1788')
 
   .intro
     p The flag of the Commonwealth of Virginia follows a common pattern for U.S. state flags, featuring its seal on a field of blue.
@@ -24,9 +23,9 @@ block content
     .content
       h2 Flag design
       p The Virginia flag features a field of deep blue charged with the seal of the commonwealth on a circle of white, centered.
-      +survey('Virginia', '54th')
+      +survey(name, '54th')
     .visual.flag
-      img(src='/assets/images/flag-virginia.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -54,7 +53,7 @@ block content
       h2 Coat of Arms
       p Since the coat of arms and seal were created in the 1770s, many versions came about, though each still representing Virtus victorious over Tyranny. To achieve consistency, the seal (and the flag) were standardized in the 1950s. 
     .visual.flag
-      img(src='/assets/images/coat-of-arms-virginia.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -63,7 +62,7 @@ block content
       p The purple robe worn by the tyrant references Julius Caesar.
       hr
       small Virginia statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
@@ -104,27 +103,27 @@ block content
       p If resized, it must maintain these proportions.
       p The flag should be made of silk, nylon, or similar material and can be trimmed with fringe on three sides measuring 2.5 inches wide.
     .visual
-      img(src='/assets/images/flag-virginia-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('new-hampshire', 'New Hampshire',
               'new-york', 'New York')

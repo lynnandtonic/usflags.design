@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Connecticut.'
-  - var bodyClass = 'detail connecticut'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Connecticut'
+  - var path = 'connecticut'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Connecticut - 
-
 block content
 
-  +state('Connecticut', '/assets/images/flag-connecticut.svg', 'The Constitution State', 'January 9, 1788')
+  +state(name, path, 'The Constitution State', 'January 9, 1788')
 
   .intro
     p More than 100 years after statehood, Governor O. William Coffin established a committee to standardize a state flag.
@@ -23,24 +22,24 @@ block content
     .content
       h2 Flag design
       p The Connecticut flag features a field of azure charged with the state coat of arms, centered.
-      +survey('Connecticut', '50th')
+      +survey(name, '50th')
     .visual.flag
-      img(src='/assets/images/flag-connecticut.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-connecticut-icon-grapevine.svg')
+          span.icon: img(src='/assets/images/flag-connecticut-icon-grapevine.svg', alt='a single grapevine')
           h4 grapevine
           p transplantation, settlement
         li.icon-item
-          span.icon: img(src='/assets/images/flag-connecticut-icon-three-grapevines.svg')
+          span.icon: img(src='/assets/images/flag-connecticut-icon-three-grapevines.svg', alt='a group of three grapevines')
           h4 grapevines
           p three settlements of Windsor, Wethersfield, and Hartford
         li.icon-item
-          span.icon: img(src='/assets/images/flag-connecticut-icon-motto.svg')
+          span.icon: img(src='/assets/images/flag-connecticut-icon-motto.svg', alt='Latin motto on a ribbon banner')
           h4 motto
           p “He Who Transplanted Still Sustains”
 
@@ -49,72 +48,78 @@ block content
       h2 Coat of Arms
       p While featured on the flag long before, the state coat of arms wasn’t officially adopted until 1931. It was based on the seal for Saybrook Colony, which featured 15 grapevines and the motto “Sustinet qui transtulit.”
     .visual.flag
-      img(src='/assets/images/coat-of-arms-connecticut.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
       h2 Colors
-      p The flag features a field of azure, accented with white, silver, gold, and other “neutral colors.”
+      p Connecticut statute mentions the colors of its flag, including “neutral colors” for the grapevines, but it does not provide specific color values.
+      p In a 1956 agreement, the Office of the Secretary of State and the State Purchasing Division developed a uniform color standard for the manufacture of Connecticut state flags, as specified here.
       hr
-      small Connecticut statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
           .sample(class='azure')
           .name Azure
           .hex #0c2d83
-        include includes/color-white
+          .cable Cable No. 70086 #[span Yale Blue]
+        include includes/color-white-cable
       .colors.secondary
         .color
           .sample(class='gold')
           .name Gold
           .hex #ffd312
+          .cable Cable No. 70057 #[span Old Gold]
         .color
           .sample(class='silver')
           .name Silver
           .hex #c4c4c4
+          .cable Cable No. 70151 #[span Silver]
         .color
           .sample(class='brown')
           .name Brown
           .hex #961e1d
+          .cable Cable No. 70093 #[span Sandalwood]
         .color
           .sample(class='green')
           .name Green
           .hex #129612
+          .cable Cable No. 70167 #[span Primitive Green]
         .color
           .sample(class='grape')
           .name Grape
           .hex #b400b4
+          .cable Cable No. 70212 #[span Parma Violet]
 
   .guide
     .content
       h2 Construction
       p Connecticut statute specifies the dimensions of the flag in feet and inches. It should have a hoist of 4 feet, 4 inches and a fly of 5 feet, 6 inches.
-      p This is a proportion of 26:33.
+      p This is a proportion of 26:33, but the flag is often produced with more common proportions of 2:3 and 3:5.
       p It does not specify the dimensions for the coat of arms.
     .visual
-      img(src='/assets/images/flag-connecticut-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('georgia', 'Georgia',
               'massachusetts', 'Massachusetts')
@@ -126,6 +131,7 @@ block content
       include includes/source-mitchell
       li.source Connecticut General Statutes. Title 3 - State Elective Officers. Chapter 33 - Secretary. Section 3-107 - State flag.
       li.source: a(href='https://portal.ct.gov/About/State-Symbols/The-State-Flag') The State of Connecticut
+      li.source: a(href='https://biznet.ct.gov/SCP_Search/ContractDetail.aspx?ID=20016') Connecticut State Contract #18PSX0115
       li.source: a(href='https://www.britannica.com/topic/flag-of-Connecticut') Encyclopedia Britannica
       li.souurce: a(href='https://statesymbolsusa.org/symbol-official-item/connecticut/state-flag/flag-connecticut') State Symbols USA
       li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Connecticut') Flag of Connecticut - Wikipedia

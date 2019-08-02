@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Iowa.'
-  - var bodyClass = 'detail iowa'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Iowa'
+  - var path = 'iowa'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Iowa - 
-
 block content
 
-  +state('Iowa', '/assets/images/flag-iowa.svg', 'The Hawkeye State', 'December 28, 1846', 'border')
+  +state(name, path, 'The Hawkeye State', 'December 28, 1846', 'border')
 
   .intro
     p Like a handful of other states, Iowa owes its flag to the Daughters of the American Revolution. State Regent and Knoxville resident Dixie Cornell Gebhardt designed the Iowa flag in 1917.
@@ -25,25 +24,25 @@ block content
       p The Iowa flag is an unequal vertical tricolor of blue, white, and red.
       p Within the white stripe, the widest of the three, an eagle is charged with blue streamers in its beak upon which the words “Our Liberties We Prize and Our Rights We Will Maintain” are inscribed.
       p Below the eagle and streamers, the word “Iowa” is inscribed in red.
-      +survey('Iowa', '42nd')
+      +survey(name, '42nd')
     .visual.flag
-      img.border(src='/assets/images/flag-iowa.svg')
+      +flag(name, path, 'border')
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-iowa-icon-stripes.svg')
+          span.icon: img(src='/assets/images/flag-iowa-icon-stripes.svg', alt='three vertical stripes')
           h4 stripes
           p France
           p #[em Note:] Iowa was once a French territory and borrows its three stripes from the French national flag.
         li.icon-item
-          span.icon: img(src='/assets/images/flag-iowa-icon-eagle.svg')
+          span.icon: img(src='/assets/images/flag-iowa-icon-eagle.svg', alt='eagle')
           h4 eagle
           p the United States
         li.icon-item
-          span.icon: img(src='/assets/images/flag-iowa-icon-motto.svg')
+          span.icon: img(src='/assets/images/flag-iowa-icon-motto.svg', alt='words on a banner')
           h4 motto
           p admission to the U.S. as a free state, #[em Our Liberties We Prize and Our Rights We Will Maintain]
         li.icon-item
@@ -55,7 +54,7 @@ block content
       p The blue represents loyalty, justice, and truth. The white represents purity and the red stands for courage.
       hr
       small Iowa statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
@@ -79,27 +78,27 @@ block content
       p Though not specified in Iowa statute, the flag is usually produced with a proportion of 2:3.
       p The width of the white middle stripe should be twice the width of each of the other stripes.
     .visual
-      img(src='/assets/images/flag-iowa-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('texas', 'Texas',
               'wisconsin', 'Wisconsin')

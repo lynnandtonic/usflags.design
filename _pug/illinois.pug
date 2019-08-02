@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Illinois.'
-  - var bodyClass = 'detail illinois'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Illinois'
+  - var path = 'illinois'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Illinois - 
-
 block content
 
-  +state('Illinois', '/assets/images/flag-illinois.svg', 'The Prairie State', 'December 3, 1818', 'border')
+  +state(name, path, 'The Prairie State', 'December 3, 1818', 'border')
 
   .intro
     p The original Illinois flag was adopted in 1915, designed by Lucy Derwent and submitted to a design contest held by the Daughters of the American Revolution.
@@ -25,29 +24,29 @@ block content
       h2 Flag design
       p The Illinois flag features a field of white charged with the state seal, centered.
       p Below the seal, the word “Illinois” is inscribed in blue.
-      +survey('Illinois', '49th')
+      +survey(name, '49th')
     .visual.flag
-      img.border(src='/assets/images/flag-illinois.svg')
+      +flag(name, path, 'border')
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-illinois-icon-eagle.svg')
+          span.icon: img(src='/assets/images/flag-illinois-icon-eagle.svg', alt='eagle')
           h4 eagle
           p liberty through strength and peace
         li.icon-item
-          span.icon: img(src='/assets/images/flag-illinois-icon-sun.svg')
+          span.icon: img(src='/assets/images/flag-illinois-icon-sun.svg', alt='water and a sun with radiating beams')
           h4 sun & river
           p the Illinois River, natural beauty
         li.icon-item
-          span.icon: img(src='/assets/images/flag-illinois-icon-motto.svg')
+          span.icon: img(src='/assets/images/flag-illinois-icon-motto.svg', alt='words on a vertical banner')
           h4 motto
           p state sovereignty, federalism
           p #[em Note:] After the Civil War, Illinois Secretary of State Sharon Tyndale tried to change the motto to put “National Union” before “State Sovereignty.” Unable to do so, he flipped “Sovereignty” upside down to make it less readable.
         li.icon-item
-          span.icon: img(src='/assets/images/flag-illinois-icon-dates.svg')
+          span.icon: img(src='/assets/images/flag-illinois-icon-dates.svg', alt='1868, 1818')
           h4 1868 & 1818
           p the year Illinois gained statehood (1818), the year Illinois’ state seal was officially adopted (1868)
 
@@ -58,7 +57,7 @@ block content
       p Two seals preceded the current one, with 1819 and 1839 versions very closely resembling the Great Seal of the United States.
       p In 1867, despite not gaining approval to change the state motto, Tyndale began his redesign of the state seal resulting in the version we know today.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-illinois.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -66,7 +65,7 @@ block content
       p The Illinois flag uses the same red, white, and blue as the U.S. national flag.
       hr
       small Illinois statute does not provide Cable or Pantone values for the colors of the seal.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         include includes/color-us-white
@@ -103,34 +102,34 @@ block content
       h2 Construction
       p The flag should have a proportion of 3:5.
     .visual
-      img(src='/assets/images/flag-illinois-dimensions.svg')
+      +construction(name, path)
 
   .guide
     .content
       h2 Previous iteration
       p The Lucy Derwent version of the flag was used from 1915-1969 and featured selected imagery from the state seal.
     .visual.flag
-      img.border(src='/assets/images/flag-illinois-1915-1969.svg')
+      img.border(src='/assets/images/flag-illinois-1915-1969.svg', alt='previous version of the Illinois flag')
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('mississippi', 'Mississippi',
               'alabama', 'Alabama')

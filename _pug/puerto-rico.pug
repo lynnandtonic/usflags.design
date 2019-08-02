@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the flag of Puerto Rico.'
-  - var bodyClass = 'detail puerto-rico'
+  - var bodyClass = 'detail'
+  - var category = 'territory'
+  - var name = 'Puerto Rico'
+  - var path = 'puerto-rico'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Puerto Rico - 
-
 block content
 
-  +territory('Puerto Rico', '/assets/images/flag-puerto-rico.svg', 'April 11, 1899', 'border')
+  +territory(name, path, 'April 11, 1899', 'border')
 
   .intro
     p The Revolutionary Flag of Lares (Puerto Rico’s first flag) was knitted in 1868 by independence leader Mariana Bracetti. It flew that same year during El Grito de Lares, the first major revolt against Spanish colonial rule.
@@ -26,9 +25,9 @@ block content
       p The Puerto Rico flag features five equally-sized, horizontal alternating stripes, three red and two white.
       p An equilateral triangle of blue fills the width of the hoist and extends toward the center.
       p Upon the blue triangle, a white five-pointed star is charged.
-      +survey('Puerto Rico', '7th')
+      +survey(name, '7th')
     .visual.flag
-      img.border(src='/assets/images/flag-puerto-rico.svg')
+      +flag(name, path, 'border')
 
   .guide.wide
     .content
@@ -74,7 +73,7 @@ block content
           .name Red
           .hex #ef3340
           .pantone PMS 032
-        include includes/color-white
+        include includes/color-white-pantone
 
   .guide
     .content
@@ -83,7 +82,7 @@ block content
       p It is commonly produced with a proportion of 2:3.
       p All the stripes should be equal width and the each side of the blue triangle should be equal.
     .visual
-      img(src='/assets/images/flag-puerto-rico-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
@@ -108,10 +107,10 @@ block content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('guam', 'Guam',
               'american-samoa', 'American Samoa')

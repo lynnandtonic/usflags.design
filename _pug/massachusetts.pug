@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Massachusetts.'
-  - var bodyClass = 'detail massachusetts'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Massachusetts'
+  - var path = 'massachusetts'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Massachusetts - 
-
 block content
 
-  +state('Massachusetts', '/assets/images/flag-massachusetts.svg', 'The Bay State', 'February 6, 1788', 'border')
+  +state(name, path, 'The Bay State', 'February 6, 1788', 'border')
 
   .intro
     p The Massachusetts flag was the first state (commonwealth) flag to feature a plain white field and, for about 50 years, was a rare two-sided design.
@@ -23,32 +22,32 @@ block content
     .content
       h2 Flag design
       p The Massachusetts flag features a field of white charged with the commonwealth coat of arms in blue and gold, off-centered towards the hoist.
-      +survey('Massachusettss', '38th')
+      +survey(name, '38th')
     .visual.flag
-      img.border(src='/assets/images/flag-massachusetts.svg')
+      +flag(name, path, 'border')
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-massachusetts-icon-algonquin.svg')
+          span.icon: img(src='/assets/images/flag-massachusetts-icon-algonquin.svg', alt='Native American man with bow and arrow')
           h4 Algonquin
           p Native peoples
         li.icon-item
-          span.icon: img(src='/assets/images/flag-massachusetts-icon-arrow.svg')
+          span.icon: img(src='/assets/images/flag-massachusetts-icon-arrow.svg', alt='arrow, pointed downward')
           h4 arrow
           p peace (pointed downward)
         li.icon-item
-          span.icon: img(src='/assets/images/flag-massachusetts-icon-star.svg')
+          span.icon: img(src='/assets/images/flag-massachusetts-icon-star.svg', alt='five-pointed star')
           h4 star
           p Massachusetts, an original colony
         li.icon-item
-          span.icon: img(src='/assets/images/flag-massachusetts-icon-broadsword.svg')
+          span.icon: img(src='/assets/images/flag-massachusetts-icon-broadsword.svg', alt='an arm holds up a sword, pointed downward')
           h4 broadsword
           p peace only under liberty
         li.icon-item
-          span.icon: img(src='/assets/images/flag-massachusetts-icon-motto.svg')
+          span.icon: img(src='/assets/images/flag-massachusetts-icon-motto.svg', alt='Latin words on a banner')
           h4 motto
           p “By the Sword We Seek Peace, But Peace Only Under Liberty”
 
@@ -58,7 +57,7 @@ block content
       p The Massachusetts coat of arms was adopted in 1775. Inscribed in Latin on the ribbon are the words “Ense petit placidam sub libertate quietem” which translate to “By the Sword We Seek Peace, But Peace Only Under Liberty.”
       p Despite the claim that the broadsword references the commonwealth motto, the imagery of an Algonquin man beneath an arm weilding a sword has caused a great deal of pain, reminding many of the violence inflicted on Native Americans.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-massachusetts.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -88,7 +87,7 @@ block content
       p The Secretary of the Commonwealth provides specifications for the flag, recreated here.
       p The flag can be produced with a few proportions, but 3:5 is recommended.
     .visual
-      img(src='/assets/images/flag-massachusetts-dimensions.svg')
+      +construction(name, path)
 
   .guide
     .content
@@ -96,27 +95,27 @@ block content
       p Before 1971, the Massachusetts flag had a different design on its reverse. It featured the blue shield with a pine tree.
       p With the importance of timber in the region, the pine tree became a symbol of New England. After the #[a(href='https://en.wikipedia.org/wiki/Pine_Tree_Riot') Pine Tree Riot] in 1772, it persisted as an emblem for resistance and independence.
     .visual.flag
-      img.border(src='/assets/images/flag-massachusetts-reverse.svg')
+      img.border(src='/assets/images/flag-massachusetts-reverse.svg', alt='the reverse of a previous version of the Massachusetts flag, featuring a pine tree')
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('connecticut', 'Connecticut',
               'maryland', 'Maryland')

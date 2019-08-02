@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the flag of U.S. Virgin Islands.'
-  - var bodyClass = 'detail usvi'
+  - var bodyClass = 'detail'
+  - var category = 'territory'
+  - var name = 'U.S. Virgin Islands'
+  - var path = 'usvi'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | U.S. Virgin Islands - 
-
 block content
 
-  +territory('U.S. Virgin Islands', '/assets/images/flag-usvi.svg', 'March 31, 1917', 'border')
+  +territory(name, path, 'March 31, 1917', 'border')
 
   .intro
     p After Rear Admiral Summer E.W. Kitelle was sworn in as governor, he approached his chief of staff, William Russell White, about designing an official flag.
@@ -24,9 +23,9 @@ block content
       h2 Flag design
       p The flag of the U.S. Virgin Islands features a field of white charged with an eagle, centered and flanked by the letters, V and I.
       p Upon the eagle’s chest is a shield of blue with red and white stripes. In its talons are a sprig of laurel and three arrows.
-      +survey('U.S. Virgin Islands', '37th')
+      +survey(name, '37th')
     .visual.flag
-      img.border(src='/assets/images/flag-usvi.svg')
+      +flag(name, path, 'border')
 
   .guide.wide
     .content
@@ -56,7 +55,7 @@ block content
       p #[em The Flags and Anthems Manual] for the London 2012 Olympic Games does provide Pantone colors for the U.S. Virgin Islands flag, as specified here.
     .visual
       .colors.primary
-        include includes/color-white
+        include includes/color-white-pantone
         .color
           .sample(class='yellow')
           .name Yellow
@@ -86,17 +85,17 @@ block content
       p U.S. Virgin Islands statute does not specify dimensions or proportion for the flag.
       p It is commonly produced with a proportion of 2:3.
     .visual
-      img(src='/assets/images/flag-usvi-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('american-samoa', 'American Samoa',
               'northern-mariana-islands', 'Northern Mariana Islands')

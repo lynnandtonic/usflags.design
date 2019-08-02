@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Tennessee.'
-  - var bodyClass = 'detail tennessee'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Tennessee'
+  - var path = 'tennessee'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Tennessee - 
-
 block content
 
-  +state('Tennessee', '/assets/images/flag-tennessee.svg', 'The Volunteer State', 'June 1, 1796')
+  +state(name, path, 'The Volunteer State', 'June 1, 1796')
 
   .intro
     p Tennessee has had two official state flags. The first was adopted 1 May 1897, but did not find widespread popularity.
@@ -25,9 +24,9 @@ block content
       p The Tennessee flag features a field of red.
       p At the free end is a uniform, vertical stripe of blue, fimbriated with a stripe of white.
       p Centered on the field of red is a circle of blue, also fimbriated with white. Upon the blue circle are three white five-pointed stars.
-      +survey('Tennessee', '14th')
+      +survey(name, '14th')
     .visual.flag
-      img(src='/assets/images/flag-tennessee.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -63,7 +62,7 @@ block content
       p The blue stripe is 1/8 the width of the hoist and the white stripe is 1/5 the width of the blue stripe. The diameter of the blue circle is one half the hoist.
       p The three stars are the largest they can be without touching each other or the edge of the blue circle. None of their sides should be parallel with the flag edges.
     .visual
-      img(src='/assets/images/flag-tennessee-dimensions.svg')
+      +construction(name, path)
 
   .guide
     .content
@@ -77,20 +76,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('kentucky', 'Kentucky',
               'ohio', 'Ohio')

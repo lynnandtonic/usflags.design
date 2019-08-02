@@ -1,14 +1,13 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the flag of Washington D.C.'
-  - var bodyClass = 'detail washington-dc'
+  - var bodyClass = 'detail'
+  - var category = 'district'
+  - var name = 'Washington D.C.'
+  - var path = 'washington-dc'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
-
-block title
-  | Washington D.C. - 
 
 block content
 
@@ -32,9 +31,9 @@ block content
       h2 Flag design
       p The Washington D.C. flag features a field of white.
       p The chief is charged with three red five-pointed stars, evenly spaced. Below, two red horizontal stripes extend the full length of the flag.
-      +survey('Washington D.C.', '8th')
+      +survey(name, '8th')
     .visual.flag
-      img.border(src='/assets/images/flag-washington-dc.svg')
+      +flag(name, path, 'border')
 
   .guide
     .content
@@ -66,27 +65,27 @@ block content
       p The chief (top white stripe) should be 3/10 the width of the hoist with each star measuring 2/10 the hoist and spaced evenly within the chief.
       p The red stripes and the base (bottom white stripe) should be 2/10 the hoist and the space between the red stripes should be 1/10.
     .visual
-      img(src='/assets/images/flag-washington-dc-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('hawaii', 'Hawaii',
               'guam', 'Guam')

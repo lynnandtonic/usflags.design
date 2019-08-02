@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of North Carolina.'
-  - var bodyClass = 'detail north-carolina'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'North Carolina'
+  - var path = 'north-carolina'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | North Carolina - 
-
 block content
 
-  +state('North Carolina', '/assets/images/flag-north-carolina.svg', 'The Tar Heel State', 'November 21, 1789', 'border')
+  +state(name, path, 'The Tar Heel State', 'November 21, 1789', 'border')
 
   .intro
     p The first official flag of North Carolina was adopted a month after the state seceded from the union in 1861. The design of the flag is credited to Raleigh artist, William G. Browne.
@@ -25,9 +24,9 @@ block content
       p The North Carolina flag features a blue union the full width of the flag and one-third the length. The remaining area is a horizontal bicolor of red and white.
       p Within the blue union is a white five-pointed star flanked by the letters ‘N’ and ‘C’ in gold.
       p They are encircled by two scrolls inscribed with two dates: “May 20th, 1775” above and “April 12th, 1776” below.
-      +survey('North Carolina', '33rd')
+      +survey(name, '33rd')
     .visual.flag
-      img.border(src='/assets/images/flag-north-carolina.svg')
+      +flag(name, path, 'border')
 
   .guide.wide
     .content
@@ -70,7 +69,7 @@ block content
       p The flag’s length should be half more than its width (a proportion of 2:3).
       p The length of the blue union should be the same as the widths of the horizontal red and white stripes.
     .visual
-      img(src='/assets/images/flag-north-carolina-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
@@ -95,20 +94,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('new-york', 'New York',
               'rhode-island', 'Rhode Island')

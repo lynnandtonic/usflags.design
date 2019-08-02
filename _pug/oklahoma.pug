@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Oklahoma.'
-  - var bodyClass = 'detail oklahoma'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Oklahoma'
+  - var path = 'oklahoma'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Oklahoma - 
-
 block content
 
-  +state('Oklahoma', '/assets/images/flag-oklahoma.svg', 'The Sooner State', 'November 16, 1907')
+  +state(name, path, 'The Sooner State', 'November 16, 1907')
 
   .intro
     p Oklahoma adopted its first state flag in 1911 which featured a field of red and a single white star.
@@ -26,9 +25,9 @@ block content
       p The Oklahoma flag features a field of sky blue charged with an Osage war shield, centered. The shield is decorated with six crosses and seven pendant eagle feathers.
       p On top of the shield, a Native American peace pipe is crossed with an olive branch.
       p The word “Oklahoma” is inscribed below in white.
-      +survey('Oklahoma', '39th')
+      +survey(name, '39th')
     .visual.flag
-      img(src='/assets/images/flag-oklahoma.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -68,7 +67,7 @@ block content
           .name Amber
           .hex #bb9959
           .pantone PMS 465c
-        include includes/color-white
+        include includes/color-white-pantone
       .colors.secondary
         .color
           .sample(class='flesh')
@@ -97,7 +96,7 @@ block content
       p Oklahoma statute does not specify the dimensions for the flag. It is often produced with a 4:6 proportion.
       p For each cross on the war shield, the horizontal bar should be 3/4 the width of the vertical bar. The top edge of the horizontal bar should be placed at the 25% mark of the vertical bar.
     .visual
-      img(src='/assets/images/flag-oklahoma-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
@@ -125,20 +124,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('utah', 'Utah',
               'new-mexico', 'New Mexico')

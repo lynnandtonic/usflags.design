@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of South Carolina.'
-  - var bodyClass = 'detail south-carolina'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'South Carolina'
+  - var path = 'south-carolina'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | South Carolina - 
-
 block content
 
-  +state('South Carolina', '/assets/images/flag-south-carolina.svg', 'The Palmetto State', 'May 23, 1788')
+  +state(name, path, 'The Palmetto State', 'May 23, 1788')
 
   .intro
     p The South Carolina flag’s origins date back to the American Revolutionary War when Colonel William Moultrie designed their first militia flag, a silver crescent on a field of blue.
@@ -23,9 +22,9 @@ block content
     .content
       h2 Flag design
       p The South Carolina flag features a white palmetto tree centered on a field of indigo with a white crescent in the upper left.
-      +survey('South Carolina', '10th')
+      +survey(name, '10th')
     .visual.flag
-      img(src='/assets/images/flag-south-carolina.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -62,7 +61,7 @@ block content
       p Similar to the colors of the flag, South Carolina has no official guidelines for the size of the flag nor the treatment of the crescent and palmetto. Because of this, the flag sees a lot of variation.
       p Regardless, the flag is often produced with a proportion of 2:3.
     .visual
-      img(src='/assets/images/flag-south-carolina-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
@@ -91,20 +90,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('maryland', 'Maryland',
               'new-hampshire', 'New Hampshire')

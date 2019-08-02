@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Ohio.'
-  - var bodyClass = 'detail ohio'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Ohio'
+  - var path = 'ohio'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Ohio - 
-
 block content
 
-  +state('Ohio', '/assets/images/flag-ohio.svg', 'The Buckeye State', 'March 1, 1803')
+  +state(name, path, 'The Buckeye State', 'March 1, 1803')
 
   .intro
     p The Ohio flag is unlike any other U.S. flag due to its unique shape. It’s the only flag that isn’t a rectangle and is instead a swallow-tailed burgee.
@@ -25,9 +24,9 @@ block content
       p The Ohio flag is a broad pennant featuring three red and two white horizontal stripes.
       p A blue triangle extends from the hoist, its apex at the center of the middle red stripe. 
       p Upon the blue triangle, a white circle surrounds an inset red disc. Seventeen white five-pointed stars surround.
-      +survey('Ohio', '15th')
+      +survey(name, '15th')
     .visual.flag
-      img(src='/assets/images/flag-ohio.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -66,27 +65,27 @@ block content
       p The flag has an 8:13 proportion.
       p Many flag makers, rather than create the Ohio flag’s unique shape, print the Ohio flag on a rectangular field of white.
     .visual
-      img(src='/assets/images/flag-ohio-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('tennessee', 'Tennessee',
               'louisiana', 'Louisiana')

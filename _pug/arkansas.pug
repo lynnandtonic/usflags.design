@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Arkansas.'
-  - var bodyClass = 'detail arkansas'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Arkansas'
+  - var path = 'arkansas'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Arkansas - 
-
 block content
 
-  +state('Arkansas', '/assets/images/flag-arkansas.svg', 'The Natural State', 'June 15, 1836')
+  +state(name, path, 'The Natural State', 'June 15, 1836')
 
   .intro
     p In 1912, the Pine Bluff chapter of the Daughters of the American Revolution held a flag design contest to create a flag for the USS #[em Arkansas].
@@ -25,29 +24,29 @@ block content
       h2 Flag design
       p The Arkansas flag features a field of red surrounding a centered diamond of white, bordered by a band of blue emblazoned with 25 white five-pointed stars.
       p Within the white diamond the word “Arkanas” is inscribed. Three blue five-pointed stars are placed below and one more placed above.
-      +survey('Arkansas', '45th')
+      +survey(name, '45th')
     .visual.flag
-      img(src='/assets/images/flag-arkansas.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-arkansas-icon-diamond.svg')
+          span.icon: img(src='/assets/images/flag-arkansas-icon-diamond.svg', alt='diamond')
           h4 diamond
           p diamonds, natural resources
           p #[em Note:] Arkansas is the only diamond-bearing state in the U.S.
         li.icon-item
-          span.icon: img(src='/assets/images/flag-arkansas-icon-stars.svg')
+          span.icon: img(src='/assets/images/flag-arkansas-icon-stars.svg', alt='diamond of stars')
           h4 25 stars
           p Arkansas as the 25th state to join the Union
         li.icon-item
-          span.icon: img(src='/assets/images/flag-arkansas-icon-3-stars.svg')
+          span.icon: img(src='/assets/images/flag-arkansas-icon-3-stars.svg', alt='three stars')
           h4 3 stars
           p the three countries to which Arkansas has belonged (Spain, France, and the U.S.) and the first three states formed from the Louisiana Purchase (Louisiana, Missouri and Arkansas)
         li.icon-item
-          span.icon: img(src='/assets/images/flag-arkansas-icon-1-star.svg')
+          span.icon: img(src='/assets/images/flag-arkansas-icon-1-star.svg', alt='five-pointed star')
           h4 1 star
           p Arkansas’ secession and role in the Confederacy
 
@@ -65,26 +64,26 @@ block content
       h2 Construction
       p The flag should have a proportion of 2:3.
     .visual
-      img(src='/assets/images/flag-arkansas-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
       h2 Previous iterations
       ul.visual.flag-list
         li.flag-item
-          span.flag: img(src='/assets/images/flag-arkansas-hocker.svg')
+          span.flag: img(src='/assets/images/flag-arkansas-hocker.svg', alt='the original design for the Arkansas flag')
           h4 Proposed design
           p Willie K. Hocker’s design submitted to the flag contest.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-arkansas-1913-1923.svg')
+          span.flag: img(src='/assets/images/flag-arkansas-1913-1923.svg', alt='the 1913 version of the Arkansas flag')
           h4 1913-1923
           p “Arkanas” is added to the Hocker design.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-arkansas-1923.svg')
+          span.flag: img(src='/assets/images/flag-arkansas-1923.svg', alt='the 1923 version of the Arkansas flag')
           h4 1923-1924
           p A fourth star is added within the white diamond.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-arkansas.svg')
+          span.flag: img(src='/assets/images/flag-arkansas.svg', alt='the current Arkansas flag')
           h4 1924-Present
           p The fourth star is separated from the other three.
 
@@ -93,20 +92,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('missouri', 'Missouri',
               'michigan', 'Michigan')

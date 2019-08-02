@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Delware.'
-  - var bodyClass = 'detail delaware'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Delaware'
+  - var path = 'delaware'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Delaware - 
-
 block content
 
-  +state('Delaware', '/assets/images/flag-delaware.svg', 'The First State', 'December 7, 1787')
+  +state(name, path, 'The First State', 'December 7, 1787')
 
   .intro
     p Delaware was the first state to ratify the U.S. Constitution and displays that date proudly on its flag.
@@ -24,45 +23,45 @@ block content
       h2 Flag design
       p The Delaware flag features a field of colonial blue surrounding a centered diamond of buff charged with the state coat of arms.
       p “December 7, 1787” (the date Delaware became a state) is inscribed below the diamond in white.
-      +survey('Delaware', '52nd')
+      +survey(name, '52nd')
     .visual.flag
-      img(src='/assets/images/flag-delaware.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-delaware-icon-diamond.svg')
+          span.icon: img(src='/assets/images/flag-delaware-icon-diamond.svg', alt='diamond')
           h4 diamond
           p the Diamond State, small but valuable
           p #[em Note:] It was Thomas Jefferson who compared Delaware to a diamond.
         li.icon-item
-          span.icon: img(src='/assets/images/flag-delaware-icon-husbandman.svg')
+          span.icon: img(src='/assets/images/flag-delaware-icon-husbandman.svg', alt='farmer with a hoe')
           h4 husbandman
           p farming, agriculture
         li.icon-item
-          span.icon: img(src='/assets/images/flag-delaware-icon-rifleman.svg')
+          span.icon: img(src='/assets/images/flag-delaware-icon-rifleman.svg', alt='man in uniform with rifle')
           h4 rifleman
           p citizens’ role in protecting freedom
         li.icon-item
-          span.icon: img(src='/assets/images/flag-delaware-icon-wheat.svg')
+          span.icon: img(src='/assets/images/flag-delaware-icon-wheat.svg', alt='sheave of wheat')
           h4 wheat
           p agriculture
         li.icon-item
-          span.icon: img(src='/assets/images/flag-delaware-icon-corn.svg')
+          span.icon: img(src='/assets/images/flag-delaware-icon-corn.svg', alt='corn in husk')
           h4 corn
           p agriculture
         li.icon-item
-          span.icon: img(src='/assets/images/flag-delaware-icon-ox.svg')
+          span.icon: img(src='/assets/images/flag-delaware-icon-ox.svg', alt='ox')
           h4 ox
           p animal husbandry
         li.icon-item
-          span.icon: img(src='/assets/images/flag-delaware-icon-river.svg')
+          span.icon: img(src='/assets/images/flag-delaware-icon-river.svg', alt='wavy rectangle')
           h4 water
           p the Delaware River, transportation, commerce
         li.icon-item
-          span.icon: img(src='/assets/images/flag-delaware-icon-ship.svg')
+          span.icon: img(src='/assets/images/flag-delaware-icon-ship.svg', alt='ship with many sails')
           h4 ship
           p shipbuilding, coastal trades
 
@@ -72,7 +71,7 @@ block content
       p The flag features the Delaware coat of arms, adopted in 1777.
       p On the lower banner, the state motto “Liberty and Independence” is inscribed, also heard in the state song, “Our Delaware.”
     .visual.flag
-      img(src='/assets/images/coat-of-arms-delaware.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -81,7 +80,7 @@ block content
       p The colors were inspired by a military uniform George Washington once wore.
       hr
       small Delaware statute describes the colors featured in the coat of arms, but Cable or Pantone values are not provided.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
@@ -122,27 +121,27 @@ block content
       h2 Construction
       p Delaware statute doesn’t specify dimensions, but the flag is usually produced with a proportion of 2:3.
     .visual
-      img(src='/assets/images/flag-delaware-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('northern-mariana-islands', 'Northen Mariana Islands',
               'pennsylvania', 'Pennsylvania')

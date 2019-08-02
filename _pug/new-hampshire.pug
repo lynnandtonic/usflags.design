@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of New Hampshire.'
-  - var bodyClass = 'detail new-hampshire'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'New Hampshire'
+  - var path = 'new-hampshire'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | New Hampshire - 
-
 block content
 
-  +state('New Hampshire', '/assets/images/flag-new-hampshire.svg', 'The Granite State', 'June 21, 1788')
+  +state(name, path, 'The Granite State', 'June 21, 1788')
 
   .intro
     p The flag of New Hampshire follows a common pattern for U.S. state flags, featuring the state seal on a field of blue. It is the only flag, though, to feature a warship.
@@ -23,9 +22,9 @@ block content
     .content
       h2 Flag design
       p The New Hampshire flag features a field of blue charged with the state seal, centered.
-      +survey('New Hampshire', '63rd')
+      +survey(name, '63rd')
     .visual.flag
-      img(src='/assets/images/flag-new-hampshire.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -54,7 +53,7 @@ block content
       p The prominent colors are blue and gold, with supporting colors within the seal.
       hr
       small New Hampshire statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
@@ -86,7 +85,7 @@ block content
       p New Hampshire statute doesn’t specify dimensions, but the flag is usually produced with a proportion of 2:3.
       p It does not specify dimensions for the coat of arms beyond “suitable proportion.”
     .visual
-      img(src='/assets/images/flag-new-hampshire-dimensions.svg')
+      +construction(name, path)
 
   .guide
     .content
@@ -95,29 +94,29 @@ block content
       p The original seal featured the Latin words (later translated to English) “Sigillum Reipublicae Neo Hantoniensis” and the date 1784, when New Hampshire’s state constitution took effect.
       p The state coat of arms (pictured) shows a similar compositon to the original seal.
     .visual
-      img(src='/assets/images/flag-new-hampshire-original.jpg')
+      img(src='/assets/images/flag-new-hampshire-original.jpg', alt='a photo of the original New Hampshire flag')
       figcaption Image courtesy of Miltonborough Historical Society
-      img(src='/assets/images/coat-of-arms-new-hampshire.jpg')
+      +coat-of-arms(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('south-carolina', 'South Carolina',
               'virginia', 'Virginia')

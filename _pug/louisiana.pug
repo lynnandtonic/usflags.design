@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Louisiana.'
-  - var bodyClass = 'detail louisiana'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Louisiana'
+  - var path = 'louisiana'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Louisiana - 
-
 block content
 
-  +state('Louisiana', '/assets/images/flag-louisiana.svg', 'The Pelican State', 'April 30, 1812')
+  +state(name, path, 'The Pelican State', 'April 30, 1812')
 
   .intro
     p Louisiana has flown many flags in its history, like the flags of Spain, France, and Great Britain. Leading up to and during the American Civil War, it flew four distinct flags including the Confederate battle and national flags.
@@ -25,9 +24,9 @@ block content
       p The Louisiana flag features a field of blue charged with a crest, centered.
       p The crest depicts a mother pelican with her three chicks in a nest, wounding herself with three drops of blood on her chest.
       p Upon a white banner below the crest, the state motto, “Union Justice Confidence” is inscribed.
-      +survey('Louisiana', '36th')
+      +survey(name, '36th')
     .visual.flag
-      img(src='/assets/images/flag-louisiana.svg')
+      +flag(name, path)
 
   .guide
     .content
@@ -43,7 +42,7 @@ block content
       p The pelican has long been a symbol of Lousiana. Prior to the Civil War, the “pelican in her piety” was paired with the words “Justice Union and Confidence.”
       p After the war, when union and reconstruction were priority, the order was changed to “Union Justice Confidence.”
     .visual.flag
-      img(src='/assets/images/coat-of-arms-louisiana.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -56,7 +55,7 @@ block content
           .name Blue
           .hex #002855
           .pantone PMS 295C
-        include includes/color-white
+        include includes/color-white-pantone
       .colors.secondary
         .color
           .sample(class='gray-1')
@@ -114,26 +113,26 @@ block content
       h2 Construction
       p The flag has a proportion of 7:11. Within this scale, the crest should be 5.25 units tall and 6 units wide.
     .visual
-      img(src='/assets/images/flag-louisiana-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
       h2 Previous iterations
       ul.visual.flag-list
         li.flag-item
-          span.flag: img(src='/assets/images/flag-louisiana-1861.svg')
+          span.flag: img.border(src='/assets/images/flag-louisiana-1861.svg', alt='striped Louisiana flag from 1861')
           h4 1861
           p Flag raised during the weeks between seceding from the United States and joining the Confederacy.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-louisiana-pelican-1861.jpg')
+          span.flag: img(src='/assets/images/flag-louisiana-pelican-1861.jpg', alt='pelican Louisiana flag from 1861')
           h4 1861
           p Flag raised at a similar time, establishing the pelican iconography. It was flown simultaneously with the flags of the Confederacy.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-louisiana-1912-2006.jpg')
+          span.flag: img(src='/assets/images/flag-louisiana-1912-2006.jpg', alt='Louisiana flag from 1912')
           h4 1912-2006
           p A variation of the pelican flag with the red droplets of blood missing.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-louisiana.svg')
+          span.flag: img(src='/assets/images/flag-louisiana.svg', alt='current Louisiana flag')
           h4 2010-Present
           p The current flag, following the standards defined by Louisiana statute.
 
@@ -142,20 +141,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('ohio', 'Ohio',
               'indiana', 'Indiana')

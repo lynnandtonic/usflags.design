@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the flag of American Samoa.'
-  - var bodyClass = 'detail american-samoa'
+  - var bodyClass = 'detail'
+  - var category = 'territory'
+  - var name = 'American Samoa'
+  - var path = 'american-samoa'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | American Samoa - 
-
 block content
 
-  +territory('American Samoa', '/assets/images/flag-american-samoa.svg', 'April 17, 1900', 'border')
+  +territory(name, path, 'April 17, 1900', 'border')
 
   .intro
     p American Samoa became a U.S. territory in April of 1900 and didn’t fly its own flag until exactly sixty years later.
@@ -24,24 +23,24 @@ block content
       h2 Flag design
       p The American Samoa flag features a field of blue bisected by a red and white fly chevron pointing toward the hoist.
       p Within the chevron, a bald eagle is charged, a war club (uatogi) and a fly-whisk (fue) in its claws.
-      +survey('American Samoa', '27th')
+      +survey(name, '27th')
     .visual.flag
-      img.border(src='/assets/images/flag-american-samoa.svg')
+      +flag(name, path, 'border')
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-american-samoa-icon-eagle.svg')
+          span.icon: img(src='/assets/images/flag-american-samoa-icon-eagle.svg', alt='eagle')
           h4 eagle
           p power, protection, and friendship with the United States
         li.icon-item
-          span.icon: img(src='/assets/images/flag-american-samoa-icon-uatogi.svg')
+          span.icon: img(src='/assets/images/flag-american-samoa-icon-uatogi.svg', alt='war club')
           h4 uatogi
           p power, government
         li.icon-item
-          span.icon: img(src='/assets/images/flag-american-samoa-icon-fue.svg')
+          span.icon: img(src='/assets/images/flag-american-samoa-icon-fue.svg', alt='fly-whisk')
           h4 fue
           p wisdom, tradition
         li.icon-item
@@ -63,7 +62,7 @@ block content
           .name Red
           .hex #ef3340
           .pantone PMS 032
-        include includes/color-white
+        include includes/color-white-pantone
       .colors.secondary
         .color
           .sample(class='gold')
@@ -75,7 +74,7 @@ block content
           .name Brown
           .hex #be531c
           .pantone PMS 167
-        include includes/color-black
+        include includes/color-black-pantone
 
   .guide
     .content
@@ -83,17 +82,17 @@ block content
       p American Somoa statutes do not mention the territory flag.
       p It is usually produced with a proportion of 10:19.
     .visual
-      img(src='/assets/images/flag-american-samoa-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('puerto-rico', 'Puerto Rico',
               'us-virgin-islands', 'U.S. Virgin Islands')

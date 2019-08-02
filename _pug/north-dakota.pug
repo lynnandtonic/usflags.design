@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of North Dakota.'
-  - var bodyClass = 'detail north-dakota'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'North Dakota'
+  - var path = 'north-dakota'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | North Dakota - 
-
 block content
 
-  +state('North Dakota', '/assets/images/flag-north-dakota.svg', 'The Peace Garden State', 'November 2, 1889')
+  +state(name, path, 'The Peace Garden State', 'November 2, 1889')
 
   .intro
     p North Dakota’s flag was introduced in a 1911 bill by Colonel John H. Fraine.
@@ -27,9 +26,9 @@ block content
       p Upon the eagle’s chest is a shield with seven red and six white alternating stripes. The eagle clasps an olive branch and a sheaf of arrows. In its mouth, it holds a banner inscribed with “E Pluribus Unum.”
       p Above the eagle are thirteen gold stars underneath golden sun rays.
       p Below the eagle, “North Dakota” is inscribed on a scroll of red and gold.
-      +survey('North Dakota”', '56th')
+      +survey(name, '56th')
     .visual.flag
-      img(src='/assets/images/flag-north-dakota.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -123,27 +122,27 @@ block content
       p The eagle should be 3 feet, 4 inches wing to wing and 1 foot, 10 inches from head to olive branch.
       p The flag can have an optional border of knotted yellow fringe 2 and 1/2 inches wide.
     .visual
-      img(src='/assets/images/flag-north-dakota-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('colorado', 'Colorado',
               'south-dakota', 'South Dakota')

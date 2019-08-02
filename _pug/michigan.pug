@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Michigan.'
-  - var bodyClass = 'detail michigan'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Michigan'
+  - var path = 'michigan'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Michigan - 
-
 block content
 
-  +state('Michigan', '/assets/images/flag-michigan.svg', 'The Great Lake State', 'January 26, 1837')
+  +state(name, path, 'The Great Lake State', 'January 26, 1837')
 
   .intro
     p The current Michigan flag is the third version for the state. Descriptions of the first two flags exist, but their specific designs have been lost to history.
@@ -24,37 +23,37 @@ block content
     .content
       h2 Flag design
       p The Michigan flag features a field of blue charged with the state coat of arms, centered.
-      +survey('Michigan', '59th')
+      +survey(name, '59th')
     .visual.flag
-      img(src='/assets/images/flag-michigan.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-michigan-icon-elk-moose.svg')
+          span.icon: img(src='/assets/images/flag-michigan-icon-elk-moose.svg', alt='an elk and a mooose face each other on hind legs, their front legs on a shield')
           h4 elk & moose
           p natural beauty, regional fauna
           p #[em Note:] The elk and moose are said to be borrowed from the Hudson’s Bay Company coat of arms.
         li.icon-item
-          span.icon: img(src='/assets/images/flag-michigan-icon-eagle.svg')
+          span.icon: img(src='/assets/images/flag-michigan-icon-eagle.svg', alt='eagle with laurel and arrows in its claws')
           h4 eagle
           p freedom, peace, strength, the Union
         li.icon-item
-          span.icon: img(src='/assets/images/flag-michigan-icon-man.svg')
+          span.icon: img(src='/assets/images/flag-michigan-icon-man.svg', alt='a man holds a gun and waves on the shore')
           h4 armed man
           p peace, strong defense
         li.icon-item
-          span.icon: img(src='/assets/images/flag-michigan-icon-tuebor.svg')
+          span.icon: img(src='/assets/images/flag-michigan-icon-tuebor.svg', alt='Tuebor')
           h4 motto
           p #[em I will defend]
         li.icon-item
-          span.icon: img(src='/assets/images/flag-michigan-icon-e-pluribus-unum.svg')
+          span.icon: img(src='/assets/images/flag-michigan-icon-e-pluribus-unum.svg', alt='E Pluribus Unum on a banner')
           h4 motto
           p national unity, #[em Out of many, one]
         li.icon-item
-          span.icon: img(src='/assets/images/flag-michigan-icon-motto.svg')
+          span.icon: img(src='/assets/images/flag-michigan-icon-motto.svg', alt='Latin words on a banner')
           h4 motto
           p #[em If You Seek a Pleasant Peninsula, Look About You]
 
@@ -63,7 +62,7 @@ block content
       h2 Coat of Arms
       p Established in 1835, the Michigan coat of arms bears resemblance to the coat of arms of the #[a(href='https://en.wikipedia.org/wiki/Hudson%27s_Bay_Company#/media/File:HBC-coa.JPG') Hudson’s Bay Company], which also features an elk and moose as supports.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-michigan.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -106,22 +105,22 @@ block content
       h2 Construction
       p Michigan statute doesn’t specify dimensions for its flag. It is usually produced with a proportion of 2:3.
     .visual
-      img(src='/assets/images/flag-michigan-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
       h2 Previous iterations
       ul.visual.flag-list
         li.flag-item
-          span.flag: img.blank(src='/assets/images/blank.jpg')
+          span.flag: img.blank(src='/assets/images/blank.jpg', alt='a blank rectangle')
           h4 1837–1865
-          p The first flag featured the coat of arms plus a woman and soldier. The reverse featured a portrait of Stevens T. Mason.
+          p Lost to time, but as described: The first flag featured the coat of arms plus a woman and soldier. The reverse featured a portrait of Stevens T. Mason.
         li.flag-item
-          span.flag: img.blank(src='/assets/images/blank.jpg')
+          span.flag: img.blank(src='/assets/images/blank.jpg', alt='a blank rectangle')
           h4 1837–1911
-          p The woman and soldier were removed from the obverse. Mason’s portrait was removed and the U.S. coat of arms was added to the reverse.
+          p Lost to time, but as described: The woman and soldier were removed from the obverse. Mason’s portrait was removed and the U.S. coat of arms was added to the reverse.
         li.flag-item
-          span.flag: img.blank(src='/assets/images/flag-michigan.svg')
+          span.flag: img.blank(src='/assets/images/flag-michigan.svg', alt='the current flag of Michigan')
           h4 1911–Present
           p The U.S. coat of arms were removed from the reverse.
         li.flag-item
@@ -131,20 +130,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('arkansas', 'Arkansas',
               'florida', 'Florida')

@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Georgia.'
-  - var bodyClass = 'detail georgia'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Georgia'
+  - var path = 'georgia'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Georgia - 
-
 block content
 
-  +state('Georgia', '/assets/images/flag-georgia.svg', 'The Peach State', 'January 2, 1788')
+  +state(name, path, 'The Peach State', 'January 2, 1788')
 
   .intro
     p Georgia holds a few flag records. Not only has it had the most flags (eight different iterations), its current flag is the most recently adopted of the entire nation’s.
@@ -26,32 +25,32 @@ block content
       p The Georgia flag is a horizontal triband of red and white.
       p It features a square canton of blue charged with the state’s coat of arms in gold, surrounded by a ring of thirteen white five-pointed stars.
       p Below the coat of arms, the words “In God We Trust” are inscribed.
-      +survey('Georgia', '72nd*', '*The flag voted on was the 2001–2003 version (see Previous Iterations section).')
+      +survey(name, '72nd*', '*The flag voted on was the 2001–2003 version (see Previous Iterations section).')
     .visual.flag
-      img(src='/assets/images/flag-georgia.svg')
+      +flag(name, path, 'border')
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-georgia-icon-stars.svg')
+          span.icon: img(src='/assets/images/flag-georgia-icon-stars.svg', alt='ring of stars')
           h4 13 stars
           p the original thirteen colonies
         li.icon-item
-          span.icon: img(src='/assets/images/flag-georgia-icon-pillars.svg')
+          span.icon: img(src='/assets/images/flag-georgia-icon-pillars.svg', alt='three Greek-style columns')
           h4 pillars
           p three branches of government: executive, legislative, and judicial
         li.icon-item
-          span.icon: img(src='/assets/images/flag-georgia-icon-militia.svg')
+          span.icon: img(src='/assets/images/flag-georgia-icon-militia.svg', alt='Colonial soldier holding a sword')
           h4 militia
           p protecting the Constitution
         li.icon-item
-          span.icon: img(src='/assets/images/flag-georgia-icon-motto.svg')
+          span.icon: img(src='/assets/images/flag-georgia-icon-motto.svg', alt='“Widom, Justice, Moderatino” on a banner')
           h4 motto
           p wisdom, justice, moderation
         li.icon-item
-          span.icon: img(src='/assets/images/flag-georgia-icon-in-god-we-trust.svg')
+          span.icon: img(src='/assets/images/flag-georgia-icon-in-god-we-trust.svg', alt='In God we trust')
           h4 motto
           p a foundation for all above it
 
@@ -60,7 +59,7 @@ block content
       h2 Coat of Arms
       p The original coat of arms featured the date 1799 (as seen to the right). In 1914, the date was changed to 1776 to reference the signing of the Declaration of Independence.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-georgia.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -68,7 +67,7 @@ block content
       p The Georgia flag uses the same red, white, and blue as the U.S. national flag.
       hr
       small Georgia statute does not provide Cable or Pantone values for the gold of the flag.
-      small The hex value here is approximate.
+      small The hex value here is an approximation.
     .visual.colors.primary
       include includes/color-us-blue
       include includes/color-us-red
@@ -83,42 +82,42 @@ block content
       h2 Construction
       p The Georgia flag can be produced with different proportions including 2:3, 3:5, or 5:8.
     .visual
-      img(src='/assets/images/flag-georgia-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
       h2 Previous iterations
       ul.visual.flag-list
         li.flag-item
-          span.flag: img(src='/assets/images/flag-georgia-unofficial.jpg')
+          span.flag: img(src='/assets/images/flag-georgia-unofficial.jpg', alt='unofficial Georgia flag')
           h4 Pre–1879
           p The flag supplied to militia units bearing the coat of arms.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-georgia-1879-1902.jpg')
+          span.flag: img(src='/assets/images/flag-georgia-1879-1902.jpg', alt='Georgia flag from 1879')
           h4 1879–1902
           p Introduced by Herman H. Perry, Georgia state senator. Based on the first Confederate national flag.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-georgia-1902-1906.jpg')
+          span.flag: img(src='/assets/images/flag-georgia-1902-1906.jpg', alt='Georgia flag from 1902')
           h4 1902–1906
           p Upon the blue field, the coat of arms must be “stamped, painted or embroidered.”
         li.flag-item
-          span.flag: img(src='/assets/images/flag-georgia-1906-1920.jpg')
+          span.flag: img(src='/assets/images/flag-georgia-1906-1920.jpg', alt='Georgia flag from 1906')
           h4 1906–1920
           p A white shield is added along with a red banner with the word “Georgia.”
         li.flag-item
-          span.flag: img(src='/assets/images/flag-georgia-1920-1956.jpg')
+          span.flag: img(src='/assets/images/flag-georgia-1920-1956.jpg', alt='Georgia flag from 1920')
           h4 1920–1956
           p The coat of arms is replaced with the state seal in white and blue.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-georgia-1956-2001.jpg')
+          span.flag: img(src='/assets/images/flag-georgia-1956-2001.jpg', alt='Georgia flag from 1956')
           h4 1956–2001
           p Designed by John Sammons Bell, the red and white bars are replaced with the Confederate battle flag.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-georgia-2001-2003.jpg')
+          span.flag: img(src='/assets/images/flag-georgia-2001-2003.jpg', alt='Georgia flag from 2001')
           h4 2001–2003
           p Designed by architect Cecil Alexander and championed by Governor Roy Barnes, a very unpopular “compromise” version.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-georgia.svg')
+          span.flag: img(src='/assets/images/flag-georgia.svg', alt='current Georgia flag')
           h4 2003–Present
           p The current Georgia state flag.
 
@@ -127,20 +126,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('new-jersey', 'New Jersey',
               'connecticut', 'Connecticut')

@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Missouri.'
-  - var bodyClass = 'detail missouri'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Missouri'
+  - var path = 'missouri'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Missouri - 
-
 block content
 
-  +state('Missouri', '/assets/images/flag-missouri.svg', 'The Show Me State', 'August 10, 1821', 'border')
+  +state(name, path, 'The Show Me State', 'August 10, 1821', 'border')
 
   .intro
     p Like many other state flags, the Missouri flag begins with the Daughters of the American Revolution. They appointed Mary Elizabeth Oliver to lead a committee and in 1908 she brought her design to the state capitol.
@@ -24,44 +23,44 @@ block content
       h2 Flag design
       p The Missouri state flag is a horizontal tricolor of red, white, and blue.
       p At the center, the state coat of arms is charged, surrounded by a circular band of blue emblazoned with 24 white five-pointed stars.
-      +survey('Missouri', '48th')
+      +survey(name, '48th')
     .visual.flag
-      img.border(src='/assets/images/flag-missouri.svg')
+      +flag(name, path, 'border')
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-missouri-icon-stars.svg')
+          span.icon: img(src='/assets/images/flag-missouri-icon-stars.svg', alt='circle of 24 stars')
           h4 24 stars
           p the states of the Union, including Missouri
         li.icon-item
-          span.icon: img(src='/assets/images/flag-missouri-icon-stars2.svg')
+          span.icon: img(src='/assets/images/flag-missouri-icon-stars2.svg', alt='a half-circle of 24 stars in 3 rows')
           h4 24 more stars
           p Missouri as the 24th state
         li.icon-item
-          span.icon: img(src='/assets/images/flag-missouri-icon-bears.svg')
+          span.icon: img(src='/assets/images/flag-missouri-icon-bears.svg', alt='two bears face each other on hind legs')
           h4 bears
           p strength, courage
         li.icon-item
-          span.icon: img(src='/assets/images/flag-missouri-icon-knight.svg')
+          span.icon: img(src='/assets/images/flag-missouri-icon-knight.svg', alt='a Knight’s helmet upon a circle that reads “United we stand, divided we fall”')
           h4 knight & shield
           p strength and independence of the state, strength of the Union
         li.icon-item
-          span.icon: img(src='/assets/images/flag-missouri-icon-crescent.svg')
+          span.icon: img(src='/assets/images/flag-missouri-icon-crescent.svg', alt='crescent moon shape')
           h4 crescent
           p the immense potential for the future
         li.icon-item
-          span.icon: img(src='/assets/images/flag-missouri-icon-eagle.svg')
+          span.icon: img(src='/assets/images/flag-missouri-icon-eagle.svg', alt='eagle from the Great Seal of the U.S.')
           h4 eagle
           p freedom, strength, peace, the Union
         li.icon-item
-          span.icon: img(src='/assets/images/flag-missouri-icon-motto.svg')
+          span.icon: img(src='/assets/images/flag-missouri-icon-motto.svg', alt='Salus Populi Suprema Lex Esto')
           h4 motto
           p #[em The Welfare of the People Shall Be the Supreme Law]
         li.icon-item
-          span.icon: img(src='/assets/images/flag-missouri-icon-date.svg')
+          span.icon: img(src='/assets/images/flag-missouri-icon-date.svg', alt='Roman numberals MDCCCXX')
           h4 1820
           p the Missouri Compromise
 
@@ -70,7 +69,7 @@ block content
       h2 Coat of Arms
       p The Missouri coat of arms and state seal have been relatively unchanged since they were designed in 1822 by Judge Robert William Wells.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-missouri.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -113,27 +112,27 @@ block content
       p The width of the blue band around the center circle of the seal is 1/14 the width of the hoist.
       p The diameter of the circle is 1/3 the length of the fly.
     .visual
-      img(src='/assets/images/flag-missouri-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('maine', 'Maine',
               'arkansas', 'Arkansas')

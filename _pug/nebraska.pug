@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Nebraska.'
-  - var bodyClass = 'detail nebraska'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Nebraska'
+  - var path = 'nebraska'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Nebraska - 
-
 block content
 
-  +state('Nebraska', '/assets/images/flag-nebraska.svg', 'The Cornhusker State', 'March 1, 1867')
+  +state(name, path, 'The Cornhusker State', 'March 1, 1867')
 
   .intro
     p The flag of Nebraska follows a common pattern for U.S. state flags, featuring the state seal on a field of blue.
@@ -24,37 +23,37 @@ block content
     .content
       h2 Flag design
       p The Nebraska state flag features a field of blue charged with the state seal in gold and silver, centered.
-      +survey('Nebraska', '71st')
+      +survey(name, '71st')
     .visual.flag
-      img(src='/assets/images/flag-nebraska.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-nebraska-icon-blacksmith.svg')
+          span.icon: img(src='/assets/images/flag-nebraska-icon-blacksmith.svg', alt='a blacksmith hammering an anvil')
           h4 blacksmith
           p mechanic arts
         li.icon-item
-          span.icon: img(src='/assets/images/flag-nebraska-icon-wheat.svg')
+          span.icon: img(src='/assets/images/flag-nebraska-icon-wheat.svg', alt='a cabin, farmland, and wheat')
           h4 cabin & wheat
           p pioneers who settled and farmed the land, agricultural tradition
         li.icon-item
-          span.icon: img(src='/assets/images/flag-nebraska-icon-boat.svg')
+          span.icon: img(src='/assets/images/flag-nebraska-icon-boat.svg', alt='a steamboat on a river')
           h4 steamboat
           p travel, commerce, the Missouri River
         li.icon-item
-          span.icon: img(src='/assets/images/flag-nebraska-icon-train.svg')
+          span.icon: img(src='/assets/images/flag-nebraska-icon-train.svg', alt='a train travels through the mountains')
           h4 train
           p industry, expansion, the Rocky Mountains
         li.icon-item
-          span.icon: img(src='/assets/images/flag-nebraska-icon-motto.svg')
+          span.icon: img(src='/assets/images/flag-nebraska-icon-motto.svg', alt='Equality before the law')
           h4 motto
           p #[em Equality Before the Law]
           p #[em Note:] Nebraska was the first and only state to grant black men the right to vote by Congressional mandate.
         li.icon-item
-          span.icon: img(src='/assets/images/flag-nebraska-icon-date.svg')
+          span.icon: img(src='/assets/images/flag-nebraska-icon-date.svg', alt='March 1st 1867')
           h4 March 1st 1867
           p date Nebraska gained statehood
 
@@ -64,7 +63,7 @@ block content
       p The coat of arms and state seal were established in 1867 when Nebraska gained statehood.
       p In 1921, a bill was introduced to redesign the seal. Bertram Goodhue (the architect of the Nebraska State Capitol) designed the seal and the bill overwhelmingly passed the Nebraska House. It was opposed in the senate though and has remained unchanged.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-nebraska.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -72,7 +71,7 @@ block content
       p The Nebraska flag features a field of “national blue.”
       hr
       small Nebraska statute does not provide Cable or Pantone values for the other colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual.colors.primary
       include includes/color-us-blue
       .color
@@ -91,27 +90,27 @@ block content
       p The original state flag was produced with a hoist of 4 feet, 6 inches and a fly of 5 feet, 6 inches.
       p Currently the flag is commonly produced with a proportion of 3:5.
     .visual
-      img(src='/assets/images/flag-nebraska-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('nevada', 'Nevada',
               'colorado', 'Colorado')

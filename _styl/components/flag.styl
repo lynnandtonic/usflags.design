@@ -2,18 +2,22 @@
 * $FLAG
 --------------------------------------------------------------------*/
 
-.flag,
-.flag img
-  display: block
-  border-radius: 4px
-
 .flag
+  display: block
   margin-bottom: 8px
 
+.flag,
+.flag img
+  border-radius: 4px
+
 .flag-item a
+  opacity: 1
 
   .flag
     transition: all .15s ease-in-out
+
+    img
+      display: block
 
   .state:after
     display: inline-block
@@ -24,11 +28,11 @@
   &:hover
 
     .flag
-      transform: scale(1.02)
-      filter: grayscale(1) brightness(1)
+      transform: scale(1.02) translateY(-5px)
 
     .flag:not(.non-rect)
-      box-shadow: 4px 4px 0 $grey-light
+      box-shadow: 0 0 0 4px white,
+                  0 0 10px 2px black(.35)
 
     .state
       text-decoration: underline

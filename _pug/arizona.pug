@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Arizona.'
-  - var bodyClass = 'detail arizona'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Arizona'
+  - var path = 'arizona'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Arizona - 
-
 block content
 
-  +state('Arizona', '/assets/images/flag-arizona.svg', 'The Grand Canyon State', 'February 14, 1912')
+  +state(name, path, 'The Grand Canyon State', 'February 14, 1912')
 
   .intro
     p The Arizona flag was designed in 1910 by Colonel Charles W. Harris, general of the Arizona National Guard, for the Arizona Rifle Team to use in competition. His wife, Mae Harris, sewed the first competition version.
@@ -25,20 +24,20 @@ block content
     .content
       h2 Flag design
       p The Arizona flag features a lower half of blue while the upper half features thirteen equally-sized beams, six gold and seven red, radiating from a copper five-pointed star, centered.
-      +survey('Arizona', '6th')
+      +survey(name, '6th')
     .visual.flag
-      img(src='/assets/images/flag-arizona.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-arizona-icon-star.svg')
+          span.icon: img(src='/assets/images/flag-arizona-icon-star.svg', alt='five-pointed star')
           h4 star
           p Arizona as one of the largest producers of copper
         li.icon-item
-          span.icon: img(src='/assets/images/flag-arizona-icon-rays.svg')
+          span.icon: img(src='/assets/images/flag-arizona-icon-rays.svg', alt='radiating lines')
           h4 rays
           p the setting sun, the original thirteen colonies
         li.icon-item
@@ -50,7 +49,7 @@ block content
       p Blue and gold are Arizona’s state colors.
       hr
       small Arizona statute does not provide Cable or Pantone values for the “old gold” or copper.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual.colors.primary
       include includes/color-us-blue
       include includes/color-us-red
@@ -70,27 +69,27 @@ block content
       p The flag should have a hoist of 4 feet and a fly of 6 feet.
       p The copper star should be 2 feet tall and positioned 1 foot from the top and 1 foot from the bottom, horizontally centered.
     .visual
-      img(src='/assets/images/flag-arizona-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('new-mexico', 'New Mexico',
               'alaska', 'Alaska')

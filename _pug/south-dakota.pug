@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of South Dakota.'
-  - var bodyClass = 'detail south-dakota'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'South Dakota'
+  - var path = 'south-dakota'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | South Dakota - 
-
 block content
 
-  +state('South Dakota', '/assets/images/flag-south-dakota.svg', 'The Mount Rushmore State', 'November 2, 1889')
+  +state(name, path, 'The Mount Rushmore State', 'November 2, 1889')
 
   .intro
     p South Dakota’s first state flag was designed by Ida Anding McNeil, a local stenographer. It was adopted July 1, 1909 and featured a two-sided design: a golden sun on the obverse and the state seal on the reverse.
@@ -25,9 +24,9 @@ block content
       h2 Flag design
       p The South Dakota flag features a field of sky blue charged with the state seal in white and dark blue, centered.
       p Surrounding the seal is a serrated, golden sun. Around the sun, the words ”South Dakota” are inscribed above and “The Mount Rushmore State” below.
-      +survey('South Dakota”', '68th')
+      +survey(name, '68th')
     .visual.flag
-      img(src='/assets/images/flag-south-dakota.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -69,7 +68,7 @@ block content
       p The South Dakota flag uses a unique sky blue for its field.
       hr
       small South Dakota statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual.colors.primary
       .color
         .sample(class='sky-blue')
@@ -92,7 +91,7 @@ block content
       p Within the field, the seal should be 4/9 the width of the hoist and the sun, 5/9. The width each of the golden letters should be 1/18 the width of the hoist.
       p Flags made for indoor use should have three sides of golden fringe 1/18 the width of the hoist.
     .visual
-      img(src='/assets/images/flag-south-dakota-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
@@ -120,20 +119,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('north-dakota', 'North Dakota',
               'montana', 'Montana')

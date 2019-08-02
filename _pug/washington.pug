@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Washington.'
-  - var bodyClass = 'detail washington'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Washington'
+  - var path = 'washington'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Washington - 
-
 block content
 
-  +state('Washington', '/assets/images/flag-washington.svg', 'The Evergreen State', 'November 11, 1889')
+  +state(name, path, 'The Evergreen State', 'November 11, 1889')
 
   .intro
     p The Washington flag was designed in 1914 by the Daughters of the American Revolution, who put together a flag committee led by Emma Chadwick.
@@ -24,9 +23,9 @@ block content
     .content
       h2 Flag design
       p The Washington flag features a field of green charged with the state seal, centered.
-      +survey('Washington', '47th')
+      +survey(name, '47th')
     .visual.flag
-      img.border(src='/assets/images/flag-washington.svg')
+      +flag(name, path)
 
   .guide
     .content
@@ -68,8 +67,8 @@ block content
           .hex #fdd6c6
           .cable Cable No. 80004 #[span Eggshell]
           .pantone PMS DS-5-9
-        include includes/color-white
-        include includes/color-black
+        include includes/color-white-pantone
+        include includes/color-black-pantone
 
   .guide
     .content
@@ -78,7 +77,7 @@ block content
       p For these sizes, the seal must be 19 inches, 25 inches, and 31 inches, respectively.
       p All other sizes of the flag must keep a proportion of 1:1.6 and the seal will be 1/3 the length of the fly.
     .visual
-      img(src='/assets/images/flag-washington-dimensions.svg')
+      +construction(name, path)
 
   .guide
     .content
@@ -92,20 +91,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('montana', 'Montana',
               'idaho', 'Idaho')

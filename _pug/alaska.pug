@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Alaska.'
-  - var bodyClass = 'detail alaska'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Alaska'
+  - var path = 'alaska'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Alaska - 
-
 block content
 
-  +state('Alaska', '/assets/images/flag-alaska.svg', 'The Last Frontier', 'January 3, 1959')
+  +state(name, path, 'The Last Frontier', 'January 3, 1959')
 
   .intro
     p Alaska became a territory of the United States in 1912. In its journey to statehood, the Alaska Department of the American Legion held a 1927 flag design contest for children across Alaska, grades 7-12.
@@ -24,20 +23,20 @@ block content
     .content
       h2 Flag design
       p The Alaska flag features a field of blue with 7 small gold stars in the shape of the Big Dipper and one large gold star in the upper right.
-      +survey('Alaska', '5th')
+      +survey(name, '5th')
     .visual.flag
-      img(src='/assets/images/flag-alaska.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-alaska-icon-dipper.svg')
+          span.icon: img(src='/assets/images/flag-alaska-icon-dipper.svg', alt='the Big Dipper made from stars')
           h4 The Big Dipper
           p strength, Ursa Major (The Great Bear)
         li.icon-item
-          span.icon: img(src='/assets/images/flag-alaska-icon-star.svg')
+          span.icon: img(src='/assets/images/flag-alaska-icon-star.svg', alt='five-pointed star')
           h4 The North Star
           p Alaska as the northernmost state
         li.icon-item
@@ -48,7 +47,7 @@ block content
       p The field of blue was chosen to represent the Alaskan sky and the forget-me-not, an Alaskan flower.
       hr
       small Alaska statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual.colors.primary
       .color
         .sample(class='blue')
@@ -65,27 +64,27 @@ block content
       p The Alaska flag should have a proportion of 1:1.416.
       p Alaska statutes provide a detailed proportion and size chart, recreated here.
     .visual
-      img(src='/assets/images/flag-alaska-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('arizona', 'Arizona',
               'hawaii', 'Hawaii')

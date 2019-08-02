@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Wyoming.'
-  - var bodyClass = 'detail wyoming'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Wyoming'
+  - var path = 'wyoming'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Wyoming - 
-
 block content
 
-  +state('Wyoming', '/assets/images/flag-wyoming.svg', 'The Equality State', 'July 10, 1890')
+  +state(name, path, 'The Equality State', 'July 10, 1890')
 
   .intro
     p In 1916, the Wyoming Daughters of the American Revolution (DAR) organized a contest to design the state flag.
@@ -25,9 +24,9 @@ block content
       p The Wyoming flag features an outside border of red and an inner border of white.
       p Inside the borders, a panel of blue is charged with a white silhouetted bison, centered.
       p Upon the bison’s shoulder is the state seal in blue and white.
-      +survey('Wyoming', '23rd')
+      +survey(name, '23rd')
     .visual.flag
-      img.border(src='/assets/images/flag-wyoming.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -87,27 +86,27 @@ block content
       p The red border is 1/20 and the white border is 1/40 the length of the fly.
       p The bison is 1/2 the length of the blue field and the state seal is 1/5 the length of the fly.
     .visual
-      img(src='/assets/images/flag-wyoming-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('idaho', 'Idaho',
               'utah', 'Utah')

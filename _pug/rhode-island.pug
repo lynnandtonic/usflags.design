@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Rhode Island.'
-  - var bodyClass = 'detail rhode-island'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Rhode Island'
+  - var path = 'rhode-island'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Rhode Island - 
-
 block content
 
-  +state('Rhode Island', '/assets/images/flag-rhode-island.svg', 'The Ocean State', 'May 29, 1790', 'border')
+  +state(name, path, 'The Ocean State', 'May 29, 1790', 'border')
 
   .intro
     p The flag of Rhode Island strays from the average in two ways. It is almost square in shape, compared to the common 2:3 flag proportion, and it uses a low-contrast gold on white instead of a more typical light on dark color scheme.
@@ -25,9 +24,9 @@ block content
       p The Rhode Island flag features a field of white with a golden anchor at center, surrounded by a ring of thirteen gold five-pointed stars.
       p A blue ribbon sits below the anchor, with the word “Hope” inscribed in gold.
       p Three edges (except the hoist) are detailed with golden fringe.
-      +survey('Rhode Island', '28th')
+      +survey(name, '28th')
     .visual.flag
-      img.border(src='/assets/images/flag-rhode-island.svg')
+      +flag(name, path, 'border')
 
   .guide.wide
     .content
@@ -52,7 +51,7 @@ block content
       h2 Coat of Arms
       p The anchor and “Hope” are also featured on Rhode Island’s coat of arms, adopted in 1881.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-rhode-island.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -60,7 +59,7 @@ block content
       p The Rhode Island flag is one of only a few with a field of white.
       hr
       small Rhode Island statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual.colors.primary
       include includes/color-white
       .color
@@ -81,7 +80,7 @@ block content
       h2 Pike
       p Any pike (flagpole) flying the flag should be surmounted by a spearhead and be 9 feet tall (not including the spearhead).
     .visual
-      img(src='/assets/images/flag-rhode-island-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
@@ -106,20 +105,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('north-carolina', 'North Carolina',
               'vermont', 'Vermont')

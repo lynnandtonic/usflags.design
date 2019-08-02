@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Maryland.'
-  - var bodyClass = 'detail maryland'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Maryland'
+  - var path = 'maryland'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Maryland - 
-
 block content
 
-  +state('Maryland', '/assets/images/flag-maryland.svg', 'The Old Line State', 'April 28, 1788')
+  +state(name, path, 'The Old Line State', 'April 28, 1788', 'border')
 
   .intro
     p The design of the Maryland flag is based on English heraldry. The first Lord Baltimore, George Calvert, initiated the settlement of Maryland colony and lends the Calvert family crest and the crest of his mother’s family, the Crosslands.
@@ -25,20 +24,20 @@ block content
       p The Maryland flag features a quadrisection pattern.
       p The 1st and 4th quarter are a paly of gold and black (an even number of vertical stripes) and a bend dexter (right diagonal band) upon which the colors are reversed.
       p The 2nd and 3rd quarters are quadrisections of red and white with a cross bottony (a Greek cross with ends of trefoils) upon which the colors are reversed.
-      +survey('Maryland', '4th')
+      +survey(name, '4th')
     .visual.flag
-      img(src='/assets/images/flag-maryland.svg')
+      +flag(name, path, 'border')
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-maryland-icon-calvert.svg')
+          span.icon: img(src='/assets/images/flag-maryland-icon-calvert.svg', alt='six vertical stripes and one diagonal stripe')
           h4 Calvert
           p Union support, the Calvert family crest
         li.icon-item
-          span.icon: img(src='/assets/images/flag-maryland-icon-crossland.svg')
+          span.icon: img(src='/assets/images/flag-maryland-icon-crossland.svg', alt='trefoiled cross divided into quadrants')
           h4 Crossland
           p Confederate support, the Crossland family crest
         li.icon-item
@@ -49,7 +48,7 @@ block content
       p The Maryland Secretary of State provides Pantone values for the red and gold of the flag.
       p Black and gold became known as “Maryland colors” and were used by loyalists during the Civil War. Red and white, adopted by Confederate sympathizers, became known as “secession colors.”
     .visual.colors.primary
-      include includes/color-black
+      include includes/color-black-pantone
       .color
         .sample(class='gold')
         .name Gold
@@ -60,7 +59,7 @@ block content
         .name Red
         .hex #9d2235
         .pantone PMS 201
-      include includes/color-white
+      include includes/color-white-pantone
 
   .guide
     .content
@@ -70,27 +69,27 @@ block content
       h2 Pike
       p Maryland law requires any pike (flagple) flying the state flag to be ornamented with a gold cross bottony. Government buildings adhere, but many private citizens and businesses choose not to.
     .visual
-      img(src='/assets/images/flag-maryland-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('massachusetts', 'Massachusetts',
               'south-carolina', 'South Carolina')

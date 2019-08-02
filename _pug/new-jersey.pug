@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of New Jersey.'
-  - var bodyClass = 'detail new-jersey'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'New Jersey'
+  - var path = 'new-jersey'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | New Jersey - 
-
 block content
 
-  +state('New Jersey', '/assets/images/flag-new-jersey.svg', 'The Garden State', 'December 18, 1787')
+  +state(name, path, 'The Garden State', 'December 18, 1787')
 
   .intro
     p New Jersey became the third state to ratify the U.S. Constitution, named in honor of England’s Isle of Jersey.
@@ -23,9 +22,9 @@ block content
     .content
       h2 Flag design
       p The New Jersey flag features a field of buff charged with the state coat of arms, centered.
-      +survey('New Jersey', '46th')
+      +survey(name, '46th')
     .visual.flag
-      img(src='/assets/images/flag-new-jersey.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -69,7 +68,7 @@ block content
       h2 Coat of Arms
       p New Jersey’s coat of arms was designed by Pierre Eugene du Simitiere in 1777.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-new-jersey.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -78,7 +77,7 @@ block content
       p The colors were chosen by George Washington while encamped at Jockey Hollow during the Revolutionary War, originally for the New Jersey Line uniform coats.
       hr
       small New Jersey statute does not provide Cable or Pantone values for the other colors of the coat of arms.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
@@ -121,20 +120,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('pennsylvania', 'Pennsylvania',
               'georgia', 'Georgia')

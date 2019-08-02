@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Idaho.'
-  - var bodyClass = 'detail idaho'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Idaho'
+  - var path = 'idaho'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Idaho - 
-
 block content
 
-  +state('Idaho', '/assets/images/flag-idaho.svg', 'The Gem State', 'July 3, 1890')
+  +state(name, path, 'The Gem State', 'July 3, 1890')
 
   .intro
     p The Idaho state flag was first flown by the First Idaho Infantry during the Spanish-American War. Like many other infantries, including Montana, this flag featured the state seal on a field of blue.
@@ -26,48 +25,48 @@ block content
       h2 Flag design
       p The Idaho flag features a field of blue charged with the state seal, in full color, centered.
       p Below the seal is a banner of gold and red with the words ”State of Idaho” inscribed.
-      +survey('Idaho', '64th')
+      +survey(name, '64th')
     .visual.flag
-      img(src='/assets/images/flag-idaho.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-idaho-icon-justice.svg')
+          span.icon: img(src='/assets/images/flag-idaho-icon-justice.svg', alt='the goddess Justice holding scales')
           h4 Justice
           p the goddess Justice, justice and equality under the law, women’s suffrage
         li.icon-item
-          span.icon: img(src='/assets/images/flag-idaho-icon-cap.svg')
+          span.icon: img(src='/assets/images/flag-idaho-icon-cap.svg', alt='a cap on the end of a stick')
           h4 phrygian cap
           p liberty
         li.icon-item
-          span.icon: img(src='/assets/images/flag-idaho-icon-miner.svg')
+          span.icon: img(src='/assets/images/flag-idaho-icon-miner.svg', alt='a miner with pickax and shovel')
           h4 miner
           p mining industry
         li.icon-item
-          span.icon: img(src='/assets/images/flag-idaho-icon-shield.svg')
+          span.icon: img(src='/assets/images/flag-idaho-icon-shield.svg', alt='shield')
           h4 shield
           p protection through unity
         li.icon-item
-          span.icon: img(src='/assets/images/flag-idaho-icon-syringa.svg')
+          span.icon: img(src='/assets/images/flag-idaho-icon-syringa.svg', alt='tall flowers')
           h4 wild syringa
           p state flower, regional flora
         li.icon-item
-          span.icon: img(src='/assets/images/flag-idaho-icon-cornucopia.svg')
+          span.icon: img(src='/assets/images/flag-idaho-icon-cornucopia.svg', alt='cornucopias filled with food, sheaves of wheat')
           h4 cornucopia & wheat
           p farming, agriculture
         li.icon-item
-          span.icon: img(src='/assets/images/flag-idaho-icon-nature.svg')
+          span.icon: img(src='/assets/images/flag-idaho-icon-nature.svg', alt='mountains, a river, trees, and a farmer plowing a field')
           h4 nature
           p natural resources, lumber, the Shoshone River
         li.icon-item
-          span.icon: img(src='/assets/images/flag-idaho-icon-elk.svg')
+          span.icon: img(src='/assets/images/flag-idaho-icon-elk.svg', alt='elk head')
           h4 elk
           p game law, regional fauna
         li.icon-item
-          span.icon: img(src='/assets/images/flag-idaho-icon-motto.svg')
+          span.icon: img(src='/assets/images/flag-idaho-icon-motto.svg', alt='Esto Perpetua, on a banner')
           h4 motto
           p an everlasting future, #[em Let It Be Perpetual]
 
@@ -77,7 +76,7 @@ block content
       p The Idaho flag features a field of blue, with supporting colors within the state seal.
       hr
       small Idaho statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
@@ -131,27 +130,27 @@ block content
       p The seal should be 21 inches in diameter.
       p The banner inscribed “The State of Idaho” should be 3 inches tall by 29 inches wide, placed 8.5 inches from the bottom edge. The letters should be 2 inches tall.
     .visual
-      img(src='/assets/images/flag-idaho-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('washington', 'Washington',
               'wyoming', 'Wyoming')

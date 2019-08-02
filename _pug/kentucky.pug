@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Kentucky.'
-  - var bodyClass = 'detail kentucky'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Kentucky'
+  - var path = 'kentucky'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Kentucky - 
-
 block content
 
-  +state('Kentucky', '/assets/images/flag-kentucky.svg', 'The Bluegrass State', 'June 1, 1792')
+  +state(name, path, 'The Bluegrass State', 'June 1, 1792')
 
   .intro
     p The flag of Kentucky follows a common pattern for U.S. state flags, featuring the seal on a field of blue.
@@ -23,25 +22,25 @@ block content
     .content
       h2 Flag design
       p The Kentucky flag features a field of navy charged with the seal of the commonwealth, centered.
-      +survey('Kentucky', '66th')
+      +survey(name, '66th')
     .visual.flag
-      img(src='/assets/images/flag-kentucky.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-kentucky-icon-goldenrod.svg')
+          span.icon: img(src='/assets/images/flag-kentucky-icon-goldenrod.svg', alt='half wreath of leaves and flowers')
           h4 goldenrod
           p state flower, regional flora
         li.icon-item
-          span.icon: img(src='/assets/images/flag-kentucky-icon-men.svg')
+          span.icon: img(src='/assets/images/flag-kentucky-icon-men.svg', alt='two men facing each other and shaking hands')
           h4 handshake
           p pioneers, statesmen, united we stand
           p #[em Note:] The two men are often mistaken for Daniel Boone and Henry Clay.
         li.icon-item
-          span.icon: img(src='/assets/images/flag-kentucky-icon-motto.svg')
+          span.icon: img(src='/assets/images/flag-kentucky-icon-motto.svg', alt='“United we stand, divided we fall” in a circle')
           h4 motto
           p unity
           p #[em Note:] Historians believe this motto was inspired by “The Liberty Song,” written by John Dickinson in 1768.
@@ -52,7 +51,7 @@ block content
       p The coat of arms, along with early versions of the state seal, depicted the two men as statesmen, both in swallowtail coats.
       p Alternate versions show the men shaking hands and in other versions in full embrace.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-kentucky.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -60,7 +59,7 @@ block content
       p The official colors of the seal are blue and gold, reflected also on the state flag.
       hr
       small Kentucky statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
@@ -83,28 +82,30 @@ block content
       h2 Construction
       p The fly of the flag must be 1 and 9/10 the width of the hoist.
       p The seal should be 2/3 the width of the hoist.
+      h2 Pike
+      p A pike (flagpole) flying the flag should be surmounted by the Kentucky cardinal “in an alert but restful pose, cast in bronze, brass, or other suitable material.”
     .visual
-      img(src='/assets/images/flag-kentucky-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('vermont', 'Vermont',
               'tennessee', 'Tennessee')

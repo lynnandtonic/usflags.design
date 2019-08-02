@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Indiana.'
-  - var bodyClass = 'detail indiana'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Indiana'
+  - var path = 'indiana'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Indiana - 
-
 block content
 
-  +state('Indiana', '/assets/images/flag-indiana.svg', 'The Hoosier State', 'December 11, 1816')
+  +state(name, path, 'The Hoosier State', 'December 11, 1816')
 
   .intro
     p For Indiana’s centennial in 1916, the Indiana Daughters of the American Revolution organized a contest to design the state flag.
@@ -25,20 +24,20 @@ block content
       p The Indiana flag features a field of blue with a centered torch of gold or buff.
       p Lines radiate from the torch, surrounded by nineteen five-pointed stars. An outer ring contains thirteen stars, an inner ring has five stars, and one larger star is placed above the torch.
       p The word ”Indiana” is inscribed in half circle above the center star.
-      +survey('Indiana', '32nd')
+      +survey(name, '32nd')
     .visual.flag
-      img(src='/assets/images/flag-indiana.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-indiana-icon-torch.svg')
+          span.icon: img(src='/assets/images/flag-indiana-icon-torch.svg', alt='lit torch')
           h4 torch
           p liberty and enlightment with far-reaching influence
         li.icon-item
-          span.icon: img(src='/assets/images/flag-indiana-icon-stars.svg')
+          span.icon: img(src='/assets/images/flag-indiana-icon-stars.svg', alt='circle of stars')
           h4 19 stars
           p the original thirteen colonies, the next five states (Vermont, Kentucky, Tennessee, Ohio, Louisiana), and Indiana as the nineteenth state
         li.icon-item
@@ -65,27 +64,27 @@ block content
       h2 Construction
       p Indiana statute allows for two different proportions for the state flag. It can be sized with a 2:3 or 3:5.
     .visual
-      img(src='/assets/images/flag-indiana-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('louisiana', 'Louisiana',
               'mississippi', 'Mississippi')

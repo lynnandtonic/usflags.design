@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of New Mexico.'
-  - var bodyClass = 'detail new-mexico'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'New Mexico'
+  - var path = 'new-mexico'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | New Mexico - 
-
 block content
 
-  +state('New Mexico', '/assets/images/flag-new-mexico.svg', 'The Land of Enchantment', 'January 6, 1912')
+  +state(name, path, 'The Land of Enchantment', 'January 6, 1912')
 
   .intro
     p New Mexico’s flag was rated #1 in a 2001 survey by the North American Vexillological Association.
@@ -24,9 +23,9 @@ block content
     .content
       h2 Flag design
       p The New Mexico flag features a field of yellow charged with the Zia sun symbol in red, centered.
-      +survey('New Mexico', '1st')
+      +survey(name, '1st')
     .visual.flag
-      img(src='/assets/images/flag-new-mexico.svg')
+      +flag(name, path)
 
   .guide
     .content
@@ -48,7 +47,7 @@ block content
       p The New Mexico red and yellow are specified as the colors of “old Spain.” They were originally the colors of Spain’s Queen Isabella.
       hr
       small New Mexico statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual.colors.primary
       .color
         .sample(class='yellow')
@@ -65,7 +64,7 @@ block content
       p The New Mexico flag has a proportion of 2:3.
       p The Zia symbol’s inner rays should be one-fifth longer than the outer rays. The circle’s diameter should be one-third the width of the symbol, which should be one-third the width of the flag.
     .visual
-      img(src='/assets/images/flag-new-mexico-dimensions.svg')
+      +construction(name, path)
 
   .guide
     .content
@@ -79,20 +78,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('oklahoma', 'Oklahoma',
               'arizona', 'Arizona')

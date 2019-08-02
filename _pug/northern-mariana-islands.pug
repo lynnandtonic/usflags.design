@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the flag of Northern Mariana Islands.'
-  - var bodyClass = 'detail nmi'
+  - var bodyClass = 'detail'
+  - var category = 'territory'
+  - var name = 'Northern Mariana Islands'
+  - var path = 'nmi'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Northern Mariana Islands - 
-
 block content
 
-  +territory('Northern Mariana Islands', '/assets/images/flag-nmi.svg', 'November 4, 1986')
+  +territory(name, path, 'November 4, 1986')
 
   .intro
     p Until the early 1970s, the Flag of the Trust Territory of the Pacific Islands flew over the Northern Mariana Islands (NMI).
@@ -25,9 +24,9 @@ block content
       h2 Flag design
       p The NMI flag features a field of ocean blue.
       p Centered, a white five-pointed star is superimposed on a gray latte stone. Surrounding both is a traditional Carolinian mwáár.
-      +survey('Northern Mariana Islands', '41st')
+      +survey(name, '41st')
     .visual.flag
-      img(src='/assets/images/flag-nmi.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -55,7 +54,7 @@ block content
       p The NMI flag features “ocean blue” and “traditional colors” for the flowers in the mwáár.
       hr
       small NMI statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
@@ -93,7 +92,7 @@ block content
       p While the flag can be produced with different proportions, they provide an example with a hoist of 40 inches and a fly of 78 inches.
       p Within this proportion, the latte stone and star should be 16 inches wide and 24 inches tall. The mwáár wreath should be 6 inches wide.
     .visual
-      img(src='/assets/images/flag-nmi-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
@@ -118,10 +117,10 @@ block content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('us-virgin-islands', 'U.S. Virgin Islands',
               'delaware', 'Delaware')

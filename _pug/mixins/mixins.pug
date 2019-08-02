@@ -1,36 +1,61 @@
-mixin state(state,img,nickname,date,border)
+//- State header
+mixin state(state, img, nickname, date, border)
   header.state
     .flex
       h1= state
       .flag
-        img(src=img, alt=state + ' state flag', class=border)
+        img(src='/assets/images/flag-' + img + '.svg',
+            alt='flag of ' + state,
+            class=border)
     .meta
       .nickname= nickname
       .date Admitted 
         span= date
 
-mixin territory(territory,img,date,border)
+//- Territory header
+mixin territory(territory, img, date, border)
   header.territory
     .flex
       h1= territory
       .flag
-        img(src=img, alt=territory + ' flag', class=border)
+        img(src='/assets/images/flag-' + img + '.svg',
+        alt='flag of ' + territory,
+        class=border)
     .meta
       .date U.S. territory since 
         span= date
 
-mixin flag(state, link, img, border)
+//- Flag image
+mixin flag(state, img, border)
+  img(src='/assets/images/flag-' + img + '.svg',
+      alt='flag of ' + state,
+      class=border)
+
+//- Flag as a list item + a link to the page
+mixin flag-item(state, link, img, border)
   li.flag-item(class=link)
     a(href='/' + link)
-      span.flag(class=border)
-        img(src=img, alt=state + ' state flag')
+      span.flag
+        img(src='/assets/images/flag-' + img,
+            alt='flag of ' + state,
+            class=border)
       span.state= state
 
+//- NAVA survey callout
 mixin survey(state, rank, asterisk)
   .nava-survey
     p In the #[a(href='https://nava.org/digital-library/raven/Raven_v08_2001_p011-038.pdf') 2001 North American Vexillological Association (NAVA) flag survey] of United States and Canada flags, the flag of #[strong= state] was ranked #[strong= rank] out of 72.
       span.asterisk= asterisk
 
+//- Coat of arms
+mixin coat-of-arms(state, img)
+  img(src='/assets/images/coat-of-arms-' + img + '.jpg', alt='the ' + state + ' coat of arms')
+
+//- Construction sheet
+mixin construction(state,img)
+  img(src='/assets/images/flag-' + img +'-dimensions.svg', alt='construction sheet for the flag of ' + state + '.')
+
+//- Previous/next links
 mixin pagination(prevURL, prevName, nextURL, nextName)
   nav.pagination
     a.previous(href='/' + prevURL)= prevName

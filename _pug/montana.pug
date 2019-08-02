@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Montana.'
-  - var bodyClass = 'detail montana'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Montana'
+  - var path = 'montana'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Montana - 
-
 block content
 
-  +state('Montana', '/assets/images/flag-montana.svg', 'The Treasure State', 'November 8, 1889')
+  +state(name, path, 'The Treasure State', 'November 8, 1889')
 
   .intro
     p The Montana state flag was first flown by the First Territorial Infantry during the Spanish-American War. Colonel Harry C. Kessler commissioned this flag featuring the state seal on a field of blue.
@@ -24,24 +23,24 @@ block content
       h2 Flag design
       p The Montana flag features a field of blue charged with the state seal, in full color, centered.
       p Above the seal, the word “Montana” is inscribed in gold.
-      +survey('Montana', '70th')
+      +survey(name, '70th')
     .visual.flag
-      img.border(src='/assets/images/flag-montana.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-montana-icon-tools.svg')
+          span.icon: img(src='/assets/images/flag-montana-icon-tools.svg', alt='shovel, pickax, and plow')
           h4 tools
           p farming, mining
         li.icon-item
-          span.icon: img(src='/assets/images/flag-montana-icon-motto.svg')
+          span.icon: img(src='/assets/images/flag-montana-icon-motto.svg', alt='Oro y Plata')
           h4 motto
           p natural resources, #[em Gold and Silver]
         li.icon-item
-          span.icon: img(src='/assets/images/flag-montana-icon-nature.svg')
+          span.icon: img(src='/assets/images/flag-montana-icon-nature.svg', alt='mountains, river, and sun')
           h4 nature
           p natural beauty, the Great Falls of the Missouri River, the Rocky Mountains
         li.icon-item
@@ -51,7 +50,7 @@ block content
       h2 Coat of Arms
       p The Montana coat of arms and state seal were designed in 1865 by Francis Thompson.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-montana.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -59,7 +58,7 @@ block content
       p The Montana flag prominently features blue and gold, with supporting colors within the state seal.
       hr
       small Montana statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
@@ -111,34 +110,34 @@ block content
       p The height of the letters in “Montana” should be 1/10 the width of the fly.
       p The flag can optionally have golden fringe along the upper and lower edges.
     .visual
-      img(src='/assets/images/flag-montana-dimensions.svg')
+      +construction(name, path)
 
   .guide
     .content
       h2 Previous iteration
       p The original state flag featured the seal, but the word ”Montana” wasn’t added until years later. This version flew from 1905–1981.
     .visual.flag
-      img.border(src='/assets/images/flag-montana-original.svg')
+      img.border(src='/assets/images/flag-montana-original.svg', alt='the original Montana flag')
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('south-dakota', 'South Dakota',
               'washington', 'Washington')

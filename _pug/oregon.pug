@@ -1,18 +1,16 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Oregon.'
-  - var bodyClass = 'detail oregon'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Oregon'
+  - var path = 'oregon'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
-
-block title
-  | Oregon - 
-
 block content
 
-  +state('Oregon', '/assets/images/flag-oregon.svg', 'The Beaver State', 'February 14, 1859')
+  +state(name, path, 'The Beaver State', 'February 14, 1859')
 
   .intro
     p Oregon has a unique state flag despite it featuring its coat of arms on a field of blue (like many others). Since Massachusetts updated its flag in 1971, Oregon is the only state with a different design on its reverse.
@@ -25,10 +23,10 @@ block content
       h2 Flag design
       p The Oregon flag’s obverse features a field of blue charged with the state coat of arms in gold, centered. “State of Oregon” and “1859” are inscribed in gold, above and below the coat of arms respectively.
       p The flag’s reverse is also a field of blue charged with a gold beaver on a log and facing right, centered.
-      +survey('Oregon', '62nd')
+      +survey(name, '62nd')
     .visual.flag
-      img(src='/assets/images/flag-oregon.svg')
-      img(src='/assets/images/flag-oregon-reverse.svg')
+      +flag(name, path)
+      img(src='/assets/images/flag-oregon-reverse.svg', alt='The flag of Oregon’s reverse.')
 
   .guide.wide
     .content
@@ -74,7 +72,7 @@ block content
       p Oregon has had a few versions of its seal and coat of arms. Previous iterations featured a salmon, Native American man, and the state motto “Alis Volat Propriis” which translates to “She flies with her own wings.”
       p This version was first designed in 1857 and adopted in 1859 when Oregon became a state.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-oregon.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -82,7 +80,7 @@ block content
       p The Oregon flag features the state colors of navy blue and gold.
       hr
       small Oregon statute describes the colors of the flag, but doesn’t provide Cable or Pantone values.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual.colors.primary
       .color
         .sample(class='blue')
@@ -98,27 +96,27 @@ block content
       h2 Construction
       p Oregon statute does not specify dimensions, but the flag is often produced with a proportion of 3:5.
     .visual
-      img(src='/assets/images/flag-oregon-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide
     .content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('minnesota', 'Minnesota',
               'kansas', 'Kansas')

@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Texas.'
-  - var bodyClass = 'detail texas'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Texas'
+  - var path = 'texas'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Texas - 
-
 block content
 
-  +state('Texas', '/assets/images/flag-texas.svg', 'The Lone Star State', 'December 29, 1845', 'border')
+  +state(name, path, 'The Lone Star State', 'December 29, 1845', 'border')
 
   .intro
     p While Texas has had a variety of flags flown (like the familiar “Six Flags Over Texas”), it has only had one official state flag.
@@ -25,9 +24,9 @@ block content
       h2 Flag design
       p The Texas flag is a horizontal bicolor of white and red and features a vertical stripe of blue at the hoist.
       p Upon the blue stripe, a white five-pointed star is charged, centered.
-      +survey('Texas', '2nd')
+      +survey(name, '2nd')
     .visual.flag
-      img.border(src='/assets/images/flag-texas.svg')
+      +flag(name, path, 'border')
 
   .guide
     .content
@@ -57,7 +56,7 @@ block content
       p Texas law specifies the height of the pike (flagpole) to be 2.5 times as long as the flag’s hoist, with an optional finial of a star or spearhead.
       p If the flag is permanantly mounted, the flag may be decorated with gold fringe and the pike may have a gold cord or tassles.
     .visual
-      img(src='/assets/images/flag-texas-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
@@ -94,20 +93,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('florida', 'Florida',
               'iowa', 'Iowa')

@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Nevada.'
-  - var bodyClass = 'detail nevada'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Nevada'
+  - var path = 'nevada'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Nevada - 
-
 block content
 
-  +state('Nevada', '/assets/images/flag-nevada.svg', 'The Silver State', 'October 31, 1864')
+  +state(name, path, 'The Silver State', 'October 31, 1864')
 
   .intro
     p Nevada has flown four state flags, with a notable third version resulting from a mistake in legislature that went unnoticed for 60 years.
@@ -25,9 +24,9 @@ block content
       h2 Flag design
       p The Nevada flag features a field of cobalt blue. In the canton is a variant of the state’s emblem which centers a silver five-pointed star.
       p Above the star is a gold banner with “Battle Born” inscribed in black. Below the star “Nevada” is inscribed also in gold and it is surrounded by two sprays of green sagebrush with gold flowers.
-      +survey('Nevada', '55th')
+      +survey(name, '55th')
     .visual.flag
-      img(src='/assets/images/flag-nevada.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
@@ -71,8 +70,8 @@ block content
           .name Green
           .hex #00843d
           .pantone PMS 348
-        include includes/color-white
-        include includes/color-black
+        include includes/color-white-pantone
+        include includes/color-black-pantone
 
   .guide
     .content
@@ -81,7 +80,7 @@ block content
       p Nevada law specifies the proportion and spacing for the flag’s visual elements, which is rendered here.
       p The flag should be produced single faced, obverse side only.
     .visual
-      img(src='/assets/images/flag-nevada-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
@@ -109,20 +108,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('west-virginia', 'West Virginia',
               'nebraska', 'Nebraska')

@@ -1,18 +1,17 @@
 extends layout
 
 block vars
-  - var pageDescription = 'Design guide for the state flag of Minnesota.'
-  - var bodyClass = 'detail minnesota'
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'Minnesota'
+  - var path = 'minnesota'
 
 block tweet
   a.tweet(href="https://ctt.ec/DidfP") Share on Twitter
 
-block title
-  | Minnesota - 
-
 block content
 
-  +state('Minnesota', '/assets/images/flag-minnesota.svg', 'The North Star State', 'May 11, 1858')
+  +state(name, path, 'The North Star State', 'May 11, 1858')
 
   .intro
     p In prepration for the 1893 Chicago World’s Fair, a Minnesota Women’s Auxiliary Board was put together to create a design. They hosted a contest and from 200 submissions, local artist Amelia Hyde Center designed the winning flag.
@@ -24,42 +23,42 @@ block content
     .content
       h2 Flag design
       p The Minnesota flag features a field of medium blue charged with the state seal, centered.
-      +survey('Minnesota', '67th')
+      +survey(name, '67th')
     .visual.flag
-      img(src='/assets/images/flag-minnesota.svg')
+      +flag(name, path)
 
   .guide.wide
     .content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-stars.svg')
+          span.icon: img(src='/assets/images/flag-minnesota-icon-stars.svg', alt='five groups of four stars, positioned to look like a star’s points')
           h4 19 Stars
           p Minnesota as the North Star State and the nineteenth state after the original thirteen colonies
         li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-flowers.svg')
+          span.icon: img(src='/assets/images/flag-minnesota-icon-flowers.svg', alt='wreath of flowers')
           h4 pink & white lady’s slipper
           p state flower, regional flora
           p #[em Note:] It was previously depicted as white lady’s slipper, which is not native to Minnesota.
         li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-dates.svg')
+          span.icon: img(src='/assets/images/flag-minnesota-icon-dates.svg', alt='1858, 1819, 1893')
           h4 dates
           p the establishment of Fort Snelling (1819), Minnesota’s year of statehood (1858), and the flag’s adoption (1893)
         li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-motto.svg')
+          span.icon: img(src='/assets/images/flag-minnesota-icon-motto.svg', alt='L’etoile Du Nord')
           h4 motto
           p #[em The Star of the North]
         li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-farmer.svg')
+          span.icon: img(src='/assets/images/flag-minnesota-icon-farmer.svg', alt='a man plows a field')
           h4 pioneer
           p agriculture, hunting, logging
         li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-native-american.svg')
+          span.icon: img(src='/assets/images/flag-minnesota-icon-native-american.svg', alt='a Native American man rides on a horse before a sunset')
           h4 Native American
           p the rich history of Native peoples
           p #[em Note:] See the coat of arms section below.
         li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-nature.svg')
+          span.icon: img(src='/assets/images/flag-minnesota-icon-nature.svg', alt='mountains, a river, waterfall, and trees')
           h4 nature
           p transportation, commerce, the Mississippi River and St. Anthony Falls, the three pine regions (St. Croix, Mississippi, Lake Superior).
 
@@ -70,7 +69,7 @@ block content
       p This was seen as offensive and historically inaccurate, so the seal was updated in 1983 to depict the man riding his horse #[em toward] the pioneer. This was meant to include Native Americans in Minnesota history.
       p Still, many would prefer the flag be redesigned entirely, introducing bills and petitions to change the flag. None have been successful, yet.
     .visual.flag
-      img(src='/assets/images/coat-of-arms-minnesota.jpg')
+      +coat-of-arms(name, path)
 
   .guide
     .content
@@ -78,7 +77,7 @@ block content
       p Once a royal blue, the field is now a “medium” blue, drawing inspiration from Union blue used during the Civil War.
       hr
       small Minnesota statute does not provide Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximate.
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
@@ -105,26 +104,26 @@ block content
       p Minnesota statute does not specify a size or proportion for the flag.
       p It is often produced with the common proportion of 3:5.
     .visual
-      img(src='/assets/images/flag-minnesota-dimensions.svg')
+      +construction(name, path)
 
   .guide.wide.timeline
     .content
       h2 Previous iterations
       ul.visual.flag-list
         li.flag-item
-          span.flag: img.border(src='/assets/images/flag-minnesota-1893-1957-obverse.jpg')
+          span.flag: img.border(src='/assets/images/flag-minnesota-1893-1957-obverse.jpg', alt='obverse of the Minnesota flag from 1893')
           h4 1893-1957 Obverse
           p Original two-sided design by Amelia Hyde Center.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-minnesota-1893-1957-reverse.jpg')
+          span.flag: img(src='/assets/images/flag-minnesota-1893-1957-reverse.jpg', alt='reverse of the Minnesota flag from 1893')
           h4 1893-1957 Reverse
           p The reverse of Center’s design, later deemed too complicated for mass production.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-minnesota-1957-1983.jpg')
+          span.flag: img(src='/assets/images/flag-minnesota-1957-1983.jpg', alt='the Minnesota flag from 1957')
           h4 1957-1983
           p The seal is updated, blue darkened, and reverse removed.
         li.flag-item
-          span.flag: img(src='/assets/images/flag-minnesota-thumb.svg')
+          span.flag: img(src='/assets/images/flag-minnesota-thumb.svg', alt='the current Minnesota flag')
           h4 1983-Present
           p The current flag with medium blue and updated seal.
 
@@ -133,20 +132,20 @@ block content
       h2 Flags of the Native Peoples
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   .guide.wide
     .content
       h2 Similar Flags
       p Lalalala
     ul.visual.flag-list
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
 
   +pagination('california', 'California',
               'oregon', 'Oregon')
