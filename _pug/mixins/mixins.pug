@@ -32,12 +32,12 @@ mixin flag(state, img, border)
       class=border)
 
 //- Flag as a list item + a link to the page
-mixin flag-item(state, link, img, border)
+mixin flag-item(state, link, img, alt, border)
   li.flag-item(class=link)
     a(href='/' + link)
       span.flag
         img(src='/assets/images/flag-' + img,
-            alt='flag of ' + state,
+            alt=alt,
             class=border)
       span.state= state
 
@@ -53,7 +53,7 @@ mixin coat-of-arms(state, img)
 
 //- Construction sheet
 mixin construction(state,img)
-  img(src='/assets/images/flag-' + img +'-dimensions.svg', alt='construction sheet for the flag of ' + state + '.')
+  img(src='/assets/images/flag-' + img +'-dimensions.svg', alt='construction sheet for the flag of ' + state)
 
 //- Previous/next links
 mixin pagination(prevURL, prevName, nextURL, nextName)
