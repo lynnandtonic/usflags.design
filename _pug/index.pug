@@ -13,22 +13,22 @@ block content
     .flex
       h1 US Flags
       .flag
-        img.border(src='/assets/images/flag-usa.svg')
+        img.border(src='/assets/images/flag-usa.svg', alt='the U.S. national flag')
     .meta
       .description A design guide for the flags of the United States
 
   ul.flag-list
-    +flag-item('Delaware', 'delaware', 'delaware.svg',
+    +flag-item('Delaware', 'delaware', 'delaware-thumb.jpg',
                'a field of colonial blue charged with a buff diamond; within the diamond is the state coat of arms featuring a farmer and rifleman')
-    +flag-item('Pennsylvania', 'pennsylvania', 'pennsylvania.svg',
+    +flag-item('Pennsylvania', 'pennsylvania', 'pennsylvania-thumb.jpg',
                'a field of dark blue charged with the state coat of arms featuring two horses')
-    +flag-item('New Jersey', 'new-jersey', 'new-jersey.svg',
+    +flag-item('New Jersey', 'new-jersey', 'new-jersey-thumb.jpg',
                'a field of buff charged with the state coat of arms featuring the goddesses Liberty and Ceres')
     +flag-item('Georgia', 'georgia', 'georgia.svg',
                'a horizontal triband of red and white with the state coat of arms in a blue canton', 'border')
     +flag-item('Connectict', 'connecticut', 'connecticut-thumb.svg',
                'a field of blue charged with the state coat of arms featuring three grapevines')
-    +flag-item('Massachusetts', 'massachusetts', 'massachusetts-thumb.svg',
+    +flag-item('Massachusetts', 'massachusetts', 'massachusetts-thumb.jpg',
                'a field of white charged with the commonwealth coat of arms featuring a Native American man', 'border')
     +flag-item('Maryland', 'maryland', 'maryland.svg',
                'a quadrisection featuring two quadrants of black and yellow stripes and two quadrants of red and white trefoiled Greek crosses', 'border')
@@ -36,7 +36,7 @@ block content
                'a field of blue charged with a white palmetto tree at center and a white crescent at top left')
     +flag-item('New Hampshire', 'new-hampshire', 'new-hampshire.svg',
                'a field of blue charged with the state seal featuring a ship')
-    +flag-item('Virginia', 'virginia', 'virginia-thumb.svg',
+    +flag-item('Virginia', 'virginia', 'virginia-thumb.jpg',
                'a field of blue charged with the seal of the commonwealth featuring goddess Virtus defeating a tyrant')
     +flag-item('New York', 'new-york', 'new-york-thumb.svg',
                'a field of blue charged with the state coat of arms featuring the goddesses Liberty and Justice')
@@ -46,13 +46,13 @@ block content
                'a field of white with a gold anchor at center and surrounded by a circle of gold stars', 'border')
     +flag-item('Vermont', 'vermont', 'vermont-thumb.jpg',
                'a field of blue charged with the state coat of arms featuring a pine tree and deer’s head')
-    +flag-item('Kentucky', 'kentucky', 'kentucky-thumb.svg',
+    +flag-item('Kentucky', 'kentucky', 'kentucky-thumb.jpg',
                'a field of blue charged with the seal of the commonwealth featuring two men shaking hands')
     +flag-item('Tennessee', 'tennessee', 'tennessee-thumb.svg',
                'a field of red charged with a blue circle containing three white stars; two stripes of blue and white run vertically on the fly edge')
     +flag-item('Ohio', 'ohio', 'ohio.svg',
                'a broad pennant with five alternating red and white stripes; blue triangle extends from the hoist side charged with a red circle and seventeen white stars', 'non-rect')
-    +flag-item('Louisiana', 'louisiana', 'louisiana-thumb.svg',
+    +flag-item('Louisiana', 'louisiana', 'louisiana-thumb.jpg',
                'a field of blue charged with a crest featuring a bleeding mother pelican feeding her three babies')
     +flag-item('Indiana', 'indiana', 'indiana.svg',
                'a field of blue featuring a gold torch surrounded by nineteen gold stars')
@@ -62,7 +62,7 @@ block content
                'a field of white charged with the state seal featuring an eagle and the rising sun with “Illinois” inscribed below', 'border')
     +flag-item('Alabama', 'alabama', 'alabama.svg',
                'a field of white with a red saltire', 'border')
-    +flag-item('Maine', 'maine', 'maine-thumb.svg',
+    +flag-item('Maine', 'maine', 'maine-thumb.jpg',
                'a field of blue charged with the state coat of arms featuring a farmer, sailor, and the north star')
     +flag-item('Missouri', 'missouri', 'missouri-thumb.svg',
                'a horizontal tricolor of red, white, and blue charged with the state coat of arms featuring two bears', 'border')
@@ -70,45 +70,45 @@ block content
                'a field of red charged with a blue bordered diamond of white; inside the diamond, the word “Arkansas” is surrounded by stars')
     +flag-item('Michigan', 'michigan', 'michigan.svg',
                'a field of blue charged with the state coat of arms featuring a moose, elk, and eagle')
-    +flag-item('Florida', 'florida', 'florida.svg',
+    +flag-item('Florida', 'florida', 'florida-thumb.jpg',
                'a field of white with a red saltire charged with the state seal featuring a Seminole woman and palmetto tree', 'border')
     +flag-item('Texas', 'texas', 'texas.svg',
                'a horizontal bicolor of white and red and a hoist-side vetical stripe of blue with a white star', 'border')
     +flag-item('Iowa', 'iowa', 'iowa.svg',
                'an unequal vertical tricolor of blue, white, and red; within the white stripe is an eagle holding a banner in its beak and the word “Iowa” inscribed below', 'border')
-    +flag-item('Wisconsin', 'wisconsin', 'wisconsin.svg',
+    +flag-item('Wisconsin', 'wisconsin', 'wisconsin-thumb.jpg',
                'a field of dark blue charged with the state coat of arms featuring a sailor and a miner; above the seal “Wisconsin” is inscribed and “1848” is below')
     +flag-item('California', 'california', 'california.svg',
                'a white field with a bottom-edge horizontal red stripe and a red star top left; a left-facing bear stands on grass at center with “California Republic” inscribed below', 'border')
-    +flag-item('Minnesota', 'minnesota', 'minnesota-thumb.svg',
+    +flag-item('Minnesota', 'minnesota', 'minnesota-thumb.jpg',
                'a field of medium blue charged with the state seal featuring a pioneer and Native American man')
     +flag-item('Oregon', 'oregon', 'oregon-thumb.svg',
                'a field of blue charged with the state coat of arms in gold; “State of Oregon” is inscribed above and “1859” is below')
-    +flag-item('Kansas', 'kansas', 'kansas-thumb.svg',
+    +flag-item('Kansas', 'kansas', 'kansas-thumb.jpg',
                'a field of dark blue charged with the state seal topped with a sunflower crest and “Kansas” inscribed below')
-    +flag-item('West Virginia', 'west-virginia', 'west-virginia-thumb.svg',
+    +flag-item('West Virginia', 'west-virginia', 'west-virginia-thumb.jpg',
                'a panel of white with a dark blue border charged with the state coat of arms surrounded by a wreath of rhododendron')
-    +flag-item('Nevada', 'nevada', 'nevada.svg',
+    +flag-item('Nevada', 'nevada', 'nevada-thumb.jpg',
                'a field of cobalt blue with a state emblem in the canton featuring a white star and sagebrush with gold flowers')
     +flag-item('Nebraska', 'nebraska', 'nebraska-thumb.svg',
                'a field of blue charged with the state seal in blue and silver featuring a blacksmith, steamboat, and train')
     +flag-item('Colorado', 'colorado', 'colorado.svg',
                'a triband of blue and white charged with a red letter “C” filled with a gold disc', 'border')
-    +flag-item('North Dakota', 'north-dakota', 'north-dakota-thumb.svg',
+    +flag-item('North Dakota', 'north-dakota', 'north-dakota-thumb.jpg',
                'a field of blue charged with an eagle resembling the Great Seal of the U.S. below thirteen gold stars and golden sun rays')
-    +flag-item('South Dakota', 'south-dakota', 'south-dakota-thumb.svg',
+    +flag-item('South Dakota', 'south-dakota', 'south-dakota-thumb.jpg',
                'a field of sky blue charged with the state seal in blue and white and surrounded by a serrated, golden sun and the words ”South Dakota” and “The Mount Rushmore State”')
-    +flag-item('Montana', 'montana', 'montana.svg',
+    +flag-item('Montana', 'montana', 'montana-thumb.jpg',
                'a field of blue charged with the state seal and the word “Montana” inscribed in gold above')
-    +flag-item('Washington', 'washington', 'washington.svg',
+    +flag-item('Washington', 'washington', 'washington-thumb.jpg',
                'a field of green charged with the state seal featuring a portrait of President George Washington surrounded by a ring of gold')
-    +flag-item('Idaho', 'idaho', 'idaho-thumb.svg',
+    +flag-item('Idaho', 'idaho', 'idaho-thumb.jpg',
                'a field of blue charged with the state seal featuring the goddess Justice and a miner; “Idaho” is inscribed on a banner below')
     +flag-item('Wyoming', 'wyoming', 'wyoming-thumb.svg',
                'a panel of blue, surrounded by an outside border of red and an inner border of white, charged with a white silhouetted bison; upon the bison is the state seal in blue')
-    +flag-item('Utah', 'Utah', 'utah-thumb.svg',
+    +flag-item('Utah', 'utah', 'utah-thumb.jpg',
                'a field of blue charged with the state coat of arms featuring an eagle, two U.S. flags, and a beehive')
-    +flag-item('Oklahoma', 'oklahoma', 'oklahoma.svg',
+    +flag-item('Oklahoma', 'oklahoma', 'oklahoma-thumb.jpg',
                'a field of sky blue charged with an Osage war shield, a peace pipe, and an olive branch; “Oklahoma” is inscribed below in white')
     +flag-item('New Mexico', 'new-mexico', 'new-mexico.svg',
                'a field of yellow charged with the Zia sun symbol in red (a red disc with four lines extending from each of its top, bottom, left, and right sides)')
