@@ -4,16 +4,26 @@
 
 .nav-main,
 .pagination
-  display: flex
-  justify-content: space-between
   font-family: $font-family-study
   font-style: italic
+  display: flex
+  justify-content: space-between
+
+.nav-main
+  .links a
+    display: block
+    text-align: right
+
+    @media screen and (min-width: 400px)
+      margin-left: 20px
+      display: inline-block
 
 .pagination
   margin-bottom: 50px
 
 .tweet
   position: relative
+  padding-left: 25px
 
   &:before
     content: ''
@@ -21,7 +31,7 @@
     height: @width
     display: block
     position: absolute
-    left: -25px
+    left: 0
     top: 2px
     background: transparent url('/assets/images/icon-twitter.svg') no-repeat center center
     background-size: 20px 20px

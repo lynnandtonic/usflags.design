@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------------
+* $404 PAGE
+--------------------------------------------------------------------*/
+
+.fourohfour
+  min-height: 400px
+  @media screen and (max-width: $w-medium - 1)
+    height: calc(100vh - 14px)
+  @media screen and (min-width: $w-medium)
+    height: calc(100vh - 30px)
+
+  .container
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  .message
+    text-align: center
+
+    h1
+      font-size: 7em

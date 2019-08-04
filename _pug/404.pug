@@ -1,10 +1,12 @@
 extends layout
 
 block vars
-  - var pageDescription = ''
+  - var pageDescription = 'Page not found.'
   - var bodyClass = 'fourohfour'
   - var name = 'Page not found'
 
 block content
 
-  h1 hi
+  .message
+    h1 404
+    p Flag not found. Try #[a(href='/') going home].

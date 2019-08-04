@@ -17,7 +17,10 @@ html(lang='en')
     meta(name='author', content='Lynn Fisher')
 
     title
-      | #{name} - US Flags [dot] Design
+      if bodyClass !== 'home'
+        | #{name} - US Flags
+      else
+        | US Flags
 
     link(rel='shortcut icon', href='/assets/images/burger-icon.png')
     link(rel='stylesheet', href='https://use.typekit.net/wpe2kir.css')
@@ -35,12 +38,14 @@ html(lang='en')
         div
           if bodyClass !== 'home'
             a.back(href='/') Back to flags
-        block tweet
+        .links
+          a(href='/about') About
+          block tweet
 
       block content
 
       footer.footer-main
-        p Made with #[span 💚] by #[a(href='https://twitter.com/lynnandtonic') Lynn Fisher]
+        p Made with <3 by #[a(href='https://twitter.com/lynnandtonic') Lynn Fisher]
         p: a(href='https://patreon.com/lynnandtonic') Support this project on Patreon
 
     include includes/ga.html

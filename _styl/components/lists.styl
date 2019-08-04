@@ -1,5 +1,4 @@
-.flag-list,
-.icon-list
+[class*='list']
   display: grid
 
   a
@@ -10,12 +9,13 @@
     text-decoration: underline
 
   @media screen and (max-width: 606px)
-    .flag-item:empty,
-    .icon-item:empty
+    [class*='item']:empty
       display: none
 
-p + .icon-list,
-p + .flag-list
+h2 + [class*='list']
+  margin-top: 30px
+
+p + [class*='list']
   margin-top: 30px
 
 .flag-list
@@ -33,7 +33,7 @@ p + .flag-list
 
 .icon-list
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
-  grid-gap: 40px 80px
+  grid-gap: 60px
 
   h4
     margin-bottom: 5px
@@ -60,6 +60,48 @@ p + .flag-list
     width: auto
     height: 150px
 
-h2 + .flag-list,
-h2 + .icon-list
-  margin-top: 30px
+.stat-list
+
+  .stat-item
+    position: relative
+
+    h4
+      font-weight: $font-weight-normal
+
+  .icon img
+    position: absolute
+    left: 0
+
+  @media $bp-small
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+    grid-gap: 50px
+
+    .stat-item
+      padding-left: 45px
+
+    h4
+      font-size: .8em
+
+    .icon
+      font-size: 2em
+
+      img
+        width: 30px
+        top: 10px
+
+  @media screen and (min-width: $w-medium)
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr))
+    grid-gap: 100px 80px
+
+    .stat-item
+      padding-left: 55px
+
+    h4
+      font-size: 1em
+
+    .icon
+      font-size: 4em
+
+      img
+        width: 40px
+        top: 30px

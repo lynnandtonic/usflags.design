@@ -1,0 +1,180 @@
+extends layout
+
+block vars
+  - var pageDescription = ''
+  - var bodyClass = 'detail about'
+  - var name = 'About'
+
+block content
+
+  header
+    .flex
+      h1 About
+    .meta
+      .nickname Created by #[a(href='https://twitter.com/lynnandtonic') Lynn Fisher]
+      .date Launched 
+        span August 2019
+
+  .intro
+    p This site is a meeting of two things for me: a budding vexillology interest and a love for visual design guides.
+    p I’ve always loved the #[a(href='/arizona') Arizona flag] and consider it one of the best designed. After a visit to the National Constitution Center in Philadelphia and seeing all of the state and territory flags hung together in a row, I was eager to learn more about their designs and histories.
+    p Some states and their laws include more details than others. A lot is up to local governments’ interpretation. Even more has been lost to history.
+    p The content of this site was gathered from official laws, state offices, historical societies, and vexillologists. Many emails were written, phone calls made, and documents reviewed. But of course there is information still missing.
+    p If you have questions or information to contribute, please #[a(href='https://twitter.com/lynnandtonic') reach out on Twitter] or submit an #[a(href='As you might guess, a lot has been lost to history.') issue on GitHub].
+    p If you’d like to support this project and further research, please #[a(href='https://patreon.com/lynnandtonic') become a patron on Patreon].
+
+  .guide.wide
+    .content
+      h2 Flag Stats
+      p Some stats and numbers about common features and iconography across the 56 flags featured on this site.
+      ul.visual.stat-list
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-shield.svg')
+            | 30
+          h4 Seals / Coats of arms
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-blue.svg')
+            | 29
+          h4 Fields of blue
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-green.svg')
+            | 1
+          h4 Fields of green
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-no-blue.svg')
+            | 4
+          h4 Flags without blue
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-star.svg')
+            | 387
+          h4 Stars
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-nametag.svg')
+            | 30
+          h4 State names or initials
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-burgee.svg')
+            | 1
+          h4 Non-rectangular
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-saltire.svg')
+            | 5
+          h4 Saltires
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-eagle.svg')
+            | 12
+          h4 Eagles
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-flower.svg')
+            | 17
+          h4 Specific varieties of plants/flowers
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-goddess.svg')
+            | 7
+          h4 Goddesses
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-god.svg')
+            | 3
+          h4 “God”
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-cow.svg')
+            | 12
+          h4 Cows / oxen
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-horse.svg')
+            | 11
+          h4 Horses
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-deer.svg')
+            | 3
+          h4 Deer
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-moose.svg')
+            | 2
+          h4 Moose
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-buffalo.svg')
+            | 6
+          h4 Buffalo
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-beaver.svg')
+            | 2
+          h4 Beavers
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-bear.svg')
+            | 4
+          h4 Bears
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-boat.svg')
+            | 12
+          h4 Boats
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-plow.svg')
+            | 12
+          h4 Plows
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-wheat.svg')
+            | 7
+          h4 Wheat
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-anchor.svg')
+            | 3
+          h4 Anchors
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-knight.svg')
+            | 2
+          h4 Knights
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-cornucopia.svg')
+            | 4
+          h4 Cornucopias
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-sun.svg')
+            | 11
+          h4 Suns
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-gun.svg')
+            | 5
+          h4 Guns
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-sword.svg')
+            | 4
+          h4 Swords
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-train.svg')
+            | 1
+          h4 Train
+        li.stat-item
+          span.icon
+            img(src='/assets/images/stat-washington.svg')
+            | 1
+          h4 Historical person
