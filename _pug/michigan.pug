@@ -6,9 +6,6 @@ block vars
   - var name = 'Michigan'
   - var path = 'michigan'
 
-block tweet
-  a.tweet(href="https://ctt.ec/DidfP") Share
-
 block content
 
   +state(name, path, 'The Great Lake State', 'January 26, 1837')
@@ -68,6 +65,8 @@ block content
     .content
       h2 Colors
       p Only azure and white (argent) are specifically mentioned in the statute for the coat of arms. No colors are specified for the flag.
+      hr
+      small The hex values here are approximations.
     .visual
       .colors.primary
         .color
@@ -103,7 +102,7 @@ block content
   .guide
     .content
       h2 Construction
-      p Michigan statute doesn’t specify dimensions for its flag. It is usually produced with a proportion of 2:3.
+      p Michigan law doesn’t specify dimensions for its flag. It is usually produced with a proportion of 2:3.
     .visual
       +construction(name, path)
 

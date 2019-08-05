@@ -1,0 +1,132 @@
+extends layout
+
+block vars
+  - var pageDescription = 'A glossary of flag terms used on US Flags [dot] Design and within vexillology.'
+  - var bodyClass = 'glossary'
+  - var name = 'Glossary'
+
+block content
+
+  header
+    .flex
+      h1 Glossary
+    .meta
+      .description Explanation of flag terms
+
+  dl
+    .glossary-item
+      img(src='/assets/images/glossary-field.svg')
+      dt field
+      dd The background of a flag made up of a solid color; often called the “ground”
+    .glossary-item
+      img(src='/assets/images/glossary-charged.svg')
+      dt charged
+      dd an emblem or design placed on the field of a flag
+    .glossary-item
+      img(src='/assets/images/glossary-hoist.svg')
+      dt hoist
+      dd the vertical width of the flag; the side of the flag closest the pike (flagpole)
+    .glossary-item
+      img(src='/assets/images/glossary-fly.svg')
+      dt fly
+      dd the horizontal length of the flag; the free end of the flag
+    .glossary-item
+      img(src='/assets/images/glossary-dexter.svg')
+      dt dexter
+      dd the right side of the flag to a shield bearer, the left side of the flag to an observer
+        hr.narrow
+        small This site will typically use #[strong left/right] instead of #[strong dexter/sinister] for clarity
+    .glossary-item
+      img(src='/assets/images/glossary-sinister.svg')
+      dt sinister
+      dd the left side of the flag to a shield bearer, the right side of the flag to an observer
+        hr.narrow
+        small This site will typically use #[strong left/right] instead of #[strong dexter/sinister] for clarity
+    .glossary-item
+      img(src='/assets/images/glossary-obverse.svg')
+      dt obverse
+      dd the front face of a flag with the hoist (and pike) to the left of the observer
+    .glossary-item
+      img(src='/assets/images/glossary-reverse.svg')
+      dt reverse
+      dd the back face of a flag with the hoist (and pike) to the right of the observer
+    .glossary-item
+      img(src='/assets/images/glossary-triband.svg')
+      dt triband
+      dd a flag featuring three parallel stripes (vertical or horizontal) of two colors
+    .glossary-item
+      img(src='/assets/images/glossary-tricolor.svg')
+      dt tricolor
+      dd a flag featuring three parallel stripes (vertical or horizontal) of three colors
+    .glossary-item
+      img(src='/assets/images/glossary-bicolor.svg')
+      dt bicolor
+      dd a flag featuring two parallel stripes (vertical or horizontal) of differing color
+    .glossary-item
+      img(src='/assets/images/glossary-quadrisection.svg')
+      dt quadrisection
+      dd a flag divided into four equal sections often with alternating colors; each quarter is called a canton
+    .glossary-item
+      img(src='/assets/images/glossary-canton.svg')
+      dt canton
+      dd one of the quarters of a flag; most commonly used to describe the first canton (upper hoist canton)
+    .glossary-item
+      img(src='/assets/images/glossary-chief.svg')
+      dt chief
+      dd the top horizontal section of a flag or shield
+    .glossary-item
+      img(src='/assets/images/glossary-bend.svg')
+      dt bend
+      dd a diagonal stripe of color extending from corner to corner
+    .glossary-item
+      img(src='/assets/images/glossary-saltire.svg')
+      dt saltire
+      dd a diagonal cross extending from corner to corner
+    .glossary-item
+      img(src='/assets/images/glossary-cross.svg')
+      dt cross
+      dd two stripes of the same color intersected at right angles
+    .glossary-item
+      img(src='/assets/images/glossary-cross-bottony.svg')
+      dt cross bottany
+      dd a cross with ends of trefoils (three circles)
+    .glossary-item
+      img(src='/assets/images/glossary-stripe.svg')
+      dt stripe
+      dd a solid band of color extending to at least one flag edge
+    .glossary-item
+      img(src='/assets/images/glossary-border-outer.svg')
+      dt border (outer)
+      dd a band of color surrounding a field (panel) of another color; outer borders touch the edges of the flag
+    .glossary-item
+      img(src='/assets/images/glossary-border-inner.svg')
+      dt border (inner)
+      dd a border positioned inside another border
+    .glossary-item
+      img(src='/assets/images/glossary-panel.svg')
+      dt panel
+      dd area of a flag surrounded by a border
+    .glossary-item
+      img(src='/assets/images/glossary-fimbriated.svg')
+      dt fimbriated
+      dd separating one area from another with a thin band or line of color, usually white
+    .glossary-item
+      img(src='/assets/images/glossary-chevron.svg')
+      dt chevron
+      dd a V-shaped band of color
+    .glossary-item
+      img(src='/assets/images/glossary-pennant.svg')
+      dt broad pennant
+      dd a flag with the fly-end cut into a swallowtail
+    .glossary-item
+      dt Cable color
+      dd a number corresponding to a fabric swatch color from #[em The Standard Color Reference of America], produced by The Color Association of the United States
+    .glossary-item
+      dt Pantone color
+      dd color values from the Pantone Matching System (PMS)
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source: a(href='https://en.wikipedia.org/wiki/Glossary_of_vexillology') Wikipedia
+      li.source: a(href='https://www.crwflags.com/fotw/flags/vxt-dtoc.html') Flags of the World

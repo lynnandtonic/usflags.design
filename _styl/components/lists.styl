@@ -18,6 +18,9 @@ h2 + [class*='list']
 p + [class*='list']
   margin-top: 30px
 
+//----------------------
+// Flag lists
+//----------------------
 .flag-list
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
   grid-gap: 40px
@@ -31,9 +34,26 @@ p + [class*='list']
   margin-top: 5px
   font-size: .9em
 
+//----------------------
+// Iconography lists
+//----------------------
 .icon-list
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
-  grid-gap: 60px
+
+  @media $bp-small
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr))
+    grid-gap: 30px
+
+    .icon img
+      width: auto
+      height: 90px
+
+  @media screen and (min-width: $w-medium)
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    grid-gap: 60px
+
+    .icon img
+      width: auto
+      height: 150px
 
   h4
     margin-bottom: 5px
@@ -56,10 +76,9 @@ p + [class*='list']
       text-transform: uppercase
       letter-spacing: 1px
 
-  .icon img
-    width: auto
-    height: 150px
-
+//----------------------
+// Stats
+//----------------------
 .stat-list
 
   .stat-item
