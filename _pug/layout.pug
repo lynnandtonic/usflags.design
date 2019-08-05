@@ -18,11 +18,14 @@ html(lang='en')
 
     title
       if bodyClass !== 'home'
-        | #{name} - US Flags
+        | #{name} - US Flags [dot] Design
       else
-        | US Flags
+        | US Flags [dot] Design
 
-    link(rel='shortcut icon', href='/assets/images/burger-icon.png')
+    if bodyClass == 'detail'
+      link(rel='shortcut icon', href='/assets/images/favicons/' + path + '.png')
+    else
+      link(rel='shortcut icon', href='/assets/images/favicons/us-flag.png')
     link(rel='stylesheet', href='https://use.typekit.net/wpe2kir.css')
 
     link(rel='stylesheet', href='/assets/css/main.css')
@@ -40,6 +43,7 @@ html(lang='en')
             a.back(href='/') Back to flags
         .links
           a(href='/about') About
+          a(href='/about#stats') Stats
           block tweet
 
       block content

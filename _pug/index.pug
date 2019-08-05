@@ -1,7 +1,7 @@
 extends layout
 
 block vars
-  - var pageDescription = ''
+  - var pageDescription = 'US Flags [dot] Design is an informational site dedicated to the design histories of the state and territory flags of the United States.'
   - var bodyClass = 'home'
 
 block tweet
@@ -11,7 +11,8 @@ block content
 
   header
     .flex
-      h1 US Flags
+      h1 US Flags 
+        span [dot] Design
       .flag
         img.border(src='/assets/images/flag-usa.svg', alt='the U.S. national flag')
     .meta
