@@ -73,45 +73,137 @@ block content
   .guide
     .content
       h2 Colors
-      p Colonial blue and buff are Delaware’s state colors, assigned with specific color values.
+      p Colonial blue and buff are Delaware’s state colors.
       p The two colors were inspired by a military uniform George Washington once wore.
+      p The Delaware Public Archives provides color values for the #[a(href='https://en.wikipedia.org/wiki/Munsell_color_system') Munsell] and Pantone 1995 color systems.
       hr
-      small Delaware statute describes the colors featured in the coat of arms, but Cable or Pantone values are not provided.
-      small The hex values here are approximations.
+      small Values corresponding to imagery:
+      small #[strong Colonial Blue]: field <br>
+        | #[strong Buff]: diamond, rifleman’s binding, bag, and leggings <br>
+        | #[strong Gray Brown]: farmer’s trousers <br>
+        | #[strong Brown]: farmer’s hat and hoe, rifleman’s hat and gun stock, ship’s hull <br>
+        | #[strong Red Brown]: cow <br>
+        | #[strong Red]: farmer’s shirt <br>
+        | #[strong Flesh]: face and hands <br>
+        | #[strong Orange]: shield’s top panel <br>
+        | #[strong Yellow 1]: shield’s frame, branches <br>
+        | #[strong Yellow 2]: corn <br>
+        | #[strong Yellow 3]: wheat <br>
+        | #[strong Green 1]: rifleman’s suit <br>
+        | #[strong Green 2]: grass and corn husk <br>
+        | #[strong Blue]: shield’s center panel <br>
+        | #[strong Blue 2]: emblem below ship <br>
+        | #[strong Silver]: emblem below ship<br>
+        | #[strong Gray]: rifleman’s flask, feather, and gun barrel <br>
+        | #[strong White]: shield’s lower panel
     .visual
       .colors.primary
         .color
           .sample(class='arno')
           .name Colonial Blue
-          .hex #71a19f
+          .hex #669ca4
           .cable Cable No. 10663 #[span Arno Blue]
+          .munsell Munsell 1.5B 6/4
+          .pantone Pantone S238-6
         .color
           .sample(class='buff')
           .name Buff
-          .hex #d7ac6c
+          .hex #c7a97f
           .cable Cable No. 10781 #[span Golden Beige]
+          .munsell Munsell 10YR /74
+          .pantone Pantone S24-4
       .colors.secondary
-        include includes/color-black
         .color
-          .sample(class='gold')
-          .name Gold
-          .hex #ffd93c
-        .color
-          .sample(class='green')
-          .name Green
-          .hex #3f863f
-        .color
-          .sample(class='red')
-          .name Red
-          .hex #a8393a
+          .sample(class='gray-brown')
+          .name Gray Brown
+          .hex #9b9379
+          .munsell Munsell 5Y 6/2
+          .pantone Pantone S42-7
         .color
           .sample(class='brown')
           .name Brown
-          .hex #4f3636
+          .hex #5a4143
+          .munsell Munsell 2.5YR 3/2
+          .pantone Pantone S317-1
+        .color
+          .sample(class='red-brown')
+          .name Red Brown
+          .hex #8e4f3e
+          .munsell Munsell 10R 4/6
+          .pantone Pantone S317-5
+        .color
+          .sample(class='red')
+          .name Red
+          .hex #b12f39
+          .munsell Munsell 5R 4/12
+          .pantone Pantone S89-1
+        .color
+          .sample(class='flesh')
+          .name Flesh
+          .hex #f1dfd8
+          .munsell Munsell 10R 9/2
+          .pantone Pantone S61-9
+        .color
+          .sample(class='orange')
+          .name Orange
+          .hex #f09b1e
+          .munsell Munsell 7.5YR 7/12
+          .pantone Pantone S36-2
+        .color
+          .sample(class='yellow-1')
+          .name Yellow 1
+          .hex #e6c737
+          .munsell Munsell 5Y 8/10
+          .pantone Pantone S5-3
+        .color
+          .sample(class='yellow-2')
+          .name Yellow 2
+          .hex #f7d400
+          .munsell Munsell 5Y 8.5/12
+          .pantone Pantone S5-4
+        .color
+          .sample(class='yellow-3')
+          .name Yellow 3
+          .hex #f8e38c
+          .munsell Munsell 5Y 9/6
+          .pantone Pantone S5-5
+        .color
+          .sample(class='green-1')
+          .name Green 1
+          .hex #586538
+          .munsell Munsell 5GY 4/4
+          .pantone Pantone S293-1
+        .color
+          .sample(class='green-2')
+          .name Green 2
+          .hex #6d8138
+          .munsell Munsell 5GY 5/6
+          .pantone Pantone S293-2
         .color
           .sample(class='blue')
           .name Blue
-          .hex #006fff
+          .hex #629ab9
+          .munsell Munsell 10B 6/6
+          .pantone Pantone S235-6
+        .color
+          .sample(class='blue-2')
+          .name Blue 2
+          .hex #669ca4
+          .munsell Munsell 2.5B 6/4
+          .pantone Pantone S238-6
+        .color
+          .sample(class='silver')
+          .name Silver
+          .hex #c2c9cd
+          .munsell Munsell 10B 8/1
+          .pantone Pantone S235-9
+        .color
+          .sample(class='gray')
+          .name Gray
+          .hex #344b51
+          .munsell Munsell 2.5B 3/2
+          .pantone Pantone S327-3
+        include includes/color-white-pantone
 
   .guide
     .content
@@ -139,4 +231,6 @@ block content
       include includes/source-howe
       include includes/source-mitchell
       li.source Delaware Code. TITLE 29 State Government. Part I General Provisions. CHAPTER 3. STATE SEAL, SONG AND SYMBOLS. Section § 306 State flag.
+      li.source Research Room Staff. Delaware Public Archives, personal communication, August 5, 2019.
+      li.source: a(href='http://pteromys.melonisland.net/munsell/') Munsell Color Palette
       li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Delaware') Flag of Delaware - Wikipedia
