@@ -51,6 +51,13 @@ block content
       h2 Colors
       p California statute is very specific about the five colors featured on its flag.
       p It is one of only four state flags to not include blue.
+      hr
+      small Values corresponding to imagery:
+      small #[strong White]: field, bear’s eye and claws <br>
+        | #[strong Red]: stripe, star, bear’s tongue <br>
+        | #[strong Green]: grass <br>
+        | #[strong Tan]: bear <br>
+        | #[strong Brown]: bear’s paws, shading, iris of eye, outline, grass tufts, letters <br>
     .visual
       .colors.primary
         include includes/color-us-white
@@ -111,13 +118,12 @@ block content
 
   .guide.wide
     .content
-      h2 Flags of the Native Peoples
-      p Lalalala
-    ul.visual.flag-list
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +native-intro(name)
+      ul.visual.flag-list
+        +native-item('Big Pine Paiute', 'big-pine-paiute.jpg', 'alt', 'border')
+        .flag-item
+        .flag-item
+        .flag-item
 
   +pagination('wisconsin', 'Wisconsin',
               'minnesota', 'Minnesota')
@@ -126,7 +132,9 @@ block content
     h3 Sources
     ul
       include includes/source-howe
+      include includes/source-healy
       li.source California Government Code. Title 1 General. Division 2 State Seal, Flag, and Emblems. Chapter 2 State Flag and Emblems § 420.
       li.souurce Flags Over California: A History Guide (PDF). California State Military Museum. State of California, Military Department. 2002. Retrieved 22 July 2012.
       li.source: a(href='http://www.sfmuseum.org/hist6/toddflag.html') The Virtual Museum of the City of San Francisco
       li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_California') Flag of California - Wikipedia
+      li.source: a(href='http://www.bigpinepaiute.org/') Big Pine Paiute

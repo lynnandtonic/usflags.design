@@ -52,6 +52,14 @@ block content
       h2 Colors
       p Oklahoma statute specifies Pantone values for its flag colors.
       p Fluke chose her specific blue to match the Choctaw battle flag that flew during the Civil War.
+      hr
+      small Values corresponding to imagery:
+      small #[strong French Blue]: field <br>
+        | #[strong Amber]: shield <br>
+        | #[strong Flesh]: feathers, pipe <br>
+        | #[strong Gold Brown]: feathers, crosses <br>
+        | #[strong Ruby Red]: pipe body, tassel <br>
+        | #[strong Dartmouth Greeen]: olive branch
     .visual
       .colors.primary
         .color
@@ -118,13 +126,13 @@ block content
 
   .guide.wide
     .content
-      h2 Flags of the Native Peoples
-      p Lalalala
-    ul.visual.flag-list
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +native-intro(name)
+      ul.visual.flag-list
+        +native-item('Absentee Shawnee', 'absentee-shawnee.svg', 'alt')
+        +native-item('Alabama Quassarte', 'alabama-quassarte.jpg', 'alt', 'border')
+        +native-item('Caddo Nation', 'caddo-nation.jpg', 'inner seal artwork by Nathan Soliz')
+        .flag-item
+        .flag-item
 
   +pagination('utah', 'Utah',
               'new-mexico', 'New Mexico')
@@ -133,7 +141,12 @@ block content
     h3 Sources
     ul
       include includes/source-howe
+      include includes/source-healy
       li.source Oklahoma Statutes. Title 25. Definitions and General Provisions. §25-91. State flag - Design.
       li.source: a(href='https://www.okhistory.org/kids/symbols') Oklahoma Historical Society
       li.source: a(href='https://www.britannica.com/topic/flag-of-Oklahoma') Encyclopedia Britannica
       li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Oklahoma') Flag of Oklahoma - Wikipedia
+      li.source: a(href='https://www.redearth.org') redearth.org
+      li.source: a(href='https://www.astribe.com/') Absentee Shawnee Tribe
+      li.source: a(href='http://alabama-quassarte.org/') Alabama Quassarte Tribal Town
+      li.source: a(href='https://caddo.xyz') Caddo Nation

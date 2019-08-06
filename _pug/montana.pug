@@ -119,13 +119,12 @@ block content
 
   .guide.wide
     .content
-      h2 Flags of the Native Peoples
-      p Lalalala
-    ul.visual.flag-list
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +native-intro(name)
+      ul.visual.flag-list.natives
+        +native-item('Affiliated Tribes of Northwest Indians', 'atni.jpg', 'alt', 'border')
+        +native-item('Assiniboine & Gros Ventre', 'assiniboine-and-gros-ventre.jpg', 'alt', 'border')
+        +native-item('Assiniboine & Sioux', 'assiniboine-and-sioux.jpg', 'alt')
+        +native-item('Blackfeet Nation', 'blackfeet-nation.jpg', 'alt')
 
   +pagination('south-dakota', 'South Dakota',
               'washington', 'Washington')
@@ -134,7 +133,11 @@ block content
     h3 Sources
     ul
       include includes/source-howe
+      include includes/source-healy
       include includes/source-mitchell
       li.source Montana Code Annotated. TITLE 1. GENERAL LAWS AND DEFINITIONS. CHAPTER 1. GENERAL PROVISIONS. Part 5. State Symbols -- Official Designations. Section 1-1-502. State flag.
       li.source: a(href='https://sosmt.gov/about-corey/state-flag/') Montana Secretary of State
       li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Montana') Flag of Montana - Wikipedia
+      li.source: a(href='https://www.atnitribes.org/') Affiliated Tribes of Northwest Indians
+      li.source: a(href='http://www.fortpecktribes.org/') Fork Peck Tribes
+      li.source: a(href='https://blackfeetnation.com/') Blackfeet Nation

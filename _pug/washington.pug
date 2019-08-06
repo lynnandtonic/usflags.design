@@ -37,6 +37,14 @@ block content
     .content
       h2 Colors
       p The colors of the flag are defined by the Secretary of State, first standardized in 1955.
+      hr
+      small Values corresponding to imagery:
+      small #[strong Green]: field <br>
+        | #[strong Gold]: border of seal <br>
+        | #[strong Blue]: background of seal <br>
+        | #[strong Flesh]: George Washington’s face <br>
+        | #[strong White]: Washington’s hair and shirt <br>
+        | #[strong Black]: Washington’s coat, shadows, borders, lettering
     .visual
       .colors.primary
         .color
@@ -85,13 +93,12 @@ block content
 
   .guide.wide
     .content
-      h2 Flags of the Native Peoples
-      p Lalalala
-    ul.visual.flag-list
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
-      +flag-item('Delaware', 'delaware', '/assets/images/flag-arizona.png')
+      +native-intro(name)
+      ul.visual.flag-list
+        +native-item('Affiliated Tribes of Northwest Indians', 'atni.jpg', 'alt', 'border')
+        .flag-item
+        .flag-item
+        .flag-item
 
   +pagination('montana', 'Montana',
               'idaho', 'Idaho')
@@ -100,7 +107,8 @@ block content
     h3 Sources
     ul
       include includes/source-howe
+      include includes/source-healy
       li.source Revised Code of Washington. Title 1 - GENERAL PROVISIONS. Chapter 120 - GENERAL PROVISIONS. Section 1.20.010 - State flag.
       li.source: a(href='https://www.sos.wa.gov/flag/reproduction.aspx') Washington Secretary of State
-      li.source: a(href='https://www.britannica.com/topic/flag-of-Washington') Encyclopedia Britannica
       li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Washington') Flag of Washington - Wikipedia
+      li.source: a(href='https://www.atnitribes.org/') Affiliated Tribes of Northwest Indians

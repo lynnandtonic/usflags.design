@@ -45,6 +45,20 @@ block content
     .content
       h2 Colors
       p Louisiana statute specifies the Pantone colors featured on its flag.
+      hr
+      small Values corresponding to imagery:
+      small #[strong Blue]: field <br>
+        | #[strong Yellow]: pelican plumage <br>
+        | #[strong Orange 1]: pelican chicks’s beaks <br>
+        | #[strong Orange 2]: beaks <br>
+        | #[strong Red]: blood <br>
+        | #[strong Tan 1]: nest <br>
+        | #[strong Tan 2]: nest <br>
+        | #[strong Brown 1]: nest <br>
+        | #[strong Brown 2]: mother pelican’s bill, wings, nest <br>
+        | #[strong Gray 1]: mother pelican <br>
+        | #[strong Gray 2]: banner, shadows <br>
+        | #[strong Black]: outlines
     .visual
       .colors.primary
         .color
@@ -54,16 +68,6 @@ block content
           .pantone PMS 295C
         include includes/color-white-pantone
       .colors.secondary
-        .color
-          .sample(class='gray-1')
-          .name Gray 1
-          .hex #888b8d
-          .pantone PMS Cool Gray 8C
-        .color
-          .sample(class='gray-2')
-          .name Gray 2
-          .hex #53565a
-          .pantone PMS Cool Gray 11C
         .color
           .sample(class='yellow')
           .name Yellow
@@ -104,6 +108,17 @@ block content
           .name Brown 2
           .hex #512f2e
           .pantone PMS 497C
+        .color
+          .sample(class='gray-1')
+          .name Gray 1
+          .hex #888b8d
+          .pantone PMS Cool Gray 8C
+        .color
+          .sample(class='gray-2')
+          .name Gray 2
+          .hex #53565a
+          .pantone PMS Cool Gray 11C
+        include includes/color-black-pantone
 
   .guide
     .content
