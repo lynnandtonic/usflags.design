@@ -1,0 +1,107 @@
+extends layout
+
+block vars
+  - var bodyClass = 'detail'
+  - var category = 'state'
+  - var name = 'United States'
+  - var path = 'usa'
+
+block content
+
+  header.territory
+    .flex
+      h1 #{name}
+      .flag
+        img(src='/assets/images/flag-usa.svg',
+            alt='flag of the United States of America',
+            class='border')
+    .meta
+      .date Established 
+        span July 4, 1776
+
+  .intro
+    p Handfuls of people have claimed credit in designing and/or sewing early versions of the United States flag, despite most details being lost to history.
+    p Notable among them are Francis Hopkinson who asserted he designed the first flag and Betsy Ross, whose grandson later claimed she sewed it. Historians remain skeptical.
+    p The flag has seen 27 different versions since its official adoption June 14, 1777.
+    p As new states joined, corresponding stars were added to the flag. With few specifications in place, a variety of creative star arrangements were produced. The orderly pattern of offset rows wasn’t standardized until 1959.
+    p The current 50-star flag was adopted July 4, 1960.
+
+  .guide
+    .content
+      h2 Flag design
+      p The U.S. flag features thirteen horizontal stripes of alternating red and white, seven red and six white.
+      p In the upper hoist canton is a union of blue with fifty white five-pointed stars arranged in nine horizontal offset rows.
+    .visual.flag
+      +flag(name, path, 'border')
+
+  .guide.wide
+    .content
+      h2 Iconography
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-usa-icon-stars.svg', alt='fifty stars')
+          h4 50 stars
+          p the fifty states of the Union
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-usa-icon-stripes.svg', alt='thirteen horizontal stripes')
+          h4 13 stripes
+          p the original thirteen colonies
+        li.icon-item
+
+  .guide
+    .content
+      h2 Colors
+      p The official colors of the flag are white, “Old Glory Red” and “Old Glory Blue.”
+      p There are a lot of varying color values in use due to the difficulty of interpreting Cable colors for digital screens.
+      p The values here are provided by the U.S. State Department and the U.S. Embassy in the U.K.
+      p Red represents valor and bravery, white symbolizes purity and innocence, and the blue stands for vigilance, perseverance, and justice.
+    .visual.colors.primary
+      include includes/color-us-red
+      include includes/color-us-white
+      include includes/color-us-blue
+
+  .guide
+    .content
+      h2 Construction
+      p U.S. Executive Order 10834 specifies proportions for the flag, as recreated here.
+      p The U.S. flag has a proportion of 1:1.9.
+      p Each stripe is 1/13 the width of the hoist and each star is 4/5 the width of a stripe.
+      p The union is the width of seven stripes and 2/5 the length of the fly.
+    .visual
+      +construction(name, path)
+
+  .guide.wide.timeline
+    .content
+      h2 Previous iterations
+      p Despite a variety of flags flying over South Carolina, only two have been officially recognized.
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-south-carolina-moultrie.svg', alt='a field of blue with a white crescent in the upper left and inscribed with “Liberty”')
+          h4 Moultrie Flag
+          p The flag supplied to militia units during the Revolutionary War, designed by William Moultrie.
+        li.flag-item
+          span.flag: img.border(src='/assets/images/flag-south-carolina-draft.svg', alt='a field of white charged with a green palmetto tree off-centered; in the upper left is a blue canton charged with a white crescent')
+          h4 Unofficial draft
+          p A draft with the palmetto, the design later credited to Alexander S. Salley and Ellen Heyward Jervey.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-south-carolina-two-day.svg', alt='a field of blue charged with a white oval containing a gold palmetto tree; in the upper left is a white crescent')
+          h4 January 26–28, 1861
+          p The Two-Day Flag featured a gold palmetto within a white circle, changed moments later.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-south-carolina.svg', alt='the current flag')
+          h4 January 28, 1861–Present
+          p The current state flag of South Carolina.
+
+  +pagination('nmi', 'Northern Mariana Islands',
+              'delaware', 'Delaware')
+
+  .guide.wide.sources
+    h3 Sources
+    ul
+      li.source U.S. Code. Title 4. FLAG AND SEAL, SEAT OF GOVERNMENT, AND THE STATES. Chapter 1. THE FLAG. Sections 1-2.
+      li.source: a(href='https://www.scstatehouse.gov/studentpage/coolstuff/seal.shtml') United States Executive Order 10834, Aug. 21, 1959.
+      li.souurce: a(href='https://en.wikisource.org/wiki/Page:Title_3_CFR_1959-1963_Compilation.djvu/368') Title 3 - The President, Code of Federal Regulations, 1959-1963 Compilation. January 1, 1959 to December 31, 1963.
+      li.source: a(href='https://uk.usembassy.gov/our-relationship/u-s-flag-facts/') U.S. Embassy and Consulates in the United Kingdom
+      li.source: a(href='https://eca.state.gov/files/bureau/state_department_u.s._flag_style_guide.pdf') United States Department of State Identity and Marking Standards, June, 2012.
+      li.source: a(href='https://www.usa.gov/flag') usa.gov
+      li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_the_United_States') Flag of the United States - Wikipedia
