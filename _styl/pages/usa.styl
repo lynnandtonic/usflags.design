@@ -1,0 +1,53 @@
+/*--------------------------------------------------------------------
+* $USA FLAG PAGE
+--------------------------------------------------------------------*/
+
+.usa
+
+  .timeline
+
+    .flag-item
+      padding-top: 35px
+      position: relative
+
+      &:before
+        content: ''
+        width: 100%
+        height: 1px
+        display: block
+        border-top: 10px solid $grey-light
+        position: absolute
+        top: 0
+
+      &.variant
+        background-color: #f1f1f1
+
+        .flag
+          padding: 30px
+          padding-bottom: 0
+
+        h4,
+        small
+          padding: 0 30px
+
+        small
+          color: #666
+          &:last-child
+            margin-bottom: 30px
+
+        &:not(:nth-child(4n+1)):before
+          width: calc(100% + 40px)
+          margin-left: -40px
+
+    small
+      font-style: italic
+
+    .date,
+    .label
+      padding-right: 10px
+      position: absolute
+      top: -4px
+      background: white
+      font-size: .80em
+      font-weight: $font-weight-bold
+      text-transform: uppercase
