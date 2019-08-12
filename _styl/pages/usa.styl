@@ -35,9 +35,20 @@
           &:last-child
             margin-bottom: 30px
 
-        &:not(:nth-child(4n+1)):before
-          width: calc(100% + 40px)
-          margin-left: -40px
+        @media screen and (min-width: 548px) and (max-width: 861px)
+          &:not(:nth-child(2n+1)):before
+            width: calc(100% + 40px)
+            margin-left: -40px
+
+        @media screen and (min-width: 862px) and (max-width: 1131px)
+          &:not(:nth-child(3n+1)):before
+            width: calc(100% + 40px)
+            margin-left: -40px
+
+        @media screen and (min-width: 1132px)
+          &:not(:nth-child(4n+1)):before
+            width: calc(100% + 40px)
+            margin-left: -40px
 
     small
       font-style: italic
