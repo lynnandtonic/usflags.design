@@ -32,28 +32,14 @@ mixin flag(state, img, border)
       class=border)
 
 //- Flag as a list item + a link to the page
-mixin flag-item(state, link, img, alt, border)
+mixin flag-item(state, link, img, alt, border, rect)
   li.flag-item(class=link)
     a(href='/' + link)
-      span.flag
+      span.flag(class=rect)
         img(src='/assets/images/flag-' + img,
             alt=alt,
             class=border)
       span.state= state
-
-//- Native peoples flags (no link)
-mixin native-item(tribe, img, alt, border)
-  li.flag-item
-    span.flag
-      img(src='/assets/images/native-peoples/flag-' + img,
-          alt=alt,
-          class=border)
-    span.state= tribe
-
-//- Native peoples intro
-mixin native-intro(state)
-  h2 Flags of Native Peoples
-  p= 'Much of the land of ' + state + ' once and still does belong to native peoples. Here are a selection of flags from these tribes and nations.'
 
 //- NAVA survey callout
 mixin survey(state, rank, asterisk)
