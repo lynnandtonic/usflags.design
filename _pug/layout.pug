@@ -11,10 +11,37 @@ html(lang='en')
     meta(name='viewport',content='width=device-width, initial-scale=1, minimum-scale=1')
 
     if bodyClass == 'detail'
-      meta(name='description', content='Design guide for the ' + category + ' flag of ' + name + '.')
+      meta(name='description', content='A visual design guide for the flag of ' + name + '. This guide describes the flag’s history and official specifications including composition, iconography, colors, and construction.')
     else
       meta(name='description', content=pageDescription)
     meta(name='author', content='Lynn Fisher')
+
+    meta(property='og:locale', content='en_US')
+    meta(property='og:type', content='website')
+    meta(property='og:site_name', content='US Flags [dot] Design')
+    if bodyClass !== 'home'
+      meta(property='og:title', content=name + ' - US Flags [dot] Design')
+      meta(property='twitter:title', content=name + ' - US Flags [dot] Design')
+      meta(property='og:url', content='https://usflags.design/' + path)
+      meta(property='og:image', content='https://usflags.design/assets/images/og/og-' + path + '.jpg')
+      meta(property='og:image:secure_url', content='https://usflags.design/assets/images/og/og-' + path + '.jpg')
+      meta(property='twitter:image', content='https://usflags.design/assets/images/og/og-' + path + '.jpg')
+      meta(property='og:description', content='A visual design guide for the flag of ' + name + '. This guide describes the flag’s history and official specifications including composition, iconography, colors, and construction.')
+      meta(name='twitter:description', content='A visual design guide for the flag of ' + name + '. This guide describes the flag’s history and official specifications including composition, iconography, colors, and construction.')
+    else
+      meta(property='og:title', content='US Flags [dot] Design')
+      meta(property='twitter:title', content='US Flags [dot] Design')
+      meta(property='og:url', content='https://usflags.design')
+      meta(property='og:image', content='https://usflags.design/assets/images/og/og-us-flags.jpg')
+      meta(property='og:image:secure_url', content='https://usflags.design/assets/images/og/og-us-flags.jpg')
+      meta(property='twitter:image', content='https://usflags.design/assets/images/og/og-us-flags.jpg')
+      meta(property='og:description', content=pageDescription)
+      meta(name='twitter:description', content=pageDescription)
+    meta(property='og:image:width', content='1200')
+    meta(property='og:image:height', content='630')
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:site', content='@lynnandtonic')
+    meta(name='twitter:creator', content='@lynnandtonic')
 
     title
       if bodyClass !== 'home'
