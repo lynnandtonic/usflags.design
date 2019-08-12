@@ -6,12 +6,19 @@
   display: block
   margin-bottom: 8px
 
+  a, 
+  a img
+    display: block
+
 .flag,
 .flag img
   border-radius: 4px
 
 .flag-item a
   opacity: 1
+
+  &:focus
+    box-shadow: 0 -6px 0 16px $teal
 
   .flag
     transition: all .15s ease-in-out
@@ -25,7 +32,8 @@
     content: '→'
     opacity: 0
 
-  &:hover
+  &:hover,
+  &:focus
 
     .flag
       transform: scale(1.02) translateY(-5px)
