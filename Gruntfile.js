@@ -99,6 +99,10 @@ module.exports = function(grunt) {
                         expand: true,
                         src: ['**'],
                         dest: 'public/assets'
+                    },
+                    {
+                        src: ['_redirects'],
+                        dest: 'public/'
                     }
                 ]
             },
