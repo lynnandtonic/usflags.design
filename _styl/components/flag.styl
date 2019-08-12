@@ -5,7 +5,9 @@
 .flag
   display: block
   margin-bottom: 8px
-  background-color: white;
+
+  &.non-rect
+    background-color: white;
 
   a, 
   a img
@@ -32,6 +34,10 @@
     margin-left: 5px
     content: '→'
     opacity: 0
+
+  &:hover
+    background-color: transparent
+    box-shadow: none
 
   &:hover,
   &:focus

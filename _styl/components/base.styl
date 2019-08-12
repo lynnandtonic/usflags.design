@@ -36,12 +36,16 @@ body
 img
   width: 100%
 
-a:focus
-  background: $teal
-  outline: none
-  box-shadow: 0 0 0 5px $teal
-  color: black !important
-  opacity: 1 !important
+a
+  &:hover
+    background-color: $grey-lightest
+    box-shadow: 0 0 0 5px $grey-lightest
+  &:focus
+    background-color: $teal
+    outline: none
+    box-shadow: 0 0 0 5px $teal
+    color: black !important
+    opacity: 1 !important
 
 .container
   max-width: 1200px
