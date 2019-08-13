@@ -57,8 +57,6 @@ html(lang='en')
 
     link(rel='stylesheet', href='/assets/css/main.css')
 
-    block scripts
-
   body(class=bodyClass + ' ' + path)
 
     include mixins/mixins
@@ -78,4 +76,5 @@ html(lang='en')
         p Made with #[span 💚] by #[a(href='https://twitter.com/lynnandtonic') Lynn Fisher]
         p: a(href='https://patreon.com/lynnandtonic') Support this project on Patreon
 
-    include includes/ga.html
+  block scripts
+  include includes/ga.html

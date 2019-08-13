@@ -32,13 +32,14 @@ mixin flag(state, img, border)
       class=border)
 
 //- Flag as a list item + a link to the page
-mixin flag-item(state, link, img, alt, border, rect)
+mixin flag-item(statehood, state, link, img, alt, border, rect)
   li.flag-item(class=link)
     a(href='/' + link)
       span.flag(class=rect)
         img(src='/assets/images/flag-' + img,
             alt=alt,
             class=border)
+      span.number= statehood
       span.state= state
 
 //- NAVA survey callout
