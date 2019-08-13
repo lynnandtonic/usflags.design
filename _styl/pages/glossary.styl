@@ -20,22 +20,36 @@
       font-size: 1.2em
 
   @media screen and (min-width: $w-medium)
-    display: grid
-    grid-template-columns: 200px 1fr
-    grid-template-rows: 40px auto
-    grid-gap: 5px 40px
-    grid-template-areas: "one two" "one three"
+    &:after
+      content: ''
+      display: table
+      clear: both
+
+    img
+      width: 200px
+      margin-right: 50px
+      float: left
+
+    @supports (display: grid)
+      display: grid
+      grid-template-columns: 200px 1fr
+      grid-template-rows: 40px auto
+      grid-gap: 5px 40px
+      grid-template-areas: "one two" "one three"
+
+      img
+        grid-area: one
+        width: 100%
+        margin-right: auto
+        float: none
+
+      dt
+        grid-area:two
+        align-self: end
+
+      dd
+        grid-area: three
 
     dt
       font-size: 1.5em
-
-    img
-      grid-area: one
-
-    dt
-      grid-area:two
-      align-self: end
-
-    dd
-      grid-area: three
 

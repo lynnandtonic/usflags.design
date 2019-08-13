@@ -1,5 +1,10 @@
 [class*='list']
-  display: grid
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+  @supports (display: grid)
+    display: grid
 
   a
     display: block
@@ -22,8 +27,25 @@ p + [class*='list']
 // Flag lists
 //----------------------
 .flag-list
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
-  grid-gap: 40px
+
+  .flag-item
+    margin-bottom: 40px
+
+  @media screen and (min-width: $w-medium)
+    .flag-item
+      width: 47%
+
+  @media screen and (min-width: $w-large)
+    .flag-item
+      width: 23%
+
+  @supports (display: grid)
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
+    grid-gap: 40px
+
+    .flag-item
+      width: auto
+      margin-bottom: auto
 
   .state
     font-family: $font-family-study
@@ -39,21 +61,37 @@ p + [class*='list']
 //----------------------
 .icon-list
 
-  @media $bp-small
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr))
-    grid-gap: 30px
+  .icon img
+    width: auto
 
+  @media $bp-small
     .icon img
-      width: auto
       height: 90px
 
-  @media screen and (min-width: $w-medium)
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
-    grid-gap: 60px
+    .icon-item
+      width: 45%
+      margin-bottom: 30px
 
+    @supports (display: grid)
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr))
+      grid-gap: 30px
+
+  @media screen and (min-width: $w-medium)
     .icon img
-      width: auto
       height: 150px
+
+    .icon-item
+      width: 24%
+      margin-bottom: 60px
+
+    @supports (display: grid)
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+      grid-gap: 60px
+
+  @supports (display: grid)
+    .icon-item
+      width: auto
+      margin-bottom: auto
 
   h4
     margin-bottom: 5px
@@ -92,10 +130,9 @@ p + [class*='list']
     left: 0
 
   @media $bp-small
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
-    grid-gap: 50px
-
     .stat-item
+      width: 28%
+      margin-bottom: 50px
       padding-left: 45px
 
     h4
@@ -108,11 +145,14 @@ p + [class*='list']
         width: 30px
         top: 10px
 
-  @media screen and (min-width: $w-medium)
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr))
-    grid-gap: 100px 80px
+    @supports (display: grid)
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+      grid-gap: 50px
 
+  @media screen and (min-width: $w-medium)
     .stat-item
+      width: 22%
+      margin-bottom: 80px
       padding-left: 55px
 
     h4
@@ -124,3 +164,12 @@ p + [class*='list']
       img
         width: 40px
         top: 30px
+
+    @supports (display: grid)
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr))
+      grid-gap: 100px 80px
+
+  @supports (display: grid)
+    .stat-item
+      width: auto
+      margin-bottom: auto

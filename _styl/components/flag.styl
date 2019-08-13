@@ -42,7 +42,18 @@
     background-color: transparent
     box-shadow: none
 
-  &:hover,
+    .flag
+      transform: scale(1.02) translateY(-5px)
+
+    .flag:not(.non-rect)
+      box-shadow: 0 0 0 4px white,
+                  0 0 10px 2px black(.35)
+
+    .state
+      text-decoration: underline
+      &:after
+        opacity: 1
+
   &:focus
 
     .flag

@@ -101,9 +101,31 @@
 
 .colors
   width: 100%
-  display: grid
-  grid-gap: 10px
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+  .color
+    margin-bottom: 10px
+  &.primary .color
+    width: 48%
+  &.secondary .color
+    width: 31%
+
+  @supports (display: grid)
+    display: grid
+    grid-gap: 10px
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+
+    .color
+      margin-bottom: auto
+
+    &.primary .color,
+    &.secondary .color
+      width: auto
+
+    & + .colors
+      margin-top: 30px
 
   &.primary
     .sample
@@ -113,9 +135,6 @@
     font-size: .9em
     .sample
       height: 50px
-
-  & + .colors
-    margin-top: 30px
 
   .sample
     width: 100%

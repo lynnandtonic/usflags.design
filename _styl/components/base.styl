@@ -10,6 +10,7 @@
   color: white
 
 html
+  min-width: $w-small
   background-color: #eee
 
   @media screen and (max-width: $w-medium - 1)
@@ -38,9 +39,12 @@ img
 
 a
   transition: background-color .1s ease-in, box-shadow .1s ease-in
+
   &:hover
     background-color: $grey-lightest
     box-shadow: 0 0 0 5px $grey-lightest
+    color: black !important
+
   &:focus
     background-color: $teal
     outline: none
