@@ -7,7 +7,7 @@ block vars
 block scripts
   script.
     function alphList() {
-      var list, i, switching, b, shouldSwitch, sort1, sort2;
+      var list, i, switching, state, shouldSwitch, sort1, sort2;
       list = document.getElementById("flag-list");
       sort1 = document.getElementById("sort1");
       sort2 = document.getElementById("sort2");
@@ -15,17 +15,17 @@ block scripts
 
       while (switching) {
         switching = false;
-        b = list.getElementsByClassName("flag-item");
+        state = list.getElementsByClassName("flag-item");
 
-        for (i = 0; i < (b.length - 1); i++) {
+        for (i = 0; i < (state.length - 1); i++) {
           shouldSwitch = false;
-          if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+          if (state[i].innerHTML.toLowerCase() > state[i + 1].innerHTML.toLowerCase()) {
             shouldSwitch = true;
             break;
           }
         }
         if (shouldSwitch) {
-          b[i].parentNode.insertBefore(b[i + 1], b[i]);
+          state[i].parentNode.insertBefore(state[i + 1], state[i]);
           switching = true;
           sort1.classList.remove("active");
           sort2.classList.add("active");
@@ -59,8 +59,6 @@ block scripts
         }
       }
     }
-
-
 
 block content
 
