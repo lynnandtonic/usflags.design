@@ -10,12 +10,22 @@
 
   clear: both
 
-  @media screen and (min-width: $w-medium)
-    display: flex
-    justify-content: space-between
+  display: flex
+  justify-content: space-between
 
-    p
-      margin-bottom: 5px
+  p
+    margin-bottom: 5px
 
   span
     font-style: normal
+
+  .coffee
+    transition: transform 300ms ease-in-out
+    background: none
+    box-shadow: none
+
+    img
+      max-height: 30px
+
+    &:hover
+      transform: scale(1.2)
