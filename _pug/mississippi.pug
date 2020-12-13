@@ -11,46 +11,67 @@ block content
   +state(name, path, 'The Magnolia State', 'December 10, 1817', 'border')
 
   .intro
-    p
-      strong: em Update coming soon.
-    p Mississippi currently does not have a state flag.
-    p Its controversial flag (and its second officially) was removed in June 2020 following nationwide Black Lives Matter protests.
-    p Since Georgia changed its flag in 2003, Mississippi was the only U.S. flag to feature the Confederate battle flag, often called “The Southern Cross.”
-    p This version of the flag was adopted February 7, 1894, almost 30 years after the end of the American Civil War.
-    p The people of Mississippi previously voted (with a significant majority) to keep this version of the flag in a referendum on April 17, 2001.
-    p A new design for the Mississippi state flag will be voted on in November 2020.
+    p For 126 years, Mississippi’s flag featured the Confederate Battle flag in its canton. Despite its inclusion of the racist symbol, the people of Mississippi voted to keep this version of the flag in a referendum in 2001.
+    p Following nationwide Black Lives Matter protests in the summer of 2020, the state finally removed the flag and created a commission to design a new one.
+    p Voters chose The New Magnolia flag, designed by Rocky Vaughan, Sue Anna Joe, Kara Giles, and Dominique Pugh. The flag was made official November 2020 and renamed the In God We Trust flag.
 
   .guide
     .content
       h2 Composition
-      p To be determined.
+      p The Mississippi flag features a field of blue charged with a magnolia blossom at the center. Surrounding the blossom is a circle of twenty white five-pointed stars and a single gold star at the top.
+      p Below the magnolia blossom, the words “In God We Trust” are inscribed.
+      p The field of blue is flanked by gold and red vertical stripes.
       +survey(name, '22nd*', '*The flag voted on was the 1894–2020 version (see Previous Iterations section).')
-    .visual.flag.border
+    .visual
       +flag(name, path)
 
-  .guide
+  .guide.wide
     .content
       h2 Iconography
-      p To be determined.
-    //-   p Both the second and third national flags of the Confederate States, like the Mississippi state flag, use the battle flag in their cantons.
-    //-   p Defenders of the battle flag claim it is a symbol of the south’s history and defense of liberty and states’ rights during the Civil War.
-    //-   p Despite this claim, it is representative of the Confederacy’s support and defense of slavery. Since the war, the battle flag has been used as a rallying banner for white supremacists and a symbol of continued racism and violence.
-    //- .visual.flag
-    //-   img(src='/assets/images/flag-mississippi-southern-cross.svg', alt='the Confederate battle flag')
+      ul.visual.icon-list
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-mississippi-icon-stars.svg', alt='a ring of twenty stars')
+          h4 20 stars
+          p Mississippi as the 20th state to join the union
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-mississippi-icon-five-pointed-star.svg', alt='five-pointed star')
+          h4 five-pointed star
+          p the indigenous peoples of Mississippi
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-mississippi-icon-magnolia.svg', alt='magnolia blossom')
+          h4 magnolia blossom
+          p hospitality, rebirth
+        li.icon-item
+          span.icon: img(src='/assets/images/flag-mississippi-icon-in-god-we-trust.svg', alt='In God We Trust')
+          h4 motto
+          p faith
 
   .guide
     .content
       h2 Colors
-      p To be determined.
+      p Official color values coming soon.
+      p Blue represents vigilance, justice, and perseverance, red represents hardiness and valor, and gold represents Mississippi’s rich cultural history.
+      hr
+      small The hex values here are approximations.
     .visual.colors.primary
-      //- include includes/color-us-red
-      //- include includes/color-us-blue
+      .color
+        .sample(class='red')
+        .name Red
+        .hex #c21f32
+      .color
+        .sample(class='blue')
+        .name Blue
+        .hex #081f40
       include includes/color-us-white
+      .color
+        .sample(class='gold')
+        .name Gold
+        .hex #eaab22
 
   .guide
     .content
       h2 Construction
-      p To be determined.
+      p Official construction coming soon.
     .visual
       +construction(name, path)
 
@@ -78,3 +99,4 @@ block content
       li.source Mississippi Code. Title 3. Chapter 3 § 3-3-16 - Design of state flag.
       li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Mississippi') Flag of Mississippi - Wikipedia
       li.source: a(href="https://mississippitoday.org/2020/06/28/mississippi-furls-state-flag-with-confederate-emblem-after-126-years/") Mississippi Today
+      li.source: a(href='https://www.mdah.ms.gov/flagpoll-top2') Mississippi Department of Archives and History
