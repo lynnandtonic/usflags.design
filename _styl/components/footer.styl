@@ -7,26 +7,30 @@
   font-family: $font-family-study
   font-style: italic
   font-size: .9em
+  text-align: center
 
   clear: both
+  
+  @media screen and (min-width: 500px)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-align: left
 
-  display: flex
-  justify-content: space-between
-  align-items: center
-
-  p
-    margin-bottom: 0
+    p
+      margin-bottom: 0
 
   span
     font-style: normal
 
   .coffee
-    transition: transform 300ms ease-in-out
+    display: flex
+    gap: .4em
+    align-items: center
+    justify-content: center
+
+  .coffee-icon
     background: none
     box-shadow: none
-
-    img
-      max-height: 30px
-
-    &:hover
-      transform: scale(1.2)
+    width: 20px
+    height: 20px
