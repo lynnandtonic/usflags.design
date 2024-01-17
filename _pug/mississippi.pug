@@ -18,9 +18,9 @@ block content
   .guide
     .content
       h2 Composition
-      p The Mississippi flag features a field of blue charged with a magnolia blossom at the center. Surrounding the blossom is a circle of twenty white five-pointed stars and a single gold star at the top.
-      p Below the magnolia blossom, the words “In God We Trust” are inscribed.
-      p The field of blue is flanked by gold and red vertical stripes.
+      p The Mississippi flag features a panel of blue charged with a magnolia blossom at the center. Surrounding the blossom is a circle of twenty white five-pointed stars and a single gold star at the top.
+      p Below the magnolia blossom, the words “In God We Trust” are inscribed in Americana typeface.
+      p The panel of blue is flanked by gold and red vertical stripes.
       +survey(name, '22nd*', '*The flag voted on was the 1894–2020 version (see Previous Iterations section).')
     .visual
       +flag(name, path)
@@ -49,7 +49,7 @@ block content
   .guide
     .content
       h2 Colors
-      p Official color values coming soon.
+      p The flag’s official colors are white, gold, Old Glory Red, and Old Glory Blue (both of which differ slightly from the U.S. flag colors of the same name).
       p Blue represents vigilance, justice, and perseverance, red represents hardiness and valor, and gold represents Mississippi’s rich cultural history.
       hr
       small The hex values here are approximations.
@@ -58,20 +58,24 @@ block content
         .sample(class='red')
         .name Red
         .hex #c21f32
+        .pantone PMS 200
       .color
         .sample(class='blue')
         .name Blue
         .hex #081f40
-      include includes/color-us-white
+        .pantone PMS 282
+      include includes/color-white
       .color
         .sample(class='gold')
         .name Gold
         .hex #eaab22
+        .pantone PMS 7563
 
   .guide
     .content
       h2 Construction
-      p Official construction coming soon.
+      p The Mississippi flag is generally produced with a 3:5 width to length proportion.
+      p Its visual elements are described in proportional units. The flag’s vertical height is 72 units and horizontal length is 120. The outer red bars are 25 units wide each, the inner gold stripes are 5 each, and the center blue panel is 60 units wide. The central artwork is two-thirds the height or 48 units.
     .visual
       +construction(name, path)
 
@@ -88,6 +92,9 @@ block content
           h4 1894–2020
           p This controversial flag, featuring the Confederate battle flag, was removed in 2020 following nationwide Black Lives Matter protests.
         li.flag-item
+          span.flag: img(src='/assets/images/flag-mississippi-thumb.svg', alt='the current flag')
+          h4 2020–Present
+          p The current Mississippi state flag.
 
   +pagination('indiana', 'Indiana',
               'illinois', 'Illinois')
