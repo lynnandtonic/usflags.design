@@ -14,13 +14,13 @@ block content
     p In prepration for the 1893 Chicago World’s Fair, a Minnesota Women’s Auxiliary Board was put together to create a design. They hosted a contest and from 200 submissions, local artist Amelia Hyde Center designed the winning flag.
     p It was embroidered by Pauline and Thomane Fjelde, sisters who won a gold medal for their work. The flag was officially adopted April 4, 1893.
     p In 1957, the flag was simplified for easier production and changed again in 1983, to reflect updates to the state seal.
-    p This version of the flag was officially adopted August 2, 1983.
+    p In 2023, Minnesota formed the State Emblems Redesign Commission and began accepting public submissions. The chosen flag, a modified design by Andrew Prekker, was adopted May 11, 2024.
 
   .guide
     .content
       h2 Composition
-      p The Minnesota flag features a field of medium blue charged with the state seal, centered.
-      +survey(name, '67th')
+      p The Minnesota flag features a concave pentagon of deep blue at the hoist charged with an eight-point white star. The remainder is solid, bright blue.
+      +survey(name, '67th*', '*The flag voted on was the 1983-2024 version (see Previous Iterations section).')
     .visual.flag
       +flag(name, path)
 
@@ -29,77 +29,52 @@ block content
       h2 Iconography
       ul.visual.icon-list
         li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-stars.svg', alt='five groups of four stars, positioned to look like a star’s points')
-          h4 19 Stars
-          p Minnesota as the North Star State and the nineteenth state after the original thirteen colonies
+          span.icon: img(src='/assets/images/flag-minnesota-icon-dark-field.svg', alt='rectangle with triangular cutout on right side')
+          h4 dark blue field
+          p the night sky, the shape of Minnesota
         li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-flowers.svg', alt='wreath of flowers')
-          h4 pink & white lady’s slipper
-          p state flower, regional flora
-          p #[em Note:] It was previously depicted as white lady’s slipper, which is not native to Minnesota.
+          span.icon: img(src='/assets/images/flag-minnesota-icon-bright-field.svg', alt='rectangle with triangular protrusion on left side')
+          h4 bright blue field
+          p abundance of water
         li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-dates.svg', alt='1858, 1819, 1893')
-          h4 dates
-          p the establishment of Fort Snelling (1819), Minnesota’s year of statehood (1858), and the flag’s adoption (1893)
+          span.icon: img(src='/assets/images/flag-minnesota-icon-star.svg', alt='eight-pointed star')
+          h4 eight-pointed star
+          p the North Star (L’étoile du Nord), many cultures
         li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-motto.svg', alt='L’etoile Du Nord')
-          h4 motto
-          p #[em The Star of the North]
-        li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-farmer.svg', alt='a man plows a field')
-          h4 pioneer
-          p agriculture, hunting, logging
-        li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-native-american.svg', alt='a Native American man rides on a horse before a sunset')
-          h4 Native American
-          p the rich history of Native peoples
-          p #[em Note:] See the coat of arms section below.
-        li.icon-item
-          span.icon: img(src='/assets/images/flag-minnesota-icon-nature.svg', alt='mountains, a river, waterfall, and trees')
-          h4 nature
-          p transportation, commerce, the Mississippi River and St. Anthony Falls, the three pine regions (St. Croix, Mississippi, Lake Superior).
 
-  .guide
-    .content
-      h2 Coat of Arms
-      p The original seal and coat of arms depicted a Sioux man in war attire fleeing into the distance.
-      p This was seen as offensive and historically inaccurate, so the seal was updated in 1983 to depict the man riding his horse #[em toward] the pioneer. This was meant to include Native Americans in Minnesota history.
-      p Still, many would prefer the flag be redesigned entirely, introducing bills and petitions to change the flag. None have been successful, yet.
-    .visual.flag
-      +coat-of-arms(name, path)
+  //- .guide
+  //-   .content
+  //-     h2 Coat of Arms
+  //-     p The original seal and coat of arms depicted a Sioux man in war attire fleeing into the distance.
+  //-     p This was seen as offensive and historically inaccurate, so the seal was updated in 1983 to depict the man riding his horse #[em toward] the pioneer. This was meant to include Native Americans in Minnesota history.
+  //-     p Still, many would prefer the flag be redesigned entirely, introducing bills and petitions to change the flag. None have been successful, yet.
+  //-   .visual.flag
+  //-     +coat-of-arms(name, path)
 
   .guide
     .content
       h2 Colors
-      p Once a royal blue, the field is now a “medium” blue, drawing inspiration from Union blue used during the Civil War.
+      p Two distinct blues represent the sky and water.
       hr
-      small Neither Minnesota law nor the Office of the Secretary of State provides Cable or Pantone values for the colors of the flag.
-      small The hex values here are approximations.
+      small PMS and hex values provided by the Minnesota State Emblems Redesign Commission.
     .visual
       .colors.primary
         .color
-          .sample(class='blue')
-          .name Medium Blue
-          .hex #3d68c9
+          .sample(class='sky-blue')
+          .name Night Sky Blue
+          .hex #002C5A
+          .pantone PMS 648
         include includes/color-white
-      .colors.secondary
         .color
-          .sample(class='gold')
-          .name Gold
-          .hex #fcb216
-        .color
-          .sample(class='red')
-          .name Red
-          .hex #ed1a3a
-        .color
-          .sample(class='green')
-          .name Green
-          .hex #60bb48
+          .sample(class='water-blue')
+          .name Water Blue
+          .hex #73C6E5
+          .pantone PMS 305
   .guide
     .content
       h2 Construction
-      p Minnesota statute does not specify a size or proportion for the flag.
-      p It is often produced with the common proportion of 3:5.
+      p The Minnesota flag is produced with the common proportion of 3:5. The proportion and spacing for the flag’s visual elements are rendered here.
+      p The star is a regular octagram, constructed from 8 vertices arranged equally around a circle. Each vertex is connected to the vertex that is 3 turns away.
     .visual
       +construction(name, path)
 
@@ -120,9 +95,13 @@ block content
           h4 1957-1983
           p The seal is updated, blue darkened, and reverse removed.
         li.flag-item
+          span.flag: img(src='/assets/images/flag-minnesota-1983-2024.jpg', alt='a field of medium blue charged with the sealg')
+          h4 1983-2024
+          p The flag with medium blue and updated seal.
+        li.flag-item
           span.flag: img(src='/assets/images/flag-minnesota-thumb.svg', alt='the current Minnesota flag')
-          h4 1983-Present
-          p The current flag with medium blue and updated seal.
+          h4 2024-Present
+          p The current flag designed by Andrew Prekker and Minnesota State Emblems Redesign Commission.
 
   +pagination('california', 'California',
               'oregon', 'Oregon')
@@ -133,6 +112,7 @@ block content
       include includes/source-howe
       include includes/source-mitchell
       li.source Minnesota Statutes. Chapter 1. Sovereignty, Jurisdiction, Emergency Operation, General Policies. Section 1.141 State Flag.
+      li.source The New Official Flag and Great Seal. Report of the Minnesota State Emblems Redesign Commission to the Minnesota Legislature and Governor. January 1 2024.
       li.source: a(href='http://collections.mnhs.org/MNHistoryMagazine/articles/53/v53i01p002-008.pdf') Becker, William. “The Origin of the Minnesota State Flag” (PDF). Minnesota State Legislature.
       li.source: a(href='https://www.lakewoodcemetery.org/single-post/2018/06/13/The-Fair-and-the-Flag-The-Origins-and-Evolution-of-Minnesota%E2%80%99s-State-Flag') Lakewood Cemetery
       li.source: a(href='https://en.wikipedia.org/wiki/Flag_of_Minnesota') Flag of Minnesota - Wikipedia
