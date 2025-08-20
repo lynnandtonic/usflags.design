@@ -13,7 +13,7 @@ block content
   .intro
     p The New York flag, one of unusually wide proportion, follows a common pattern for U.S. state flags, featuring the state coat of arms on a field of blue.
     p It spotlights many images seen in other state seals and flags like the goddess Liberty, Phrygian cap, and bald eagle, among others.
-    p An original version of the flag was adopted in 1788, but the current iteration was officially adopted April 2, 1901.
+    p An original version of the flag was adopted in 1788 and the current iteration was officially adopted April 2, 1901. In 2020, the motto #[em E pluribus unum] was added to the seal.
 
   .guide
     .content
@@ -57,8 +57,8 @@ block content
           p natural beauty, commerce by waterway
         li.icon-item
           span.icon: img(src='/assets/images/flag-new-york-icon-excelsior.svg', alt='a banner inscribed with “Excelsior”')
-          h4 motto
-          p #[em Ever Upward], progress
+          h4 mottos
+          p #[em Ever Upward], #[em Out of many, one]
 
   .guide
     .content
@@ -111,12 +111,22 @@ block content
     .visual
       +construction(name, path)
 
-  .guide
+  .guide.wide.timeline
     .content
-      h2 Previous iteration
-      p The New York flag previously had a field of buff, matching the color of troop uniforms. In 1901 it was changed to a field of blue to better follow the design of other military flags.
-    .visual
-      img(src='/assets/images/flag-new-york-pre-1901.svg', alt='a field of buff charged with the state coat of arms')
+      h2 Previous iterations
+      ul.visual.flag-list
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-new-york-pre-1901.svg', alt='a field of buff charged with the state coat of arms')
+          h4 Pre-1901
+          p Features a field of buff, matching the color of troop uniforms.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-new-york-1901-2020.svg', alt='a field of blue charged with the state coat of arms')
+          h4 1901–2020
+          p Changed to a field of blue to better align with other state flags.
+        li.flag-item
+          span.flag: img(src='/assets/images/flag-new-york.svg', alt='previous flag with “E Pluribus Unum” added underneath “Excelsior”')
+          h4 2020–Present
+          p Current flag with updated seal featuring #[em E pluribus unum].
 
   +pagination('virginia', 'Virginia',
               'north-carolina', 'North Carolina')
